@@ -1,0 +1,418 @@
+[
+	{
+		"title": "Foundations of Exercise Science",
+		"description": "This course is an introduction to the field of exercise science. The content includes  definitions, objectives, and philosophies of the field; basic content of components of  exercise science, contemporary issues and research, and potential career options.  This introduction to the field of exercise science will have a foundation of the  Christian perspective of vocational gifting, calling, preparation and service to  humankind. Offered Fall and Spring semesters.",
+		"courseCode": "111",
+		"departmentCode": "EXS",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "EXS",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Health and Sexuality",
+		"description": "This course is designed to prepare future health educators to teach the relationship  between health and human sexuality. The class activities will include  lectures/discussions, peer teaching, development of an abstinence-based curriculum,  and lectures by outside resource personnel.",
+		"courseCode": "214",
+		"departmentCode": "EXS",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Health, Exercise, and Aging",
+		"description": "The course is designed to examine common health-related physiological changes,  current issues, and concerns as they pertain to the aging individual. Prerequisite: EXS  111 or permission of instructor.",
+		"courseCode": "215",
+		"departmentCode": "EXS",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Health Promotion Program Planning",
+		"description": "This course is a study of the philosophy, goals, objectives, organization, content, and  methods of wellness programs. Characteristics of various clientele and how  programs can be developed to meet their specific needs will be studied. Prerequisite:  EXS 111. Offered Fall semester of odd years.",
+		"courseCode": "217",
+		"departmentCode": "EXS",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "EXS",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Introduction to Exercise Science Research",
+		"description": "Students will gain a basic introduction to research through a field experience in an  exercise science research project. Students will help with data collection, data entry,  and data analysis portions of the study. May be repeated once for credit. By permission  of instructor only.",
+		"courseCode": "273",
+		"departmentCode": "EXS",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Introduction to Exercise Testing",
+		"description": "This course will introduce students to the basic skills of cardiovascular disease risk  assessment, anthropometric measures, basic muscle strength and endurance  assessment, EKG preparation, and data collection. Prerequisite: EXS 111 or permission  of instructor.",
+		"courseCode": "274",
+		"departmentCode": "EXS",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Exercise Techniques for Physical Fitness",
+		"description": "A course designed to teach various motor skills needed to effectively improve  physical fitness such as proper running mechanics, basic lifting techniques, and  common stretches. Students will also develop presentation and group exercise  leadership skills. Meets foundational core stewardship of the body requirement beyond  KIN 100. Exercise Science majors and Coaching minors only.",
+		"courseCode": "280",
+		"departmentCode": "EXS",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Physiology of Exercise",
+		"description": "A study of how the body adapts and responds to acute and chronic exercise.  Attention is given to skeletal muscle structure and function, neurological control of  movement, metabolic systems, and cardiovascular and pulmonary systems.  Prerequisite: BIO 310 or permission of instructor. Offered Spring semester.",
+		"courseCode": "306",
+		"departmentCode": "EXS",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Applied Nutrition",
+		"description": "This course is a study of basic principles of human nutrition including fundamentals  of digestion, absorption, and metabolism; nutrients and their roles for the lifespan;  eating disorders; and nutrition for performance. Exercise Science, Health Science, and  Human Physiology and Preventative Medicine majors only or by permission of instructor.  Offered Fall and Spring semesters.",
+		"courseCode": "316",
+		"departmentCode": "EXS",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "EKG and Stress Testing",
+		"description": "This course is designed to provide the undergraduate exercise science student with  the basic knowledge and skills needed to interpret resting and exercise EKG’s.  Emphasis will be placed on 1) learning normal vs. abnormal EKG patterns at rest and  during exercise; and, 2) the effects of cardiovascular medication on the resting or  exercise EKG and various physiologic responses to exercise testing. An additional  purpose of the course is to introduce the undergraduate exercise student to selected  cardiac assessment techniques. Prerequisite: EXS 306 or permission of instructor.",
+		"courseCode": "317",
+		"departmentCode": "EXS",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Therapeutic Exercise and Pharmacotherapy",
+		"description": "A detailed study of the role exercise plays in preventing and treating chronic diseases  and conditions including metabolic diseases, obesity, cardiovascular conditions,  systemic inflammatory diseases, neurological diseases, cancer, orthopedic  conditions, and aging. Prerequisite: EXS 306 or permission of instructor. Offered January  interterm.",
+		"courseCode": "318",
+		"departmentCode": "EXS",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Community Health Promotion",
+		"description": "This course introduces students to health promotion in a community setting. The  content explores the theoretical and practical issues of the field of community health  that enable students to identify and apply health education principles to health  challenges facing individuals, groups, and communities. Local cultures will be  explored throughout the trip and students will be expected to reflect on their  experience. Meets foundational core cross-cultural requirement. Offered: January  interterm of even years. Prerequisite: Permission of instructor.",
+		"courseCode": "320",
+		"departmentCode": "EXS",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Principles of Strength Training and Conditioning",
+		"description": "This course is the study of the essentials of strength training and conditioning for  practitioners and prepares students for certification with the National Strength and  Conditioning Association (NSCA). The course will cover the following: biomechanics  of exercise, rehabilitation, bioenergetics of training, aerobic exercise prescription,  resistance training, and speed and plyometric training. Prerequisites: EXS 280, 306,  316, and 381; or permission of instructor. Offered Spring semester of even years.",
+		"courseCode": "328",
+		"departmentCode": "EXS",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Physical Fitness Assessment",
+		"description": "This course will provide a comprehensive study of the components of physical  fitness and methods of assessing fitness levels within each component. Health  assessment and risk analysis instruments will also be examined. The course consists  of classroom work, practical assessment projects, and some field experiences. Each  student will participate in “hands-on” fitness assessments of various population  groups. Prerequisites: EXS 111, 274, and 306; or permission of instructor. Offered Fall  and Spring semesters.",
+		"courseCode": "353",
+		"departmentCode": "EXS",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "EXS",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "EXS",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Kinesiology",
+		"description": "An analysis of human movement based on anatomic and mechanical principles.  Emphasis is given to the application of these principles to the understanding of  athletic performance. Prerequisites: BIO 310 or permission of instructor. Offered Fall  semester.",
+		"courseCode": "381",
+		"departmentCode": "EXS",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally,  one hour of credit is awarded for a minimum of 40 hours of practicum experience.  Prerequisite: Permission of KIN department.",
+		"courseCode": "393",
+		"departmentCode": "EXS",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory. Prerequisite: Permission of instructor.",
+		"courseCode": "450",
+		"departmentCode": "EXS",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Physical Fitness Prescription",
+		"description": "This course provides a study of the prescription and development of appropriate  exercise programs based on accurate assessment of each component. Appropriate  programs for various populations groups will be considered. The course will  consist of classroom work, practical prescription projects, and some field  experiences. Each student will participate in “hands-on” prescription and program  development for a variety of individuals. Prerequisite: EXS 306. Offered Spring  semester.",
+		"courseCode": "453",
+		"departmentCode": "EXS",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Seminar",
+		"description": "A limited-enrollment course designed especially for upper-class majors with  emphasis on directed readings and discussion.",
+		"courseCode": "480",
+		"departmentCode": "EXS",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Lifespan and Environmental Physiology",
+		"description": "This is a seminar-style course which will examine the differences in pediatric  physiology and geriatric physiology as well as address physiological adaptations to  different natural environments. A variety of topics related to pediatric and geriatric  physiology will be explored including growth, maturation and aging, underlying  mechanisms for changes in fitness in children and older adults, and specific health  challenges facing these populations. Topics relevant to environmental physiology  that will be explored include adaptations related to hot, humid, and hypoxic  environments. Prerequisite: EXS 306. Offered Fall semester.",
+		"courseCode": "482",
+		"departmentCode": "EXS",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major. Open  to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "EXS",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Fitness for Life",
+		"description": "This course will assist students in developing an understanding of human flourishing  founded on biblical principles and scientific evidence in the areas of sleep, stress  and time management, nutrition, and various aspects of physical fitness. Students  will engage in various assignments and physical activities related to these areas with  the purpose of providing the abilities to make healthy lifestyle and behavior choices.  This course satisfies two of the three hours of foundational core requirements for  stewardship of the body.",
+		"courseCode": "100",
+		"departmentCode": "KIN",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "KIN",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "General Physical Education Activity Courses",
+		"description": "These courses encourage students to adopt an active physical lifestyle and maintain  physical fitness and wellness throughout their lives. Students learn about activities  and develop skills for participation in lifetime activities. One KIN 200 course is taken  after KIN 100 to meet the three-hour foundational core requirement. Prerequisite: EXS  111, KIN 100, or KIN 221.",
+		"courseCode": "200",
+		"departmentCode": "KIN",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Individualized Physical Education",
+		"description": "The individualized physical education course is designed for students who fit into  one of the following categories: (1) the student has a physical problem that prohibits  completion of another KIN 200 course; (2) the student would like to do an activity  that is not offered as an KIN 200 course; or (3) the student is near graduation and  cannot schedule another KIN 200 course. Students design a program with the  instructor’s supervision and then engage in that program throughout the semester.  Physical fitness assessments may be included as well as cognitive assignments.  Students must apply for acceptance into the class and be approved by the instructor  in order to register for the course. Prerequisite: EXS 111, KIN 100, or KIN 221.",
+		"courseCode": "200I",
+		"departmentCode": "KIN",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Athletic Participation",
+		"description": "The athletic participation course is designed for students who compete on an NAIA  intercollegiate athletic team. Students must be approved by the athletic department to  receive academic credit for this course. Credit is awarded only during the sport season  and credit will not be granted retroactively for athletic participation from a previous season.",
+		"courseCode": "200Z",
+		"departmentCode": "KIN",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Principles of Coaching",
+		"description": "This course is a study of the duties and responsibilities of coaches and the potential  problems and issues they may face. The content will include the four major areas  of coaching certification programs: medical aspects, physiological aspects,  psychological aspects, and organizational and administrative aspects. Methods and  strategies of handling the responsibilities and the problems will be studied. Offered  Spring semester of even years.",
+		"courseCode": "220",
+		"departmentCode": "KIN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Exercise as Medicine",
+		"description": "This class examines the impact of physical activity, exercise, nutrition, and lifestyle  related factors on health and the prevention and treatment of chronic disease.  Students will learn the physiological basis of cardiorespiratory and musculoskeletal  fitness, how these are influenced by exercise and physical activity, and their relation  to health and disease. The therapeutic effect of exercise will be compared to  traditional pharmacological treatment approaches where applicable. In addition  students will be challenged to consider the personal, spiritual, and social  responsibilities of maintaining an optimal level of fitness as they apply course content  to their own life. Meets the 3 hour foundational core stewardship of the body requirement.  Open to Pre-Med students and Public Health, Health Promotion and Wellness, Health  Science, and Human Physiology and Preventative Medicine majors only or by permission of  instructor.",
+		"courseCode": "221",
+		"departmentCode": "KIN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Emergency Health Care",
+		"description": "Prevention, treatment, and emergency care of various health problems and injuries  will be examined. Skills will be obtained in CPR, AED, first aid, blood and airborne  pathogens, and use of PPEs according to guidelines of the Emergency Care and Safety  Institute and American Red Cross.",
+		"courseCode": "223",
+		"departmentCode": "KIN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Officiating Sports",
+		"description": "A study of the officiating skills and techniques needed for various sports. The  opportunity to earn official’s rating is provided. Offered Fall semester of odd years.",
+		"courseCode": "231",
+		"departmentCode": "KIN",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Elementary School Health Program",
+		"description": "A course designed to equip the elementary education student with a basic  understanding of teaching concepts associated with physical education activities and  appropriate health and safety practices. Fundamental content of the areas of physical  education, health, and safety, as well as teaching methods, are explored. Meets  foundational core stewardship of the body requirement beyond KIN 100. Prerequisite: KIN  100. Open to Elementary Education, Health Promotion and Wellness, and Public Health majors only or permission of instructor.",
+		"courseCode": "250",
+		"departmentCode": "KIN",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "KIN",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "CPR for Healthcare Providers",
+		"description": "Successful completion of this course will certify participants in the techniques of CPR  and AED use for adults, children, and infants; foreign body obstruction; and cardiac  emergency management according to American Red Cross standards. Priority  registration for this course is given to students in the KIN majors.",
+		"courseCode": "271",
+		"departmentCode": "KIN",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Basic Swimming Skills",
+		"description": "For KIN majors who have satisfactorily completed a basic swimming, intermediate  swimming, or emergency water safety course at another institution. Students will  receive credit for basic proficiency in swimming skills and water safety upon  submission of official transcript. Meets foundational core stewardship of the body  requirement beyond KIN 100.",
+		"courseCode": "300",
+		"departmentCode": "KIN",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Lifeguard Training",
+		"description": "This course is designed to train an individual in the proper methods for rescue, water  safety, first aid, CPR, and other skills necessary for lifeguarding. Meets foundational  core stewardship of the body requirement beyond KIN 100. Prerequisite: KIN 100.",
+		"courseCode": "302",
+		"departmentCode": "KIN",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Motor Learning",
+		"description": "A study of the theories and research of the processes of learning motor skills. The  application of appropriate methods of teaching motor skills is studied and practiced  to enable the students to understand how they can be used effectively. Prerequisite:  EXS 111 or permission of instructor.",
+		"courseCode": "324",
+		"departmentCode": "KIN",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Water Safety Instructor",
+		"description": "Instruction in the skills, terminology, and progressions of teaching swimming strokes  and water safety. The course includes knowledge of the skills, physical performance  of the skills, and teaching skills. Successful completion of the American Red Cross  requirements leads to certification in Red Cross WSI. Advanced swimming skills are  necessary. Meets foundational core stewardship of the body requirement beyond KIN 100.",
+		"courseCode": "333",
+		"departmentCode": "KIN",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Lifeguard Training Instructor",
+		"description": "Acquisition of the skills, terminology, and progressions for teaching American Red  Cross Lifeguard Instructor Training. The course includes both knowledge of the  skills and physical performance of the skills. Successful completion of the American  Red Cross requirements leads to certification as a Red Cross LGI. Meets  foundational core stewardship of the body requirement beyond KIN 100. Prerequisites:  KIN 302 and permission of instructor.",
+		"courseCode": "334",
+		"departmentCode": "KIN",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Research Methods",
+		"description": "An exploration of the basic methods of research and data collection in the realms  of sport management, physical education, and exercise science in a lecture format.  Topics include defining a research question, reviewing and analyzing past research,  designing a research project, collecting and analyzing data, and interpreting results.  Students will also learn basic statistics and Excel and PowerPoint table and figure  making skills. Prerequisite: EXS 111 or KIN 221. Exercise Science, Health Science, and  Human Physiology and Preventative Medicine majors only. Offered Fall and Spring  semesters.",
+		"courseCode": "355",
+		"departmentCode": "KIN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "KIN",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Coaching Methods",
+		"description": "This course will assist the student in learning how to teach the skills and strategies  of selected sports and how to utilize that information to be an effective coach. The  content includes basic sport skills, types of offenses and defenses, special situation  strategies and other strategies specific to selected sports. The student will learn  correct techniques of skills and skill progressions as well as drills to teach skills and  strategies.",
+		"courseCode": "367",
+		"departmentCode": "KIN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "KIN",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally,  one hour of credit is awarded for a minimum of 40 hours of practicum experience.  Prerequisite: Permission of KIN department.",
+		"courseCode": "393",
+		"departmentCode": "KIN",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory. Prerequisite: Permission of instructor.",
+		"courseCode": "450",
+		"departmentCode": "KIN",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Psychology of Coaching",
+		"description": "This course is a study of the role of psychology in coaching and how coaches can use  psychology to enhance the performance of athletes and teams. Topics include  psychology, philosophy of sport, motivation, self-confidence, goal setting,  attention/concentration, imagery, arousal, self-talk, stress management, and mental  skill methods/training. An application of appropriate mental skills will be addressed  for each topic. Biblical principles of psychology will be integrated into topics.",
+		"courseCode": "472",
+		"departmentCode": "KIN",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Seminar",
+		"description": "A limited-enrollment course designed especially for upper-class majors with emphasis  on directed readings and discussion. Students examine contemporary issues in sport.",
+		"courseCode": "480",
+		"departmentCode": "KIN",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major. Open  to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "KIN",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Internship",
+		"description": "This field experience is designed to have the students apply what they have learned  in their courses and to extend that learning by working in an organization that is  appropriate for their major. Students work on a regular basis at the organization  under the supervision of approved staff members. Students are also under the  supervision of a member of the Taylor University Department of Kinesiology. Each  student must comply with the guidelines for credit hours, clock hours, and other criteria that  are specific for the internship in his/her major. To register for this internship, the student  must submit a proposal for the internship and have it approved by the KIN department and  the internship organization. Prerequisites: All designated prerequisites for the internship in  that major.",
+		"courseCode": "492",
+		"departmentCode": "KIN",
+		"creditLow": "4",
+		"creditHigh": null
+	}
+]

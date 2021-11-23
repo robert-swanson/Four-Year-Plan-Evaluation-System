@@ -1,0 +1,8 @@
+test {
+    require 10 credits.
+    require 10 credits from "COS-120", "COS-121", "COS-104".
+    require 10 upper division credits.
+    require 4 courses.
+    require 4 courses from "COS-120", "COS-121", "COS-104".
+    require 4 upper division courses.
+}

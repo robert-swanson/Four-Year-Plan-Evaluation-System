@@ -1,0 +1,994 @@
+[
+	{
+		"title": "Introduction to Holy Land Studies",
+		"description": "A study of the biblical background and contemporary significance of Israel. Taught  in Israel during January, this travel-study course may count for either BIB 110 or a  departmental elective. Offered January interterm—when available.",
+		"courseCode": "103",
+		"departmentCode": "BIB",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Biblical Literature I",
+		"description": "A course that has as its primary content the Old Testament, with special attention  given to the law, the prophets and the history of Israel. Meets foundational core requirement.",
+		"courseCode": "110",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "BIB",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "In the Footsteps of Paul",
+		"description": "A study of the biblical background and contemporary significance of cities Paul  visited and wrote to in Greece and Turkey or Greece and Italy. Taught during  January, this travel-study course may count for BIB 210 or a departmental elective.  Offered January interterm.",
+		"courseCode": "203",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Introduction to Holy Land Studies",
+		"description": "A study of the biblical background and contemporary significance of Israel and Jesus  Christ. Taught in Israel during January, this travel-study course may count for either BIB  210 or a departmental elective. Offered January interterm—when available.",
+		"courseCode": "204",
+		"departmentCode": "BIB",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Biblical Literature II",
+		"description": "A course that includes a foundation in New Testament study with focus on Jesus  Christ as portrayed in the Gospels and Epistles. Also included is a series of  explorations into the relevancy of Christ to modern life. Meets foundational core requirement. Prerequisite: BIB 110 or BIB 310.",
+		"courseCode": "210",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Survey of Biblical Literature",
+		"description": "A survey of the Bible, both Old and New Testaments, designed to help students  learn the central ideas and themes of the Bible; to become familiar with its chief  persons, places, and events; to become aware of the types of biblical literature; and  to develop the ability to study the Bible effectively. This course is offered through  Taylor University Online (TUO).",
+		"courseCode": "213",
+		"departmentCode": "BIB",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Genesis",
+		"description": "A detailed study of the book of \"beginnings,\" giving attention to its authorship,  authenticity, chronology, and spiritual implication. This course is offered through  Taylor University Online (TUO).",
+		"courseCode": "217",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Matthew",
+		"description": "A detailed study of the purpose, structure, and theology of Matthew's gospel, with  special emphasis on titles and teachings of Jesus, significant events in His life, and  the application of the gospel to the present time. This course is offered through Taylor  University Online (TUO).",
+		"courseCode": "218",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "BIB",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Inductive Study of the Bible",
+		"description": "Specific methods are taught to enable students to understand the propositions of  the biblical text, relate those propositions to one another, and ask questions of the  text in order to discover what the biblical writers meant to convey through their  writings. This course incorporates the departmental computer competency  requirements for biblical literature and Christian education majors. Prerequisites:  BIB 110 or BIB 310; and BIB 210.",
+		"courseCode": "272",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Biblical Literature I",
+		"description": "See BIB 110. Primarily for transfer students and has additional requirements. Meets  foundational core requirement. Available upon request and with permission of the  instructor.",
+		"courseCode": "310",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Gospel of John",
+		"description": "An analytical study of the content of the fourth gospel, with special emphasis on  the distinctive elements of John’s message. This course is offered through Taylor  University Online (TUO).",
+		"courseCode": "311",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Romans",
+		"description": "This course combines inductive study of the New Testament letter of Paul to the  Romans with critical investigation of contemporary approaches to Paul, with special  focus on the “New Perspective.” Prerequisites: BIB 110 and BIB 210. This course is  offered through Taylor University Online (TUO).",
+		"courseCode": "313",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Pentateuch",
+		"description": "Emphasizes the historical narrative and the content of the Law of God. Special  attention is given to the Genesis account of the origin of the cosmos, man, sin and  salvation. The authorship of the Pentateuch is considered. Prerequisite: BIB 110 or  BIB 310. Offered Spring semester.",
+		"courseCode": "320",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Acts and the Early Church",
+		"description": "A historical study with particular attention given to the missionary expansion of the  early Church, the work of the Holy Spirit and the place of the Church in the world.  Prerequisite: BIB 210. Offered Spring semester.",
+		"courseCode": "330",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Pauline Epistles",
+		"description": "Attention is given to the life, ministry and writings of Paul. The doctrinal, pastoral  and personal epistles of Paul are studied with reference to their geographical and  historical settings, the organization of the Apostolic Church and the development  of Christian doctrine. Careful exegesis is made of selected portions of each epistle.  Prerequisite: BIB 210. Offered Fall semester.",
+		"courseCode": "331",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Hebrews and General Epistles",
+		"description": "A study of the non-Pauline epistles with attention to their authorship, historical  place in the canon and doctrinal uniqueness. The contents of each book are  analyzed, and problem texts are treated. Prerequisite: BIB 210. Offered Spring  semester of odd years.",
+		"courseCode": "332",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Hebrew Prophets",
+		"description": "Selected major and minor prophetic works of the Old Testament are considered,  with special emphasis given to the historical background, Messianic message and  content, together with specific theological concepts and teachings that are pertinent  to modern times. Prerequisite: BIB 110 or BIB 310. Offered Fall semester.",
+		"courseCode": "340",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "The Gospels",
+		"description": "Stresses the life and teaching of Jesus as set forth in the Synoptic Gospels and John.  Attention is given to the literary and theological characteristics of each individual  gospel and to the development of gospel criticism. The primary focus, however, is  on the words and works of Jesus Christ and their significance for Christians today.  Prerequisite: BIB 210. Offered Fall semester.",
+		"courseCode": "341",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Poetic and Wisdom Literature",
+		"description": "Hebrew poetry and wisdom as presented in the books of Job, Psalms, Proverbs,  Ecclesiastes, Lamentations and the Song of Solomon. Prerequisite: BIB 110 or BIB  310. Offered Fall semester.",
+		"courseCode": "350",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "BIB",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "BIB",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally,  one hour of credit is awarded for a minimum of 40 hours of practicum experience.  Offered primarily during Summer.",
+		"courseCode": "393",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Apocalyptic Literature of the Bible",
+		"description": "Examines the historical and theological dimensions of Old Testament, New  Testament, and second Temple period apocalypticism. Special attention is given to  apocalyptic thought in Daniel, the gospels, and Revelation. Prerequisite: BIB 210.  Offered Spring semester of even years.",
+		"courseCode": "420",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory.",
+		"courseCode": "450",
+		"departmentCode": "BIB",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Old Testament Historical Literature",
+		"description": "Selected historical books in the Old Testament are considered, with particular  emphasis given to the authorship, historical theory, and theological content of these  books. Prerequisite: BIB 110 or BIB 310. Offered Spring semester of odd years.",
+		"courseCode": "452",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Biblical Theology",
+		"description": "A study of the Bible and its central message and meaning. The Bible is viewed as  recording a special kind of history revealing God’s will and purpose and giving  essential meaning to all human life and destiny. This course is normally taken during  the senior year. Prerequisite: BIB 272. Offered Fall semester.",
+		"courseCode": "462",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Seminar",
+		"description": "A limited-enrollment course designed especially for upper-class majors with  emphasis on directed readings and discussion.",
+		"courseCode": "480",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major.  Open to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "BIB",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Biblical Literature Capstone",
+		"description": "Designed as a culminating experience for all Biblical Literature majors wherein  students focus on key exegetical, historical, and theological issues crucial to a  proper understanding of the biblical literature. The completion of the course paper  and its presentation to peers meets university requirements for senior comprehensive  exams for Biblical Literature majors. Prerequisites: BIB 272, BIB 320 and BIB  341. Offered Spring semester.",
+		"courseCode": "493",
+		"departmentCode": "BIB",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Introduction to Christian Ministries",
+		"description": "A course that focuses on the purpose and scope of Christian ministries and the  types of ministries available to majors.",
+		"courseCode": "100",
+		"departmentCode": "CMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "CMI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Historical and Theological Foundations for Christian Ministries",
+		"description": "A course focusing on the biblical, theological, historical, and philosophical foundations for  Christian ministry. Prerequisite: CMI 100. Offered Fall semester.",
+		"courseCode": "232",
+		"departmentCode": "CMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Psychological and Educational Foundations for Christian Ministries",
+		"description": "A course focusing on theories of human development and learning, as well as  educational theory. Applications for ministry settings are explored. Prerequisite:  CMI 100. Offered Spring semester.",
+		"courseCode": "242",
+		"departmentCode": "CMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Personal Foundations for Ministry",
+		"description": "Students’ capacity for ministry is enhanced in this course by facilitating personal  growth and development. Emphasis is given to the ways theological truths address  life issues. Prerequisite: CMI 100.",
+		"courseCode": "262",
+		"departmentCode": "CMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "CMI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Discipleship and Evangelism",
+		"description": "An intensive study of the theology, theories and approaches used to help people grow  and develop in their faith. A special focus will be placed on the life of Christ as a  model for ministry. Prerequisite: CMI 100. Offered Spring semester.",
+		"courseCode": "325",
+		"departmentCode": "CMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Care, Kingdom, and Culture",
+		"description": "Provides a theological and kingdom of God lens to engage contemporary, personal,  and cultural issues. Includes topics relating to sexuality and gender, race and ethnicity,  and mental health. Students will be equipped to engage their context missionally  through cultural exegesis and connoisseurship while developing skills in pastoral care.",
+		"courseCode": "345",
+		"departmentCode": "CMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Teaching and Learning Strategies",
+		"description": "A practical course designed to help the student teach the Bible more effectively by  the use of educational strategies. A teaching lab and supervision are included, and  competency in the use of instructional media is required. Prerequisites: CMI 100 and  BIB 272. Offered Fall semester.",
+		"courseCode": "351",
+		"departmentCode": "CMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Program and Curriculum Development",
+		"description": "A course that focuses on the development of educational programs within church and  parachurch ministries. Emphasis is on published curricula and the development of  curricular writing skills. Prerequisite: CMI 351. Offered Spring semester.",
+		"courseCode": "352",
+		"departmentCode": "CMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "CMI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "CMI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Leadership Development",
+		"description": "A course designed to facilitate the development of students’ skills in leadership,  organization and management related to specific ministry situations. Prerequisite: CMI 100. Offered Fall semester.",
+		"courseCode": "371",
+		"departmentCode": "CMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally, one  hour of credit is awarded for a minimum of 40 hours of practicum experience. Offered  primarily during Summer. Prerequisite: senior status or permission of instructor.",
+		"courseCode": "393",
+		"departmentCode": "CMI",
+		"creditLow": "2",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Philosophy and Strategies for Christian Ministries",
+		"description": "A research course designed to help students articulate their philosophies of  ministry within a particular age group or ministry context. Attention is given to  critical areas of need within Christian ministry. This course meets university  requirements for senior comprehensive exams for Christian ministry majors. Graduating  Christian Ministries majors only. Offered Spring semester.",
+		"courseCode": "421",
+		"departmentCode": "CMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory.",
+		"courseCode": "450",
+		"departmentCode": "CMI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Seminar",
+		"description": "A limited-enrollment course designed especially for upper-class majors with  emphasis on directed readings and discussion. Prerequisite: major GPA of at least 3.00.",
+		"courseCode": "480",
+		"departmentCode": "CMI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major.  Open to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "CMI",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Christian Ministries Internship",
+		"description": "A practical, semester-long, supervised ministry experience in Cuenca, Ecuador.  Permission required from CMI program advisor and CMI Ecuador program liaison.",
+		"courseCode": "492",
+		"departmentCode": "CMI",
+		"creditLow": "5",
+		"creditHigh": "8"
+	},
+	{
+		"title": "Christian Ministries Senior Capstone",
+		"description": "This integrative course exposes students to models of ministry and vocational  direction through research and participative observation and experiences. This course  introduces the method for the final philosophy of ministry comprehensive paper. A  substantive exposure trip is part of the course structure. Offered January interterm.",
+		"courseCode": "493",
+		"departmentCode": "CMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "GRK",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "GRK",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "GRK",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "GRK",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally,  one hour of credit is awarded for a minimum of 40 hours of practicum experience.  Offered primarily during Summer.",
+		"courseCode": "393",
+		"departmentCode": "GRK",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Advanced Exegesis of the Greek New Testament",
+		"description": "An extension of skills developed in GRK 301 and GRK 302. Offered by arrangement  with the instructor.",
+		"courseCode": "401",
+		"departmentCode": "GRK",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory.",
+		"courseCode": "450",
+		"departmentCode": "GRK",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Seminar",
+		"description": "A limited-enrollment course designed especially for upper-class majors with  emphasis on directed readings and discussion.",
+		"courseCode": "480",
+		"departmentCode": "GRK",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major.  Open to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "GRK",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "HEB",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "HEB",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "HEB",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "HEB",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally,  one hour of credit is awarded for a minimum of 40 hours of practicum experience.  Offered primarily during Summer.",
+		"courseCode": "393",
+		"departmentCode": "HEB",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory.",
+		"courseCode": "450",
+		"departmentCode": "HEB",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Seminar",
+		"description": "A limited-enrollment course designed especially for upper-class majors with  emphasis on directed readings and discussion.",
+		"courseCode": "480",
+		"departmentCode": "HEB",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major.  Open to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "HEB",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Introduction to Philosophy",
+		"description": "A survey of important issues and traditions in philosophy.",
+		"courseCode": "110",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Society and Philosophy",
+		"description": "A philosophical inquiry into pressing issues for contemporary society. This course  addresses questions concerning public discourse, citizenship, government, civil  disobedience, science, technology, popular music, film, and sports. Topics are  considered in light of philosophical perspectives from ancient to contemporary times  as well as in light of historical Christian theology. Meets foundational core civic  engagement or general social science requirement.",
+		"courseCode": "121",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "PHI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Faith and Philosophy",
+		"description": "An examination of issues related to the integration of Christian faith and philosophy.  Must be completed by philosophy majors no later than the year of their first upper division  philosophy courses.",
+		"courseCode": "191",
+		"departmentCode": "PHI",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Logic",
+		"description": "A study of classical and contemporary formulations of the principles of human  thought. Proper deductive and inductive logic is contrasted with fallacies. Categorical  logic, truth functional logic, and quantificational logic are examined. Offered Fall semester.",
+		"courseCode": "201",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "History of Philosophy I",
+		"description": "A survey of philosophical thought from the early pre-Socratic Greeks to the modern  period. Offered Fall semester.",
+		"courseCode": "202",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "History of Philosophy II",
+		"description": "A survey of philosophical thought from the modern period to contemporary  movements such as linguistic analysis and phenomenology. Offered Spring semester.",
+		"courseCode": "203",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Contemporary Moral Issues",
+		"description": "A systematic analysis of pressing issues such as sexual morality, divorce, abortion,  homosexuality, euthanasia, and war and peace. Offered Spring semester.",
+		"courseCode": "262",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "PHI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Medical Ethics",
+		"description": "An examination of ethical issues in medicine and healthcare with an emphasis on learning  to develop and communicate Christian ethical positions in a pluralistic world. Issues  discussed will include respect for patients, the moral status of embryos and fetuses,  terminal care and euthanasia, and justice in healthcare.",
+		"courseCode": "311",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "World Religions: Western Tradition",
+		"description": "A study of Judaism, Islam, Zoroastrianism, and related religious movements. Offered  Fall semester.",
+		"courseCode": "322",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "World Religions: Eastern Tradition",
+		"description": "A study of Hinduism, Buddhism, Sikhism, Shinto, and Chinese religions. Offered Spring  semester.",
+		"courseCode": "323",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Aesthetics",
+		"description": "A study of classical and contemporary theories about the nature of art, the artistic  process, the psychology of aesthetic experience, and standards for good art.  Prerequisite: one other course in philosophy or consent of the instructor.",
+		"courseCode": "342",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Metaphysics",
+		"description": "A study of such issues as the nature of existence, identity, essences, causality,  freedom, and space and time. Prerequisite: One other course in philosophy or consent of  the instructor.",
+		"courseCode": "355",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "PHI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "PHI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Principles of Ethics",
+		"description": "A survey of the theoretical foundations of ethics, such as the distinction between  absolutist and relativistic views, the nature of justice, and the need for rules.  Readings from classical and modern authors are included.",
+		"courseCode": "371",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Ethics Bowl",
+		"description": "An intensive study of practical moral issues, culminating in regional and national  competitions involving Ethics Bowl teams from other colleges. May be repeated  twice for credit. Prerequisite: consent of the instructor.",
+		"courseCode": "382",
+		"departmentCode": "PHI",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally,  one hour of credit is awarded for a minimum of 40 hours of practicum experience.  Offered primarily during Summer.",
+		"courseCode": "393",
+		"departmentCode": "PHI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Contemporary Christian Belief",
+		"description": "The integration of Christian thought with contemporary ideas and an introduction  to Christian apologetics. Meets foundational core requirement and is required of all  students. Prerequisite: REL 313.",
+		"courseCode": "413",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Continental Philosophy",
+		"description": "A seminar giving detailed attention to influential works in continental philosophy,  from its roots in Kant down to the present. Prerequisite: Any PHI course or instructor  permission.",
+		"courseCode": "420",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Philosophical and Theological Methods",
+		"description": "An interdisciplinary examination of both the history and current movements within  philosophical and theological methodology. Prerequisite: Any PHI course or instructor  permission.",
+		"courseCode": "425",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Epistemology",
+		"description": "Contemporary theories on the nature and limits of knowledge and the justification  of beliefs. Prerequisite: Any PHI course or instructor permission.",
+		"courseCode": "432",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Philosophy of Mind",
+		"description": "A study of philosophical theories of consciousness, perception, and intelligence,  with special attention on contemporary research. Prerequisite: One other course in  philosophy or consent of the instructor.",
+		"courseCode": "445",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory.",
+		"courseCode": "450",
+		"departmentCode": "PHI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Philosophy of Religion",
+		"description": "A study of the major issues in the philosophy of religion, including religious  experience, theism, religious language, and the problem of evil. Prerequisite: Any PHI  course or instructor permission.",
+		"courseCode": "452",
+		"departmentCode": "PHI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Seminar",
+		"description": "A limited-enrollment course designed especially for upper-class majors with  emphasis on directed readings and discussion. Prerequisite: major GPA of at least 3.00.",
+		"courseCode": "480",
+		"departmentCode": "PHI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major.  Open to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "PHI",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "REL",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "REL",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Revelation, the Seven Cities, and the Seven Councils",
+		"description": "A survey of Christian belief with special emphasis on Revelation and the seven church  councils. January interterm course involving two weeks study on campus and two weeks on  site in Turkey. Meets REL 313 foundational core requirement. Prerequisites: BIB 110 or 310;  and 210.",
+		"courseCode": "303",
+		"departmentCode": "REL",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Theology of Worship",
+		"description": "A theological Biblical and historical study of Christian worship from a classical as well as  contemporary perspective. This course examines the pattern, purpose and essential and  non-essential features of worship found in the Bible and in church history with the goal of  formulating one’s own theology and practice of Biblical worship. Open to Music, Biblical  Studies, and Philosophy majors. Prerequisite: REL 313. Offered Spring semester of even years.",
+		"courseCode": "310",
+		"departmentCode": "REL",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Foundations of Christian World Mission",
+		"description": "A study of the biblical, theological, and historical foundations of Christian mission  strategy. Offered Fall semester.",
+		"courseCode": "311",
+		"departmentCode": "REL",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Historic Christian Belief",
+		"description": "A survey of Christian belief as developed during the history of the Church. May not  be counted toward BIB, CMI, or PHI majors or minors. Meets foundational core requirement  and is required of all students. Prerequisites: BIB 110 or 310; 210 or 203; and junior or  senior status.",
+		"courseCode": "313",
+		"departmentCode": "REL",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Global Theology",
+		"description": "Global theology investigates international contemporary Christian understandings of  God through the rubric of systematic theology. A seminal dimension of Christian  global engagement, global theology seeks to understand how international Christians  express their faith against the backgrounds of their respective histories and in the  context of their current social, political, and religious contexts. The course pays  special attention to dialogue between international Christians and believers of  neighboring faiths, who often constitute the majority in various global contexts. A goal  of the course is to increase awareness that western Christianity has much to gain  through partnership with Christians from the majority world.",
+		"courseCode": "350",
+		"departmentCode": "REL",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "REL",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "REL",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Preparation and Strategy for Christian World Mission",
+		"description": "An introduction to the essentials of missionary life and global service. Current global  and mission trends and holistic outreach strategies are explored. Attention is given  to knowledge, skills, and attitudes essential for adaptation and intercultural  relationships. Offered Spring semester or as part of the Applied Missions Minor.",
+		"courseCode": "391",
+		"departmentCode": "REL",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally,  one hour of credit is awarded for a minimum of 40 hours of practicum experience.  Offered primarily during Summer.",
+		"courseCode": "393",
+		"departmentCode": "REL",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "World Missions Area Studies",
+		"description": "A research seminar designed for students to explore global opportunities in a  region of the world that interests them. The religion, history, economics, culture,  government, language, and geography of an area and outreach strategies  appropriate to the region are considered. Prerequisite: ANT 200 or REL 311 or REL 391  or junior status. Offered Spring semester or as part of the Applied Missions Minor.",
+		"courseCode": "432",
+		"departmentCode": "REL",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory.",
+		"courseCode": "450",
+		"departmentCode": "REL",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Seminar",
+		"description": "A limited-enrollment course designed especially for upper-class majors with  emphasis on directed readings and discussion.",
+		"courseCode": "480",
+		"departmentCode": "REL",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major.  Open to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "REL",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Introduction to Theology",
+		"description": "A detailed study of Bibliology, theology, and angelology. This course is foundational to all systematic theology. This course is offered through Taylor University Online (TUO).",
+		"courseCode": "243",
+		"departmentCode": "THE",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "YMI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Ministry to Youth",
+		"description": "A general study of the various programs used to meet the needs of junior high and  senior high youth through church and parachurch ministries. Offered Spring semester.",
+		"courseCode": "221",
+		"departmentCode": "YMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "YMI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Youth Culture and Issues",
+		"description": "An intensive study of theories and approaches used to understand culture and issues  facing adolescents today. Offered Fall semester.",
+		"courseCode": "315",
+		"departmentCode": "YMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Discipleship and Evangelism in Youth Ministry",
+		"description": "An intensive study of the theories and approaches used to help junior high and senior  high youth to grow and develop in their faith. Prerequisite: YMI 221.",
+		"courseCode": "325",
+		"departmentCode": "YMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "YMI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "YMI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally, one  hour of credit is awarded for a minimum of 40 hours of practicum experience. Offered  primarily during Summer. Prerequisite: senior status or permission of instructor.",
+		"courseCode": "393",
+		"departmentCode": "YMI",
+		"creditLow": "2",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Philosophy and Strategies for Youth Ministry",
+		"description": "A research course designed to help students articulate their philosophies of  ministry within a particular youth ministry context. Attention is given to critical  areas of need within youth ministry. This course meets university requirements for  senior comprehensive exams for youth ministry majors. Graduating youth ministry majors  only. Offered Spring semester.",
+		"courseCode": "421",
+		"departmentCode": "YMI",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory.",
+		"courseCode": "450",
+		"departmentCode": "YMI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Seminar",
+		"description": "A limited-enrollment course designed especially for upper-class majors with  emphasis on directed readings and discussion. Prerequisite: major GPA of at least 3.00.",
+		"courseCode": "480",
+		"departmentCode": "YMI",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major.  Open to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "YMI",
+		"creditLow": "1",
+		"creditHigh": "2"
+	}
+]

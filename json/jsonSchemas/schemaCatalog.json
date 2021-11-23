@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://envisageplanner.com/schemaCatalog",
+  "title": "Catalog",
+  "description": "List of courses for each department for a given catalog year",
+  "type": "object",
+  "required": ["catalogYear", "departments"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string"},
+    "catalogYear": { "$ref": "schemaGlobals.json#/definitions/catalogYear" },
+    "departments": {
+      "description": "A list of department objects",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "courses"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Department name"
+          },
+          "description": {
+            "description": "Description of department",
+            "type": "string"
+          },
+          "courses": {
+            "description": "An array of course objects",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["courseID", "name", "prefix", "number"],
+              "additionalProperties": false,
+              "properties": {
+                "courseID": { "$ref": "schemaGlobals.json#/definitions/courseID" },
+                "name": {
+                  "description": "Course name",
+                  "type": "string"
+                },
+                "prefix": {
+                  "type": "string",
+                  "pattern": "[A-Z]{3}",
+                  "description": "3 letter symbol for department offering this course"
+                },
+                "number": {
+                  "description": "Course number",
+                  "type": "integer"
+                },
+                "description": {
+                  "description": "Course description",
+                  "type": "string"
+                },
+                "prerequisites": {"$ref": "#/definitions/prerequisites"},
+                "offeringPattern": {"$ref": "#/definitions/offeringPattern"},
+                "tags": {"$ref": "#/definitions/courseTags"}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+
+    "prerequisites": {
+      "description": "List of courseIDs for prerequisites (eg. ['COS 121', 'COS 265'])",
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "schemaGlobals.json#/definitions/courseID" }
+    },
+    "offeringPattern": {
+      "description": "The frequency this course if typically offered",
+      "type": "string",
+      "enum": ["always", "fall", "spring", "jTerm", "summer", "oddFall", "evenFall", "oddSpring", "evenSpring"]
+    },
+    "courseTags": {
+      "description": "Optional tags that are applied to this course",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["honors", "sp", "cc"],
+        "uniqueItems": true
+      }
+    }
+  }
+}

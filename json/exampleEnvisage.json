@@ -1,0 +1,865 @@
+{
+    "name": "My New Plan!",
+    "customTags": [],
+    "customDegrees": [
+        {
+            "name": "Photography",
+            "department": "",
+            "type": "Minor",
+            "catalogYear": 2020,
+            "minimumHours": "21",
+            "categories": [
+                {
+                    "name": "Core",
+                    "requirementType": "all",
+                    "requirementValue": 0,
+                    "courses": [
+                        "ART 156",
+                        "ART 261",
+                        "ART 346"
+                    ],
+                    "comment": ""
+                }
+            ],
+            "requirements": "",
+            "custom": true,
+            "complete": "Photography - 2020",
+            "code": "Photography - 2020"
+        },
+        {
+            "name": "Computer Science: Digital Media B.S. (V2)",
+            "department": "Computer Science and Engineering",
+            "type": "B.S.",
+            "catalogYear": 2020,
+            "minimumHours": "78",
+            "categories": [
+                {
+                    "name": "Core Requirements",
+                    "requirementType": "all",
+                    "requirementValue": 0,
+                    "courses": [
+                        "COS 102",
+                        "COS 103",
+                        "COS 120",
+                        "COS 121",
+                        "COS 143",
+                        "COS 243",
+                        "COS 265",
+                        "COS 350",
+                        "COS 492",
+                        "COS 493",
+                        "MAT 151",
+                        "MAT 215",
+                        "ART 152",
+                        "ART 253",
+                        "FMP 215",
+                        "FMP 220",
+                        "SYS 214"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Ethics",
+                    "requirementType": "1",
+                    "requirementValue": 0,
+                    "courses": [
+                        "COS 311",
+                        "COS 321"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Advanced",
+                    "requirementType": "1",
+                    "requirementValue": 0,
+                    "courses": [
+                        "COS 284",
+                        "COS 320",
+                        "COS 382",
+                        "COS 435"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Industry Experience",
+                    "requirementType": "1",
+                    "requirementValue": 0,
+                    "courses": [
+                        "COS 393",
+                        "COS 394",
+                        "COS 450"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Statistics",
+                    "requirementType": "1",
+                    "requirementValue": 0,
+                    "courses": [
+                        "MAT 210",
+                        "MAT 352"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Information Systems and Analytics Concentration",
+                    "requirementType": "total",
+                    "requirementValue": "12",
+                    "courses": [
+                        "COS 284",
+                        "SYS 390",
+                        "SYS 330",
+                        "SYS 403"
+                    ],
+                    "comment": "Complete 12 hrs in any one concentration"
+                },
+                {
+                    "name": "Game Design Concentration",
+                    "requirementType": "total",
+                    "requirementValue": "12",
+                    "courses": [
+                        "GAME ENGINE ARCHITECTURE",
+                        "COS 424",
+                        "COS 284",
+                        "COS 425",
+                        "COS 381"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Video and Photo Concentration",
+                    "requirementType": "total",
+                    "requirementValue": "12",
+                    "courses": [
+                        "ART 156",
+                        "ART 154",
+                        "FMP 230",
+                        "ART 346",
+                        "ART 353",
+                        "FMP 430",
+                        "FMP 185"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Digital Art Concentration",
+                    "requirementType": "total",
+                    "requirementValue": "12",
+                    "courses": [
+                        "ART 156",
+                        "ART 154",
+                        "ART 151",
+                        "ART 254",
+                        "ART 251",
+                        "ART 456"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Data Science Concentration",
+                    "requirementType": "total",
+                    "requirementValue": "12",
+                    "courses": [
+                        "COS 326",
+                        "MAT 311",
+                        "MAT 382",
+                        "COS 343",
+                        "SYS 411"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Web Development",
+                    "requirementType": "total",
+                    "requirementValue": "12",
+                    "courses": [
+                        "ART 456",
+                        "COS 343",
+                        "COS 331"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Electives",
+                    "requirementType": "total",
+                    "requirementValue": "78",
+                    "courses": [],
+                    "comment": "Any COS, MAT, SYS, ART, or FMP course"
+                }
+            ],
+            "requirements": "",
+            "custom": true,
+            "complete": "Computer Science: Digital Media B.S. (V2) - 2020",
+            "code": "Computer Science: Digital Media B.S. (V2) - 2020"
+        },
+        {
+            "name": "Honors Guild Minor",
+            "department": "Honors Guild",
+            "type": "Minor",
+            "catalogYear": 2020,
+            "minimumHours": "18",
+            "categories": [
+                {
+                    "name": "Program Requirements",
+                    "requirementType": "all",
+                    "requirementValue": 0,
+                    "courses": [
+                        "CAS 120",
+                        "HNR 225"
+                    ],
+                    "comment": "Must take 3 colloquiums"
+                },
+                {
+                    "name": "Theology and Philosophy",
+                    "requirementType": "1",
+                    "requirementValue": 0,
+                    "courses": [
+                        "BIB 210",
+                        "HNR 370",
+                        "PHI 413"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Arts and Humanities",
+                    "requirementType": "1",
+                    "requirementValue": 0,
+                    "courses": [
+                        "ENG 230",
+                        "HNR 264",
+                        "HNR 370",
+                        "HUM 330",
+                        "ENG 373"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Social and Natural Sciences",
+                    "requirementType": "1",
+                    "requirementValue": 0,
+                    "courses": [
+                        "CHE 120",
+                        "COS 321",
+                        "HNR 270",
+                        "HNR 370",
+                        "MAT 220"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Electives",
+                    "requirementType": "total",
+                    "requirementValue": "18",
+                    "courses": [
+                        "HNR 225",
+                        "IAS 340",
+                        "IAS 370",
+                        "PHI 382",
+                        "SDV 215",
+                        "SDV 216"
+                    ],
+                    "comment": ""
+                }
+            ],
+            "requirements": "",
+            "custom": true,
+            "complete": "Honors Guild Minor - 2020",
+            "code": "Honors Guild Minor - 2020"
+        },
+        {
+            "name": "Computer Science Digital Media B.S. - Goal Oriented",
+            "department": "COS",
+            "type": "B.S.",
+            "catalogYear": 2020,
+            "minimumHours": "82",
+            "categories": [
+                {
+                    "name": "First Department Requirements",
+                    "requirementType": "all",
+                    "requirementValue": 0,
+                    "courses": [
+                        "COS 120",
+                        "COS 121",
+                        "COS 143",
+                        "COS 243",
+                        "COS 265",
+                        "COS 350",
+                        "COS 492",
+                        "COS 493",
+                        "COS 331",
+                        "COS 370",
+                        "COS 321",
+                        "COS 394",
+                        "COS 384",
+                        "COS 320",
+                        "ART 456"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Additional Requirements",
+                    "requirementType": "all",
+                    "requirementValue": 0,
+                    "courses": [
+                        "MAT 151",
+                        "MAT 215",
+                        "MAT 210",
+                        "ART 154",
+                        "ART 156",
+                        "ART 152",
+                        "ART 253",
+                        "ART 346",
+                        "ART 353",
+                        "FMP 215",
+                        "FMP 220",
+                        "FMP 185",
+                        "SYS 214",
+                        "ENT 320"
+                    ],
+                    "comment": ""
+                }
+            ],
+            "requirements": "",
+            "custom": true,
+            "complete": "Computer Science Digital Media B.S. - Goal Oriented - 2020",
+            "code": "Computer Science Digital Media B.S. - Goal Oriented - 2020"
+        },
+        {
+            "name": "Computer Science Digital Media",
+            "department": "Computer Science",
+            "type": "B.S.",
+            "catalogYear": 2020,
+            "minimumHours": "75",
+            "categories": [
+                {
+                    "name": "Core Requirements",
+                    "requirementType": "all",
+                    "requirementValue": 0,
+                    "courses": [
+                        "COS 103",
+                        "COS 120",
+                        "COS 121",
+                        "COS 143",
+                        "COS 265",
+                        "COS 350",
+                        "COS 492",
+                        "COS 493",
+                        "MAT 151",
+                        "MAT 215",
+                        "ART 154",
+                        "ART 156",
+                        "ART 152",
+                        "ART 253"
+                    ],
+                    "comment": ""
+                }
+            ],
+            "requirements": "",
+            "custom": true,
+            "complete": "Computer Science Digital Media - 2020",
+            "code": "Computer Science Digital Media - 2020"
+        },
+        {
+            "name": "Computer Science: Digital Media B.S.",
+            "department": "",
+            "type": "B.S.",
+            "catalogYear": 2020,
+            "minimumHours": "75",
+            "categories": [
+                {
+                    "name": "Core",
+                    "requirementType": "all",
+                    "requirementValue": 0,
+                    "courses": [
+                        "COS 120"
+                    ],
+                    "comment": ""
+                }
+            ],
+            "requirements": "",
+            "custom": true,
+            "complete": "Computer Science: Digital Media B.S. - 2020",
+            "code": "Computer Science: Digital Media B.S. - 2020"
+        },
+        {
+            "name": "Computer Science: Digital Media",
+            "department": "Computer Science",
+            "type": "B.S.",
+            "catalogYear": 2020,
+            "minimumHours": "78",
+            "categories": [
+                {
+                    "name": "Core Requirements",
+                    "requirementType": "all",
+                    "requirementValue": 0,
+                    "courses": [
+                        "COS 103",
+                        "COS 120",
+                        "COS 121",
+                        "COS 143",
+                        "COS 243",
+                        "COS 265",
+                        "COS 350",
+                        "COS 492",
+                        "COS 493",
+                        "MAT 151",
+                        "MAT 215",
+                        "ART 154",
+                        "ART 156",
+                        "ART 152",
+                        "ART 253",
+                        "FMP 215",
+                        "FMP 220",
+                        "SYS 214"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Elective 1",
+                    "requirementType": "courses",
+                    "requirementValue": "2",
+                    "courses": [
+                        "COS 331",
+                        "COS 351",
+                        "COS 370",
+                        "COS 424",
+                        "COS 425",
+                        "SYS 310"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Elective 2",
+                    "requirementType": "courses",
+                    "requirementValue": "2",
+                    "courses": [
+                        "FMP 230",
+                        "ART 151",
+                        "ART 251",
+                        "ART 346",
+                        "ART 353"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Ethics ",
+                    "requirementType": "1",
+                    "requirementValue": 0,
+                    "courses": [
+                        "COS 311",
+                        "COS 321"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Real World",
+                    "requirementType": "1",
+                    "requirementValue": 0,
+                    "courses": [
+                        "COS 393",
+                        "COS 394",
+                        "COS 450"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Stats",
+                    "requirementType": "1",
+                    "requirementValue": 0,
+                    "courses": [
+                        "MAT 210",
+                        "MAT 352"
+                    ],
+                    "comment": ""
+                },
+                {
+                    "name": "Electives",
+                    "requirementType": "total",
+                    "requirementValue": "78",
+                    "courses": [
+                        "COS 284",
+                        "SYS 390",
+                        "SYS 394",
+                        "SYS 330",
+                        "SYS 403",
+                        "COS 370",
+                        "COS 424",
+                        "COS 425",
+                        "COS 381",
+                        "FMP 230",
+                        "ART 346",
+                        "ART 353",
+                        "FMP 430",
+                        "FMP 185",
+                        "ART 151",
+                        "ART 254",
+                        "ART 251",
+                        "ART 256",
+                        "COS 326",
+                        "MAT 311",
+                        "MAT 382",
+                        "COST 343",
+                        "SYS 411",
+                        "COS 331",
+                        "COS 351"
+                    ],
+                    "comment": ""
+                }
+            ],
+            "requirements": "",
+            "custom": true,
+            "complete": "Computer Science: Digital Media - 2020",
+            "code": "Computer Science: Digital Media - 2020"
+        }
+    ],
+    "customCourses": {
+        "": {
+            "code": "",
+            "name": "Transformational Entrepreneurship",
+            "hours": "3",
+            "scheduleOptions": [
+                "Unspecified",
+                "Every Semester",
+                "Fall",
+                "Spring",
+                "J-Term",
+                "Summer",
+                "Fall Odd Years",
+                "Fall Even Years",
+                "Spring Odd Years",
+                "Spring Even Years",
+                "Offered Inconsistently"
+            ],
+            "description": "",
+            "tags": [],
+            "prerequisites": [],
+            "hidden": false,
+            "custom": true,
+            "complete": " - Transformational Entrepreneurship"
+        },
+        "COS 311": {
+            "code": "COS 311",
+            "name": "Ethics in Computer Science",
+            "hours": "3",
+            "scheduleOptions": [
+                "Unspecified",
+                "Every Semester",
+                "Fall",
+                "Spring",
+                "J-Term",
+                "Summer",
+                "Fall Odd Years",
+                "Fall Even Years",
+                "Spring Odd Years",
+                "Spring Even Years",
+                "Offered Inconsistently"
+            ],
+            "description": "A study of the ethical implications of computers in society and the role of Christians as computer science and engineering professionals. Foundational concepts of Western moral philosophy are presented. Major ethical issues, such as privacy, piracy, liability, equity, and whistle-blowing are explored. Professional society codes of conduct are examined and discussed. Legal and ethical issues such as piracy, copyright, and fair use related to media are also addressed. Ethical concerns of computer science and systems analysis and their relationship to one's faith are an integral part of this course. ",
+            "prerequisites": [],
+            "custom": true,
+            "complete": "COS 311 - Ethics in Computer Science"
+        },
+        "COS 143": {
+            "code": "COS 143",
+            "name": "Interactive Webpage Design",
+            "hours": "3",
+            "scheduleOptions": [
+                "Unspecified",
+                "Every Semester",
+                "Fall",
+                "Spring",
+                "J-Term",
+                "Summer",
+                "Fall Odd Years",
+                "Fall Even Years",
+                "Spring Odd Years",
+                "Spring Even Years",
+                "Offered Inconsistently"
+            ],
+            "description": "A study of how to deliver interactive webpages through a web browser. Students will learn to represent the data structurally with HTML, the presentation with CSS, and the functionality with Javascript. Students will explore good design strategies that promote useful webpages. In order to deliver interactive sites, the students will utilize remote scripting (AJAX) to connect with existing server functionality to receive XML or JSON data for page updates. Modern web technologies including HTML5, CSS3, DOM manipulation, etc. will be explored. ",
+            "prerequisites": [],
+            "custom": true,
+            "complete": "COS 143 - Interactive Webpage Design"
+        }
+    },
+    "track": {
+        "id": "My New Plan!",
+        "name": "My New Plan!",
+        "description": "Graduate with Computer Science: Digital Media (B.S.)",
+        "unplacedClasses": [
+            "REL 313",
+            "PHI 413",
+            "IAS 495",
+            "COS 103",
+            "COS 243",
+            "COS 265",
+            "COS 350",
+            "COS 492",
+            "COS 493",
+            "MAT 151",
+            "MAT 215",
+            "ART 154",
+            "ART 156",
+            "ART 152",
+            "ART 253",
+            "FMP 215",
+            "FMP 220",
+            "SYS 214",
+            "COS 331",
+            "ART 353"
+        ],
+        "transferred": {},
+        "years": {
+            "2018": {
+                "year": 2018,
+                "name": "Freshman",
+                "semesters": {
+                    "2018 Fall": {
+                        "id": "2018 Fall",
+                        "name": "Fall",
+                        "courses": [
+                            "IAS 110",
+                            "BIB 110",
+                            "COS 120"
+                        ]
+                    },
+                    "2019 J-Term": {
+                        "id": "2019 J-Term",
+                        "name": "J-Term",
+                        "courses": [
+                            "BIB 210",
+                            "COS 143"
+                        ]
+                    },
+                    "2019 Spring": {
+                        "id": "2019 Spring",
+                        "name": "Spring",
+                        "courses": [
+                            "COS 121"
+                        ]
+                    },
+                    "2019 Summer": {
+                        "id": "2019 Summer",
+                        "name": "Summer",
+                        "courses": []
+                    }
+                }
+            },
+            "2019": {
+                "year": 2019,
+                "name": "Sophomore",
+                "semesters": {
+                    "2019 Fall": {
+                        "id": "2019 Fall",
+                        "name": "Fall",
+                        "courses": []
+                    },
+                    "2020 J-Term": {
+                        "id": "2020 J-Term",
+                        "name": "J-Term",
+                        "courses": []
+                    },
+                    "2020 Spring": {
+                        "id": "2020 Spring",
+                        "name": "Spring",
+                        "courses": []
+                    },
+                    "2020 Summer": {
+                        "id": "2020 Summer",
+                        "name": "Summer",
+                        "courses": []
+                    }
+                }
+            },
+            "2020": {
+                "year": 2020,
+                "name": "Junior",
+                "semesters": {
+                    "2020 Fall": {
+                        "id": "2020 Fall",
+                        "name": "Fall",
+                        "courses": []
+                    },
+                    "2021 J-Term": {
+                        "id": "2021 J-Term",
+                        "name": "J-Term",
+                        "courses": []
+                    },
+                    "2021 Spring": {
+                        "id": "2021 Spring",
+                        "name": "Spring",
+                        "courses": []
+                    },
+                    "2021 Summer": {
+                        "id": "2021 Summer",
+                        "name": "Summer",
+                        "courses": []
+                    }
+                }
+            },
+            "2021": {
+                "year": 2021,
+                "name": "Senior",
+                "semesters": {
+                    "2021 Fall": {
+                        "id": "2021 Fall",
+                        "name": "Fall",
+                        "courses": []
+                    },
+                    "2022 J-Term": {
+                        "id": "2022 J-Term",
+                        "name": "J-Term",
+                        "courses": []
+                    },
+                    "2022 Spring": {
+                        "id": "2022 Spring",
+                        "name": "Spring",
+                        "courses": []
+                    }
+                }
+            }
+        },
+        "startingYear": 2018,
+        "startingSemester": "Fall",
+        "finalYear": 2022,
+        "finalSemester": "Spring",
+        "currentDegrees": [
+            "Foundational Core",
+            "Honors Guild Minor",
+            "Computer Science: Digital Media"
+        ],
+        "courseSelections": {
+            "manuallyAdded": [],
+            "IAS 110": {
+                "code": "IAS 110",
+                "degree": "Foundational Core",
+                "meetsCategory": "Spiritual Foundation"
+            },
+            "BIB 110": {
+                "code": "BIB 110",
+                "degree": "Foundational Core",
+                "meetsCategory": "Spiritual Foundation"
+            },
+            "BIB 210": {
+                "code": "BIB 210",
+                "degree": "Foundational Core",
+                "meetsCategory": "Spiritual Foundation"
+            },
+            "REL 313": {
+                "code": "REL 313",
+                "degree": "Foundational Core",
+                "meetsCategory": "Spiritual Foundation"
+            },
+            "PHI 413": {
+                "code": "PHI 413",
+                "degree": "Foundational Core",
+                "meetsCategory": "Spiritual Foundation"
+            },
+            "IAS 495": {
+                "code": "IAS 495",
+                "degree": "Foundational Core",
+                "meetsCategory": "Spiritual Foundation"
+            },
+            "COS 103": {
+                "code": "COS 103",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "COS 120": {
+                "code": "COS 120",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "COS 121": {
+                "code": "COS 121",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "COS 143": {
+                "code": "COS 143",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "COS 243": {
+                "code": "COS 243",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "COS 265": {
+                "code": "COS 265",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "COS 350": {
+                "code": "COS 350",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "COS 492": {
+                "code": "COS 492",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "COS 493": {
+                "code": "COS 493",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "MAT 151": {
+                "code": "MAT 151",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "MAT 215": {
+                "code": "MAT 215",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "ART 154": {
+                "code": "ART 154",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "ART 156": {
+                "code": "ART 156",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "ART 152": {
+                "code": "ART 152",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "ART 253": {
+                "code": "ART 253",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "FMP 215": {
+                "code": "FMP 215",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "FMP 220": {
+                "code": "FMP 220",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "SYS 214": {
+                "code": "SYS 214",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Core Requirements"
+            },
+            "COS 331": {
+                "code": "COS 331",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Elective 1"
+            },
+            "ART 353": {
+                "code": "ART 353",
+                "degree": "Computer Science: Digital Media",
+                "meetsCategory": "Elective 2"
+            }
+        }
+    }
+}

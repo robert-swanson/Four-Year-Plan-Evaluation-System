@@ -1,0 +1,34 @@
+[
+	{
+		"title": "Cardiorespiratory Physiology and Chronic Disease",
+		"description": "This course explores the physiology of the cardiac, respiratory and vascular  systems, pathophysiology of the most common cardiorespiratory diseases, and  current evidence and mechanisms for disease prevention through lifestyle  modification. Prerequisites: BIO 201; BIO 310; BIO 311; and CHE 202 or CHE 212.",
+		"courseCode": "310",
+		"departmentCode": "HPH",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Pathophysiology of Immunological & Metabolic Chronic Diseases",
+		"description": "This course explores the pathophysiology of immunological and metabolic chronic  diseases with specific emphasis on cancer, hyperlipidemia, diabetes, obesity, and  frailty, as well as the major organ systems most commonly impacted by those  diseases and current evidence and mechanisms for disease prevention through  lifestyle modification. Prerequisites: BIO 201; BIO 310; BIO 311; and CHE 202 or CHE 212.",
+		"courseCode": "315",
+		"departmentCode": "HPH",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Neuromuscular Physiology and Chronic Disease",
+		"description": "This course explores the physiology of the central and peripheral nervous system  with specific emphasis on neuromuscular control, the pathophysiology of the most  common neurological and neuromuscular diseases (e.g., stroke, Parkinson's,  Alzheimer's, mental illness), and the current evidence and mechanisms for disease  prevention through lifestyle modification. Prerequisites: BIO 201; BIO 310; BIO 311;  and CHE 202 or CHE 212.",
+		"courseCode": "320",
+		"departmentCode": "HPH",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Human Physiology Capstone",
+		"description": "This course will revisit and add to the theological and philosophical underpinnings  of human health and medicine that were initially explored in KIN 221 Exercise as  Medicine. Students will review their reflective writings from their freshmen year  and develop an updated philosophy of human health and flourishing and the practice  of medicine. In addition students will be required to research a specific chronic  disease and present an in depth presentation of the current scientific evidence for  disease prevention. This course will culminate in a multi-day retreat where  students will give their presentations and engage their peers and faculty in  discussions centered around their philosophy papers. Must be a graduating senior to  enroll. Offered Interterm.",
+		"courseCode": "493",
+		"departmentCode": "HPH",
+		"creditLow": "3",
+		"creditHigh": null
+	}
+]

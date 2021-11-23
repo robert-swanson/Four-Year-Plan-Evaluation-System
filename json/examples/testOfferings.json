@@ -1,0 +1,96 @@
+{
+    "$schema": "../jsonSchemas/schemaOfferings.json",
+    "spring 2021" : {
+        "COS-101" : [
+            {
+                "crn": "1111",
+                "section": 1,
+                "type": "lecture",
+                "credits": 3,
+                "professors": ["Dr. X", "Dr. Y"],
+                "location": {
+                    "building": "Euler",
+                    "roomNumber": "217"
+                },
+                "numEnrolled": 0,
+                "maxEnrollment": 0,
+                "startDate": "2021-03-21",
+                "meetings": [
+                    {
+                        "days": ["monday", "thursday", "friday"],
+                        "startTime": "12:00 PM",
+                        "endTime": "12:50 PM"
+                    }
+                ]
+            }
+        ],
+        "COS-120" : [
+            {
+                "crn": "2222",
+                "section": 1,
+                "type": "lecture",
+                "credits": 3,
+                "professors": ["Dr. X", "Dr. Y"],
+                "location": {
+                    "building": "Euler",
+                    "roomNumber": "217"
+                },
+                "numEnrolled": 0,
+                "maxEnrollment": 0,
+                "meetings": [
+                    {
+                        "days": ["monday", "wednesday", "friday"],
+                        "startTime": "12:00 PM",
+                        "endTime": "12:50 PM"
+                    }
+                ]
+            }
+        ],
+        "COS-121" : [
+            {
+                "crn": "3333",
+                "section": 1,
+                "type": "lecture",
+                "credits": 3,
+                "professors": ["Dr. X", "Dr. Y"],
+                "location": {
+                    "building": "Euler",
+                    "roomNumber": "217"
+                },
+                "numEnrolled": 0,
+                "maxEnrollment": 0,
+                "meetings": [
+                    {
+                        "days": ["monday", "wednesday", "friday"],
+                        "startTime": "12:00 PM",
+                        "endTime": "12:50 PM"
+                    }
+                ]
+            }
+        ]
+    }, 
+    "fall 2021": {
+        "COS-120" : [
+            {
+                "crn": "2222",
+                "section": 1,
+                "type": "lecture",
+                "credits": 3,
+                "professors": ["Dr. X", "Dr. Y"],
+                "location": {
+                    "building": "Euler",
+                    "roomNumber": "217"
+                },
+                "numEnrolled": 0,
+                "maxEnrollment": 0,
+                "meetings": [
+                    {
+                        "days": ["monday", "wednesday", "friday"],
+                        "startTime": "12:00 PM",
+                        "endTime": "12:50 PM"
+                    }
+                ]
+            }
+        ]
+    }
+}

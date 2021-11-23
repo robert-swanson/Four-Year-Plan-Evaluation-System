@@ -1,0 +1,210 @@
+[
+	{
+		"title": "Chemistry for Living",
+		"description": "A course designed for students who have little or no background in chemistry.  Basic principles of chemistry are applied in a social context. Three hours of  lecture and one two-hour lab per week. Meets foundational core physical science  requirement. No prerequisite, although high school algebra is recommended.",
+		"courseCode": "100",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Forensic Science",
+		"description": "This course is a one semester introduction to forensic science which will focus on  the application of physical and life sciences to criminal investigation. Topics include  the crime scene, physical evidence, fingerprints, forensic toxicology, forensic  serology, as well as many others. There are no prerequisites. Based upon the course  section selected, will meet either a life or physical science foundational core requirement.",
+		"courseCode": "120",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "CHE",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "General, Organic, and Biochemistry I",
+		"description": "This is the first semester of a two-semester sequence designed for students with minimal  backgrounds in chemistry yet need a solid foundation in chemistry for their major.  These students do not typically take other chemistry courses beyond this sequence.  The two semesters are a comprehensive overview of general chemistry, organic  chemistry, and biochemistry. The first semester focuses on general chemistry with an  introduction to organic chemistry. Three hours of lecture and three hours of lab per week.  Meets foundational core physical science requirement. No college level prerequisites, but high school  algebra and chemistry are strongly recommended.",
+		"courseCode": "201",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "General, Organic, and Biochemistry II",
+		"description": "This is the continuation of CHE 201 (see CHE 201 description). The second  semester continues with the introduction to organic chemistry and includes an  overview of biochemistry. Three hours of lecture and three hours of lab per week.  Prerequisite: CHE 201.",
+		"courseCode": "202",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "College Chemistry I",
+		"description": "This is a general chemistry course for those intending to take later coursework in  chemistry, such as organic, inorganic, analytical, or environmental chemistries. The  course thoroughly explores the basic concepts and theories of chemistry, using  quantitative skills to predict and characterize chemical properties and changes. The  nature of atomic structure and chemical bonding and the properties of solids, liquids,  and gases are all presented and studied using lectures, demonstrations, and computer assisted teaching and testing methods. Chemical change is studied in terms of reaction  classes, energy flows, and kinetic theories. Three hours of lecture and three hours of lab  per week. Meets the foundational core physical science requirement. High school algebra  and chemistry are strongly recommended.",
+		"courseCode": "211",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "College Chemistry II",
+		"description": "The second general chemistry course for those intending to take later coursework in  chemistry, such as organic, inorganic, analytical, or environmental chemistries. This  course thoroughly explores the basic concepts and theories of chemistry using  quantitative skills to predict and characterize chemical properties and changes. The  nature of organic chemistry, complexes, equilibria, electrochemistry, and advanced  acid-base properties are all presented and studied using lectures, demonstrations, and  computer-assisted teaching and testing methods. Chemical change is studied in terms  of entropy, free energy, and kinetic theories. Three hours of lecture and three hours of  lab per week. Prerequisite: CHE 211.",
+		"courseCode": "212",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "CHE",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Analytical Chemistry I",
+		"description": "Introduction to modern theories and methods used in separations and quantitative  determinations. Topics include basic statistics and treatment of data, gravimetry,  titrations, and spectroscopy. Topics correlate with the lab. Lab includes gravimetric,  titrations, and spectroscopy. Some instrumentation is used including AA and GCMS.  Three hours of lecture and three hours of lab per week. Prerequisite: CHE 212 or permission  of instructor.",
+		"courseCode": "301",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Analytical Chemistry II",
+		"description": "A continuation of CHE 301 in which instrumental methods of analysis are emphasized.  A survey of instrumental methods used in modern analytical chemistry. Topics include  the general principles of basic instrument components and their integration into the  wide variety of modern instrumentation. Students will gain hands-on experience with  a variety of spectroscopic (UV, VIS, AA), spectrometric (MS), electrochemical,  chromatographic (HPLC, GC, IC), and hybrid (GC/MS, LC/MS) analytical  instrumentations. Three hours of lecture and three hours of lab per week. Prerequisite:  CHE 301 or permission of instructor.",
+		"courseCode": "302",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Organic Chemistry I",
+		"description": "The study of covalent carbon compounds. Nomenclature, properties, and reactions  (including reaction mechanisms) of all classes of hydrocarbons, alcohols, ethers,  halides, and organometallic substances are studied. NMR, IR, and MS spectroscopic  methods are learned and applied. The lab includes development of advanced lab skills  and study of the kinetics and properties of organic substances in reactions. Three  hours of lecture and three hours of lab per week. Prerequisite: CHE 212.",
+		"courseCode": "311",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Organic Chemistry II",
+		"description": "Continuation of CHE 311. Focuses on carbonyl and carboxylate compounds and their  derivatives, amines, and polyfunctional compounds, including biomolecules. Lab work  includes study of the properties of aromatic compounds, qualitative organic analysis,  and small group original research projects. Three hours of lecture and three hours of lab per week. Prerequisite: CHE 311.",
+		"courseCode": "312",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Environmental Pollution and Toxicology",
+		"description": "A course that emphasizes principles and analysis of pollution sources, movement,  distribution, and toxic effects in natural and biological environment. The principles of  toxicology related to industry and the environment, including dose response,  mechanisms of toxicity, hazard evaluation will be explored. The laboratory work will  provide experience in sampling and analysis of water, as well as common toxicology  techniques. Three hours of lecture and three hours of lab per week. One year of general  chemistry is recommended.",
+		"courseCode": "320",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Advanced Inorganic Chemistry",
+		"description": "Coverage of the bonding and properties of the main group and especially transition  metal elements with a focus on their coordination and solid-state chemistry.  Molecular symmetry principles, spectroscopy, materials science and catalytic  applications of these substances are discussed in lecture and studied in lab. Three  hours of lecture and three hours of lab per week. Prerequisite: CHE 311.",
+		"courseCode": "330",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "CHE",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "CHE",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally, one  hour of credit is awarded for a minimum of 40 hours of practicum experience. Offered  primarily during Summer.",
+		"courseCode": "393",
+		"departmentCode": "CHE",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Biochemistry Lab",
+		"description": "The lab uses a case study approach in which an enzyme is isolated and characterized  in detail. The molecular genetics, structure, regulation, and kinetics of the enzyme  are studied using a wide range of techniques. This course is designed for chemistry  and biology majors with a background in organic chemistry. There will be some  lecture, but the primary experience will be in the lab. Prerequisite: CHE 411 or consent  of instructor. BIO 201 is strongly recommended. Offered January interterm.",
+		"courseCode": "410L",
+		"departmentCode": "CHE",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Biochemistry I",
+		"description": "An introduction to the principles of biochemistry in which conformation and  biosynthesis of macromolecules, bioenergetics, molecular genetics, and techniques of  separation and analysis are studied. This course is designed for chemistry and biology  majors with a background in organic chemistry. Three hours of lecture per week.  Prerequisite: CHE 311 or permissions of instructor. BIO 201 and CHE 312 are strongly  recommended.",
+		"courseCode": "411",
+		"departmentCode": "CHE",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Biochemistry II",
+		"description": "This course is a continuation of CHE 411. The emphasis is on metabolism, molecular  genetics, and molecular physiology. This course is designed for chemistry and biology  majors with a background in organic chemistry. Three hours of lecture per week.  Prerequisite: CHE 411 or consent of instructor. BIO 201 is strongly recommended.",
+		"courseCode": "412",
+		"departmentCode": "CHE",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Chemistry Thesis",
+		"description": "Students write a major paper, receive coaching and feedback, modify their paper if  necessary, and give an oral presentation. Prerequisite: Successful completion of Fall term  paper writing workshop. Required of all chemistry seniors.",
+		"courseCode": "420",
+		"departmentCode": "CHE",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Physical Chemistry I",
+		"description": "An introduction to the principles of thermodynamics, kinetic-molecular theory of  gases, and chemical kinetics. The lab includes vacuum techniques, calorimetry,  electrochemistry, physical characterization of solutions, and optical techniques.  Three hours of lecture and three hours of lab per week. Prerequisites: CHE 211; CHE  212; PHY 211; PHY 204 or PHY 212; MAT 146 or MAT 151; and MAT 230.",
+		"courseCode": "431",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Physical Chemistry II",
+		"description": "Emphasis on elementary principles of quantum mechanics, molecular structure,  spectroscopy, and photochemistry. The lab focuses on computational chemistry,  mathematical modeling, and spectroscopy. Three hours of lecture and three hours  of lab per week. Prerequisites: CHE 211; CHE 212; PHY 211; PHY 204 or PHY 212; MAT  146 or MAT 151; and MAT 230.",
+		"courseCode": "432",
+		"departmentCode": "CHE",
+		"creditLow": "4",
+		"creditHigh": null
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory.",
+		"courseCode": "450",
+		"departmentCode": "CHE",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Seminar",
+		"description": "A limited-enrollment course designed especially for upper-class majors with emphasis  on directed readings and discussion.",
+		"courseCode": "480",
+		"departmentCode": "CHE",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major.  Open to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "CHE",
+		"creditLow": "1",
+		"creditHigh": "2"
+	}
+]

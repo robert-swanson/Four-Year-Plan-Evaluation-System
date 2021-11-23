@@ -1,0 +1,136 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://envisageplanner.com/schemaOfferings",
+    "title": "Offerings",
+    "description": "A list of course offerings",
+    "type": "object",
+    "required": [ ],
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {"type": "string"}
+    },
+    "patternProperties": {
+        "^(spring|fall|summer|winter|jterm) \\d{4}$": {
+            "$ref": "#/definitions/term"
+        }
+    },
+    "definitions": {
+        "term": {
+            "description": "A term (eg \"spring 2021\") containing courseIDs mapped to an array of course offerings",
+            "type": "object",
+            "additionalProperties": false,
+            "patternProperties": {
+                "[A-Z]{3}-\\d+[A-Z]*": {
+                    "$ref": "#/definitions/course"
+                }
+            }
+        },
+        "course": {
+            "description": "a course id (eg \"COS 101\") mapped to an array of course offerings",
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/offering"
+            }
+        },
+        "offering": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [ "crn" ,"section", "type", "credits", "professors", "location", "meetings"],
+            "properties": {
+                "crn": { "$ref": "schemaGlobals.json#/definitions/crn" },
+                "section": {
+                    "type": "integer",
+                    "description": "Section number for this course offering"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": ["lecture", "lab"],
+                    "description": "The type of section this is ('lecture' or 'lab') (if sections any are scheduled, one of each type of section must be scheduled in that semester)"
+                },
+                "credits": {
+                    "type": "integer",
+                    "description": "Number of credits earned by this course offering"
+                },
+                "professors": {
+                    "type": "array",
+                    "description": "Professors teaching this section",
+                    "items": {"type": "string"},
+                    "minItems": 1
+                },
+                "location": {
+                    "$ref": "#/definitions/location"
+                },
+                "numEnrolled": {
+                    "type": "integer",
+                    "description": "Number of students currently enrolled in this section"
+                },
+                "maxEnrollment": {
+                    "type": "integer",
+                    "description": "The maximum number of seats for this section"
+                },
+                "startDate": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "A custom starting date for this course"
+                },
+                "endDate": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "A custom ending date for this course"
+                },
+                "meetings": {
+                    "description": "The list of meeting times for this course section",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/meeting"
+                    },
+                    "minItems": 1
+                }
+            }
+        },
+        "location": {
+            "type": "object",
+            "description": "Location object for section",
+            "required": ["building", "roomNumber"],
+            "additionalProperties": false,
+            "properties": {
+                "building": { "type": "string" },
+                "roomNumber": { "type": "string" }
+            }
+        },
+        "meeting" : {
+            "description": "A meeting time for this course section",
+            "type": "object",
+            "required": ["days", "startTime", "endTime"],
+            "additionalProperties": false,
+            "properties": {
+                "days": {
+                    "$ref": "#/definitions/days"
+                },
+                "startTime": {
+                    "$ref": "#/definitions/time",
+                    "description": "Start time for this meeting"
+                },
+                "endTime": {
+                    "$ref": "#/definitions/time",
+                    "description": "End time for this meeting"
+                }
+            }
+        },
+        "days": {
+            "type": "array",
+            "items": {
+                "description": "A day of the week",
+                "type": "string",
+                "enum": ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
+            },
+            "uniqueItems": true,
+            "minItems": 1,
+            "description": "The days of the week this meeting time applies for"
+        },
+        "time": {
+            "type": "string",
+            "pattern": "^\\d{1,2}:\\d{2} ?(PM|AM)$"
+        }
+    }
+}

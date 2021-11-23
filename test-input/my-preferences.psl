@@ -1,0 +1,22 @@
+my_preferences (moderately = 3.0, strongly = 10.0) {
+    require plan starting in fall 2018.
+    require plan ending in fall 2021.
+
+    prefer strongly starting at or after 9:00 AM.
+    prefer strongly more courses.
+    prefer moderately taking course "COS-381".
+    prefer moderately taking course "COS-432".
+    prefer more upper division courses.
+
+    for mondays, wednesdays, fridays {
+        prefer moderately not meeting at 10:00 AM - 10:50 AM.
+        prefer moderately less time blocks reserving 10:00 AM - 10:50 AM, 12:00 PM - 12:50 PM.
+    }
+
+    for tuesdays, thursdays {
+        prefer moderately less time blocks.
+    }
+
+    prefer moderately not meeting at 3:00 PM - 3:50 PM.
+    prefer moderately ending earlier.
+}

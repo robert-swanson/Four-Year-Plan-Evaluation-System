@@ -1,0 +1,240 @@
+﻿COS 101 2 hours 
+Information Technology Concepts 
+The course focuses on practical understanding and application of computing  technology in educational, small business, or organizational environments. Specific  topics include an overview of operating systems, application software, computing  hardware, telecommunications, networking, and information management systems and  analysis. In addition, it heavily emphasizes the impact of technology on modern society  and the ethical issues related to use of information and communication systems. This  course is offered through Taylor University Online (TUO) and does not count toward any  major, minor, or foundational core curriculum requirement for residential students. 
+COS 102 3 hours 
+Fundamentals of Systems and Computing  
+An introduction to the basic concepts of “system” and “process” with particular  emphasis on computing systems. Major topics include systems thinking, quality,  problem solving, and design. Computing-specific topics include algorithms, networks,  computer hardware, and basic relational database concepts. The learning experience  features field trips and guest lectures. 
+COS 103 1 hour 
+Computer Science and Engineering: New Majors Orientation
+Provides an introduction to the Computer Science and Engineering majors focusing on  the habits, mindset, and requirements for success in the major. The course includes  an overview of the discipline with an exploration of various career paths in computing  (e.g., industry, missions, graduate school). A significant portion of the course involves a  weekend retreat with faculty, staff, and graduating seniors. Lastly, students are introduced  to integrating faith and computing. Offered Fall semester. 
+COS 104 2 hours 
+Computing and Culture – Applications and Context 
+An introduction to the ideas of computational technology including the use of  applications, ethical foundations and the understanding of the context of technology in  our world. Analysis from a Christian perspective is emphasized. Topics discussed  include algorithmic thinking, organization of data with spreadsheets and databases,  internet and security, hardware, software, and the history of computers. Important  skills covered in the course include web design, spreadsheet and database applications,  video and photo manipulation, information literacy, and an introduction to the process  of programming. Meets foundational core computation requirement. 
+COS 105 1 hour 
+Ethics, Computing, and Society 
+As computing technology becomes more complex and less visible, we understand less  about how the world functions. Our worldview is impacted by technology in ways  that are not recognized and, therefore, not critically evaluated, particularly with a  Christian understanding. This course is designed to introduce students to the context  of computation in their world. Through writing, discussions, and class assignments,  students will gain an understanding of computing technology that goes beyond its use  and explores the impact of technology on our world view. The context provided  includes an introduction to the issues in our society associated with ethics and  technology. Main topics addressed include: applying major ethical theories, intellectual  property, privacy, and putting technology into context with a Christian perspective.  This course is available only to transfer students who have credit in an acceptable computer  competency course and will meet the foundational core computation requirement for such  students. 
+COS 109 3 hours 
+Computer and Network Operations 
+A study of the concepts, principles, tools, and constraints related to computer and  network operations, including the following topics: shell scripting, information  technology system components, systems policy and governance, operating systems  management, network devices, and virtual machines. Students will install and configure  commodity operating systems, manage users, analyze system logs, write scripts to  automate systems administration, review and write information technology policies,  and related activities. 
+COS 120 4 hours 
+Introduction to Computational Problem Solving 
+Approaches to computing solutions for problems from a variety of subject areas are  examined and provide motivation for the study of the development of algorithms and  their implementation. Programming concepts are introduced incrementally in order to  solve increasingly complex problems. Good algorithm design and program structure  are emphasized. Introductory data structures and software engineering principles are  stressed. An introduction to object-oriented programming is included. Three hours of  lecture and two hours of lab per week. Meets foundation core computation requirement. 
+COS 121 4 hours  
+Foundations of Computer Science  
+This course builds on COS 120 by emphasizing object-oriented programming and  including concepts of computer science such as computational complexity  simulation and recursion. The use and implementation of data structures such as  lists, stacks, queues, and trees are introduced as they are needed in developing  algorithms for problems studied. Additional topics include the Linux operating  system and tools, source code versioning, unit testing, and code refactoring. Three  hours of lecture and two hours of lab per week. Prerequisite: COS 120 or COS 130 or  SYS 120. 
+COS 130 3 hours 
+Computational Problem Solving for Engineers 
+This introductory programming course will take a similar approach to solving  problems as COS 120. The differences will be an accelerated pace and using  computational tools (emphasis on the C language) expected to be used in the  various fields of engineering. Meets foundation core computation requirement. 
+COS 143 3 hours 
+Interactive Webpage Development 
+A study of how to deliver interactive webpages through a web browser. Students will  learn to represent the data structurally with HTML, the presentation with CSS, and the  functionality with Javascript. Students will explore good design strategies that promote  useful webpages. In order to deliver interactive sites, the students will utilize remote  scripting (AJAX) to connect with existing server functionality to receive XML or JSON  data for page updates. Modern web technologies including HTML5, CSS3, DOM  manipulation, etc. will be explored. Prerequisite: COS 120 or COS 130 or SYS 120. 
+COS 170 1-4 hours 
+Selected Topics 
+A course offered on a subject of interest but not listed as a regular course offering.  
+COS 230 3 hours 
+Missions Technology 
+A survey and in-depth study of the range of technology applied to Christian  missions. Theory and issues in sustainable application are developed. Interaction  with mission agencies and a practical project are included. 
+COS 232 3 hours 
+Computer and Network Security I 
+A study of the fundamentals of operating system, network, and application security.  Major areas of exploration include: fundamental security design principles,  application vulnerability analysis, network penetration testing, basic cryptography,  and defensive programming techniques. Prerequisite: COS 121.  
+COS 243 3 hours 
+Multi-tier Web Application Development 
+The course will explore how to develop a complete web application with  implementation separating concerns between content delivery, business logic, and  data storage. An emphasis on a modern MVC platform will be used to provide the  separation of concerns. Additionally, core database knowledge for a functioning  application will be explored including data modeling for a relational database,  common SQL queries, data normalization foreign key constraints, and aggregate  operations. Prerequisites: COS 121 and COS 143. 
+COS 265 4 hours 
+Data Structures and Algorithms 
+A survey of data structures and algorithms that operate on them, with an emphasis on  abstract data types and analysis of computational complexity. Prerequisite: COS 121. 
+COS 270 1-4 hours 
+Selected Topics 
+A course offered on a subject of interest but not listed as a regular course offering.  
+COS 280 3 hours 
+Introduction to Artificial Intelligence 
+A survey of the field of artificial intelligence. Major areas of exploration include  search, logic, learning, knowledge representation, problem solving, natural language  processing, computer vision, robotics, expert systems, and neural networks. An  introduction to Lisp is included. Prerequisite: COS 121. 
+COS 284 3 hours 
+Introduction to Computer Systems 
+An integrated introduction to computer hardware architecture, operating systems,  and their interaction. Assembly language and operating system programming are  emphasized. Prerequisites: COS 121 and MAT 215. 
+COS 310 1 hour 
+Current Literature Survey 
+A survey of classical and current literature in computer science. A goal of the  course is to produce a concept for a research proposal with literature survey  appropriate for an undergraduate research project. Students lead discussions on  papers and topics of interest. Prerequisite: one 300-level COS course. 
+COS 311 3 hours 
+Ethics in Computer Science 
+A study of the ethical implications of computers in society and the role of Christians  as computer science and engineering professionals. Foundational concepts of Western  moral philosophy are presented. Major ethical issues, such as privacy, piracy, liability,  equity, and whistle-blowing are explored. Professional society codes of conduct are  examined and discussed. Legal and ethical issues such as piracy, copyright, and fair use  related to media are also addressed. Ethical concerns of computer science and systems  analysis and their relationship to one's faith are an integral part of this course. 
+COS 320 3 hours 
+Algorithm Design 
+Algorithms and related data structures from a variety of areas are examined and  analyzed. Parallel processing paradigms and theoretical topics, such as complexity  models, are introduced. Prerequisites: COS 265 and MAT 215. 
+COS 321H 3 hours 
+Ethics and Technology 
+A study of the ethical implications of computing technology in society and the role of  Christians as users, people impacted by, and shapers of computing technology.  Foundational concepts of Western moral philosophy are presented. Major ethical  issues, such as privacy, piracy, liability, equity, and whistle-blowing are explored.  Professional society codes of conduct are examined and discussed. Legal and ethical  issues such as piracy, copyright, and fair use related to media are also addressed.  Ethical concerns of computer science and systems analysis and their relationship to  one's faith are an integral part of this course. This course is intended for students in the Honors  Guild but will also meet the COS 311 requirement for majors in computer science and engineering.  Meets foundational core computation requirement. 
+COS 323 3 hours 
+Computer and Network Security II 
+A study of operating system, network, and application security. This course is a  continuation of COS 232 (Computer and Network Security). Major areas of  exploration include: software reverse engineering, static and dynamic program analysis,  basic cryptanalysis, and related current topics. Prerequisite: COS 232. 
+COS 326 3 hours 
+Data Visualization 
+This course introduces explanatory and exploratory data visualization, including  principles, techniques, and tools, that facilitate understanding and action based on very  big data sets. Principles from graphic design, visual perception, and cognitive science  are considered. Students employ modern tools and languages to access, analyze, and  visualize Internet-scale data. Participants are encouraged to take MAT 311 and a statistics  course before enrolling. Prerequisites: COS 120 or SYS 120; and COS 143. 
+COS 331 3 hours 
+Data Communications 
+A study of the nature and applications of data communications in use today.  Fundamental concepts of types, modes, and media of transmission are studied.  Communication protocols and their encompassing architectures are analyzed and  compared. Practical applications of data communications concepts are demonstrated  through networking projects and development of communications software.  Prerequisite: COS 121. 
+COS 333 3 hours 
+Missions Computing 
+Combining computer science and service to the missions community, students travel  to an international location during Interterm to undertake software development and  systems analysis for a missions partner. Students design, construct, test, document,  and deploy a non-trivial software system that meets the partner's requirements.  Students experience the local culture and participate in direct ministry as opportunities  arise. Meets foundational core cross-cultural requirement. Prerequisite: COS 121 or COS  143; and instructor permission.  
+COS 340 3 hours 
+Software Engineering 
+A study of the concepts, tools, best practices, and lifecycle phases associated with  developing large software systems, in groups, over prolonged durations. Using an agile  software development process, students gather requirements, design, and begin  construction of a non-trivial software system. Prerequisite: COS 121. 
+COS 343 3 hours 
+Database Systems 
+A study of the fundamental concepts of how database technologies work. An emphasis  on relational databases will be explored, including normalization, advanced SQL  queries, indexing, physical data storage, performance and tuning strategies, and  concurrency control. Students will be introduced to other database technologies possibly  including object-oriented databases, NoSQL, replication, etc. Prerequisites: COS 121  and MAT 215. 
+COS 350 3 hours 
+Computer Graphics 
+An introductory course in computer graphics with an emphasis on 3D image  production using a variety of approaches, including ray tracing and raster graphics.  Basic algorithms, data structures, and GUI programming are introduced. Prerequisite:  COS 121. 
+COS 351 3 hours 
+Computer Vision 
+A study of the fundamental concepts of digital image acquisition, manipulation,  enhancement, representation, analysis, and understanding. Prerequisite: COS 121.  Offered Spring semester of even years. 
+COS 355 3 hours 
+Mobile Application Development 
+A study of the concepts, principles, tools, and constraints related to developing mobile  applications, including: power-performance tradeoffs, sensor management, location  acquisition, and responsive user interface design. Students will develop mobile  applications within large software ecosystems (mobile operating system APIs and web  services) and as a result gain significant experience using current software development  tools, asynchronous programming techniques, and object-oriented design patterns.  Prerequisite: COS 265. 
+COS 360 1-4 hours 
+Independent Study 
+An individualized, directed study involving a specified topic.  
+COS 370 1-4 hours 
+Selected Topics 
+A course offered on a subject of interest but not listed as a regular course offering.  
+COS 380 3 hours 
+Natural Language Processing 
+A study of the automation of human communication abilities, covering both textual  and vocal aspects. Major topics include language parsing, understanding,  representation, enhancement, generation, translation, and speaker/author  recognition. Prerequisite: COS 280. Offered Spring semester of odd years. 
+COS 381 3 hours 
+Computer Architecture 
+A study of the hardware structure of computer systems, including arithmetic/logic units,  memory organization, control unit design, pipelining, and instruction set design. A brief  introduction to advanced topics, such as out-of-order execution, branch prediction,  multi-core systems, and parallel processing cache coherency will prepare the student  for graduate level courses in architecture. Prerequisite: COS 284.  
+COS 382 3 hours 
+Language Structures 
+A study of the features and implementation issues of programming languages,  including a survey of language paradigms. Grammars, syntax, semantics, translation,  lexical analysis, and parsing are introduced. Prerequisite: COS 265. 
+COS 393 1-4 hours 
+Practicum 
+Supervised learning involving a first-hand field experience or a project. Generally,  one hour of credit is awarded for a minimum of 40 hours of practicum experience.  Grade only. Practicum course credit requires a minimum of 320 hours of work experience.  Offered primarily during Summer. 
+COS 394 1-4 hours 
+Advanced Project 
+Students complete an open-ended software development project or laboratory  experiment project. The individual project depends on students and faculty  interest. Specific learning outcomes vary depending on faculty, student, and project  selected. Independent or small group projects are possible. May be taken by any  Computer Science major with instructor permission. May be taken multiple times for credit. 
+COS 411 3 hours 
+Digital Forensics 
+A study of the concepts, tools, methodologies, and analysis techniques used for host, media, and network forensic investigations. Students will learn how to capture, decipher,  reconstruct, and analyze digital data. Prerequisite: COS 331. 
+COS 421 3 hours 
+Operating Systems 
+A study of the design considerations of computer operating systems and their  interaction with hardware features. Topics covered include process management,  storage management, protection and security, file systems, and concurrency.  Prerequisites: COS 265 and COS 284. 
+COS 424 3 hours 
+Surfaces and Modeling 
+An advanced graphics course with emphasis on curve and surface representation and  geometric modeling. Mathematics and algorithms are studied. Topics include Bezier  and B-spline curves and surfaces and geometric modeling techniques. Prerequisite:  COS 350. 
+COS 425 3 hours 
+Animation 
+An advanced graphics course with emphasis on techniques for rendering and  animation. Mathematics and algorithms are studied. Topics include light and  illumination models, ray tracing, methods to enhance realism, and standard animation  techniques. A professional software package will be used to create a significant  animation. Prerequisite: COS 350. 
+COS 432 3 hours 
+Software Reverse Engineering and Analysis 
+A study of defensive programming techniques, platform security, secure software  engineering, software reverse engineering, and vulnerability analysis. Students will  perform static and dynamic software analysis, identify and analyze malicious software,  and apply tools and techniques for identifying software vulnerabilities. Prerequisite: COS  284. 
+COS 433 3 hours 
+Missions Computing Senior Project 
+Combining computer science and service to the missions community, students travel to  an international location during Interterm to undertake software development and  systems analysis for a missions partner. Students design, construct, test, document, and  deploy a non-trivial software system that meets the partner's requirements. Students  experience the local culture and participate in direct ministry as opportunities arise.  Students share their experience on campus in a formal paper, presentation, and poster.  Satisfies the senior project requirement. Meets foundational core cross-cultural  requirement. Prerequisites: senior standing and instructor permission.  
+COS 435 3 hours 
+Theory of Computation 
+A theoretical treatment of what can be computed and how efficiently computation can be  done. Topics include models of computation and automata, deterministic and non deterministic computations, and formal language theory. Prerequisite: COS 265. 
+COS 436 3 hours 
+Parallel and Distributed Computing 
+A study of concepts and models of distributed and parallel computing, including  concurrency, synchronization, algorithms, hardware organization, and common  programming environments. Implementation of parallel algorithms on multicore CPUs  and many-core GPUs. Prerequisites: COS 265 and COS 284. 
+COS 450 1-4 hours 
+Directed Research 
+Investigative learning involving closely directed research and the use of such facilities as  the library or laboratory. Independent or small group projects. May be taken by any COS  major with instructor approval. May be taken multiple times for credit. 
+COS 452 3 hours 
+Research I 
+Participation in a research project under faculty direction. Prerequisite: COS 310 or  instructor permission. 
+COS 453 3 hours 
+Research II 
+Participation in a research project under faculty direction. A formal presentation of  results is required. Prerequisite: COS 452 or instructor permission. 
+COS 480 1-4 hours 
+Seminar 
+A limited-enrollment course designed especially for upper-class majors with emphasis  on directed readings and discussion.  
+COS 490 1-2 hours 
+Honors 
+Individualized study or research of an advanced topic within a student’s major. Open to  students with at least a 3.00 GPA in the major field. 
+COS 491 2 hours 
+Senior Engineering Project I 
+The first of a three course culminating experience preparing students for engineering  practice through a major design and implementation project. Prerequisite: senior status,  CEN major. Offered Fall semester. 
+COS 492 3-4 hours 
+Senior Project 
+Designed to exercise each senior’s technical analysis, design, and development skills and  showcase his/her documentation and presentation skills. The student develops a project  through multiple phases of the software lifecycle frequently beginning at the design stage.  The project is typically chosen to reflect the student’s area of concentration. Prerequisite:  Senior status. 
+COS 493 1 hour 
+Computer Science Senior Capstone 
+A survey of topics useful for graduates of the department, but not covered by other  courses. The emphasis is on non-technical issues such as making a budget, finding a  church, balancing career and family, etc. The course is conducted as a trip off-campus to  further strengthen relationships with the department. Prerequisite: Senior status. 
+COS 494 3 hours 
+Senior Engineering Project II 
+The second in a three course culminating experience preparing students for engineering  practice through a major design and implementation project. Prerequisite: COS 491.  Offered January interterm. 
+COS 495 1 hour 
+Senior Engineering Project III 
+The third of a three course culminating experience preparing students for engineering  practice through a major design and implementation project. It includes the Engineering  poster session for assessment of the project. Prerequisite: COS 494. Offered Spring  semester. 
+SYS 101 3 hours 
+Introduction to Systems 
+An introduction to the basic concepts of “system” and “process”. Systems thinking,  quality, and problem solving are major topics. Because almost every modern system  uses database to control processes, basic relational database concepts and structured  query language (SQL) are taught. Field trips and guest lectures are featured in the  learning experience. 
+SYS 120 4 hours 
+Introduction to Problem Solving 
+An introduction to problem solving strategies applied to problems from numerous domains,  resulting in the development of algorithms that are programmed in Python. The basic control  structures, functions and parameter passing, and the concept of abstraction are all  emphasized. Simple data structures (e.g., lists and dictionaries) and basic file processing are  introduced. Incremental construction of large programs is practiced. Three hours of lecture  and two hours of lab per week. 
+SYS 125 2 hours 
+Introduction to Object Oriented Programming 
+This course is an introduction to object oriented design and programming. Students  will apply problem solving strategies to devise OOD descriptions of problems formerly  solved via procedural coding methods. Implementation of increasingly complex OOD  solutions will be carried out in the Python programming language. Prerequisite: COS  120 or SYS 120. 
+SYS 170 1-4 hours 
+Selected Topics 
+A course offered on a subject of interest but not listed as a regular course offering.  
+SYS 214 3 hours 
+Principles of Human Computer Interaction 
+This course discusses the analysis, design, development, and evaluation of interfaces allowing  humans to interact with computers and the presentation of information in formats designed  for human understanding. People-centered design is emphasized through prototyping and  information visualization are also discussed. 
+SYS 270 1-4 hours 
+Selected Topics 
+A course offered on a subject of interest but not listed as a regular course offering.  
+SYS 310 3 hours 
+E-Commerce 
+Examines the development of and future prospects for electronic commerce. It focuses  on the use of electronic transmissions to engage in exchange of products and services.  Students will consider the emerging changes in business as well as the new opportunities  for entrepreneurship brought on by e-commerce. They will explore the dynamics of  technical innovations as well as the organizational and societal consequences of moving  commerce electronically. They will also evaluate the operations of a variety of web-based  businesses. Guest speakers from industry will lecture regarding the technical, economic, and  political/regulatory aspects of e-commerce. Prerequisites: COS 120 or COS 130 or COS 143 or  SYS 120; and COS 102 or SYS 101. 
+SYS 320 3 hours 
+Economic Decision Analysis 
+This course covers the fundamentals of economic decision making for non-business  majors. Topics include general accounting basics (general ledger, how to interpret an  annual report, expenditure as expense or capital, and depreciation), cost accounting  basics, capital feasibility analysis, and finance basics. Course is for systems engineering  majors. Prerequisite: ECO 201.  
+SYS 330 3 hours 
+Human Relations in Organizations 
+The necessity of constructive conflict in organizations and the inevitability of  destructive personal conflict are the reasons for studying human relations. Five books,  some classic like Carnegie’s How to Win Friends and Influence People, some near  classic like Covey’s The Seven Habits of Effective People, and possible future classics  like Sande’s The Peacemaker, are read and discussed. The goal is to improve  understanding of conflict: That constructive conflict is healthy and necessary, how  creative conflict can degenerate into destructive personal conflict, the causes of team  dysfunction, how to achieve team synergy, and personal techniques for engaging in  constructive conflict, avoiding destructive conflict and redeeming it should it happen.  The Bible is used as a discussion resource. The pre-supposition of the course is that  evangelical Christian culture encourages conflict avoidance within the culture and often  without. Some strive to be “meek and mild” like Jesus, an aspiration that belies an  incomplete understanding of Jesus’ character and behavior. This is a writing course  with a strong emphasis on discussion. Meets foundational core social science requirement.  
+SYS 352 3 hours 
+Knowledge Based Systems 
+Prominent knowledge-based system approaches are introduced including crisp  production rule systems and fuzzy logic systems. Principles of knowledge acquisition  are taught and applied. Various forms of knowledge representation are experienced,  including rules, nets, frames, and predicate logic. Programming is primarily in CLIPS.  Prerequisites: COS 121; and COS 102 or SYS 101. 
+SYS 360 1-4 hours 
+Independent Study 
+An individualized, directed study involving a specified topic.  
+SYS 370 1-4 hours 
+Selected Topics 
+A course offered on a subject of interest but not listed as a regular course offering.  
+SYS 390 3 hours 
+Information Systems Analysis 
+A study of the knowledge and skills needed to conduct the definition and analysis phases  of an information system project. Central concepts are quality management and business  process reengineering. Problem definition, information gathering, user experience  modeling, data and process modeling, and specification of logical system requirements  using a business event methodology are emphasized. Learning is by doing: a major project  is begun in this course and completed in SYS 394. Prerequisites: Junior standing; COS 120 or COS 130 or COS 143 or SYS 120; and COS 102 or SYS 101. 
+SYS 392 1 hour 
+Systems Seminar 
+This course provides a survey of systems topics with an emphasis on current development  in many disciplines. Guest, faculty, and student presentations, plus occasional panel  discussions, provide the format. May be taken twice. Prerequisite: COS 102 or SYS 101. 
+SYS 393 1-4 hours 
+Practicum 
+Supervised learning involving a first-hand field experience or a project. Generally, one  hour of credit is awarded for a minimum of 40 hours of practicum experience. Offered  primarily during Summer. 
+SYS 394 3 hours 
+Information Systems Design 
+A study of the knowledge and skills needed to conduct the design and construction phases  of an information system project. Central concepts are: translating a logical design into a  physical design, project management, and client-server architectures. Students will learn  and use application technologies powering the World Wide Web. Learning is by doing; the major project defined and analyzed in SYS 390 will be designed and built. Prerequisites:  COS 120 or COS 130 or SYS 120; COS 121 or COS 143; and SYS 390. 
+SYS 401 3 hours 
+Operations Research 
+An introduction to operations research (management science), which is quantitative  decision making. Emphasis is on linear programming and its application to financial  decisions, distribution problems, project scheduling, and other network problems.  Decision analysis with probabilities and multi-goal decisions are discussed as well.  Prerequisites: COS 102 or SYS 101; COS 121 or COS 143; MAT 210 or MAT 352; MAT 151. 
+SYS 402 3 hours 
+Modeling and Simulation 
+A study of mathematical modeling and simulation methods, focusing on discrete systems.  Simil and pysym are used in hands on exercises. Many applications are surveyed and group  term projects are carried out. Prerequisites: COS 121 or COS 143; MAT 210 or MAT 352; MAT 151. 
+SYS 405 3 hours 
+Operations Research II 
+The focus of this second course in operations research is stochastic modeling with application  to industrial engineering. Topics include Markov chains, Monte Carlo techniques, Brownian  motion with application to queuing theory, stochastic inventory models, reliability, and  decision models. Prerequisites: MAT 382 and SYS 401. 
+SYS 410 2 hours 
+Fundamentals of Quality Management 
+This course is an overview of the fundamentals of quality management. Part of the course  is a review of topics covered in other systems courses: definition of quality, problem  solving process, Crosby’s absolutes, process diagrams, cost of quality, and statistical  process control. New topics include: Deming’s and Juran’s management philosophies,  understanding teams, improvement tools, quality audits, methods for collecting data and  sampling, and customer-supplier relations. The course will prepare the student to earn ASQ  certification as either Quality Improvement Associate or Quality Process Analyst. Prerequisites:  SYS 390, SYS 394, and MAT 382. 
+SYS 411 3 hours 
+Machine Learning 
+Classification learning systems of various types are explored. These include statistical  pattern recognition, neural networks, genetic algorithms, and methods for inducing  decision trees and production rules induction. Existing systems are reviewed. Group term  projects allow development of and experimentation with a system of interest. Prerequisites:  COS 121; MAT 210 or MAT 352. 
+SYS 450 1-4 hours 
+Directed Research 
+Investigative learning involving closely directed research and the use of such facilities as  the library or laboratory. 
+SYS 480 1-4 hours 
+Seminar 
+A limited-enrollment course designed especially for upper-class majors with emphasis  on directed readings and discussion.  
+SYS 490 1-2 hours 
+Honors 
+Individualized study or research of an advanced topic within a student’s major. Open to  students with at least a 3.00 GPA in the major field. 

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://envisageplanner.com/schemaGlobals",
+  "definitions": {
+    "courseID": {
+      "description": "A unique identifier for this course",
+        "type": "string",
+        "pattern": "[A-Z]{3}-\\d{3}[A-Z]?"
+    },
+    "catalogYear": {
+      "description": "The catalog year this represents (should be formatted like '2021-2022')",
+      "type": "string",
+      "pattern": "\\d{4}-\\d{4}"
+    },
+    "crn": {
+      "type": "string",
+      "description": "the course reference number for this section"
+    }
+  }
+}

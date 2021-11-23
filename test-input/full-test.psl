@@ -1,0 +1,122 @@
+numeric_evaluators (strongly = 10) {
+    require 10 credits.
+    require 10 credits from "COS-120", "COS-121", "COS-104".
+    require 10 upper division credits.
+    require 4 courses.
+    require 4 courses from "COS-120", "COS-121", "COS-104".
+    require 4 upper division courses.
+    require 120 meeting minutes.
+    require 4 courses with "Stefan Brandle".
+    require 2 time blocks reserving 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM.
+    require 8 terms.
+}
+
+term_year_evaluators {
+    require taking course "COS-120" in fall 2022.
+    require plan starting in fall 2018.
+    require plan ending in spring 2022.
+}
+
+time_evaluators {
+    require starting at 9:00 AM.
+    require ending at 3:00 PM.
+
+    require "COS-120" starting at 9:00 AM.
+    require "COS-120" ending at 9:50 AM.
+}
+
+boolean_evaluators {
+    require not meeting at 12:00 PM - 12:50 PM.
+    require taking "COS-120" before "COS-265".
+    require taking "COS-121", "COS-265" together.
+    require taking course "COS-121".
+}
+
+
+specifications {
+    require 10 credits.
+
+    prefer 10 credits.
+
+    { prefer 10 credits. }
+
+    if 10 credits then require 10 credits.
+    otherwise if 12 credits then require 12 credits.
+    otherwise if 14 credits then require 14 credits.
+    otherwise require 16 credits.
+    if 10 credits then {
+        require 10 credits.
+    } otherwise if 12 credits then {
+        require 12 credits.
+    } otherwise if 14 credits then {
+        require 14 credits.
+    }
+
+    for terms where more than 15 credits require 15 credits.
+    for terms where more than 15 credits {
+        require 15 credits.
+    }
+    for days where more than 5 credits {
+        require 5 credits.
+    }
+    for terms where more than 15 credits {
+        for days where more than 5 credits {
+            require 5 credits.
+        }
+    }
+
+    for terms where more than 15 credits {
+        if 10 credits then {
+            for days where more than 5 credits {
+                require 5 credits.
+            }
+        }
+    }
+}
+
+conditions {
+    if 8 credits then {
+        require 8 credits.
+    } otherwise if (8 credits) then {
+        require 8 credits.
+    } otherwise if (8 credits and 8 credits) then {
+        require 8 credits.
+    } otherwise if (8 credits or 8 credits) then {
+        require 8 credits.
+    } otherwise if not 8 credits then {
+        require 8 credits.
+    } otherwise if (not 8 credits and (8 credits or 8 credits)) then {
+        require 8 credits.
+    }
+}
+
+constraints {
+    require 8 credits.
+    require more than 8 credits.
+    require at least 8 credits.
+    require less than 8 credits.
+    require no more than 8 credits.
+
+    require starting at 10:00 AM.
+    require starting after 10:00 AM.
+    require starting at or after 10:00 AM.
+    require starting before 10:00 AM.
+    require starting at or before 10:00 AM.
+
+    require plan starting in fall 2020.
+    require plan starting after fall 2020.
+    require plan starting on or after fall 2020.
+    require plan starting before fall 2020.
+    require plan starting on or before fall 2020.
+
+    require not meeting at 10:00 AM - 12:00 AM.
+
+    prefer more credits.
+    prefer less credits.
+
+    prefer starting later.
+    prefer starting earlier.
+
+    prefer plan starting later.
+    prefer plan starting earlier.
+}

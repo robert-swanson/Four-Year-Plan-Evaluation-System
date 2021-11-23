@@ -1,0 +1,802 @@
+[
+	{
+		"title": "Communication Major Orientation",
+		"description": "Explores the communication majors, focusing on requirements and career options. The  course is designed to aid students as they prepare for both their coursework on campus  and career decisions upon graduation. Offered Fall semester.",
+		"courseCode": "125",
+		"departmentCode": "CAC",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Digital Tools: Photoshop",
+		"description": "Focuses on the development of painting and image editing skills using Adobe  Photoshop, the industry standard software for bitmap image generation and digital  photo manipulation. Offered Fall and Spring semesters.",
+		"courseCode": "156",
+		"departmentCode": "CAC",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Digital Tools: InDesign",
+		"description": "Provides an overview of Adobe’s page layout and graphic design software. Students  will learn the InDesign workspace and how to work with objects, type, color, and  graphics to create design projects. Offered Fall and Spring semesters.",
+		"courseCode": "157",
+		"departmentCode": "CAC",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Digital Tools: Microsoft Office",
+		"description": "Provides an overview of Microsoft Office Suite, particularly focusing on Excel.  Offered Fall and Spring semesters.",
+		"courseCode": "158",
+		"departmentCode": "CAC",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Digital Tools: Presentation Software",
+		"description": "This course is designed to examine how verbal and nonverbal skills correlate to  enhance formal presentations; to study elements for an effective visual presentation  such as theme, color, design, fonts, and photographs; and to teach skills necessary  to execute Keynote, PowerPoint, and Prezi techniques using animation, sound, video,  charts, graphs, and SmartArt. Offered Fall and Spring semesters.",
+		"courseCode": "159",
+		"departmentCode": "CAC",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Integrative Communication",
+		"description": "Integrative communication explores and develops public, interpersonal, organizational, and small group communication skills. Students will learn how to  analyze and adapt to the needs of diverse audiences and contexts using verbal and  nonverbal communication principles. Meets foundational core speaking requirement.",
+		"courseCode": "160",
+		"departmentCode": "CAC",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "CAC",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Essentials of Written Communication",
+		"description": "Teaches fundamentals of professional written communication. Students complete a  variety of assignments exemplifying the types of writing routinely practiced in business  settings including letters, resumes, news releases, reports, proposals, instructions, and  other forms of business communication. The emphasis is on real world experience and  application. Offered Fall and Spring semesters.",
+		"courseCode": "220",
+		"departmentCode": "CAC",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Communication Theory and Research",
+		"description": "Examines paths of inquiry in the communication discipline. Students study, analyze,  and explain dimensions of communication within a variety of contexts. Offered Fall and Spring semesters.",
+		"courseCode": "225",
+		"departmentCode": "CAC",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "CAC",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Intercultural Communication",
+		"description": "The study of the complex process of intercultural communication. The course seeks to  create an awareness of culture-bound assumptions and ways to communicate more  effectively with persons from other cultures. Prerequisite: COM 320. Offered Fall semester.",
+		"courseCode": "340",
+		"departmentCode": "CAC",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Social Media Strategy",
+		"description": "Explores using social media strategically and creating written strategy for usage. First  half of the semester focuses on students' professionalizing their personal social media;  second half includes working with clients to build a social media strategy for their  businesses.",
+		"courseCode": "345",
+		"departmentCode": "CAC",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "CAC",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "CAC",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally,  one hour of credit is awarded for a minimum of 40 hours of practicum experience.  Offered primarily during the Summer.",
+		"courseCode": "393",
+		"departmentCode": "CAC",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory. Tutorial and peer review methods are used to monitor  student’s progress in writing the senior thesis. Offered Spring semester.",
+		"courseCode": "450",
+		"departmentCode": "CAC",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Senior Capstone",
+		"description": "Senior strategic communication majors will complete a senior project proposal and  prepare for employment and graduate school. Offered Fall semester.",
+		"courseCode": "485",
+		"departmentCode": "CAC",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major.  Open to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "CAC",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Introduction to Organizational Communication",
+		"description": "Introduces students to foundational principles of communication as applied in general  organizational contexts.",
+		"courseCode": "111",
+		"departmentCode": "COM",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "COM",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Public Speaking",
+		"description": "Explores the development of speaking strategies and skills, including audience  analysis, nonverbal and visual communication, research, organization, the use of  evidence to support a point of view, delivery, and listening. Meets foundational core speaking  requirement.",
+		"courseCode": "210",
+		"departmentCode": "COM",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Nonprofit Organizational Communication",
+		"description": "Applies foundational principles of organizational communication to issues common in  nonprofit and faith based organizations. Prerequisite: COM 111.",
+		"courseCode": "230",
+		"departmentCode": "COM",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "COM",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Strategic Communication",
+		"description": "Explores communication issues in organizations through an application of communication  principles, concepts, and theories to prepare students for critical evaluation and management  of communication plans, strategies, and assessments.",
+		"courseCode": "301",
+		"departmentCode": "COM",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Interpersonal Communication",
+		"description": "Studies interpersonal theories, research, and biblical principles in order to better  understand one's own identity and interactions with others. Understanding, creating,  and analyzing personal messages in various contexts.",
+		"courseCode": "320",
+		"departmentCode": "COM",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Conflict Resolution",
+		"description": "Applies foundational principles of communication in organizations to conflict contexts  with the purpose of preparing students to mediate and resolve conflict in organizations.",
+		"courseCode": "325",
+		"departmentCode": "COM",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Leadership Communication",
+		"description": "Applies foundational principles and theories of communication to issues common in  leadership contexts. Prerequisite: COM 111.",
+		"courseCode": "327",
+		"departmentCode": "COM",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Mediated Communication",
+		"description": "Explores principles of interpersonal and public communication through the lens of  mediated forms of communication.",
+		"courseCode": "330",
+		"departmentCode": "COM",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "COM",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "COM",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Persuasion",
+		"description": "Analysis and application of the strategies and theories of verbal and visual persuasive  messages and persuasive campaigns in a variety of contexts including advertising,  politics, and social movements. Prerequisite: COM 210.",
+		"courseCode": "372",
+		"departmentCode": "COM",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally,  one hour of credit is awarded for a minimum of 40 hours of practicum experience.  Offered primarily during Summer.",
+		"courseCode": "393",
+		"departmentCode": "COM",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Advanced Organizational Communication",
+		"description": "Students apply developed understanding of principles, theories, and issues to  evaluate popular organizational wisdom. Prerequisites: COM 301 and COM 327.",
+		"courseCode": "411",
+		"departmentCode": "COM",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Communication Audit",
+		"description": "Applies a developed understanding of principles, theories, and issues through the  practical creation of a communication strategy and training material developed after  primary research in a communication audit. Prerequisites: COM 301 and COM 327.",
+		"courseCode": "420",
+		"departmentCode": "COM",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Restorative Communication",
+		"description": "Examines dysfunctional communication behaviors which lead to the deterioration  of interpersonal relationships and the unique communication behaviors which lead  to reconciliation of interpersonal relationships. Prerequisite: COM 320.",
+		"courseCode": "430",
+		"departmentCode": "COM",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Senior Paper/Portfolio Development",
+		"description": "Seniors will develop their senior paper/portfolio. Prerequisite: CAC 485. Offered  Spring semester.",
+		"courseCode": "486",
+		"departmentCode": "COM",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Internship",
+		"description": "Professional semester of supervised internship in a work setting related to the  major field of study. Prerequisites: Completion of departmental core and major core  courses and approval of the department faculty.",
+		"courseCode": "492",
+		"departmentCode": "COM",
+		"creditLow": "8",
+		"creditHigh": "16"
+	},
+	{
+		"title": "Introduction to Media Writing",
+		"description": "Examines a variety of journalistic writing techniques and formats, with a focus on  accurate and concise writing. Students will write for print, broadcast, and the web.  Emphasis is on improving writing/editing and on telling stories across different media  platforms. Offered Fall and Spring semesters.",
+		"courseCode": "115",
+		"departmentCode": "JRN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "JRN",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Foundations of Photojournalism",
+		"description": "Provides a solid understanding of camera use, focusing on camera settings,  equipment, techniques, skills, and concepts of digital photography as applied to  journalistic storytelling for news, features, and photo essay. Students should own or  have access to a digital SLR camera (some department cameras are available to loan).  Prerequisite: CAC 156 or ART 156. Offered Spring semester of odd years.",
+		"courseCode": "225",
+		"departmentCode": "JRN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Introduction to Sports Writing",
+		"description": "This introductory course in sports writing and reporting covers the basics of how to  create and pursue story ideas, then write and execute them for public consumption,  whether in print or online. Students will receive experience covering live sporting  events of area high school, collegiate, or professional athletic teams and writing  stories about the same.",
+		"courseCode": "230",
+		"departmentCode": "JRN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Introduction to Multimedia Storytelling",
+		"description": "Teaches students basics of multimedia storytelling best practices to produce  multimedia news and feature stories via video, audio, photography, research and  writing. Specifically, this course will help prepare students to further develop their  skills as reporters, interviewers, writers, photographers and audio/video recorders,  and editors for traditional media, nonprofits, business, and industry. Prerequisites: JRN  115; JRN 225 is preferred.",
+		"courseCode": "245",
+		"departmentCode": "JRN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Media and Society",
+		"description": "This course examines the history, operations, and effects of media industries  including magazines, newspapers, radio, television, film, public relations, advertising, and the Internet. Offered Fall and Spring semesters.",
+		"courseCode": "255",
+		"departmentCode": "JRN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "JRN",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Media Laboratory",
+		"description": "Two hours may be earned per semester by students holding the top leadership  positions in authorized campus student communications: newspaper, yearbook,  radio, or in-house production. One hour of credit may be earned per semester by  those holding secondary media positions. Media lab hours may also be earned for  special departmental projects approved by the faculty advisor and department chair.  A maximum of eight hours of media lab may be counted toward graduation. Offered Fall and Spring semesters. Prerequisite: Instructor permission.",
+		"courseCode": "300",
+		"departmentCode": "JRN",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Advanced Media Writing",
+		"description": "Explores in-depth journalistic writing, introducing students to advanced research and  interviewing methods, writing, and editing. Prerequisite: JRN 115.",
+		"courseCode": "315",
+		"departmentCode": "JRN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Layout and Design",
+		"description": "Provides communication students with an understanding of the basic principles of  graphic design. Students will learn to recognize, evaluate, and create good design by  practicing the points presented in class. Prerequisites: ART 156 or CAC 156; and ART  157 or CAC 157. Meets foundational core participation in the arts requirement. Offered  Fall and Spring semesters.",
+		"courseCode": "332",
+		"departmentCode": "JRN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Networking Study Trip",
+		"description": "Offers an off-campus, partially online course. Students spend the equivalent of one  week in a midwest city (e.g. Chicago, Columbus, Grand Rapids). Students read and  research corporate culture and communication before visiting various organizations  (both NFP and corporate). Offered Interterm of even years. Course fee.",
+		"courseCode": "355",
+		"departmentCode": "JRN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "JRN",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "JRN",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally,  one hour of credit is awarded for a minimum of 40 hours of practicum experience.  Offered primarily during Summer.",
+		"courseCode": "393",
+		"departmentCode": "JRN",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Magazine Production and Feature Writing",
+		"description": "Develops advanced student research and reporting skills in magazine writing.  Specifically, this course prepares students to be competent reporters, interviewers,  designers, and writers as they plan and create a magazine. The course also  introduces students to the magazine industry and its inner workings. Prerequisites:  JRN 115 and JRN 332. Offered Fall semester of even years.",
+		"courseCode": "435",
+		"departmentCode": "JRN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory.",
+		"courseCode": "450",
+		"departmentCode": "JRN",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Media Agency",
+		"description": "Provides a real-world, client-focused experience for students through an in-house  media agency. Select students will manage media campaigns from start to  completion, assuming a variety of roles: writing, graphic design, web design, social  media, public relations, photography, and communication strategy. Prerequisites: JRN  332, significant upper division courses in the major, and instructor permission. Offered  Fall semester of even years.",
+		"courseCode": "457",
+		"departmentCode": "JRN",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Seminar",
+		"description": "A limited-enrollment course designed especially for upper-class majors with  emphasis on directed readings and discussion.",
+		"courseCode": "480",
+		"departmentCode": "JRN",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Senior Portfolio Development",
+		"description": "Senior journalism majors will complete a senior portfolio. Prerequisites: CAC 485  and senior status. Offered Spring semester.",
+		"courseCode": "486",
+		"departmentCode": "JRN",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major.  Open to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "JRN",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Internship",
+		"description": "Professional semester of supervised internship in a work setting related to the  major field of study. Prerequisites: Completion of departmental core and major core  courses and approval of the department faculty.",
+		"courseCode": "492",
+		"departmentCode": "JRN",
+		"creditLow": "8",
+		"creditHigh": "16"
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "PBR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Introduction to Public Relations",
+		"description": "Analyzes public relations theory and practice, examining public relations  environments, audiences, and message strategies. Emphasis is placed on history,  ethics, writing, and crisis management. Offered Fall semester and offered Spring  semester as needed.",
+		"courseCode": "261",
+		"departmentCode": "PBR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "PBR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Media Laboratory",
+		"description": "Two hours may be earned per semester by students holding the top leadership positions  in authorized campus student communications: newspaper, yearbook, radio or in-house  production. One hour of credit may be earned per semester by those holding secondary  media positions. Media lab hours may also be earned for special departmental projects  approved by the faculty advisor and department chair. A maximum of eight hours of  media lab may be counted toward graduation. Offered Fall and Spring semesters.  Prerequisite: instructor permission.",
+		"courseCode": "300",
+		"departmentCode": "PBR",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Networking Study Trip",
+		"description": "Offers an off-campus, partially online course. Students spend the equivalent of one  week in a midwest city (e.g. Chicago, Columbus, Grand Rapids). Students read and research corporate culture and communication before visiting various organizations  (both NFP and corporate). Offered Interterm of even years or as needed. Course fee.",
+		"courseCode": "355",
+		"departmentCode": "PBR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "PBR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Public Relations Cases and Campaigns",
+		"description": "Examines the theory and practice behind creating a public relations campaign and a  communication case study. Students work with clients to produce a strategic  campaign. They also write a case study following the guidelines of the Arthur Page  Society. Prerequisite: PBR 261. Offered Fall semester.",
+		"courseCode": "361",
+		"departmentCode": "PBR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "PBR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally,  one hour of credit is awarded for a minimum of 40 hours of practicum experience.  Offered primarily during Summer.",
+		"courseCode": "393",
+		"departmentCode": "PBR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory.",
+		"courseCode": "450",
+		"departmentCode": "PBR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Event and Venue Planning",
+		"description": "Focuses on the event planning aspect of public relations. Students learn concepts  of venue and event planning and management from theory to the initial phases to  the evaluation phase of a major event they plan throughout the semester.  Prerequisite: PBR 261. Offered Fall semester of odd years.",
+		"courseCode": "455",
+		"departmentCode": "PBR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Media Agency",
+		"description": "Provides a real-world, client-focused experience for students through an in-house  media agency. Select students will manage media campaigns from start to  completion, assuming a variety of roles: writing, graphic design, web design, social  media, public relations, photography, and communication strategy. Prerequisites: JRN 332, significant upper division courses in the major, and instructor permission.",
+		"courseCode": "457",
+		"departmentCode": "PBR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Public Relations Writing and Production",
+		"description": "Emphasizes the development and application of public relations writing, including  promotional kits, grant proposals, pitches, and other forms of PR writing. This class  connects with outside clients for real-world experience. Prerequisites: JRN 115 and  PBR 261. Offered Spring semester.",
+		"courseCode": "461",
+		"departmentCode": "PBR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Seminar",
+		"description": "A limited-enrollment course designed especially for upper-class majors with  emphasis on directed readings and discussion.",
+		"courseCode": "480",
+		"departmentCode": "PBR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Senior Portfolio Development",
+		"description": "Senior public relations majors will complete a senior portfolio. Prerequisite: CAC  485. Offered Spring semester.",
+		"courseCode": "486",
+		"departmentCode": "PBR",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major.  Open to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "PBR",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Internship",
+		"description": "Professional semester of supervised internship in a work setting related to the  major field of study. Prerequisites: Completion of departmental core and approval of the  department faculty.",
+		"courseCode": "492",
+		"departmentCode": "PBR",
+		"creditLow": "8",
+		"creditHigh": "16"
+	},
+	{
+		"title": "Introduction to Professional Writing",
+		"description": "Introduces the fundamentals of becoming a professional writer and how using words well  translates into many areas of the job world–publishing and beyond. Foundational course  for professional writing majors and minors. Offered Fall semester.",
+		"courseCode": "101",
+		"departmentCode": "PWR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "170",
+		"departmentCode": "PWR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "The Writer’s Craft",
+		"description": "Studies the writer's art. This course considers literary models from a writer's perspective,  examining elements of classic and contemporary fiction and nonfiction and discussing their  application. It emphasizes reading to develop skill in writing. Prerequisite: PWR 101. Offered  Spring semester.",
+		"courseCode": "215",
+		"departmentCode": "PWR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Technical Writing",
+		"description": "Technical Writing prepares students to design effective technical documents for both  written and oral communication. The course emphasizes business communications,  technical reports, scientific papers, compliance reporting, and technical documentation.",
+		"courseCode": "230",
+		"departmentCode": "PWR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Editing",
+		"description": "Provides training in content editing, copyediting, and proofreading for book publishers,  magazines, and newspapers. Prerequisites: JRN 115 and PWR 101. Offered Fall semester.",
+		"courseCode": "243",
+		"departmentCode": "PWR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "270",
+		"departmentCode": "PWR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Article Writing I",
+		"description": "An introduction to writing from a Christian worldview and an overview of the  different writing genres, with an emphasis on writing articles for publication.  Stresses functional skills such as self-editing, interviewing techniques, developing  vocabulary skills, and learning to cover news. Through readings and writing  assignments, the student will follow a step-by-step process of learning the foundations  of article writing. This course is offered through Taylor University Online (TUO).",
+		"courseCode": "313",
+		"departmentCode": "PWR",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Article Writing II",
+		"description": "A course concentrating on finding, evaluating, researching, and writing the various  kinds of non-fiction articles. Self-editing, interviewing techniques, and developing  vocabulary skills are emphasized as students write humor, how-to, inspirational,  investigative, opinion, and other types of articles. Building on the foundational skills  learned in Article Writing I, students will learn the advanced specialty areas of  article writing. This course is offered through Taylor University Online (TUO).",
+		"courseCode": "314",
+		"departmentCode": "PWR",
+		"creditLow": "2",
+		"creditHigh": null
+	},
+	{
+		"title": "Non-Fiction and Scriptwriting",
+		"description": "Introductory course and workshop in the instruction and practice of writing non fiction and scriptwriting. This course is offered through Taylor University Online (TUO).",
+		"courseCode": "323",
+		"departmentCode": "PWR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Introduction to Fiction Writing",
+		"description": "An introductory course concentrating on the instruction and practice of writing  fiction. This course is offered through Taylor University Online (TUO).",
+		"courseCode": "327",
+		"departmentCode": "PWR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Inspirational Writing",
+		"description": "Focuses on writing for the Christian market: nonfiction (using the Bible well to write good  Bible questions for studies and lesson plans for various age groups), devotionals, personal  testimonies, and fiction (e.g., short stories, flash fiction). Students develop the ability to  write in a captivating manner, showing solid Bible knowledge and understanding. Students  also explore Christian writers past and present. Prerequisite: PWR 101.",
+		"courseCode": "345",
+		"departmentCode": "PWR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Independent Study",
+		"description": "An individualized, directed study involving a specified topic.",
+		"courseCode": "360",
+		"departmentCode": "PWR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Writing Seminar",
+		"description": "Concentrated instruction in an area of specialized writing. Writers in residence lead  classes and writing workshops on such topics as Detective Fiction, Inspirational Writing,  Biography, Magazine Features, Screenplays, and Writing for Children and Young Adults.  Students may receive credit for approved off-campus experiences such as the Los Angeles Film  Studies Program and semester at York St. John University. Prerequisite: Permission of chair of  the Communication Department.",
+		"courseCode": "365",
+		"departmentCode": "PWR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Selected Topics",
+		"description": "A course offered on a subject of interest but not listed as a regular course offering.",
+		"courseCode": "370",
+		"departmentCode": "PWR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Practicum",
+		"description": "Supervised learning involving a first-hand field experience or a project. Generally, one  hour of credit is awarded for a minimum of 40 hours of practicum experience.",
+		"courseCode": "393",
+		"departmentCode": "PWR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Advanced Non-Fiction Writing",
+		"description": "The purpose of this course is to provide advanced academic instruction in applying  ethical principles to the process of gathering, analyzing and integrating information  into powerful nonfiction books. The ultimate goal is to seek out powerful stories  reflecting a Christian worldview and in all work to clearly and accurately  communicate truth. This course is offered through Taylor University Online (TUO).",
+		"courseCode": "423",
+		"departmentCode": "PWR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Advanced Fiction Writing",
+		"description": "The purpose of this course is to provide academic instruction in reviewing classic  and current prominent fiction written from a Christian perspective, analyzing  current fiction and novels, and learning the basics of writing effective fiction. The  ultimate goal is to clearly and accurately communicate themes that reflect a  Christian worldview in an excellent and effective manner. Prerequisites: PWR 313,  PWR 314, PWR 323, and PWR 327. This course is offered through Taylor University  Online (TUO).",
+		"courseCode": "427",
+		"departmentCode": "PWR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Book Editing and Publishing",
+		"description": "Students participate in the process of turning a manuscript into a print-ready book.  Instructor will solicit manuscripts (potentially from faculty or other established  writers) and walk students through the entire process as if they are a publishing house.  Students will study publishing houses in depth, work as publishing boards, create pro  formas and budgets, work as agents and acquisition editors, then as editors and copy  editors. Offered Spring semester.",
+		"courseCode": "444",
+		"departmentCode": "PWR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Directed Research",
+		"description": "Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory.",
+		"courseCode": "450",
+		"departmentCode": "PWR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Freelance Writing",
+		"description": "Offers experience in the techniques and strategies of freelance writing. This course  focuses on writing and marketing manuscripts for both religious and secular publications.  Students will be required to submit work for publication. Prerequisite: PWR 101 or  instructor permission. Offered Fall semester.",
+		"courseCode": "472",
+		"departmentCode": "PWR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Writing for Publication",
+		"description": "Intensive seminar on writing manuscripts for publication. Course offered in  partnership with \"Write to Publish\" conference, often held in Wheaton each June.  Students participate in conference and attend workshops with authors, editors,  literary agents, and publishers. Students then work closely with instructor to  prepare manuscripts for publication. In addition to tuition, students must pay  conference registration fee. Offered Summer term.",
+		"courseCode": "475",
+		"departmentCode": "PWR",
+		"creditLow": "3",
+		"creditHigh": null
+	},
+	{
+		"title": "Seminar",
+		"description": "A limited-enrollment course designed especially for upper-class majors with  emphasis on directed readings and discussion.",
+		"courseCode": "480",
+		"departmentCode": "PWR",
+		"creditLow": "1",
+		"creditHigh": "4"
+	},
+	{
+		"title": "Senior Paper/Portfolio Development",
+		"description": "Seniors will develop their senior paper/portfolio. Prerequisite: CAC 485. Offered  Spring semester.",
+		"courseCode": "486",
+		"departmentCode": "PWR",
+		"creditLow": "1",
+		"creditHigh": null
+	},
+	{
+		"title": "Honors",
+		"description": "Individualized study or research of an advanced topic within a student’s major.  Open to students with at least a 3.00 GPA in the major field.",
+		"courseCode": "490",
+		"departmentCode": "PWR",
+		"creditLow": "1",
+		"creditHigh": "2"
+	},
+	{
+		"title": "Internship",
+		"description": "Professional semester of supervised internship in a work setting related to the  major field of study. Prerequisites: Completion of departmental core and major core  courses and approval of the department faculty.",
+		"courseCode": "492",
+		"departmentCode": "PWR",
+		"creditLow": "8",
+		"creditHigh": "16"
+	}
+]

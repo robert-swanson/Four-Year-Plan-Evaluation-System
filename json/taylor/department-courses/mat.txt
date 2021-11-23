@@ -1,0 +1,137 @@
+﻿MAT 100 1 hour 
+Mathematics Fundamentals 
+A study of the basic arithmetic operations, exponents, ratios, linear and quadratic  equations, graphs, and story problems. This course is specifically designed to assist those  students who need help for the mathematics proficiency examination. Pass/fail only. Does  not count toward a mathematics major or minor. 
+NOTE: MAT 100 or proficiency by an approved exam 
+is a prerequisite to all other Mathematics courses.
+MAT 110 3 hours 
+Finite Mathematics 
+A study of selected topics from set theory, matrices, systems of linear equations and  inequalities, linear programming, counting and probability, statistics, and mathematics of  finance. Prerequisite: A good understanding of algebra. Does not count toward a mathematics  major or minor. Meets foundational core mathematics requirement. 
+MAT 120 3 hours 
+Investigations in Mathematics 
+A course designed to engage students in relevant college-level mathematics and its  connection to the Christian faith and everyday life. Students will experience interesting  questions and real-life applications of mathematics from a variety of contexts while using  appropriate technology. Emphasis will be on thinking, reasoning, and exploring patterns  as well as communicating mathematical ideas. Topics will be chosen from data analysis,  modeling, probability, statistics, mathematics of finance, logic, infinity, geometric  applications, and fundamentals of problem solving. Does not count toward a mathematics  major or minor. Meets foundational core mathematics requirement. 
+3MAT 140 3 hours 
+Fundamental Calculus for Applications 
+An introductory study of derivatives, series, and integrals with a wide range of  applications, including maximum and minimum problems. Prerequisite: A good  understanding of algebra. Does not count toward a mathematics major or minor. Meets  foundational core mathematics requirement.  
+MAT 145 3 hours 
+Introduction to Functions and Calculus 
+The MAT 145-146 sequence aims to provide a deep understanding of topics from  precalculus and calculus as well as a strong sense of their usefulness. Fundamental ideas  of calculus, specifically rates of change, are introduced early and used to provide a  framework for the study of mathematical modeling involving algebraic, exponential, and  logarithmic functions. Applications to business, economics, and science are emphasized.  Meets foundational core mathematics requirement. MAT 145-146 may be taken as a two semester substitute for MAT 151. 
+MAT 146 3 hours 
+Functions and Calculus 
+MAT 146 is the second of a two-course sequence which begins with MAT 145, and continues  the investigation of functions, including trigonometric functions, and their rate of change.  Students are introduced to integrals and methods of integrations with applications. Further  topics, such as infinite series and differential equations are included. Prerequisite: MAT 145. MAT  145-146 may be taken as a two-semester substitute for MAT 151. 
+MAT 151 4 hours 
+Calculus I 
+A study of functions, including algebraic and trigonometric functions. An introduction to  the algebraic, numerical, and graphical approaches to calculus, including limits, continuity,  derivatives, integrals, and applications. Prerequisite: A good understanding of algebra and  trigonometry. Meets foundational core mathematics requirement. MAT 145 and MAT 146 may  be taken as a two-semester substitute for MAT 151. 
+MAT 170 1-4 hours 
+Selected Topics 
+A course offered on a subject of interest but not listed as a regular course offering.  MAT 180 3 hours 
+Problem Solving 
+An introduction to the mathematical sciences through the study of problem solving. An  overview of various methods of problem solving to discover patterns, construct and  modify conjectures and develop proofs of those conjectures. There will be an emphasis  on developing creativity, confidence, and concentration. Content areas studied will  include algebra, combinatorics, number theory and calculus, all from a problem-solving  point of view. Prerequisite: MAT 151 or one semester of high school calculus. Meets  foundational core mathematics requirement. 
+MAT 205 2 hours 
+Explorations in Elementary School Mathematics 
+An introductory math course for elementary education majors that focuses on helping  prospective teachers develop an understanding of the topics of algebra, probability, and  data analysis as they relate to the elementary school curriculum. Two hours of lecture  and one hour of lab. 
+MAT 210 4 hours 
+Introductory Statistics 
+A study of basic statistical methods with a focus on applied data analysis in a group  setting using statistical software. Develops proficiency in the use of descriptive  methods, sampling, linear regression and correlation, probability theory and  distributions, statistical inference techniques for estimation and hypothesis testing  and experimental design. Meets foundational core mathematics requirement. 
+MAT 215 3 hours 
+Discrete Mathematics for Computer Science 
+Discrete mathematics concepts are studied that are foundational for further study in  computer science. Topics include propositional logic and quantifiers, proofs with  emphasis on induction, relations and functions on sets, graph theory, solution of  certain classes of recurrence and equivalence relations, combinatorics, and discrete  probability. Prerequisites: COS 120 or COS 130 or SYS 120; and MAT 146 or MAT 151. 
+MAT 220 4 hours 
+Ways of Knowing 
+Topics studied include number, logic, Euclidean and non-Euclidean geometry,  algebraic structures, dimension, and infinity. A study is made of the deductive  method in mathematics and its relationship to ways of knowing in other areas. There  is an emphasis on the beauty of mathematics and the relationship of mathematics to  science and other forms of culture including the arts and religion. Course is offered  within the Honors Guild. Meets foundational core mathematics requirement. 
+MAT 230 4 hours 
+Calculus II 
+A study of analytic geometry, functions, limits and derivatives, differentiation and  integration of algebraic functions and elementary transcendental functions,  applications of the integral, the definite integral, sequences, series, Taylor’s formula,  and special techniques of integration. Prerequisite: MAT 146 or MAT 151. 
+MAT 240 4 hours 
+Calculus III 
+This is the final course in the three-course sequence that is the standard complete  introduction to the concepts and methods of calculus. The emphasis is on concepts  and solving problems rather than on theory and proof. The course presents the  concepts of calculus from three points of view: geometric, numeric, and algebraic.  Topics typically include multivariable functions; contour diagrams and cross-sections;  vectors; the dot product and the cross product; vector projection; partial derivatives;  the gradient; directional derivatives; local linearity; local extrema and critical points;  double integrals in Cartesian and polar coordinates; triple integrals in Cartesian,  cylindrical, and spherical coordinates; parametric curves; vector fields; line integrals;  gradient fields, path-independence, and the Fundamental Theorem of Calculus for  Line Integrals; Green's Theorem; flux integrals; and the Divergence Theorem and  Stokes' Theorem. Prerequisite: MAT 230. 
+MAT 251 4 hours 
+Differential Equations 
+This course is about analytic, graphical, and numerical techniques for solving ordinary  differential equations and systems of ordinary differential equations. Students will  also study "real world" phenomena using ordinary differential equations. Topics  typically include separation of variables; slope fields; linear first-order equations and  the method of integrating factors; Euler's method for both first- and second-order  autonomous equations; phase lines; methods for solving second-order linear  equations with constant coefficients having exponential, polynomial, or sinusoidal  forcing functions, including the method of undetermined coefficients, the method of  integrating factors, and the method of finding series solutions; spring-mass systems;  linear systems of equations of the form x' = Ax; the trace-determinant plane; Laplace  transforms; and existence and uniqueness theorems for various families of equations.  Prerequisite: MAT 240. Offered Spring semester. 
+MAT 255 3 hours 
+Justifications in Mathematics 
+The purpose of this course is for students to acquire the ability to create and express  mathematical arguments through the exploration of mathematical ideas. In addition  to gaining an understanding and appreciation for important and interesting  mathematics, students will develop an ability to think creatively, to analyze critically,  and to communicate clearly and correctly using mathematical reasoning and  argumentation. Students are introduced to logic, number theory, sets, functions,  infinity, graph theory, and abstract algebra, with an emphasis on proof techniques  throughout. Prerequisite: MAT 151. Offered Fall semester. 
+MAT 261 1 hour 
+Special Problems 
+Selected topics in mathematics. Prerequisite: Consent of the department chair. 
+MAT 262 1 hour 
+Special Problems-TEMP 
+Selected topics in mathematics.  
+MAT 270 1-4 hours 
+Selected Topics 
+A course offered on a subject of interest but not listed as a regular course offering.  
+MAT 280 3 hours 
+Mathematics in the Junior High/Middle School 
+An integrated content-methods course for middle school and introductory high  school preparation. This course includes the mathematical strands of reasoning and  algebra, rational numbers, geometry/measurement, and data analysis and probability,  interwoven with the connections to appropriate pedagogical strategies for middle  grades’ teaching and learning. Should be taken with an education course with a field based teaching lab component (e.g. JuMP, EDU 222, EDU 332). Mathematics and elementary  education majors only or permission of the instructor. Offered Spring semester of even years. 
+MAT 285 3 hours 
+Technology for Mathematics Education 
+The course will cover effective use of technology in a mathematics classroom and  the inextricable connection between technology, pedagogy, and content  knowledge. Students will also explore and think critically about how technology  use relates to their faith. The course will focus on free, web-based technologies  and pedagogical principles that are relevant regardless of the technology used. All  student artifacts (e.g., homework, lesson plans, and personal statement of  technology) will be collected into a digital portfolio for future use. Meets  foundation core computation requirement. Prerequisites: MAT 151 and EDU 150;  or permission of instructor. 
+MAT 301 3 hours 
+Number Concepts for Elementary Teachers 
+A junior-level integrated content-methods course for elementary teacher  preparation. The course includes a study of number systems and operations with  emphasis on current standards and research-based pedagogical practices which  focus on communication, reasoning, and representation standards. Each student will  also participate in corresponding field experience (JuMP practicum). Prerequisite:  approval into the teacher education program. Does not count toward a mathematics major  or minor. Open to majors in elementary education. The MAT 301-302 sequence meets the  mathematics foundational core requirement. 
+MAT 302 3 hours 
+Geometry and Measurement for Elementary Teachers
+A junior-level integrated content-methods course for elementary teacher  preparation. The course utilizes a problem-solving approach to the study of  geometry and measurement with emphasis on current standards and research based pedagogical practices which focus on communication, reasoning, and  representation. Each student will also participate in a corresponding field  experience (JuMP practicum). Prerequisite: approval into the teacher education  program and MAT 301. Does not count toward a mathematics major or minor. Open to  majors in elementary education. The MAT 301-302 sequence meets the mathematics  foundational core requirement. 
+MAT 309 2 hours 
+Teaching Math in Secondary Schools 
+This course is designed to assist teacher candidates in developing their pedagogical  content knowledge in the area of mathematics. It addresses such topics as lesson  planning, higher-order thinking, professional development, content-appropriate  teaching strategies, standards-based instruction, assessment of student learning,  educational technology, motivational techniques, and instructional resources.  National and state math standards are examined as a basis for reflective teaching  and best practices. Should be taken with an education course that has a field-based  teaching lab component (e.g. EDU 222 or EDU 332). Prerequisites: EDU 150 and  EDU 260. Offered Spring semester of odd years.  
+MAT 310 3 hours 
+Mathematical Modeling with Numerical Analysis 
+An introduction to modeling and the methods, techniques, and pitfalls in scientific  computing and numerical analysis. The course will emphasize projects, writing,  technology, and applications. Topics include iterative and algorithmic processes,  error analysis, numerical integration and differentiation, curve fitting, and numerical  solutions to different equations. Prerequisites: COS 120 or COS 130 or SYS 120; and  MAT 240. Offered Fall semester of even years.  
+MAT 311 3 hours 
+Introduction to Data Science  
+Provides a practical foundation to data science through the data analysis cycle of  data of acquisition, cleaning, transforming, modeling, and interpretation. An  introduction to data wrangling and management with real world applications. The  statistical program R will be introduced. Prerequisites: MAT 210 or MAT 240; COS  120 or SYS 120. 
+MAT 312 4 hours 
+College Geometry 
+Advanced Euclidean plane geometry with a brief survey of some of the non Euclidean geometries and vector and transformational geometry. Prerequisites: MAT  180 or MAT 345. Offered Spring semester of odd years. 
+MAT 340 4 hours 
+Advanced Calculus 
+An introduction to a rigorous development of the fundamental concepts of calculus.  The real numbers and their standard topology, sequences, series, limits,  differentiation, and integration are developed rigorously. Prerequisites: MAT 240;  MAT 180 or MAT 255. Offered Spring semester of even years. 
+MAT 345 4 hours 
+Linear Algebra 
+A course on matrix theory, linear equations and linear dependence, vector spaces  and linear transformations, characteristic equation, quadratic forms, and the singular  value decomposition. Prerequisite: MAT 240. Offered Spring semester of even years. 
+MAT 352 4 hours 
+Mathematical Statistics 
+A theoretical, as well as applied, study of counting outcomes, probability, probability  distributions, sampling distributions, confidence intervals, tests of hypotheses, linear  regression, and correlation. Prerequisite: MAT 240. Offered Fall semester. 
+MAT 353 1 hour  
+Actuarial Exam Preparation (P1)  
+The focus of the course is to prepare students to take the Society of Actuaries Exam P in  probability. Topics include applications of calculus, probability, and statistics to risk  management. Sitting for the Society of Actuaries Exam P is required for successful  completion of the course. Prerequisite: MAT 352 or equivalent. 
+MAT 360 1-4 hours 
+Independent Study 
+An individualized, directed study involving a specified topic.  
+MAT 370 1-4 hours 
+Selected Topics 
+A course offered on a subject of interest but not listed as a regular course offering.  MAT 382 3 hours 
+Advanced Statistical Methods 
+Introduction to a variety of topics including nonparametric statistical methods linear  models, with simple linear regression, multiple regression, and analysis of variance as  special cases of the linear model. The emphasis will be on translating applied questions  into an appropriate statistical model, checking model assumptions, and interpreting  analyses in applied contexts. A brief introduction to time series is included.  Prerequisites: MAT 210 or MAT 352; and MAT 146 or MAT 151. 
+MAT 385 3 hours 
+Mathematics of Finance 
+This course is an introduction to the mathematical models used in finance and  economics with a focus on interest theory (discrete and continuous). The goal is to  provide an understanding of the fundamental concepts of financial mathematics and  how those concepts are applied in calculating present and accumulated values for  various streams of cash flows. Topics include the mathematical foundations of interest  theory, annuities, loans, stocks, financial markets, arbitrage, and financial derivatives.  The course can be used as a foundation for the second actuarial exam. Prerequisites or  corequisites: MAT 352; or both MAT 210 and MAT 230. Offered Fall semester of odd years. MAT 386 1 hour 
+Actuarial Exam Preparation (FM1) 
+The focus of the course is to prepare students to take the Society of Actuaries Exam  FM in Financial Mathematics. Topics include the fundamental concepts of financial  mathematics, calculating present and accumulated values for various streams of cash  flows. Sitting for the Society of Actuaries Exam FM is required for successful  completion of the course. Corequisite: MAT 385 or equivalent. 
+MAT 392 1 hour 
+Mathematics Seminar 
+Each student in the seminar researches a mathematical topic and makes a presentation  to the entire group. Prerequisite: MAT 240. Offered Fall semester. 
+MAT 393 1-4 hours 
+Practicum 
+Supervised learning involving a first-hand field experience or a project. Generally, one  hour of credit is awarded for a minimum of 40 hours of practicum experience. Offered  primarily during the Summer. 
+MAT 450 1-4 hours 
+Directed Research 
+Investigative learning involving closely directed research and the use of such facilities  as the library or laboratory. 
+MAT 455 3 hours 
+Abstract Algebra 
+The development of the postulates of group theory, rings, integral domains, and fields.  Applications to cryptography. Prerequisites: MAT 180 and 240. Offered Spring semester  of odd years. 
+MAT 456 3 hours 
+Advanced Algebra 
+A continued study of Abstract and Linear Algebra. Topics include Galois Theory,  cryptography, and field extensions. Prerequisite: MAT 455. 
+MAT 461 3 hours 
+Real Analysis 
+A study of the Lebesgue integral and its consequences, including convergence theorems,  function spaces, and introductions to measure theory and operator theory. Metric  spaces, uniform convergence of functions, and topological approaches to continuity  are also considered. Prerequisite: MAT 340. Offered Fall semester of even years. 
+MAT 480 1-4 hours 
+Seminar 
+A limited-enrollment course designed especially for upper-class majors with emphasis  on directed readings and discussion.  
+MAT 490 1-2 hours 
+Honors 
+Individualized study or research of an advanced topic within a student’s major. Open  to students with at least a 3.00 GPA in the major field. 
+MAT 493 3 hours 
+Senior Capstone 
+An overview of mathematics with an emphasis on the integration of all areas in  undergraduate mathematics with an exploration of the relationship between  mathematics and the Christian faith. Open to senior status mathematics majors only.  Offered during January interterm. 
