@@ -77,9 +77,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added explanation system, restructured modules">
-      <change afterPath="$PROJECT_DIR$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitmodules" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitmodules" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/Constraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/constraints/Constraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/EqualConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/constraints/EqualConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/GreaterThanConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/constraints/GreaterThanConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/GreaterThanOrEqualConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/constraints/GreaterThanOrEqualConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/LessConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/constraints/LessConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/LessThanConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/constraints/LessThanConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/LessThanOrEqualConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/constraints/LessThanOrEqualConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/MoreConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/constraints/MoreConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/context/Condition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/BooleanContextEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/BooleanContextEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/ContextEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/ContextEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/ScalableContextEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/ScalableContextEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/TermYearContextEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/TermYearContextEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/CourseOfferingAccumulatorEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/general/CourseOfferingAccumulatorEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/CoursesWithProfessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/general/CoursesWithProfessorEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/MeetingAccumulatorEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/general/MeetingAccumulatorEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/MeetingMinutesEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/general/MeetingMinutesEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCoursesEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCoursesEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCoursesFromSetEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCoursesFromSetEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCreditsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCreditsEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCreditsFromSetEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCreditsFromSetEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalUpperLevelCoursesEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalUpperLevelCoursesEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalUpperLevelCreditsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalUpperLevelCreditsEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CourseBeforeCourseEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CourseBeforeCourseEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CourseEndTimeEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CourseEndTimeEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CourseStartTimeEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CourseStartTimeEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CourseTermYearEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CourseTermYearEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CoursesScheduledInSameSemester.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CoursesScheduledInSameSemester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/FirstTermEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/single/FirstTermEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/LastTermEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/single/LastTermEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/NumTermsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/single/NumTermsEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/SingleCourseOfferingEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/single/SingleCourseOfferingEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/MeetingInTimeRangeEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/MeetingInTimeRangeEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/NumTimeBlocksEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/NumTimeBlocksEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/WeekdayEndTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/WeekdayEndTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/WeekdayMeetingEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/WeekdayMeetingEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/WeekdayStartTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/WeekdayStartTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/ConditionResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/explanation/specification/ConditionResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/ConditionalClauseResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/explanation/specification/ConditionalClauseResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/ContextEvaluatorResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/explanation/constraints/ContextEvaluatorResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/constraints/ConstraintResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/explanation/constraints/ConstraintResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/specification/ConditionalSpecificationResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/explanation/specification/ConditionalSpecificationResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/specification/ConditionalSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/specification/ConditionalSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/listener/PSLListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/listener/PSLListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/taylor/sections_interterm_2022_page1.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,7 +360,7 @@
       <workItem from="1637529591139" duration="13805000" />
       <workItem from="1637625825183" duration="6020000" />
       <workItem from="1637701955160" duration="2584000" />
-      <workItem from="1637706635135" duration="260000" />
+      <workItem from="1637706635135" duration="5220000" />
     </task>
     <task id="LOCAL-00001" summary="Started java objects">
       <created>1619497519425</created>

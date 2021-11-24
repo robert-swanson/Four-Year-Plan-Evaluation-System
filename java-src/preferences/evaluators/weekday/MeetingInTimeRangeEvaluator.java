@@ -28,7 +28,7 @@ public class MeetingInTimeRangeEvaluator extends WeekdayMeetingEvaluator impleme
 
 
     @Override
-    public String toString() {
+    public String describe() {
         return "meeting in time range";
     }
 }

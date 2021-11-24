@@ -1,7 +1,7 @@
 package preferences.context;
 
 import preferences.constraints.RequireableConstraint;
-import preferences.explanation.ConditionResultExplanation;
+import preferences.explanation.specification.ConditionResultExplanation;
 import preferences.explanation.Explainable;
 import preferences.explanation.Explanation;
 import preferences.scoring.Score;

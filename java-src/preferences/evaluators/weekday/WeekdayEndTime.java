@@ -12,7 +12,7 @@ public class WeekdayEndTime extends WeekdayMeetingEvaluator implements ScalableC
 
     @Override
     public Result getValue(Context context) {
-        return getValue(context, "Weekday End Time", (meetings, weekday) -> {
+        lastValue = getValue(context, "Weekday End Time", (meetings, weekday) -> {
             Time end = null;
             for (Meeting meeting: meetings) {
                 Time meetingEnd = meeting.getEndTime();
@@ -22,6 +22,7 @@ public class WeekdayEndTime extends WeekdayMeetingEvaluator implements ScalableC
             }
             return new ScalableValue.TimeValue(end);
         });
+        return lastValue;
     }
 
     @Override
@@ -35,7 +36,7 @@ public class WeekdayEndTime extends WeekdayMeetingEvaluator implements ScalableC
     }
 
     @Override
-    public String toString() {
+    public String describe() {
         return "day end time";
     }
 }

@@ -2,6 +2,8 @@ package preferences.evaluators.single;
 
 import objects.misc.CourseID;
 import objects.offerings.CourseOffering;
+import preferences.evaluators.ContextEvaluator;
+import preferences.evaluators.ScalableContextEvaluator;
 import preferences.evaluators.TermYearContextEvaluator;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
@@ -11,7 +13,7 @@ import preferences.result.Result;
 import preferences.result.ScalableValue;
 import preferences.result.Value;
 
-public class CourseTermYearEvaluator implements TermYearContextEvaluator {
+public class CourseTermYearEvaluator extends ContextEvaluator implements TermYearContextEvaluator, ScalableContextEvaluator {
     final private CourseID courseID;
     public CourseTermYearEvaluator(CourseID courseID) {
         this.courseID = courseID;
@@ -28,7 +30,8 @@ public class CourseTermYearEvaluator implements TermYearContextEvaluator {
                 return new PlanResult<>(description, explanation, v);
             }
         }
-        return new PlanResult<>(description, "Course is not scheduled", Value.NULL);
+        lastValue = new PlanResult<>(description, "Course is not scheduled", Value.NULL);
+        return lastValue;
     }
 
     @Override
@@ -42,7 +45,7 @@ public class CourseTermYearEvaluator implements TermYearContextEvaluator {
     }
 
     @Override
-    public String toString() {
+    public String describe() {
         return String.format("%s scheduled", courseID);
     }
 }

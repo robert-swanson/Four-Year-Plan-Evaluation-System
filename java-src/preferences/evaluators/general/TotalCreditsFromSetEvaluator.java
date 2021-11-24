@@ -16,7 +16,8 @@ public class TotalCreditsFromSetEvaluator extends CourseOfferingAccumulatorEvalu
 
     @Override
     public Result getValue(Context context) {
-        return getValue(context, String.format("Total credits from set %s", courseIDSet.toString()), courseOffering -> courseIDSet.contains(courseOffering.getCourse().getCourseID()) ? courseOffering.getCredits() : 0);
+        lastValue = getValue(context, String.format("Total credits from set %s", courseIDSet.toString()), courseOffering -> courseIDSet.contains(courseOffering.getCourse().getCourseID()) ? courseOffering.getCredits() : 0);
+        return lastValue;
     }
 
     @Override
@@ -30,7 +31,7 @@ public class TotalCreditsFromSetEvaluator extends CourseOfferingAccumulatorEvalu
     }
 
     @Override
-    public String toString() {
+    public String describe() {
         return String.format("credits from %s", courseIDSet.toString());
     }
 }

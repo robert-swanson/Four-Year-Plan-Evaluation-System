@@ -35,7 +35,7 @@ public class WeekdayStartTime extends WeekdayMeetingEvaluator implements Scalabl
     }
 
     @Override
-    public String toString() {
+    public String describe() {
         return "day start time";
     }
 }

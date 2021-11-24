@@ -1,4 +1,10 @@
 package preferences.evaluators;
 
-public interface BooleanContextEvaluator extends ContextEvaluator {
+import preferences.context.Context;
+import preferences.result.Result;
+import preferences.result.ScalableValue;
+import preferences.result.Value;
+
+public interface BooleanContextEvaluator {
+    public abstract Result<Value.Boolean> getValue(Context context);
 }

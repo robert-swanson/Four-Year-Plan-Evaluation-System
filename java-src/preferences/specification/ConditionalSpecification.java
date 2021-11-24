@@ -2,7 +2,7 @@ package preferences.specification;
 
 import preferences.context.Condition;
 import preferences.context.Context;
-import preferences.explanation.ConditionalClauseResultExplanation;
+import preferences.explanation.specification.ConditionalClauseResultExplanation;
 import preferences.explanation.Explainable;
 import preferences.explanation.specification.ConditionalSpecificationResultExplanation;
 import preferences.scoring.Score;

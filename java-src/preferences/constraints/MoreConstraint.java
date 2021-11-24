@@ -21,8 +21,8 @@ public class MoreConstraint extends Constraint {
 
     @Override
     public ConstraintResultExplanation explainLastResult() {
-        return new ConstraintResultExplanation(this);
         // TODO: Add evaluation explanation
+        return super.explainLastResult();
     }
 
     @Override

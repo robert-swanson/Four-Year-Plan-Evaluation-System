@@ -8,7 +8,8 @@ import preferences.result.*;
 public class TotalCreditsEvaluator extends CourseOfferingAccumulatorEvaluator {
     @Override
     public Result getValue(Context context) {
-        return getValue(context, "Total credits", CourseOffering::getCredits);
+        lastValue = getValue(context, "Total credits", CourseOffering::getCredits);
+        return lastValue;
     }
 
     @Override
@@ -22,7 +23,7 @@ public class TotalCreditsEvaluator extends CourseOfferingAccumulatorEvaluator {
     }
 
     @Override
-    public String toString() {
+    public String describe() {
         return "credits";
     }
 }

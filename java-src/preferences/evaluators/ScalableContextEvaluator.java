@@ -1,8 +1,12 @@
 package preferences.evaluators;
 
+import preferences.context.Context;
 import preferences.context.ContextLevel;
+import preferences.result.Result;
+import preferences.result.ScalableValue;
 
-public interface ScalableContextEvaluator extends ContextEvaluator {
-    double getDeviance(ContextLevel contextLevel);
-    double getAverage(ContextLevel contextLevel);
+public interface ScalableContextEvaluator {
+    public abstract double getDeviance(ContextLevel contextLevel);
+    public abstract double getAverage(ContextLevel contextLevel);
+    public abstract Result<ScalableValue> getValue(Context context);
 }

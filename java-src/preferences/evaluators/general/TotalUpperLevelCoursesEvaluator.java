@@ -7,7 +7,8 @@ import preferences.result.Result;
 public class TotalUpperLevelCoursesEvaluator extends CourseOfferingAccumulatorEvaluator {
     @Override
     public Result getValue(Context context) {
-        return getValue(context, "Total upper level courses", courseOffering -> courseOffering.getCourse().getNumber() >= 300 ? 1 : 0);
+        lastValue = getValue(context, "Total upper level courses", courseOffering -> courseOffering.getCourse().getNumber() >= 300 ? 1 : 0);
+        return lastValue;
     }
 
     @Override
@@ -21,7 +22,7 @@ public class TotalUpperLevelCoursesEvaluator extends CourseOfferingAccumulatorEv
     }
 
     @Override
-    public String toString() {
+    public String describe() {
         return "upper level courses";
     }
 }

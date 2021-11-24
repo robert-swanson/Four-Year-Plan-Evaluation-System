@@ -21,5 +21,7 @@ public abstract class Constraint implements Explainable {
     }
 
     public abstract Result score(Context context);
-    public abstract ConstraintResultExplanation explainLastResult();
+    public ConstraintResultExplanation explainLastResult() {
+        return new ConstraintResultExplanation(this, contextEvaluator);
+    }
 }

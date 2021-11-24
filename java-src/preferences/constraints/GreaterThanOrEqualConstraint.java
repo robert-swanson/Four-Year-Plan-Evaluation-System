@@ -22,8 +22,8 @@ public class GreaterThanOrEqualConstraint extends RequireableConstraint {
 
     @Override
     public ConstraintResultExplanation explainLastResult() {
-        return new ConstraintResultExplanation(this);
         // TODO: Add evaluation explanation
+        return super.explainLastResult();
     }
 
     @Override

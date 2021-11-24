@@ -3,10 +3,11 @@ package preferences.evaluators.single;
 import objects.misc.CourseID;
 import objects.offerings.CourseOffering;
 import preferences.context.Context;
+import preferences.evaluators.ContextEvaluator;
 import preferences.evaluators.ScalableContextEvaluator;
 import preferences.result.*;
 
-public abstract class SingleCourseOfferingEvaluator implements ScalableContextEvaluator {
+public abstract class SingleCourseOfferingEvaluator extends ContextEvaluator {
     protected CourseID courseID;
 
     public interface CourseOfferingValue {

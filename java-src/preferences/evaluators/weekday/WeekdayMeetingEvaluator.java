@@ -14,7 +14,7 @@ import preferences.result.Value;
 
 import java.util.ArrayList;
 
-public abstract class WeekdayMeetingEvaluator extends MeetingAccumulatorEvaluator implements ContextEvaluator {
+public abstract class WeekdayMeetingEvaluator extends ContextEvaluator {
     public interface WeekdayValue {
         Value get(WeekdayMeetingIterable meetings, Weekday weekday);
     }

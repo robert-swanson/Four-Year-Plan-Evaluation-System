@@ -6,13 +6,14 @@ import objects.offerings.CourseOffering;
 import preferences.context.Context;
 import preferences.evaluators.BooleanContextEvaluator;
 import preferences.context.iterables.courseoffering.PlanCourseOfferingIterator;
+import preferences.evaluators.ContextEvaluator;
 import preferences.result.PlanResult;
 import preferences.result.Result;
 import preferences.result.Value;
 
 import java.util.Set;
 
-public class CoursesScheduledInSameSemester implements BooleanContextEvaluator {
+public class CoursesScheduledInSameSemester extends ContextEvaluator implements BooleanContextEvaluator {
     Set<CourseID> courseIDS;
     public CoursesScheduledInSameSemester(Set<CourseID> courseIDS) {
         this.courseIDS = courseIDS;
@@ -38,11 +39,12 @@ public class CoursesScheduledInSameSemester implements BooleanContextEvaluator {
                 }
             }
         }
-        return new PlanResult<>(description, explanation, value);
+        lastValue = new PlanResult<>(description, explanation, value);
+        return lastValue;
     }
 
     @Override
-    public String toString() {
+    public String describe() {
         return String.format("%s scheduled in same semester", courseIDS);
     }
 }

@@ -2,12 +2,13 @@ package preferences.evaluators.general;
 
 import objects.offerings.CourseOffering;
 import preferences.context.Context;
+import preferences.evaluators.ContextEvaluator;
 import preferences.evaluators.ScalableContextEvaluator;
 import preferences.context.iterables.courseoffering.PlanTermCourseOfferingIterable;
 import preferences.context.iterables.courseoffering.TermCourseOfferingIterable;
 import preferences.result.*;
 
-public abstract class CourseOfferingAccumulatorEvaluator implements ScalableContextEvaluator {
+public abstract class CourseOfferingAccumulatorEvaluator extends ContextEvaluator implements ScalableContextEvaluator {
     public interface CourseOfferingAttribute {
         double get(CourseOffering courseOffering);
     }

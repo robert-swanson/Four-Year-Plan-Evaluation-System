@@ -5,11 +5,12 @@ import preferences.context.Context;
 import preferences.context.WeekSubContext;
 import preferences.evaluators.ContextEvaluator;
 import preferences.context.iterables.meeting.*;
+import preferences.evaluators.ScalableContextEvaluator;
 import preferences.result.*;
 
 import java.util.ArrayList;
 
-public abstract class MeetingAccumulatorEvaluator implements ContextEvaluator {
+public abstract class MeetingAccumulatorEvaluator extends ContextEvaluator implements ScalableContextEvaluator {
     public interface MeetingAttribute {
         double get(Meeting meeting);
     }

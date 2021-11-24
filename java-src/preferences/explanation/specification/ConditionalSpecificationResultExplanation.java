@@ -1,6 +1,5 @@
 package preferences.explanation.specification;
 
-import preferences.explanation.ConditionalClauseResultExplanation;
 import preferences.specification.ConditionalSpecification;
 
 import java.util.LinkedList;

@@ -4,21 +4,22 @@ import preferences.context.Context;
 import preferences.context.ContextLevel;
 import preferences.result.Result;
 
-public class CoursesWithProfessor extends CourseOfferingAccumulatorEvaluator {
+public class CoursesWithProfessorEvaluator extends CourseOfferingAccumulatorEvaluator {
     private String professor;
 
-    public CoursesWithProfessor(String professor) {
+    public CoursesWithProfessorEvaluator(String professor) {
         this.professor = professor;
     }
 
     @Override
     public Result getValue(Context context) {
-        return getValue(context, String.format("Total courses with %s", professor), courseOffering -> {
+        lastValue = getValue(context, String.format("Total courses with %s", professor), courseOffering -> {
             for (String thisProf : courseOffering.getProfessors()) {
                 if (professor.equals(thisProf)) return 1;
             }
             return 0;
         });
+        return lastValue;
     }
 
     @Override
@@ -32,7 +33,7 @@ public class CoursesWithProfessor extends CourseOfferingAccumulatorEvaluator {
     }
 
     @Override
-    public String toString() {
+    public String describe() {
         return "courses";
     }
 }

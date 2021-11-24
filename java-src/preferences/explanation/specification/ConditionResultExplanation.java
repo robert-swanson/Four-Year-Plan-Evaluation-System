@@ -1,6 +1,7 @@
-package preferences.explanation;
+package preferences.explanation.specification;
 
 import preferences.context.Condition;
+import preferences.explanation.Explanation;
 
 public abstract class ConditionResultExplanation extends Explanation {
     public ConditionResultExplanation(Condition condition) {

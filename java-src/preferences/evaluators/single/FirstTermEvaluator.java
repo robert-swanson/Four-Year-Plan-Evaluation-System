@@ -1,6 +1,8 @@
 package preferences.evaluators.single;
 
 import objects.misc.TermYear;
+import preferences.evaluators.ContextEvaluator;
+import preferences.evaluators.ScalableContextEvaluator;
 import preferences.evaluators.TermYearContextEvaluator;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
@@ -11,7 +13,7 @@ import preferences.result.Value;
 
 import java.util.Set;
 
-public class FirstTermEvaluator implements TermYearContextEvaluator {
+public class FirstTermEvaluator extends ContextEvaluator implements TermYearContextEvaluator, ScalableContextEvaluator {
     @Override
     public Result getValue(Context context) {
         TermYear first = null;
@@ -24,10 +26,11 @@ public class FirstTermEvaluator implements TermYearContextEvaluator {
             }
         }
         if (first == null) {
-            return new PlanResult<>(description, explanation, Value.NULL);
+            lastValue = new PlanResult<>(description, explanation, Value.NULL);
         } else {
-            return new PlanResult<>(description, explanation, new ScalableValue.TermYearValue(first));
+            lastValue = new PlanResult<>(description, explanation, new ScalableValue.TermYearValue(first));
         }
+        return  lastValue;
     }
 
     @Override
@@ -41,7 +44,7 @@ public class FirstTermEvaluator implements TermYearContextEvaluator {
     }
 
     @Override
-    public String toString() {
+    public String describe() {
         return "first term";
     }
 }

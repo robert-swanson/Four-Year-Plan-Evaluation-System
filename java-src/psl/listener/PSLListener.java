@@ -82,16 +82,16 @@ public class PSLListener extends PSLGrammarBaseListener {
         return parsingContextStack.peek().evaluators.pop();
     }
 
-    private ScalableContextEvaluator getScalableEvaluator() {
+    private ContextEvaluator getScalableEvaluator() {
         ContextEvaluator evaluator = getContextEvaluator();
-        assert evaluator instanceof ScalableContextEvaluator : "Evaluator couldn't be cast to ScalableContextEvaluator";
-        return (ScalableContextEvaluator) evaluator;
+        assert evaluator instanceof ScalableContextEvaluator : "Evaluator must be ScalableContextEvaluator";
+        return evaluator;
     }
 
-    private BooleanContextEvaluator getBooleanEvaluator() {
+    private ContextEvaluator getBooleanEvaluator() {
         ContextEvaluator evaluator = getContextEvaluator();
-        assert evaluator instanceof BooleanContextEvaluator : "Evaluator couldn't be cast to BooleanContextEvaluator";
-        return (BooleanContextEvaluator) evaluator;
+        assert evaluator instanceof BooleanContextEvaluator : "Evaluator must be BooleanContextEvaluator";
+        return evaluator;
     }
 
     @Override
@@ -355,7 +355,7 @@ public class PSLListener extends PSLGrammarBaseListener {
     @Override
     public void exitNumCoursesWithProfessor(PSLGrammarParser.NumCoursesWithProfessorContext ctx) {
         String professor = ctx.professor().getText();
-        addEvaluator(new CoursesWithProfessor(professor));
+        addEvaluator(new CoursesWithProfessorEvaluator(professor));
     }
 
     @Override

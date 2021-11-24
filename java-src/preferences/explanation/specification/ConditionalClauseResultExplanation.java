@@ -1,5 +1,6 @@
-package preferences.explanation;
+package preferences.explanation.specification;
 
+import preferences.explanation.Explanation;
 import preferences.explanation.specification.SpecificationResultExplanation;
 import preferences.specification.ConditionalSpecification;
 

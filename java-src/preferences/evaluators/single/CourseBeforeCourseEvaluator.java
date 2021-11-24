@@ -6,11 +6,12 @@ import objects.offerings.CourseOffering;
 import preferences.context.Context;
 import preferences.evaluators.BooleanContextEvaluator;
 import preferences.context.iterables.courseoffering.PlanCourseOfferingIterator;
+import preferences.evaluators.ContextEvaluator;
 import preferences.result.PlanResult;
 import preferences.result.Result;
 import preferences.result.Value;
 
-public class CourseBeforeCourseEvaluator implements BooleanContextEvaluator {
+public class CourseBeforeCourseEvaluator extends ContextEvaluator implements BooleanContextEvaluator {
     final private CourseID first, second;
     public CourseBeforeCourseEvaluator(CourseID first, CourseID second) {
         this.first = first;
@@ -49,11 +50,12 @@ public class CourseBeforeCourseEvaluator implements BooleanContextEvaluator {
         } else {
             explanation = String.format("Prerequisite (%s: %s) is scheduled before Post-requisite (%s: %s)", first, firstTermYear, second, secondTearmYear);
         }
-        return new PlanResult<>(description, explanation, value);
+        lastValue = new PlanResult<>(description, explanation, value);
+        return lastValue;
     }
 
     @Override
-    public String toString() {
+    public String describe() {
         return String.format("course %s before %s", first, second);
     }
 }

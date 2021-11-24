@@ -2,6 +2,7 @@ package preferences.constraints;
 
 import preferences.context.Context;
 import preferences.context.ContextLevel;
+import preferences.evaluators.ContextEvaluator;
 import preferences.evaluators.ScalableContextEvaluator;
 import preferences.explanation.constraints.ConstraintResultExplanation;
 import preferences.result.Result;
@@ -14,7 +15,7 @@ public class EqualConstraint extends RequireableConstraint {
     private final ScoreFunction scoreFunction;
     private final Value expectedValue;
 
-    public EqualConstraint(ScalableContextEvaluator scalableContextEvaluator, Value value, ContextLevel contextLevel) {
+    public EqualConstraint(ContextEvaluator scalableContextEvaluator, Value value, ContextLevel contextLevel) {
         super(scalableContextEvaluator, ConstraintType.equal, contextLevel);
         this.expectedValue = value;
 
@@ -39,8 +40,8 @@ public class EqualConstraint extends RequireableConstraint {
 
     @Override
     public ConstraintResultExplanation explainLastResult() {
-        return new ConstraintResultExplanation(this);
         // TODO: Add evaluation explanation
+        return super.explainLastResult();
     }
 
     @Override
