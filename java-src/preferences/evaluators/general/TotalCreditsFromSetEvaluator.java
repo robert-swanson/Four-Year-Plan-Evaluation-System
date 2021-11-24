@@ -17,8 +17,8 @@ public class TotalCreditsFromSetEvaluator extends ScalableContextEvaluator {
 
     @Override
     public Result getValue(Context context) {
-        lastValue = CourseOfferingAccumulatorEvaluator.getValue(context, String.format("Total credits from set %s", courseIDSet.toString()), courseOffering -> courseIDSet.contains(courseOffering.getCourse().getCourseID()) ? courseOffering.getCredits() : 0);
-        return lastValue;
+        lastResult = CourseOfferingAccumulatorEvaluator.getValue(context, String.format("Total credits from set %s", courseIDSet.toString()), courseOffering -> courseIDSet.contains(courseOffering.getCourse().getCourseID()) ? courseOffering.getCredits() : 0);
+        return lastResult;
     }
 
     @Override

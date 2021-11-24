@@ -1,9 +1,8 @@
 package preferences.result;
 
-public abstract class Result<ValueType extends Value> {
-    protected final String resultDescription;
-    protected String resultExplanation = "";
-    protected String evaluationExplanation = "";
+import preferences.explanation.Explainable;
+
+public abstract class Result<ValueType extends Value> implements Explainable {
     protected Double calculatedScore;
     protected Boolean calculatedCheck;
 
@@ -14,30 +13,18 @@ public abstract class Result<ValueType extends Value> {
         double score(Value value);
     }
 
-    public Result(String resultDescription) {
-        this.resultDescription = resultDescription;
-    }
-    public void setEvaluationExplanation(String evaluationExplanation) { this.evaluationExplanation = evaluationExplanation; }
-
-    public String getResultExplanation() {
-        return String.format("%s:\n%s%s\n%s", resultDescription, resultExplanation, this, evaluationExplanation);
-    }
-    public void setResultExplanation(String explanation) {
-        this.resultExplanation = explanation;
-    }
-
     public abstract void scoreResult(ResultScorer resultScorer, String scoreFunctionDesc, String checkExplanation);
     public abstract void checkResult(ResultChecker resultChecker, String checkExplanation);
 
-    public String getResultDescription() {
-        return resultDescription;
-    }
-
-    public Double score() {
+    public Double getLastScore() {
         return calculatedScore;
     }
-
     public Boolean getCalculatedCheck() {
         return calculatedCheck;
+    }
+
+    @Override
+    public String toString() {
+        return describe();
     }
 }

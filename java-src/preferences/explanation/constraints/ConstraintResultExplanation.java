@@ -5,10 +5,10 @@ import preferences.evaluators.ContextEvaluator;
 import preferences.explanation.Explanation;
 
 public class ConstraintResultExplanation extends Explanation {
-    ContextEvaluatorResultExplanation contextEvaluator;
+    ContextEvaluatorResultExplanation evaluator;
 
     public ConstraintResultExplanation(Constraint constraint, ContextEvaluator contextEvaluator) {
         super(constraint);
-        this.contextEvaluator = contextEvaluator.explainLastResult();
+        this.evaluator = contextEvaluator.explainLastResult();
     }
 }

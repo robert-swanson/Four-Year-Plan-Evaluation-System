@@ -12,6 +12,7 @@ import objects.plan.PlanTerm;
 import objects.plan.PlansList;
 import preferences.context.Context;
 import preferences.explanation.Explanation;
+import preferences.explanation.specification.FullSpecificationResultExplanation;
 import preferences.scoring.Score;
 import preferences.specification.*;
 import psl.PSLCompiler;
@@ -59,7 +60,7 @@ public class Main {
 
             System.out.println("- Compiling Specification");
             PSLCompiler compiler = new PSLCompiler(pslPath, null);
-            Specification compiledSpecification = compiler.compile();
+            FullSpecification compiledSpecification = compiler.compile();
 
             System.out.println("- Scoring Plan");
 
@@ -68,7 +69,7 @@ public class Main {
             long endTime = System.currentTimeMillis();
             System.out.printf("  - Took %.4fs\n", (endTime-startTime)/1000.0);
 
-            Explanation explanation = compiledSpecification.explainLastResult();
+            FullSpecificationResultExplanation explanation = compiledSpecification.explainLastResult();
             writeOutput(outPath, explanation);
 
             context.assertPlanContext();

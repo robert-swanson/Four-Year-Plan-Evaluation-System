@@ -28,7 +28,7 @@ public abstract class CourseOfferingAccumulatorEvaluator extends ScalableContext
             accumulator += courseOfferingAttribute.get(courseOffering);
             explanation.append(String.format("  class \"%s\"\n", courseOffering));
         }
-        return new PlanResult<>(description, explanation.toString(), new ScalableValue.Numeric(accumulator));
+        return new PlanResult<>(new ScalableValue.Numeric(accumulator));
     }
 
     static TermsResult<ScalableValue.Numeric> getTermsValue(Context context, String description, CourseOfferingAttribute courseOfferingAttribute) {
@@ -45,7 +45,6 @@ public abstract class CourseOfferingAccumulatorEvaluator extends ScalableContext
             result.addValue(new ScalableValue.Numeric(accumulator));
             explanation.append(String.format("      Term Count: %.2f\n", accumulator));
         }
-        result.setResultExplanation(explanation.toString());
         return result;
     }
 

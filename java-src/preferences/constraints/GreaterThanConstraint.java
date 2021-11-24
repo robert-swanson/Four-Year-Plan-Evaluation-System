@@ -28,7 +28,7 @@ public class GreaterThanConstraint extends RequireableConstraint {
 
     @Override
     public String describe() {
-        return String.format("%s > %s", contextEvaluator, minimumValue);
+        return String.format("%s greater than %s", contextEvaluator, minimumValue);
     }
 
     @Override

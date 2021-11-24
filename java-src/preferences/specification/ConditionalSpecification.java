@@ -53,7 +53,7 @@ public class ConditionalSpecification extends Specification {
                 return lastScore;
             }
         }
-        lastScore = Score.VALID;
+        lastScore = Score.valid();
         return lastScore;
     }
 

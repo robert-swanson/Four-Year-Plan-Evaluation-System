@@ -1,13 +1,14 @@
 package preferences.result;
 
+import preferences.explanation.Explanation;
+
 import java.util.ArrayList;
 
 public class DaysResult<ValueType extends Value> extends Result<ValueType> {
-    private ArrayList<ArrayList<ArrayList<ValueType>>> values;
-    private ArrayList<ArrayList<Double>> weights;
+    private final ArrayList<ArrayList<ArrayList<ValueType>>> values;
+    private final ArrayList<ArrayList<Double>> weights;
 
-    public DaysResult(String valueDescription) {
-        super(valueDescription);
+    public DaysResult() {
         values = new ArrayList<>();
         weights = new ArrayList<>();
     }
@@ -57,7 +58,7 @@ public class DaysResult<ValueType extends Value> extends Result<ValueType> {
         inputs.append("]");
         scores.append(String.format("] --> (%.2f / %d = %.2f)", scoreSum, weekdayCount, calculatedScore));
 
-        evaluationExplanation = String.format("f([%s]) = [%s]\nwhere f(x) is: %s (to emulate \"%s\")\n", inputs, scores, scoreFunctionDesc, checkExplanation);
+//        evaluationExplanation = String.format("f([%s]) = [%s]\nwhere f(x) is: %s (to emulate \"%s\")\n", inputs, scores, scoreFunctionDesc, checkExplanation);
     }
 
     @Override
@@ -67,7 +68,6 @@ public class DaysResult<ValueType extends Value> extends Result<ValueType> {
                 for (ValueType value : week) {
                     if (!resultChecker.check(value)) {
                         calculatedCheck = false;
-                        evaluationExplanation = String.format("Condition Failed at Least Once: %s, for value = %s\n", checkExplanation, value);
                         return;
                     }
                 }
@@ -82,8 +82,12 @@ public class DaysResult<ValueType extends Value> extends Result<ValueType> {
     }
 
     @Override
-    public String toString() {
-        return String.format("%s = %s weights = %s", resultDescription, values.toString(), weights.toString());
+    public Explanation explainLastResult() {
+        return null;
     }
 
+    @Override
+    public String describe() {
+        return String.format("values: %s weights: %s", values.toString(), weights.toString());
+    }
 }

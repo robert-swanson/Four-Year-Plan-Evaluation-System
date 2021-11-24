@@ -125,5 +125,19 @@ public abstract class ScalableValue extends Value implements Comparable<Scalable
         public int compareTo(ScalableValue o) {
             return Double.compare(value, o.getScalableValue());
         }
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+
+            TermYearValue that = (TermYearValue) o;
+            return termYear.equals(that.termYear);
+        }
+
+        @Override
+        public int hashCode() {
+            return termYear.hashCode();
+        }
     }
 }

@@ -14,13 +14,13 @@ public class CoursesWithProfessorEvaluator extends ScalableContextEvaluator {
 
     @Override
     public Result getValue(Context context) {
-        lastValue = CourseOfferingAccumulatorEvaluator.getValue(context, String.format("Total courses with %s", professor), courseOffering -> {
+        lastResult = CourseOfferingAccumulatorEvaluator.getValue(context, String.format("Total courses with %s", professor), courseOffering -> {
             for (String thisProf : courseOffering.getProfessors()) {
                 if (professor.equals(thisProf)) return 1;
             }
             return 0;
         });
-        return lastValue;
+        return lastResult;
     }
 
     @Override

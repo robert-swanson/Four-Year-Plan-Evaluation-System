@@ -2,8 +2,6 @@ package preferences.evaluators.single;
 
 import objects.misc.CourseID;
 import objects.offerings.CourseOffering;
-import preferences.evaluators.ContextEvaluator;
-import preferences.evaluators.ScalableContextEvaluator;
 import preferences.evaluators.TermYearContextEvaluator;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
@@ -27,11 +25,12 @@ public class CourseTermYearEvaluator extends TermYearContextEvaluator {
             if (courseID.equals(courseOffering.getCourse().getCourseID())) {
                 Value v = new ScalableValue.TermYearValue(iterator.getCurrentTermYear());
                 String explanation = courseOffering.toString();
-                return new PlanResult<>(description, explanation, v);
+                lastResult = new PlanResult<>(v);
+                return lastResult;
             }
         }
-        lastValue = new PlanResult<>(description, "Course is not scheduled", Value.NULL);
-        return lastValue;
+        lastResult = new PlanResult<>(Value.NULL);
+        return lastResult;
     }
 
     @Override

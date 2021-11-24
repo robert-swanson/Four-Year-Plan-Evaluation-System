@@ -33,7 +33,7 @@ public class SpecificationList extends Specification {
 
     @Override
     public Score evaluate(Context context, boolean evaluateAll) {
-        lastScore = Score.VALID;
+        lastScore = Score.valid();
         for (Specification specification : specifications) {
             lastScore.addScore(specification.evaluate(context, evaluateAll));
             if (!lastScore.isValid() && !evaluateAll) {

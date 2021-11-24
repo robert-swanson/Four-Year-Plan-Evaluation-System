@@ -12,7 +12,7 @@ public class WeekdayStartTime extends ScalableContextEvaluator {
 
     @Override
     public Result getValue(Context context) {
-        return WeekdayMeetingEvaluator.getValue(context, "Weekday Start Time", (meetings, weekday) -> {
+        lastResult = WeekdayMeetingEvaluator.getValue(context, "Weekday Start Time", (meetings, weekday) -> {
             Time start = null;
             for (Meeting meeting: meetings) {
                 Time meetingStart = meeting.getStartTime();
@@ -22,6 +22,7 @@ public class WeekdayStartTime extends ScalableContextEvaluator {
             }
             return new ScalableValue.TimeValue(start);
         });
+        return lastResult;
     }
 
     @Override

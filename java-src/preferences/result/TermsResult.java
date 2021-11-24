@@ -1,12 +1,13 @@
 package preferences.result;
 
+import preferences.explanation.Explanation;
+
 import java.util.ArrayList;
 
 public class TermsResult<ValueType extends Value> extends Result<ValueType> {
     private final ArrayList<ValueType> values;
 
     public TermsResult(String valueDescription) {
-        super(valueDescription);
         values = new ArrayList<>();
     }
 
@@ -27,7 +28,7 @@ public class TermsResult<ValueType extends Value> extends Result<ValueType> {
             inputs.delete(inputs.length()-2,inputs.length());
             scores.delete(scores.length()-2,scores.length());
         }
-        evaluationExplanation = String.format("f([%s]) = [%s], %.2f/%d = %.2f, where f(x) is: %s (to emulate \"%s\")\n", inputs, scores, score, values.size(), calculatedScore, scoreFunctionDesc, checkExplanation);
+//        evaluationExplanation = String.format("f([%s]) = [%s], %.2f/%d = %.2f, where f(x) is: %s (to emulate \"%s\")\n", inputs, scores, score, values.size(), calculatedScore, scoreFunctionDesc, checkExplanation);
     }
 
     @Override
@@ -35,12 +36,12 @@ public class TermsResult<ValueType extends Value> extends Result<ValueType> {
         for (ValueType value : values) {
             if (!resultChecker.check(value)) {
                 calculatedCheck = false;
-                evaluationExplanation = String.format("Condition Failed at Least Once: %s, for value = %s\n", checkExplanation, value);
+//                evaluationExplanation = String.format("Condition Failed at Least Once: %s, for value = %s\n", checkExplanation, value);
                 return;
             }
         }
         calculatedCheck = true;
-        evaluationExplanation = String.format("Condition Passed for All Values: %s\n", checkExplanation);
+//        evaluationExplanation = String.format("Condition Passed for All Values: %s\n", checkExplanation);
     }
 
     public ArrayList<ValueType> getValues() {
@@ -52,7 +53,12 @@ public class TermsResult<ValueType extends Value> extends Result<ValueType> {
     }
 
     @Override
-    public String toString() {
+    public Explanation explainLastResult() {
+        return null;
+    }
+
+    @Override
+    public String describe() {
         StringBuilder stringBuilder = new StringBuilder();
         values.forEach(value -> {
             if (value == values.get(0)) {
@@ -61,6 +67,6 @@ public class TermsResult<ValueType extends Value> extends Result<ValueType> {
                 stringBuilder.append(", ").append(value.toString());
             }
         });
-        return String.format("%s = [%s]", resultDescription, stringBuilder);
+        return String.format("[%s]", stringBuilder);
     }
 }

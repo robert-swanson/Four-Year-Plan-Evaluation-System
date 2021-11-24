@@ -18,9 +18,9 @@ public class RequirementSpecification extends Specification {
     @Override
     public Score evaluate(Context context, boolean evaluateALl) {
         if ((invert) ^ (requireableConstraint.fulfilled(context).getCalculatedCheck())) {
-            lastScore = Score.VALID;
+            lastScore = Score.valid();
         } else {
-            lastScore = Score.INVALID;
+            lastScore = Score.invalid();
         }
         return lastScore;
     }

@@ -8,8 +8,8 @@ import preferences.result.*;
 public class TotalCoursesEvaluator extends ScalableContextEvaluator {
     @Override
     public Result getValue(Context context) {
-        lastValue = CourseOfferingAccumulatorEvaluator.getValue(context, "Total credits", courseOffering -> 1);
-        return lastValue;
+        lastResult = CourseOfferingAccumulatorEvaluator.getValue(context, "Total credits", courseOffering -> 1);
+        return lastResult;
     }
 
     @Override

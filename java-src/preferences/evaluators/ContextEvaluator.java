@@ -13,9 +13,9 @@ public abstract class ContextEvaluator implements Explainable {
         return new ContextEvaluatorResultExplanation(this);
     }
 
-    protected Result lastValue;
-    public Result getLastValue() {
-        return lastValue;
+    protected Result lastResult;
+    public Result getLastResult() {
+        return lastResult;
     }
 
     @Override

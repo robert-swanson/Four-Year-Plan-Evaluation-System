@@ -6,7 +6,6 @@ import objects.offerings.CourseOffering;
 import preferences.context.Context;
 import preferences.evaluators.BooleanContextEvaluator;
 import preferences.context.iterables.courseoffering.PlanCourseOfferingIterator;
-import preferences.evaluators.ContextEvaluator;
 import preferences.result.PlanResult;
 import preferences.result.Result;
 import preferences.result.Value;
@@ -35,12 +34,12 @@ public class CoursesScheduledInSameSemester extends BooleanContextEvaluator {
                     explanation += String.format(" %s, ", sharedTermYear);
                 } else {
                     explanation = String.format("Earlier classes were scheduled for %s, but %s was scheduled for %s", sharedTermYear, courseOffering.getCourse().getCourseID(), iterator.getCurrentTermYear());
-                    return new PlanResult<>(description, explanation, Value.FALSE);
+                    lastResult = new PlanResult<>(Value.FALSE);
                 }
             }
         }
-        lastValue = new PlanResult<>(description, explanation, value);
-        return lastValue;
+        lastResult = new PlanResult<>(value);
+        return lastResult;
     }
 
     @Override

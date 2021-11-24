@@ -66,7 +66,7 @@ public class ContextualSpecification extends Specification {
             lastScore = specification.evaluate(context, evaluateAll);
             context.unapplyContextFilter();
         } else {
-            lastScore = Score.VALID;
+            lastScore = Score.valid();
         }
         return lastScore;
     }

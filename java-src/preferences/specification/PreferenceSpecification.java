@@ -19,7 +19,7 @@ public class PreferenceSpecification extends Specification {
 
     @Override
     public Score evaluate(Context context, boolean evaluateAll) {
-        lastScore = new Score(constraint.score(context).score(), weight, invert);
+        lastScore = new Score(constraint.score(context).getLastScore(), weight, invert);
         return lastScore;
     }
 

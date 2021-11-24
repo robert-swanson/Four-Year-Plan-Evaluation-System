@@ -1,8 +1,6 @@
 package preferences.evaluators.single;
 
 import objects.misc.TermYear;
-import preferences.evaluators.ContextEvaluator;
-import preferences.evaluators.ScalableContextEvaluator;
 import preferences.evaluators.TermYearContextEvaluator;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
@@ -26,11 +24,11 @@ public class LastTermEvaluator extends TermYearContextEvaluator {
             }
         }
         if (last == null) {
-            lastValue = new PlanResult<>(description, explanation, Value.NULL);
+            lastResult = new PlanResult<>(Value.NULL);
         } else {
-            lastValue = new PlanResult<>(description, explanation, new ScalableValue.TermYearValue(last));
+            lastResult = new PlanResult<>(new ScalableValue.TermYearValue(last));
         }
-        return lastValue;
+        return lastResult;
     }
 
     @Override

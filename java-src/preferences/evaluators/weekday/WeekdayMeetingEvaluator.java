@@ -28,7 +28,7 @@ public abstract class WeekdayMeetingEvaluator extends ContextEvaluator {
     }
 
     private static DaysResult<Value> getDaysValue(Context context, String description, WeekdayValue weekdayValue) {
-        DaysResult<Value> result = new DaysResult<>(description);
+        DaysResult<Value> result = new DaysResult<>();
         StringBuilder explanation = new StringBuilder();
         PlanTermWeekdayMeetingIterable termIterator = context.termWeekdayMeetingIterable();
         for (TermWeekdayMeetingIterable termWeekdayMeetingIterable : termIterator) {
@@ -62,7 +62,7 @@ public abstract class WeekdayMeetingEvaluator extends ContextEvaluator {
             }
             result.addTermValue(termValues, weights);
         }
-        result.setResultExplanation(explanation.toString());
+//        result.setResultExplanation(explanation.toString());
         return result;
     }
 }

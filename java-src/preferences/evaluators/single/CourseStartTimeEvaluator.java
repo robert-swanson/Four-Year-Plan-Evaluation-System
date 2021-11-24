@@ -16,8 +16,8 @@ public class CourseStartTimeEvaluator extends ScalableContextEvaluator {
     @Override
     public Result getValue(Context context) {
         String description = String.format("Start time for first meeting described for first course offering found for %s", courseID);
-        lastValue = SingleCourseOfferingEvaluator.getValue(context, description, courseOffering -> new ScalableValue.TimeValue(courseOffering.getMeetings().getFirst().getStartTime()), courseID);
-        return lastValue;
+        lastResult = SingleCourseOfferingEvaluator.getValue(context, description, courseOffering -> new ScalableValue.TimeValue(courseOffering.getMeetings().getFirst().getStartTime()), courseID);
+        return lastResult;
     }
 
     @Override

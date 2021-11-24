@@ -15,10 +15,9 @@ public abstract class SingleCourseOfferingEvaluator extends ContextEvaluator {
     static Result<Value> getValue(Context context, String description, CourseOfferingValue courseOfferingValue, CourseID courseID) {
         for (CourseOffering courseOffering : context.courseOfferingIterator()) {
             if (courseOffering.getCourse().getCourseID().equals(courseID)) {
-                return new PlanResult<>(description, description, courseOfferingValue.getValue(courseOffering));
+                return new PlanResult<>(courseOfferingValue.getValue(courseOffering));
             }
         }
-        return new PlanResult<>(description, String.format("could not find %s in context", courseID), Value.NULL);
-
+        return new PlanResult<>(Value.NULL);
     }
 }

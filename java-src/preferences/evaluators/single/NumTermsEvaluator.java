@@ -3,7 +3,6 @@ package preferences.evaluators.single;
 import objects.misc.TermYear;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
-import preferences.evaluators.ContextEvaluator;
 import preferences.evaluators.ScalableContextEvaluator;
 import preferences.result.PlanResult;
 import preferences.result.Result;
@@ -15,8 +14,8 @@ public class NumTermsEvaluator extends ScalableContextEvaluator {
     @Override
     public Result getValue(Context context) {
         Set<TermYear> terms = context.getTerms();
-        lastValue = new PlanResult<>("Number of terms in context", terms.toString(), new ScalableValue.Numeric(terms.size()));
-        return lastValue;
+        lastResult = new PlanResult<>(new ScalableValue.Numeric(terms.size()));
+        return lastResult;
     }
 
     @Override

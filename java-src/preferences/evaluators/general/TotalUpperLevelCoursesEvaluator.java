@@ -8,8 +8,8 @@ import preferences.result.Result;
 public class TotalUpperLevelCoursesEvaluator extends ScalableContextEvaluator {
     @Override
     public Result getValue(Context context) {
-        lastValue = CourseOfferingAccumulatorEvaluator.getValue(context, "Total upper level courses", courseOffering -> courseOffering.getCourse().getNumber() >= 300 ? 1 : 0);
-        return lastValue;
+        lastResult = CourseOfferingAccumulatorEvaluator.getValue(context, "Total upper level courses", courseOffering -> courseOffering.getCourse().getNumber() >= 300 ? 1 : 0);
+        return lastResult;
     }
 
     @Override

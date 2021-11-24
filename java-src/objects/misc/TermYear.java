@@ -65,8 +65,8 @@ public class TermYear implements Comparable<TermYear> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        TermYear termYear = (TermYear) o;
-        return term == termYear.term && Objects.equals(catalogYear, termYear.catalogYear);
+        TermYear otherTermYear = (TermYear) o;
+        return term == otherTermYear.term && Objects.equals(catalogYear, otherTermYear.catalogYear);
     }
 
     @Override

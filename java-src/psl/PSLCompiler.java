@@ -3,12 +3,14 @@ package psl;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
+import preferences.specification.FullSpecification;
 import preferences.specification.Specification;
 import preferences.specification.SpecificationList;
 import psl.exceptions.LinkingError;
 import psl.exceptions.PSLCompileError;
 import psl.listener.PSLListener;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
@@ -30,11 +32,12 @@ public class PSLCompiler {
         priorities = new HashMap<>();
     }
 
-    public Specification compile() throws PSLCompileError {
+    public FullSpecification compile() throws PSLCompileError {
+        String name = new File(filename).getName();
         HashMap<String, Specification> blocks = compileFile(filename);
         SpecificationList specificationList = new SpecificationList();
         blocks.values().forEach(specificationList::addSpecification);
-        return specificationList.getSimplifiedSpecification();
+        return new FullSpecification(specificationList.getSimplifiedSpecification(), name);
     }
 
     private HashMap<String,Specification> compileFile(String filename) throws PSLCompileError {

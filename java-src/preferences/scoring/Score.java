@@ -5,8 +5,13 @@ public class Score {
     private double max;
     private boolean isValid;
 
-    public static final Score VALID = new Score(true);
-    public static final Score INVALID = new Score(false);
+    public static Score valid() {
+        return new Score(true);
+    }
+
+    public static Score invalid() {
+        return new Score(false);
+    }
 
     private Score(boolean valid) {
         this(0,0,false);
