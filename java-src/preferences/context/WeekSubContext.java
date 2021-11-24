@@ -119,11 +119,11 @@ public class WeekSubContext implements Explainable {
         if (startDate == null && endDate == null) {
             return "<full term>";
         } else if (startDate == null) {
-            return String.format("<until %s>", endDate);
+            return String.format("until %s", endDate);
         } else if (endDate == null) {
-            return String.format("<starting %s>", startDate);
+            return String.format("starting %s", startDate);
         } else {
-            return String.format("<%s through %s>", startDate, endDate);
+            return String.format("%s through %s", startDate, endDate);
         }
     }
 
