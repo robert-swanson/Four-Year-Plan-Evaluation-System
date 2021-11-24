@@ -13,7 +13,7 @@ import preferences.result.Result;
 import preferences.result.ScalableValue;
 import preferences.result.Value;
 
-public class CourseTermYearEvaluator extends ContextEvaluator implements TermYearContextEvaluator, ScalableContextEvaluator {
+public class CourseTermYearEvaluator extends TermYearContextEvaluator {
     final private CourseID courseID;
     public CourseTermYearEvaluator(CourseID courseID) {
         this.courseID = courseID;

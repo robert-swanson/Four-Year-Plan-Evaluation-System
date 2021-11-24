@@ -3,11 +3,12 @@ package preferences.evaluators.general;
 import objects.misc.CourseID;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
+import preferences.evaluators.ScalableContextEvaluator;
 import preferences.result.Result;
 
 import java.util.Set;
 
-public class TotalCreditsFromSetEvaluator extends CourseOfferingAccumulatorEvaluator {
+public class TotalCreditsFromSetEvaluator extends ScalableContextEvaluator {
     Set<CourseID> courseIDSet;
 
     public TotalCreditsFromSetEvaluator(Set<CourseID> courseSet) {
@@ -16,7 +17,7 @@ public class TotalCreditsFromSetEvaluator extends CourseOfferingAccumulatorEvalu
 
     @Override
     public Result getValue(Context context) {
-        lastValue = getValue(context, String.format("Total credits from set %s", courseIDSet.toString()), courseOffering -> courseIDSet.contains(courseOffering.getCourse().getCourseID()) ? courseOffering.getCredits() : 0);
+        lastValue = CourseOfferingAccumulatorEvaluator.getValue(context, String.format("Total credits from set %s", courseIDSet.toString()), courseOffering -> courseIDSet.contains(courseOffering.getCourse().getCourseID()) ? courseOffering.getCredits() : 0);
         return lastValue;
     }
 

@@ -8,11 +8,11 @@ import preferences.evaluators.ScalableContextEvaluator;
 import preferences.result.Result;
 import preferences.result.ScalableValue;
 
-public class WeekdayStartTime extends WeekdayMeetingEvaluator implements ScalableContextEvaluator {
+public class WeekdayStartTime extends ScalableContextEvaluator {
 
     @Override
     public Result getValue(Context context) {
-        return getValue(context, "Weekday Start Time", (meetings, weekday) -> {
+        return WeekdayMeetingEvaluator.getValue(context, "Weekday Start Time", (meetings, weekday) -> {
             Time start = null;
             for (Meeting meeting: meetings) {
                 Time meetingStart = meeting.getStartTime();

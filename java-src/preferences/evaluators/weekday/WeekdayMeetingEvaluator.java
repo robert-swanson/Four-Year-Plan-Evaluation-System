@@ -19,7 +19,7 @@ public abstract class WeekdayMeetingEvaluator extends ContextEvaluator {
         Value get(WeekdayMeetingIterable meetings, Weekday weekday);
     }
 
-    protected Result getValue(Context context, String description, WeekdayValue weekdayValue) {
+    protected static Result getValue(Context context, String description, WeekdayValue weekdayValue) {
         return switch (context.getContextLevel()) {
             case fullPlan -> getDaysValue(context, description + " for plan", weekdayValue);
             case terms -> getDaysValue(context, description + " for terms in context", weekdayValue);
@@ -27,7 +27,7 @@ public abstract class WeekdayMeetingEvaluator extends ContextEvaluator {
         };
     }
 
-    private DaysResult<Value> getDaysValue(Context context, String description, WeekdayValue weekdayValue) {
+    private static DaysResult<Value> getDaysValue(Context context, String description, WeekdayValue weekdayValue) {
         DaysResult<Value> result = new DaysResult<>(description);
         StringBuilder explanation = new StringBuilder();
         PlanTermWeekdayMeetingIterable termIterator = context.termWeekdayMeetingIterable();

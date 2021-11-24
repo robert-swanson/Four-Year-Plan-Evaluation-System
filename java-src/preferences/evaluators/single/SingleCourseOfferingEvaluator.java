@@ -8,17 +8,11 @@ import preferences.evaluators.ScalableContextEvaluator;
 import preferences.result.*;
 
 public abstract class SingleCourseOfferingEvaluator extends ContextEvaluator {
-    protected CourseID courseID;
-
     public interface CourseOfferingValue {
         Value getValue(CourseOffering courseOffering);
     }
 
-    public SingleCourseOfferingEvaluator(CourseID courseID) {
-        this.courseID = courseID;
-    }
-
-    Result<Value> getValue(Context context, String description, CourseOfferingValue courseOfferingValue) {
+    static Result<Value> getValue(Context context, String description, CourseOfferingValue courseOfferingValue, CourseID courseID) {
         for (CourseOffering courseOffering : context.courseOfferingIterator()) {
             if (courseOffering.getCourse().getCourseID().equals(courseID)) {
                 return new PlanResult<>(description, description, courseOfferingValue.getValue(courseOffering));

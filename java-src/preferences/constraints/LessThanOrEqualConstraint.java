@@ -14,7 +14,7 @@ public class LessThanOrEqualConstraint extends RequireableConstraint {
     private final ScoreFunction scoreFunction;
     private final ScalableValue minimumValue;
 
-    public LessThanOrEqualConstraint(ContextEvaluator scalableContextEvaluator, ScalableValue value, ContextLevel contextLevel) {
+    public LessThanOrEqualConstraint(ScalableContextEvaluator scalableContextEvaluator, ScalableValue value, ContextLevel contextLevel) {
         super(scalableContextEvaluator, ConstraintType.greaterThanOrEqual, contextLevel);
         this.minimumValue = value;
         double firstQuartile = value.getScalableValue();

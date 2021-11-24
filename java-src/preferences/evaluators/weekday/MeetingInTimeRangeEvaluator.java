@@ -7,7 +7,7 @@ import preferences.evaluators.BooleanContextEvaluator;
 import preferences.result.Result;
 import preferences.result.Value;
 
-public class MeetingInTimeRangeEvaluator extends WeekdayMeetingEvaluator implements BooleanContextEvaluator {
+public class MeetingInTimeRangeEvaluator extends BooleanContextEvaluator {
     private final TimeRange timeRange;
 
     public MeetingInTimeRangeEvaluator(TimeRange timeRange) {
@@ -16,7 +16,7 @@ public class MeetingInTimeRangeEvaluator extends WeekdayMeetingEvaluator impleme
 
     @Override
     public Result getValue(Context context) {
-        return getValue(context, String.format("Meeting in time range %s", timeRange), (meetings, weekday) -> {
+        return WeekdayMeetingEvaluator.getValue(context, String.format("Meeting in time range %s", timeRange), (meetings, weekday) -> {
             for (Meeting meeting : meetings) {
                 if (timeRange.overlapsWith(meeting.getTimeRange())) {
                     return Value.TRUE;

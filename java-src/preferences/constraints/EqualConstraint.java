@@ -15,7 +15,7 @@ public class EqualConstraint extends RequireableConstraint {
     private final ScoreFunction scoreFunction;
     private final Value expectedValue;
 
-    public EqualConstraint(ContextEvaluator scalableContextEvaluator, Value value, ContextLevel contextLevel) {
+    public EqualConstraint(ScalableContextEvaluator scalableContextEvaluator, Value value, ContextLevel contextLevel) {
         super(scalableContextEvaluator, ConstraintType.equal, contextLevel);
         this.expectedValue = value;
 

@@ -82,16 +82,16 @@ public class PSLListener extends PSLGrammarBaseListener {
         return parsingContextStack.peek().evaluators.pop();
     }
 
-    private ContextEvaluator getScalableEvaluator() {
+    private ScalableContextEvaluator getScalableEvaluator() {
         ContextEvaluator evaluator = getContextEvaluator();
         assert evaluator instanceof ScalableContextEvaluator : "Evaluator must be ScalableContextEvaluator";
-        return evaluator;
+        return (ScalableContextEvaluator) evaluator;
     }
 
-    private ContextEvaluator getBooleanEvaluator() {
+    private BooleanContextEvaluator getBooleanEvaluator() {
         ContextEvaluator evaluator = getContextEvaluator();
         assert evaluator instanceof BooleanContextEvaluator : "Evaluator must be BooleanContextEvaluator";
-        return evaluator;
+        return (BooleanContextEvaluator) evaluator;
     }
 
     @Override

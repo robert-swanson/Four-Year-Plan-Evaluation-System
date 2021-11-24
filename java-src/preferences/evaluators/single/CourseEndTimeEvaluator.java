@@ -7,15 +7,17 @@ import preferences.evaluators.ScalableContextEvaluator;
 import preferences.result.Result;
 import preferences.result.ScalableValue;
 
-public class CourseEndTimeEvaluator extends SingleCourseOfferingEvaluator implements ScalableContextEvaluator {
+public class CourseEndTimeEvaluator extends ScalableContextEvaluator {
+    CourseID courseID;
+
     public CourseEndTimeEvaluator(CourseID courseID) {
-        super(courseID);
+        this.courseID = courseID;
     }
 
     @Override
     public Result getValue(Context context) {
-        String description = String.format("End time for first meeting described for first course offering found for %s", super.courseID);
-        lastValue = getValue(context, description, courseOffering -> new ScalableValue.TimeValue(courseOffering.getMeetings().getFirst().getEndTime()));
+        String description = String.format("End time for first meeting described for first course offering found for %s", courseID);
+        lastValue = SingleCourseOfferingEvaluator.getValue(context, description, courseOffering -> new ScalableValue.TimeValue(courseOffering.getMeetings().getFirst().getEndTime()), courseID);
         return lastValue;
     }
 

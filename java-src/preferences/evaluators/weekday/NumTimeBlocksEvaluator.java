@@ -11,7 +11,7 @@ import preferences.result.ScalableValue;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class NumTimeBlocksEvaluator extends WeekdayMeetingEvaluator implements ScalableContextEvaluator {
+public class NumTimeBlocksEvaluator extends ScalableContextEvaluator {
     ArrayList<TimeRange> reservedTimeBlocks;
     int maxBufferMinutes;
 
@@ -23,7 +23,7 @@ public class NumTimeBlocksEvaluator extends WeekdayMeetingEvaluator implements S
     @Override
     public Result getValue(Context context) {
         String description = String.format("Num time blocks with less than %d minutes between them%s", maxBufferMinutes, reservedTimeBlocks == null ? "" : String.format("(ignoring the following times ranges: %s)", reservedTimeBlocks));
-        lastValue = getValue(context, description, (meetings, weekday) -> {
+        lastValue = WeekdayMeetingEvaluator.getValue(context, description, (meetings, weekday) -> {
             int timeBlocks = 0;
             ArrayList<TimeRange> timeRanges = new ArrayList<>();
             meetings.forEach(meeting -> timeRanges.add(meeting.getTimeRange()));

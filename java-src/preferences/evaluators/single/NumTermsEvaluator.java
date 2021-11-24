@@ -11,7 +11,7 @@ import preferences.result.ScalableValue;
 
 import java.util.Set;
 
-public class NumTermsEvaluator extends ContextEvaluator implements ScalableContextEvaluator {
+public class NumTermsEvaluator extends ScalableContextEvaluator {
     @Override
     public Result getValue(Context context) {
         Set<TermYear> terms = context.getTerms();

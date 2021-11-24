@@ -10,7 +10,7 @@ import preferences.result.*;
 
 import java.util.ArrayList;
 
-public abstract class MeetingAccumulatorEvaluator extends ContextEvaluator implements ScalableContextEvaluator {
+public abstract class MeetingAccumulatorEvaluator extends ScalableContextEvaluator {
     public interface MeetingAttribute {
         double get(Meeting meeting);
     }

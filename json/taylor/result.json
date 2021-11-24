@@ -1,122 +1,143 @@
 {
-  "specifications": [
+  "specifications" : [
     {
-      "constraint": {
-        "description": "first term equals fall 2018"
+      "constraint" : {
+        "contextEvaluator" : {
+          "description" : "first term"
+        },
+        "description" : "first term equals fall 2018"
       },
-      "score": "invalid",
-      "description": "require first term equals fall 2018"
+      "score" : "invalid",
+      "description" : "require first term equals fall 2018"
     },
     {
-      "constraint": {
-        "description": "last term equals fall 2021"
+      "constraint" : {
+        "contextEvaluator" : {
+          "description" : "last term"
+        },
+        "description" : "last term equals fall 2021"
       },
-      "score": "invalid",
-      "description": "require last term equals fall 2021"
+      "score" : "invalid",
+      "description" : "require last term equals fall 2021"
     },
     {
-      "constraint": {
-        "description": "day start time \u003e\u003d 9:00 AM"
+      "constraint" : {
+        "contextEvaluator" : {
+          "description" : "day start time"
+        },
+        "description" : "day start time >= 9:00 AM"
       },
-      "score": "valid (14%)",
-      "description": "prefer [10.0] day start time \u003e\u003d 9:00 AM"
+      "score" : "valid (14%)",
+      "description" : "prefer [10.0] day start time >= 9:00 AM"
     },
     {
-      "constraint": {
-        "description": "more courses"
+      "constraint" : {
+        "contextEvaluator" : {
+          "description" : "courses"
+        },
+        "description" : "more courses"
       },
-      "score": "valid (71%)",
-      "description": "prefer [10.0] more courses"
+      "score" : "valid (71%)",
+      "description" : "prefer [10.0] more courses"
     },
     {
-      "constraint": {
-        "description": "COS-381 scheduled"
+      "constraint" : {
+        "contextEvaluator" : {
+          "description" : "COS-381 scheduled"
+        },
+        "description" : "COS-381 scheduled"
       },
-      "score": "valid (100%)",
-      "description": "prefer [3.0] COS-381 scheduled"
+      "score" : "valid (100%)",
+      "description" : "prefer [3.0] COS-381 scheduled"
     },
     {
-      "constraint": {
-        "description": "COS-432 scheduled"
+      "constraint" : {
+        "contextEvaluator" : {
+          "description" : "COS-432 scheduled"
+        },
+        "description" : "COS-432 scheduled"
       },
-      "score": "valid (100%)",
-      "description": "prefer [3.0] COS-432 scheduled"
+      "score" : "valid (100%)",
+      "description" : "prefer [3.0] COS-432 scheduled"
     },
     {
-      "constraint": {
-        "description": "more upper level courses"
+      "constraint" : {
+        "contextEvaluator" : {
+          "description" : "upper level courses"
+        },
+        "description" : "more upper level courses"
       },
-      "score": "valid (29%)",
-      "description": "prefer [1.0] more upper level courses"
+      "score" : "valid (29%)",
+      "description" : "prefer [1.0] more upper level courses"
     },
     {
-      "context": {
-        "terms": {
-          "fall 2018": {
-            "courses": [
+      "context" : {
+        "terms" : {
+          "fall 2018" : {
+            "courses" : [
               "MAT-215: Discrete Mathematics for Computer Science",
               "COS-121: Foundations of Computer Science",
               "COS-121: Foundations of Computer Science",
               "BIB-110: Biblical Literature I"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cuntil 2019-1-20\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<until 2019-1-20>"
               },
               {
-                "weight": 2.2142857142857144,
-                "weekdays": {},
-                "description": "\u003c2019-1-20 through 2018-8-27\u003e"
+                "weight" : 2.2142857142857144,
+                "weekdays" : {},
+                "description" : "<2019-1-20 through 2018-8-27>"
               },
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cstarting 2018-8-27\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<starting 2018-8-27>"
               }
             ],
-            "description": "fall 2018"
+            "description" : "fall 2018"
           },
-          "spring 2019": {
-            "courses": [
+          "spring 2019" : {
+            "courses" : [
               "KIN-100: Fitness for Life",
               "MAT-230: Calculus II",
               "HNR-225: Honors Colloquium"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": 1.5,
-                "weekdays": {
-                  "Monday": {
-                    "meetings": [
+                "weight" : 1.5,
+                "weekdays" : {
+                  "Monday" : {
+                    "meetings" : [
                       "MAT-230: Calculus II (spring 2019) (0:00 AM - 0:50 AM)",
                       "KIN-100: Fitness for Life (spring 2019) (9:00 AM - 9:50 AM)"
                     ],
-                    "description": "Monday"
+                    "description" : "Monday"
                   },
-                  "Friday": {
-                    "meetings": [
+                  "Friday" : {
+                    "meetings" : [
                       "MAT-230: Calculus II (spring 2019) (0:00 AM - 0:50 AM)"
                     ],
-                    "description": "Friday"
+                    "description" : "Friday"
                   },
-                  "Wednesday": {
-                    "meetings": [
+                  "Wednesday" : {
+                    "meetings" : [
                       "MAT-230: Calculus II (spring 2019) (0:00 AM - 0:50 AM)",
                       "KIN-100: Fitness for Life (spring 2019) (9:00 AM - 9:50 AM)",
                       "HNR-225: Honors Colloquium (spring 2019) (2:00 AM - 2:50 AM)"
                     ],
-                    "description": "Wednesday"
+                    "description" : "Wednesday"
                   }
                 },
-                "description": "\u003c2019-2-1 through 2019-6-23\u003e"
+                "description" : "<2019-2-1 through 2019-6-23>"
               }
             ],
-            "description": "spring 2019"
+            "description" : "spring 2019"
           },
-          "fall 2019": {
-            "courses": [
+          "fall 2019" : {
+            "courses" : [
               "MAT-240: Calculus III",
               "COS-265: Data Structures and Algorithms",
               "COS-243: Multi-tier Web Application Development",
@@ -124,107 +145,107 @@
               "PHY-203: General Physics I",
               "PHY-203: General Physics I"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cuntil 2020-1-19\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<until 2020-1-19>"
               },
               {
-                "weight": 2.2142857142857144,
-                "weekdays": {},
-                "description": "\u003c2020-1-19 through 2019-8-26\u003e"
+                "weight" : 2.2142857142857144,
+                "weekdays" : {},
+                "description" : "<2020-1-19 through 2019-8-26>"
               },
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cstarting 2019-8-26\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<starting 2019-8-26>"
               }
             ],
-            "description": "fall 2019"
+            "description" : "fall 2019"
           },
-          "jterm 2020": {
-            "courses": [
+          "jterm 2020" : {
+            "courses" : [
               "REL-313: Historic Christian Belief"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": 2.25,
-                "weekdays": {
-                  "Monday": {
-                    "meetings": [
+                "weight" : 2.25,
+                "weekdays" : {
+                  "Monday" : {
+                    "meetings" : [
                       "REL-313: Historic Christian Belief (jterm 2020) (1:00 AM - 3:10 AM)"
                     ],
-                    "description": "Monday"
+                    "description" : "Monday"
                   },
-                  "Friday": {
-                    "meetings": [
+                  "Friday" : {
+                    "meetings" : [
                       "REL-313: Historic Christian Belief (jterm 2020) (1:00 AM - 3:10 AM)"
                     ],
-                    "description": "Friday"
+                    "description" : "Friday"
                   },
-                  "Wednesday": {
-                    "meetings": [
+                  "Wednesday" : {
+                    "meetings" : [
                       "REL-313: Historic Christian Belief (jterm 2020) (1:00 AM - 3:10 AM)"
                     ],
-                    "description": "Wednesday"
+                    "description" : "Wednesday"
                   }
                 },
-                "description": "\u003c2020-1-6 through 2020-3-7\u003e"
+                "description" : "<2020-1-6 through 2020-3-7>"
               }
             ],
-            "description": "jterm 2020"
+            "description" : "jterm 2020"
           },
-          "spring 2020": {
-            "courses": [
+          "spring 2020" : {
+            "courses" : [
               "COS-284: Introduction to Computer Systems",
               "COS-280: Introduction to Artificial Intelligence",
               "MAT-311: Introduction to Data Science",
               "COS-331: Data Communications",
               "MUS-280: Wind Ensemble"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": 1.5,
-                "weekdays": {
-                  "Monday": {
-                    "meetings": [
+                "weight" : 1.5,
+                "weekdays" : {
+                  "Monday" : {
+                    "meetings" : [
                       "COS-280: Introduction to Artificial Intelligence (spring 2020) (9:00 AM - 9:50 AM)",
                       "MUS-280: Wind Ensemble (spring 2020) (3:00 AM - 3:50 AM)",
                       "COS-284: Introduction to Computer Systems (spring 2020) (11:00 AM - 11:50 AM)",
                       "COS-331: Data Communications (spring 2020) (2:00 AM - 2:50 AM)",
                       "MAT-311: Introduction to Data Science (spring 2020) (1:00 AM - 1:50 AM)"
                     ],
-                    "description": "Monday"
+                    "description" : "Monday"
                   },
-                  "Friday": {
-                    "meetings": [
+                  "Friday" : {
+                    "meetings" : [
                       "COS-280: Introduction to Artificial Intelligence (spring 2020) (9:00 AM - 9:50 AM)",
                       "MUS-280: Wind Ensemble (spring 2020) (3:00 AM - 3:50 AM)",
                       "COS-284: Introduction to Computer Systems (spring 2020) (11:00 AM - 11:50 AM)",
                       "COS-331: Data Communications (spring 2020) (2:00 AM - 2:50 AM)",
                       "MAT-311: Introduction to Data Science (spring 2020) (1:00 AM - 1:50 AM)"
                     ],
-                    "description": "Friday"
+                    "description" : "Friday"
                   },
-                  "Wednesday": {
-                    "meetings": [
+                  "Wednesday" : {
+                    "meetings" : [
                       "COS-280: Introduction to Artificial Intelligence (spring 2020) (9:00 AM - 9:50 AM)",
                       "MUS-280: Wind Ensemble (spring 2020) (3:00 AM - 3:50 AM)",
                       "COS-284: Introduction to Computer Systems (spring 2020) (11:00 AM - 11:50 AM)",
                       "COS-331: Data Communications (spring 2020) (2:00 AM - 2:50 AM)",
                       "MAT-311: Introduction to Data Science (spring 2020) (1:00 AM - 1:50 AM)"
                     ],
-                    "description": "Wednesday"
+                    "description" : "Wednesday"
                   }
                 },
-                "description": "\u003c2020-2-3 through 2020-6-28\u003e"
+                "description" : "<2020-2-3 through 2020-6-28>"
               }
             ],
-            "description": "spring 2020"
+            "description" : "spring 2020"
           },
-          "fall 2020": {
-            "courses": [
+          "fall 2020" : {
+            "courses" : [
               "MUS-280: Wind Ensemble",
               "COS-310: Current Literature Survey",
               "COS-340: Software Engineering",
@@ -233,74 +254,74 @@
               "HUM-330: Arts and Ideas",
               "COS-436: Parallel and Distributed Computing"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cuntil 2021-1-10\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<until 2021-1-10>"
               },
               {
-                "weight": 2.2142857142857144,
-                "weekdays": {},
-                "description": "\u003c2021-1-10 through 2020-8-19\u003e"
+                "weight" : 2.2142857142857144,
+                "weekdays" : {},
+                "description" : "<2021-1-10 through 2020-8-19>"
               },
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cstarting 2020-8-19\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<starting 2020-8-19>"
               }
             ],
-            "description": "fall 2020"
+            "description" : "fall 2020"
           },
-          "spring 2021": {
-            "courses": [
+          "spring 2021" : {
+            "courses" : [
               "COS-452: Research I",
               "MUS-290: Symphony Orchestra",
               "COS-382: Language Structures",
               "COS-370: Selected Topics",
               "COS-421: Operating Systems"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": 1.4285714285714286,
-                "weekdays": {
-                  "Monday": {
-                    "meetings": [
+                "weight" : 1.4285714285714286,
+                "weekdays" : {
+                  "Monday" : {
+                    "meetings" : [
                       "COS-452: Research I (spring 2021) (0:00 AM - 0:50 AM)",
                       "MUS-290: Symphony Orchestra (spring 2021) (4:00 AM - 5:30 AM)",
                       "COS-382: Language Structures (spring 2021) (9:00 AM - 9:50 AM)",
                       "COS-421: Operating Systems (spring 2021) (3:00 AM - 3:50 AM)",
                       "COS-370: Selected Topics (spring 2021) (11:00 AM - 11:50 AM)"
                     ],
-                    "description": "Monday"
+                    "description" : "Monday"
                   },
-                  "Friday": {
-                    "meetings": [
+                  "Friday" : {
+                    "meetings" : [
                       "COS-452: Research I (spring 2021) (0:00 AM - 0:50 AM)",
                       "COS-382: Language Structures (spring 2021) (9:00 AM - 9:50 AM)",
                       "COS-421: Operating Systems (spring 2021) (3:00 AM - 3:50 AM)",
                       "COS-370: Selected Topics (spring 2021) (11:00 AM - 11:50 AM)"
                     ],
-                    "description": "Friday"
+                    "description" : "Friday"
                   },
-                  "Wednesday": {
-                    "meetings": [
+                  "Wednesday" : {
+                    "meetings" : [
                       "COS-452: Research I (spring 2021) (0:00 AM - 0:50 AM)",
                       "MUS-290: Symphony Orchestra (spring 2021) (4:00 AM - 5:30 AM)",
                       "COS-382: Language Structures (spring 2021) (9:00 AM - 9:50 AM)",
                       "COS-421: Operating Systems (spring 2021) (3:00 AM - 3:50 AM)",
                       "COS-370: Selected Topics (spring 2021) (11:00 AM - 11:50 AM)"
                     ],
-                    "description": "Wednesday"
+                    "description" : "Wednesday"
                   }
                 },
-                "description": "\u003c2021-2-1 through 2021-6-20\u003e"
+                "description" : "<2021-2-1 through 2021-6-20>"
               }
             ],
-            "description": "spring 2021"
+            "description" : "spring 2021"
           },
-          "fall 2021": {
-            "courses": [
+          "fall 2021" : {
+            "courses" : [
               "COS-453: Research II",
               "COS-435: Theory of Computation",
               "COS-432: Software Reverse Engineering and Analysis",
@@ -309,119 +330,125 @@
               "MUS-290: Symphony Orchestra",
               "COS-493: Computer Science Senior Capstone"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cuntil 2022-1-23\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<until 2022-1-23>"
               },
               {
-                "weight": 2.2142857142857144,
-                "weekdays": {},
-                "description": "\u003c2022-1-23 through 2021-8-30\u003e"
+                "weight" : 2.2142857142857144,
+                "weekdays" : {},
+                "description" : "<2022-1-23 through 2021-8-30>"
               },
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cstarting 2021-8-30\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<starting 2021-8-30>"
               }
             ],
-            "description": "fall 2021"
+            "description" : "fall 2021"
           }
         },
-        "description": "Context at level: fullPlan"
+        "description" : "Context at level: fullPlan"
       },
-      "specification": {
-        "specifications": [
+      "specification" : {
+        "specifications" : [
           {
-            "constraint": {
-              "description": "meeting in time range"
+            "constraint" : {
+              "contextEvaluator" : {
+                "description" : "meeting in time range"
+              },
+              "description" : "meeting in time range"
             },
-            "score": "valid (100%)",
-            "description": "prefer [3.0] not meeting in time range"
+            "score" : "valid (100%)",
+            "description" : "prefer [3.0] not meeting in time range"
           },
           {
-            "constraint": {
-              "description": "less time blocks"
+            "constraint" : {
+              "contextEvaluator" : {
+                "description" : "time blocks"
+              },
+              "description" : "less time blocks"
             },
-            "score": "valid (78%)",
-            "description": "prefer [3.0] less time blocks"
+            "score" : "valid (78%)",
+            "description" : "prefer [3.0] less time blocks"
           }
         ],
-        "score": "invalid (63%)",
-        "description": "Specification List"
+        "score" : "invalid (63%)",
+        "description" : "Specification List"
       },
-      "score": "invalid (63%)",
-      "description": "for days [Monday, Friday, Wednesday]"
+      "score" : "invalid (63%)",
+      "description" : "for days [Monday, Friday, Wednesday]"
     },
     {
-      "context": {
-        "terms": {
-          "fall 2018": {
-            "courses": [
+      "context" : {
+        "terms" : {
+          "fall 2018" : {
+            "courses" : [
               "MAT-215: Discrete Mathematics for Computer Science",
               "COS-121: Foundations of Computer Science",
               "COS-121: Foundations of Computer Science",
               "BIB-110: Biblical Literature I"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cuntil 2019-1-20\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<until 2019-1-20>"
               },
               {
-                "weight": 2.2142857142857144,
-                "weekdays": {},
-                "description": "\u003c2019-1-20 through 2018-8-27\u003e"
+                "weight" : 2.2142857142857144,
+                "weekdays" : {},
+                "description" : "<2019-1-20 through 2018-8-27>"
               },
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cstarting 2018-8-27\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<starting 2018-8-27>"
               }
             ],
-            "description": "fall 2018"
+            "description" : "fall 2018"
           },
-          "spring 2019": {
-            "courses": [
+          "spring 2019" : {
+            "courses" : [
               "KIN-100: Fitness for Life",
               "MAT-230: Calculus II",
               "HNR-225: Honors Colloquium"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": 1.5,
-                "weekdays": {
-                  "Monday": {
-                    "meetings": [
+                "weight" : 1.5,
+                "weekdays" : {
+                  "Monday" : {
+                    "meetings" : [
                       "MAT-230: Calculus II (spring 2019) (0:00 AM - 0:50 AM)",
                       "KIN-100: Fitness for Life (spring 2019) (9:00 AM - 9:50 AM)"
                     ],
-                    "description": "Monday"
+                    "description" : "Monday"
                   },
-                  "Friday": {
-                    "meetings": [
+                  "Friday" : {
+                    "meetings" : [
                       "MAT-230: Calculus II (spring 2019) (0:00 AM - 0:50 AM)"
                     ],
-                    "description": "Friday"
+                    "description" : "Friday"
                   },
-                  "Wednesday": {
-                    "meetings": [
+                  "Wednesday" : {
+                    "meetings" : [
                       "MAT-230: Calculus II (spring 2019) (0:00 AM - 0:50 AM)",
                       "KIN-100: Fitness for Life (spring 2019) (9:00 AM - 9:50 AM)",
                       "HNR-225: Honors Colloquium (spring 2019) (2:00 AM - 2:50 AM)"
                     ],
-                    "description": "Wednesday"
+                    "description" : "Wednesday"
                   }
                 },
-                "description": "\u003c2019-2-1 through 2019-6-23\u003e"
+                "description" : "<2019-2-1 through 2019-6-23>"
               }
             ],
-            "description": "spring 2019"
+            "description" : "spring 2019"
           },
-          "fall 2019": {
-            "courses": [
+          "fall 2019" : {
+            "courses" : [
               "MAT-240: Calculus III",
               "COS-265: Data Structures and Algorithms",
               "COS-243: Multi-tier Web Application Development",
@@ -429,107 +456,107 @@
               "PHY-203: General Physics I",
               "PHY-203: General Physics I"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cuntil 2020-1-19\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<until 2020-1-19>"
               },
               {
-                "weight": 2.2142857142857144,
-                "weekdays": {},
-                "description": "\u003c2020-1-19 through 2019-8-26\u003e"
+                "weight" : 2.2142857142857144,
+                "weekdays" : {},
+                "description" : "<2020-1-19 through 2019-8-26>"
               },
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cstarting 2019-8-26\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<starting 2019-8-26>"
               }
             ],
-            "description": "fall 2019"
+            "description" : "fall 2019"
           },
-          "jterm 2020": {
-            "courses": [
+          "jterm 2020" : {
+            "courses" : [
               "REL-313: Historic Christian Belief"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": 2.25,
-                "weekdays": {
-                  "Monday": {
-                    "meetings": [
+                "weight" : 2.25,
+                "weekdays" : {
+                  "Monday" : {
+                    "meetings" : [
                       "REL-313: Historic Christian Belief (jterm 2020) (1:00 AM - 3:10 AM)"
                     ],
-                    "description": "Monday"
+                    "description" : "Monday"
                   },
-                  "Friday": {
-                    "meetings": [
+                  "Friday" : {
+                    "meetings" : [
                       "REL-313: Historic Christian Belief (jterm 2020) (1:00 AM - 3:10 AM)"
                     ],
-                    "description": "Friday"
+                    "description" : "Friday"
                   },
-                  "Wednesday": {
-                    "meetings": [
+                  "Wednesday" : {
+                    "meetings" : [
                       "REL-313: Historic Christian Belief (jterm 2020) (1:00 AM - 3:10 AM)"
                     ],
-                    "description": "Wednesday"
+                    "description" : "Wednesday"
                   }
                 },
-                "description": "\u003c2020-1-6 through 2020-3-7\u003e"
+                "description" : "<2020-1-6 through 2020-3-7>"
               }
             ],
-            "description": "jterm 2020"
+            "description" : "jterm 2020"
           },
-          "spring 2020": {
-            "courses": [
+          "spring 2020" : {
+            "courses" : [
               "COS-284: Introduction to Computer Systems",
               "COS-280: Introduction to Artificial Intelligence",
               "MAT-311: Introduction to Data Science",
               "COS-331: Data Communications",
               "MUS-280: Wind Ensemble"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": 1.5,
-                "weekdays": {
-                  "Monday": {
-                    "meetings": [
+                "weight" : 1.5,
+                "weekdays" : {
+                  "Monday" : {
+                    "meetings" : [
                       "COS-280: Introduction to Artificial Intelligence (spring 2020) (9:00 AM - 9:50 AM)",
                       "MUS-280: Wind Ensemble (spring 2020) (3:00 AM - 3:50 AM)",
                       "COS-284: Introduction to Computer Systems (spring 2020) (11:00 AM - 11:50 AM)",
                       "COS-331: Data Communications (spring 2020) (2:00 AM - 2:50 AM)",
                       "MAT-311: Introduction to Data Science (spring 2020) (1:00 AM - 1:50 AM)"
                     ],
-                    "description": "Monday"
+                    "description" : "Monday"
                   },
-                  "Friday": {
-                    "meetings": [
+                  "Friday" : {
+                    "meetings" : [
                       "COS-280: Introduction to Artificial Intelligence (spring 2020) (9:00 AM - 9:50 AM)",
                       "MUS-280: Wind Ensemble (spring 2020) (3:00 AM - 3:50 AM)",
                       "COS-284: Introduction to Computer Systems (spring 2020) (11:00 AM - 11:50 AM)",
                       "COS-331: Data Communications (spring 2020) (2:00 AM - 2:50 AM)",
                       "MAT-311: Introduction to Data Science (spring 2020) (1:00 AM - 1:50 AM)"
                     ],
-                    "description": "Friday"
+                    "description" : "Friday"
                   },
-                  "Wednesday": {
-                    "meetings": [
+                  "Wednesday" : {
+                    "meetings" : [
                       "COS-280: Introduction to Artificial Intelligence (spring 2020) (9:00 AM - 9:50 AM)",
                       "MUS-280: Wind Ensemble (spring 2020) (3:00 AM - 3:50 AM)",
                       "COS-284: Introduction to Computer Systems (spring 2020) (11:00 AM - 11:50 AM)",
                       "COS-331: Data Communications (spring 2020) (2:00 AM - 2:50 AM)",
                       "MAT-311: Introduction to Data Science (spring 2020) (1:00 AM - 1:50 AM)"
                     ],
-                    "description": "Wednesday"
+                    "description" : "Wednesday"
                   }
                 },
-                "description": "\u003c2020-2-3 through 2020-6-28\u003e"
+                "description" : "<2020-2-3 through 2020-6-28>"
               }
             ],
-            "description": "spring 2020"
+            "description" : "spring 2020"
           },
-          "fall 2020": {
-            "courses": [
+          "fall 2020" : {
+            "courses" : [
               "MUS-280: Wind Ensemble",
               "COS-310: Current Literature Survey",
               "COS-340: Software Engineering",
@@ -538,74 +565,74 @@
               "HUM-330: Arts and Ideas",
               "COS-436: Parallel and Distributed Computing"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cuntil 2021-1-10\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<until 2021-1-10>"
               },
               {
-                "weight": 2.2142857142857144,
-                "weekdays": {},
-                "description": "\u003c2021-1-10 through 2020-8-19\u003e"
+                "weight" : 2.2142857142857144,
+                "weekdays" : {},
+                "description" : "<2021-1-10 through 2020-8-19>"
               },
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cstarting 2020-8-19\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<starting 2020-8-19>"
               }
             ],
-            "description": "fall 2020"
+            "description" : "fall 2020"
           },
-          "spring 2021": {
-            "courses": [
+          "spring 2021" : {
+            "courses" : [
               "COS-452: Research I",
               "MUS-290: Symphony Orchestra",
               "COS-382: Language Structures",
               "COS-370: Selected Topics",
               "COS-421: Operating Systems"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": 1.4285714285714286,
-                "weekdays": {
-                  "Monday": {
-                    "meetings": [
+                "weight" : 1.4285714285714286,
+                "weekdays" : {
+                  "Monday" : {
+                    "meetings" : [
                       "COS-452: Research I (spring 2021) (0:00 AM - 0:50 AM)",
                       "MUS-290: Symphony Orchestra (spring 2021) (4:00 AM - 5:30 AM)",
                       "COS-382: Language Structures (spring 2021) (9:00 AM - 9:50 AM)",
                       "COS-421: Operating Systems (spring 2021) (3:00 AM - 3:50 AM)",
                       "COS-370: Selected Topics (spring 2021) (11:00 AM - 11:50 AM)"
                     ],
-                    "description": "Monday"
+                    "description" : "Monday"
                   },
-                  "Friday": {
-                    "meetings": [
+                  "Friday" : {
+                    "meetings" : [
                       "COS-452: Research I (spring 2021) (0:00 AM - 0:50 AM)",
                       "COS-382: Language Structures (spring 2021) (9:00 AM - 9:50 AM)",
                       "COS-421: Operating Systems (spring 2021) (3:00 AM - 3:50 AM)",
                       "COS-370: Selected Topics (spring 2021) (11:00 AM - 11:50 AM)"
                     ],
-                    "description": "Friday"
+                    "description" : "Friday"
                   },
-                  "Wednesday": {
-                    "meetings": [
+                  "Wednesday" : {
+                    "meetings" : [
                       "COS-452: Research I (spring 2021) (0:00 AM - 0:50 AM)",
                       "MUS-290: Symphony Orchestra (spring 2021) (4:00 AM - 5:30 AM)",
                       "COS-382: Language Structures (spring 2021) (9:00 AM - 9:50 AM)",
                       "COS-421: Operating Systems (spring 2021) (3:00 AM - 3:50 AM)",
                       "COS-370: Selected Topics (spring 2021) (11:00 AM - 11:50 AM)"
                     ],
-                    "description": "Wednesday"
+                    "description" : "Wednesday"
                   }
                 },
-                "description": "\u003c2021-2-1 through 2021-6-20\u003e"
+                "description" : "<2021-2-1 through 2021-6-20>"
               }
             ],
-            "description": "spring 2021"
+            "description" : "spring 2021"
           },
-          "fall 2021": {
-            "courses": [
+          "fall 2021" : {
+            "courses" : [
               "COS-453: Research II",
               "COS-435: Theory of Computation",
               "COS-432: Software Reverse Engineering and Analysis",
@@ -614,59 +641,68 @@
               "MUS-290: Symphony Orchestra",
               "COS-493: Computer Science Senior Capstone"
             ],
-            "termSegments": [
+            "termSegments" : [
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cuntil 2022-1-23\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<until 2022-1-23>"
               },
               {
-                "weight": 2.2142857142857144,
-                "weekdays": {},
-                "description": "\u003c2022-1-23 through 2021-8-30\u003e"
+                "weight" : 2.2142857142857144,
+                "weekdays" : {},
+                "description" : "<2022-1-23 through 2021-8-30>"
               },
               {
-                "weight": -0.6071428571428571,
-                "weekdays": {},
-                "description": "\u003cstarting 2021-8-30\u003e"
+                "weight" : -0.6071428571428571,
+                "weekdays" : {},
+                "description" : "<starting 2021-8-30>"
               }
             ],
-            "description": "fall 2021"
+            "description" : "fall 2021"
           }
         },
-        "description": "Context at level: fullPlan"
+        "description" : "Context at level: fullPlan"
       },
-      "specification": {
-        "specifications": [
+      "specification" : {
+        "specifications" : [
           {
-            "constraint": {
-              "description": "less time blocks"
+            "constraint" : {
+              "contextEvaluator" : {
+                "description" : "time blocks"
+              },
+              "description" : "less time blocks"
             },
-            "score": "not computed",
-            "description": "prefer [3.0] less time blocks"
+            "score" : "not computed",
+            "description" : "prefer [3.0] less time blocks"
           }
         ],
-        "score": "not computed",
-        "description": "Specification List"
+        "score" : "not computed",
+        "description" : "Specification List"
       },
-      "score": "invalid (63%)",
-      "description": "for days [Tuesday, Thursday]"
+      "score" : "invalid (63%)",
+      "description" : "for days [Tuesday, Thursday]"
     },
     {
-      "constraint": {
-        "description": "meeting in time range"
+      "constraint" : {
+        "contextEvaluator" : {
+          "description" : "meeting in time range"
+        },
+        "description" : "meeting in time range"
       },
-      "score": "valid (44%)",
-      "description": "prefer [3.0] not meeting in time range"
+      "score" : "valid (44%)",
+      "description" : "prefer [3.0] not meeting in time range"
     },
     {
-      "constraint": {
-        "description": "less day end time"
+      "constraint" : {
+        "contextEvaluator" : {
+          "description" : "day end time"
+        },
+        "description" : "less day end time"
       },
-      "score": "valid (167%)",
-      "description": "prefer [3.0] less day end time"
+      "score" : "valid (167%)",
+      "description" : "prefer [3.0] less day end time"
     }
   ],
-  "score": "invalid (63%)",
-  "description": "Specification List"
+  "score" : "invalid (63%)",
+  "description" : "Specification List"
 }

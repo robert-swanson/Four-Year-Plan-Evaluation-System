@@ -6,10 +6,10 @@ import preferences.context.ContextLevel;
 import preferences.evaluators.ScalableContextEvaluator;
 import preferences.result.Result;
 
-public class MeetingMinutesEvaluator extends MeetingAccumulatorEvaluator {
+public class MeetingMinutesEvaluator extends ScalableContextEvaluator {
     @Override
     public Result getValue(Context context) {
-        lastValue = getValue(context, "Total meeting time minutes", Meeting::getMeetingMinutes);
+        lastValue = MeetingAccumulatorEvaluator.getValue(context, "Total meeting time minutes", Meeting::getMeetingMinutes);
         return lastValue;
     }
 

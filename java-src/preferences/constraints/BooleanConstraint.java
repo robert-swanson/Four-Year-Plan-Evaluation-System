@@ -38,7 +38,7 @@ public class BooleanConstraint extends RequireableConstraint {
 
     @Override
     public ConstraintResultExplanation explainLastResult() {
-        return new ConstraintResultExplanation(this);
+        return new ConstraintResultExplanation(this, contextEvaluator);
         // TODO: Add evaluation explanation
     }
 

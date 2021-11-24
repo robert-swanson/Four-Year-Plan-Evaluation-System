@@ -13,7 +13,7 @@ import preferences.result.Value;
 
 import java.util.Set;
 
-public class LastTermEvaluator extends ContextEvaluator implements TermYearContextEvaluator, ScalableContextEvaluator {
+public class LastTermEvaluator extends TermYearContextEvaluator {
     @Override
     public Result getValue(Context context) {
         TermYear last = null;

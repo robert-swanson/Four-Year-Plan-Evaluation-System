@@ -8,7 +8,7 @@ import preferences.context.iterables.courseoffering.PlanTermCourseOfferingIterab
 import preferences.context.iterables.courseoffering.TermCourseOfferingIterable;
 import preferences.result.*;
 
-public abstract class CourseOfferingAccumulatorEvaluator extends ContextEvaluator implements ScalableContextEvaluator {
+public abstract class CourseOfferingAccumulatorEvaluator extends ScalableContextEvaluator {
     public interface CourseOfferingAttribute {
         double get(CourseOffering courseOffering);
     }

@@ -2,12 +2,13 @@ package preferences.evaluators.general;
 
 import preferences.context.Context;
 import preferences.context.ContextLevel;
+import preferences.evaluators.ScalableContextEvaluator;
 import preferences.result.Result;
 
-public class TotalUpperLevelCreditsEvaluator extends CourseOfferingAccumulatorEvaluator {
+public class TotalUpperLevelCreditsEvaluator extends ScalableContextEvaluator {
     @Override
     public Result getValue(Context context) {
-        lastValue = getValue(context, "Total upper level credits", courseOffering -> courseOffering.getCourse().getNumber() >= 300 ? courseOffering.getCredits() : 0);
+        lastValue = CourseOfferingAccumulatorEvaluator.getValue(context, "Total upper level credits", courseOffering -> courseOffering.getCourse().getNumber() >= 300 ? courseOffering.getCredits() : 0);
         return lastValue;
     }
 

@@ -11,7 +11,7 @@ import preferences.result.PlanResult;
 import preferences.result.Result;
 import preferences.result.Value;
 
-public class CourseBeforeCourseEvaluator extends ContextEvaluator implements BooleanContextEvaluator {
+public class CourseBeforeCourseEvaluator extends BooleanContextEvaluator {
     final private CourseID first, second;
     public CourseBeforeCourseEvaluator(CourseID first, CourseID second) {
         this.first = first;

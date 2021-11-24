@@ -2,9 +2,10 @@ package preferences.evaluators.general;
 
 import preferences.context.Context;
 import preferences.context.ContextLevel;
+import preferences.evaluators.ScalableContextEvaluator;
 import preferences.result.Result;
 
-public class CoursesWithProfessorEvaluator extends CourseOfferingAccumulatorEvaluator {
+public class CoursesWithProfessorEvaluator extends ScalableContextEvaluator {
     private String professor;
 
     public CoursesWithProfessorEvaluator(String professor) {
@@ -13,7 +14,7 @@ public class CoursesWithProfessorEvaluator extends CourseOfferingAccumulatorEval
 
     @Override
     public Result getValue(Context context) {
-        lastValue = getValue(context, String.format("Total courses with %s", professor), courseOffering -> {
+        lastValue = CourseOfferingAccumulatorEvaluator.getValue(context, String.format("Total courses with %s", professor), courseOffering -> {
             for (String thisProf : courseOffering.getProfessors()) {
                 if (professor.equals(thisProf)) return 1;
             }

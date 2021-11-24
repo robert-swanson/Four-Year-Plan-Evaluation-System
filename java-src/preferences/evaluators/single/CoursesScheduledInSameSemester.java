@@ -13,7 +13,7 @@ import preferences.result.Value;
 
 import java.util.Set;
 
-public class CoursesScheduledInSameSemester extends ContextEvaluator implements BooleanContextEvaluator {
+public class CoursesScheduledInSameSemester extends BooleanContextEvaluator {
     Set<CourseID> courseIDS;
     public CoursesScheduledInSameSemester(Set<CourseID> courseIDS) {
         this.courseIDS = courseIDS;
