@@ -117,7 +117,7 @@ public class WeekSubContext implements Explainable {
     @Override
     public String describe() {
         if (startDate == null && endDate == null) {
-            return "<full term>";
+            return "full term";
         } else if (startDate == null) {
             return String.format("until %s", endDate);
         } else if (endDate == null) {

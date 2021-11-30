@@ -22,12 +22,6 @@ public class LessThanOrEqualConstraint extends RequireableConstraint {
     }
 
     @Override
-    public ConstraintResultExplanation explainLastResult() {
-        // TODO: Add evaluation explanation
-        return super.explainLastResult();
-    }
-
-    @Override
     public String describe() {
         return String.format("%s less than or equal to %s", contextEvaluator, minimumValue);
     }
@@ -38,16 +32,16 @@ public class LessThanOrEqualConstraint extends RequireableConstraint {
     }
 
     @Override
-    public Result score(Context context) {
+    public double score(Context context) {
         Result result = contextEvaluator.getValue(context);
         result.scoreResult(value -> scoreFunction.score(((ScalableValue)value).getScalableValue()), scoreFunction.toString(), this.toString());
-        return result;
+        return result.getLastScore();
     }
 
     @Override
-    public Result fulfilled(Context context) {
+    public boolean fulfilled(Context context) {
         Result result = contextEvaluator.getValue(context);
         result.checkResult(value -> minimumValue.compareTo((ScalableValue)value) >= 0, this.toString());
-        return result;
+        return result.getCalculatedCheck();
     }
 }

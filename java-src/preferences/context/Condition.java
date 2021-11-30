@@ -37,7 +37,7 @@ public abstract class Condition implements Explainable {
 
         @Override
         public boolean evaluate(Context context) {
-            return requireableConstraint.fulfilled(context).getCalculatedCheck();
+            return requireableConstraint.fulfilled(context);
         }
 
         @Override

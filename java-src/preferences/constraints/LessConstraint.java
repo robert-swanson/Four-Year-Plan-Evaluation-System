@@ -20,12 +20,6 @@ public class LessConstraint extends Constraint {
     }
 
     @Override
-    public ConstraintResultExplanation explainLastResult() {
-        // TODO: Add evaluation explanation
-        return super.explainLastResult();
-    }
-
-    @Override
     public String describe() {
         return String.format("less %s", contextEvaluator);
     }
@@ -36,9 +30,9 @@ public class LessConstraint extends Constraint {
     }
 
     @Override
-    public Result score(Context context) {
+    public double score(Context context) {
         Result result = contextEvaluator.getValue(context);
         result.scoreResult(value -> scoreFunction.score(((ScalableValue)value).getScalableValue()), scoreFunction.toString(), this.toString());
-        return result;
+        return result.getLastScore();
     }
 }

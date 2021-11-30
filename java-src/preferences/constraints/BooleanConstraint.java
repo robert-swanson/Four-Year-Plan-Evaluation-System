@@ -6,6 +6,7 @@ import preferences.evaluators.BooleanContextEvaluator;
 import preferences.evaluators.TermYearContextEvaluator;
 import preferences.explanation.constraints.ConstraintResultExplanation;
 import preferences.result.Result;
+import preferences.result.ScalableValue;
 import preferences.result.Value;
 
 public class BooleanConstraint extends RequireableConstraint {
@@ -19,27 +20,25 @@ public class BooleanConstraint extends RequireableConstraint {
     }
 
     @Override
-    public Result score(Context context) {
+    public double score(Context context) {
+        Result result = contextEvaluator.getValue(context);
         if (contextEvaluator instanceof  BooleanContextEvaluator) {
-            Result result = contextEvaluator.getValue(context);
             result.scoreResult(value -> ((Value.Boolean)value).value ? 1 : 0, "boolean", this.toString());
-            return result;
         } else {
-            Result result = contextEvaluator.getValue(context);
             result.scoreResult(value -> value == Value.NULL? 0 : 1, "TermYear not empty", this.toString());
-            return result;
         }
+        return result.getLastScore();
     }
 
     @Override
-    public Result fulfilled(Context context) {
-        return null;
-    }
-
-    @Override
-    public ConstraintResultExplanation explainLastResult() {
-        return new ConstraintResultExplanation(this, contextEvaluator);
-        // TODO: Add evaluation explanation
+    public boolean fulfilled(Context context) {
+        Result result = contextEvaluator.getValue(context);
+        if (contextEvaluator instanceof  BooleanContextEvaluator) {
+            result.checkResult(value -> ((Value.Boolean)value).value, describe());
+        } else {
+            result.checkResult(value -> value != Value.NULL, this.toString());
+        }
+        return result.getCalculatedCheck();
     }
 
     @Override

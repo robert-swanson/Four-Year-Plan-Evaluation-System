@@ -10,5 +10,5 @@ public abstract class RequireableConstraint extends Constraint {
         super(contextEvaluator, constraintType, contextLevel);
     }
 
-    public abstract Result fulfilled(Context context);
+    public abstract boolean fulfilled(Context context);
 }

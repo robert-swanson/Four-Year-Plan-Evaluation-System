@@ -6,6 +6,7 @@ import preferences.evaluators.ContextEvaluator;
 import preferences.explanation.constraints.ConstraintResultExplanation;
 import preferences.explanation.Explainable;
 import preferences.result.Result;
+import preferences.scoring.Score;
 
 public abstract class Constraint implements Explainable {
     public enum ConstraintType { equal, lessThan, greaterThan, lessThanOrEqual, greaterThanOrEqual, booleanConstraint, more, less }
@@ -20,7 +21,7 @@ public abstract class Constraint implements Explainable {
         this.contextLevel = contextLevel;
     }
 
-    public abstract Result score(Context context);
+    public abstract double score(Context context);
     public ConstraintResultExplanation explainLastResult() {
         return new ConstraintResultExplanation(this, contextEvaluator);
     }
