@@ -20,11 +20,11 @@ public class Time implements Comparable<Time> {
         if (!matcher.matches()) {
             throw new JsonParseException(String.format("Time '%s' does not match 12 hour format: 'HH:MM AM/PM'", twelveHourTime));
         } else {
-            pm = matcher.group(2).equalsIgnoreCase("PM");
+            pm = matcher.group(3).equalsIgnoreCase("PM");
             minutes = Integer.parseInt(matcher.group(2));
 
             hour12 = Integer.parseInt(matcher.group(1));
-            hour23 = (pm ? (hour12 % 12) + 12 : (hour12 & 12));
+            hour23 = (pm ? (hour12 % 12) + 11 : (hour12 % 12)-1);
 
             armyTime = hour23 * 100 + minutes;
         }

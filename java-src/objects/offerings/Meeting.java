@@ -31,7 +31,7 @@ public class Meeting {
 
     public int getMeetingMinutes() {
         int meetingMinutes = startTime.minutesUntil(endTime);
-        assert meetingMinutes >= 0;
+        assert meetingMinutes >= 0: "negative meeting minutes";
         return meetingMinutes;
     }
 

@@ -23,7 +23,8 @@ public class TermWeekdayMeetingIterable implements Iterator<WeekdayMeetingIterab
         if (weekSubContextIterator.hasNext()) {
             do {
                 currentWeekSubContext = weekSubContextIterator.next();
-                currentWeight = currentWeekSubContext.getWeight();
+                Double weight = currentWeekSubContext.getWeight();
+                currentWeight = weight == null ? 0.0 : weight; // TODO: Debug, remove null weights
                 weekdaySubContextIterator = currentWeekSubContext.getWeekdaySubcontexts().values().iterator();
             } while (!weekdaySubContextIterator.hasNext() && weekSubContextIterator.hasNext());
         }
