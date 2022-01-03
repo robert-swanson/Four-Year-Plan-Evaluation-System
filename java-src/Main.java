@@ -64,7 +64,7 @@ public class Main {
 
             System.out.println("- Scoring Plan");
 
-            for (int i = 0; i < 1; i++) {
+            for (int i = 0; i < 100; i++) {
                 long startTime = System.currentTimeMillis();
                 compiledSpecification.evaluate(context, true);
                 long endTime = System.currentTimeMillis();

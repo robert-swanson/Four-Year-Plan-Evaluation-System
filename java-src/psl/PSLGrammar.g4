@@ -1,9 +1,9 @@
 grammar PSLGrammar;
 
 //start: block* EOF;
-start: (block)* EOF;
+start: (block)+ EOF;
 
-block: NAME priorityList? '{' specification* '}';
+block: NAME priorityList? '{' specification+ '}';
 
 // Priority
 priority: NAME EQUALS (INT|FLOAT);
@@ -125,17 +125,9 @@ lessConstraint:
 // --- Evaluators ---
 
 numericEvaluator:
-    totalCredits |
-    totalCreditsFromSet |
-    upperDivisionCredits |
-    totalCourses |
-    totalCoursesFromSet |
-    upperDivisionCourses |
-    meetingMinutes |
-    numCoursesWithProfessor |
-    numTimeBlocks |
-    termsInPlan
-    ;
+    totalCredits | totalCreditsFromSet | upperDivisionCredits | totalCourses |
+    totalCoursesFromSet | upperDivisionCourses | meetingMinutes |
+    numCoursesWithProfessor | numTimeBlocks | termsInPlan ;
 
 totalCourses: COURSES;
 totalCoursesFromSet: COURSE_FROM courseList;
@@ -153,23 +145,14 @@ TIME_BLOCKS: 'time blocks';
 RESERVING: 'reserving';
 
 // Term Year Evaluators
-termYearEvaluators:
-    courseTermYear |
-    planStart |
-    planEnd
-    ;
+termYearEvaluators: courseTermYear | planStart | planEnd;
 
 courseTermYear: TAKING COURSE '"' courseID '"';
 planStart: PLAN STARTING;
 planEnd: PLAN ENDING;
 
 // Time Evaluators
-timeEvaluators:
-    dayStarting |
-    dayEnding |
-    courseStart |
-    courseEnd
-    ;
+timeEvaluators: dayStarting | dayEnding | courseStart | courseEnd;
 
 dayStarting: STARTING;
 dayEnding: ENDING;
@@ -177,12 +160,7 @@ courseStart: '"' courseID '"' STARTING;
 courseEnd: '"' courseID '"' ENDING;
 
 // Boolean Evaluators
-booleanEvaluators:
-    meetingAtTimeRange |
-    courseBeforeCourse |
-    coursesInSameTerm |
-    termExists
-    ;
+booleanEvaluators: meetingAtTimeRange | courseBeforeCourse | coursesInSameTerm | termExists;
 
 meetingAtTimeRange: MEETING AT timeRange;
 courseBeforeCourse: TAKING '"' courseID '"' BEFORE '"' courseID '"';
