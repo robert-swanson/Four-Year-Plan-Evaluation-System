@@ -18,8 +18,8 @@ Homework Time: **218 hours**
 
 ## Documents
 
-- [Literature Survey](./documents/Literature Survey.pdf) (Homework Time: 34 hours)
-- [Spring Archive Paper](./documents/Spring Archive Paper.pdf) (Homework Time: 10 hours)
+- [Literature Survey](./documents/Literature-Survey.pdf) (Homework Time: 34 hours)
+- [Spring Archive Paper](./documents/Spring-Archive-Paper.pdf) (Homework Time: 10 hours)
 - [Final Paper](./documents/Paper.pdf) (Homework Time: 18 hours)
 - [Presentation](./documents/Presentation.pdf) (Homework Time: 13 hours)
 - [Poster](./documents/Poster.pdf) (Homework Time: 3 hours)
