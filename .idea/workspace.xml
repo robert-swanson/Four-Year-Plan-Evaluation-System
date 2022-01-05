@@ -77,16 +77,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="removed angle brackets from week sub context description">
-      <change afterPath="$PROJECT_DIR$/test-input/simple.psl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cos382-language_structures/dsl" beforeDir="false" afterPath="$PROJECT_DIR$/../cos382-language_structures/dsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cos435-theory_of_computation/cos435-project5/cfg.go" beforeDir="false" afterPath="$PROJECT_DIR$/../cos435-theory_of_computation/cos435-project5/cfg.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/preferences/specification/Specification.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/specification/Specification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/psl/PSLGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/PSLGrammar.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/taylor/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/taylor/result.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-input/test.psl" beforeDir="false" afterPath="$PROJECT_DIR$/test-input/test.psl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,6 +330,8 @@
       <workItem from="1639622899286" duration="4276000" />
       <workItem from="1639677869705" duration="1326000" />
       <workItem from="1640049534676" duration="1097000" />
+      <workItem from="1641319181485" duration="441000" />
+      <workItem from="1641325280086" duration="5100000" />
     </task>
     <task id="LOCAL-00001" summary="Started java objects">
       <created>1619497519425</created>
