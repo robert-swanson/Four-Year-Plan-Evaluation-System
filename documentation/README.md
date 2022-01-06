@@ -27,7 +27,7 @@ The evaluation engine also makes reference to an internal database of course inf
 
 ## Topics
 
-- [Development Environment Setup](./Developement-Environment-Setup)
+- [Development Environment Setup](./Developement-Environment-Setup.md)
 
 - [PSL Grammar](PSL-Grammar.md)
 - [Evaluation Engine](Evaluation-Engine.md)
