@@ -64,12 +64,10 @@ public class Main {
 
             System.out.println("- Scoring Plan");
 
-            for (int i = 0; i < 100; i++) {
-                long startTime = System.currentTimeMillis();
-                compiledSpecification.evaluate(context, true);
-                long endTime = System.currentTimeMillis();
-                System.out.printf("- Plan is %s (took %.4fs)\n", compiledSpecification.getLastResult().describe(), (endTime-startTime)/1000.0);
-            }
+            long startTime = System.currentTimeMillis();
+            compiledSpecification.evaluate(context, true);
+            long endTime = System.currentTimeMillis();
+            System.out.printf("- Plan is %s (took %.4fs)\n", compiledSpecification.getLastResult().describe(), (endTime-startTime)/1000.0);
 
             FullSpecificationResultExplanation explanation = compiledSpecification.explainLastResult();
             writeOutput(outPath, explanation);

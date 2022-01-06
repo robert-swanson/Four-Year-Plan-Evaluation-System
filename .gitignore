@@ -6,5 +6,4 @@ venv
 *.iml
 out
 gen
-*.jar
 .Rproj.user

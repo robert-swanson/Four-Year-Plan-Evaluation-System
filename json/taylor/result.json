@@ -3,10 +3,10 @@
     "terms": {
       "fall 2018": {
         "courses": [
+          "BIB-110: Biblical Literature I",
           "MAT-215: Discrete Mathematics for Computer Science",
           "COS-121: Foundations of Computer Science",
-          "COS-121: Foundations of Computer Science",
-          "BIB-110: Biblical Literature I"
+          "COS-121: Foundations of Computer Science"
         ],
         "termSegments": [
           {
@@ -29,9 +29,9 @@
       },
       "spring 2019": {
         "courses": [
-          "COS-143: Interactive Webpage Development",
+          "COS-109: Computer and Network Operations",
           "COS-270: Selected Topics",
-          "COS-109: Computer and Network Operations"
+          "COS-143: Interactive Webpage Development"
         ],
         "termSegments": [
           {
@@ -53,12 +53,12 @@
       },
       "fall 2019": {
         "courses": [
-          "MAT-240: Calculus III",
-          "COS-265: Data Structures and Algorithms",
-          "COS-243: Multi-tier Web Application Development",
-          "COS-265: Data Structures and Algorithms",
           "PHY-203: General Physics I",
-          "PHY-203: General Physics I"
+          "COS-265: Data Structures and Algorithms",
+          "MAT-240: Calculus III",
+          "PHY-203: General Physics I",
+          "COS-243: Multi-tier Web Application Development",
+          "COS-265: Data Structures and Algorithms"
         ],
         "termSegments": [
           {
@@ -103,9 +103,9 @@
         "courses": [
           "COS-284: Introduction to Computer Systems",
           "COS-280: Introduction to Artificial Intelligence",
-          "MAT-311: Introduction to Data Science",
           "COS-331: Data Communications",
-          "MUS-280: Wind Ensemble"
+          "MUS-280: Wind Ensemble",
+          "MAT-311: Introduction to Data Science"
         ],
         "termSegments": [
           {
@@ -159,13 +159,13 @@
       },
       "fall 2020": {
         "courses": [
+          "COS-232: Computer and Network Security I",
           "MUS-280: Wind Ensemble",
           "COS-310: Current Literature Survey",
+          "COS-436: Parallel and Distributed Computing",
           "COS-340: Software Engineering",
-          "ENP-270: Selected Topics",
-          "COS-232: Computer and Network Security I",
           "HUM-330: Arts and Ideas",
-          "COS-436: Parallel and Distributed Computing"
+          "ENP-270: Selected Topics"
         ],
         "termSegments": [
           {
@@ -208,13 +208,13 @@
       },
       "fall 2021": {
         "courses": [
+          "COS-493: Computer Science Senior Capstone",
           "COS-453: Research II",
+          "MUS-290: Symphony Orchestra",
+          "COS-381: Computer Architecture",
           "COS-435: Theory of Computation",
           "COS-432: Software Reverse Engineering and Analysis",
-          "COS-381: Computer Architecture",
-          "COS-343: Database Systems",
-          "MUS-290: Symphony Orchestra",
-          "COS-493: Computer Science Senior Capstone"
+          "COS-343: Database Systems"
         ],
         "termSegments": [
           {
@@ -265,23 +265,23 @@
       {
         "constraint": {
           "evaluator": {
-            "result": "values: [[], [[8:00 AM]], [], [[1:00 PM]], [[9:00 AM, 9:00 AM], [9:00 AM]], [], [[9:30 AM]], []] weights: [[], [1.5, 1.5], [], [2.25, 2.25], [1.5, -0.25, -0.25], [], [1.4285714285714286, 1.4285714285714286], []]",
+            "result": "values: [[], [[9:00 AM, 8:00 AM, 9:00 AM, 8:00 AM], [0:00 PM]], [], [[1:00 PM, 1:00 PM, 1:00 PM, 1:00 PM], [1:00 PM]], [[9:00 AM, 9:00 AM], [9:00 AM]], [], [[9:00 AM, 9:30 AM, 9:00 AM, 9:30 AM], [9:00 AM]], []] weights: [[], [1.5, -0.25, -0.25], [], [2.25, -0.625, -0.625], [1.5, -0.25, -0.25], [], [1.4285714285714286, -0.21428571428571427, -0.21428571428571427], []]",
             "description": "day start time"
           },
           "description": "day start time greater than or equal to 9:00 AM"
         },
-        "score": "valid (100%)",
+        "score": "valid (99%)",
         "description": "prefer [10.0] day start time greater than or equal to 9:00 AM"
       },
       {
         "constraint": {
           "evaluator": {
-            "result": "34",
+            "result": "42",
             "description": "courses"
           },
           "description": "more courses"
         },
-        "score": "valid (7%)",
+        "score": "valid (71%)",
         "description": "prefer [10.0] more courses"
       },
       {
@@ -367,10 +367,10 @@
           "terms": {
             "fall 2018": {
               "courses": [
+                "BIB-110: Biblical Literature I",
                 "MAT-215: Discrete Mathematics for Computer Science",
                 "COS-121: Foundations of Computer Science",
-                "COS-121: Foundations of Computer Science",
-                "BIB-110: Biblical Literature I"
+                "COS-121: Foundations of Computer Science"
               ],
               "termSegments": [
                 {
@@ -393,9 +393,9 @@
             },
             "spring 2019": {
               "courses": [
-                "COS-143: Interactive Webpage Development",
+                "COS-109: Computer and Network Operations",
                 "COS-270: Selected Topics",
-                "COS-109: Computer and Network Operations"
+                "COS-143: Interactive Webpage Development"
               ],
               "termSegments": [
                 {
@@ -417,12 +417,12 @@
             },
             "fall 2019": {
               "courses": [
-                "MAT-240: Calculus III",
-                "COS-265: Data Structures and Algorithms",
-                "COS-243: Multi-tier Web Application Development",
-                "COS-265: Data Structures and Algorithms",
                 "PHY-203: General Physics I",
-                "PHY-203: General Physics I"
+                "COS-265: Data Structures and Algorithms",
+                "MAT-240: Calculus III",
+                "PHY-203: General Physics I",
+                "COS-243: Multi-tier Web Application Development",
+                "COS-265: Data Structures and Algorithms"
               ],
               "termSegments": [
                 {
@@ -467,9 +467,9 @@
               "courses": [
                 "COS-284: Introduction to Computer Systems",
                 "COS-280: Introduction to Artificial Intelligence",
-                "MAT-311: Introduction to Data Science",
                 "COS-331: Data Communications",
-                "MUS-280: Wind Ensemble"
+                "MUS-280: Wind Ensemble",
+                "MAT-311: Introduction to Data Science"
               ],
               "termSegments": [
                 {
@@ -523,13 +523,13 @@
             },
             "fall 2020": {
               "courses": [
+                "COS-232: Computer and Network Security I",
                 "MUS-280: Wind Ensemble",
                 "COS-310: Current Literature Survey",
+                "COS-436: Parallel and Distributed Computing",
                 "COS-340: Software Engineering",
-                "ENP-270: Selected Topics",
-                "COS-232: Computer and Network Security I",
                 "HUM-330: Arts and Ideas",
-                "COS-436: Parallel and Distributed Computing"
+                "ENP-270: Selected Topics"
               ],
               "termSegments": [
                 {
@@ -572,13 +572,13 @@
             },
             "fall 2021": {
               "courses": [
+                "COS-493: Computer Science Senior Capstone",
                 "COS-453: Research II",
+                "MUS-290: Symphony Orchestra",
+                "COS-381: Computer Architecture",
                 "COS-435: Theory of Computation",
                 "COS-432: Software Reverse Engineering and Analysis",
-                "COS-381: Computer Architecture",
-                "COS-343: Database Systems",
-                "MUS-290: Symphony Orchestra",
-                "COS-493: Computer Science Senior Capstone"
+                "COS-343: Database Systems"
               ],
               "termSegments": [
                 {
@@ -607,18 +607,18 @@
             {
               "constraint": {
                 "evaluator": {
-                  "result": "values: [[], [[True]], [], [[False]], [[False, False], [False]], [], [[False]], []] weights: [[], [1.5, 1.5], [], [2.25, 2.25], [1.5, -0.25, -0.25], [], [1.4285714285714286, 1.4285714285714286], []]",
+                  "result": "values: [[], [[False, True, False, True], [False]], [], [[False, False, False, False], [False]], [[False, False], [False]], [], [[False, False, False, False], [False]], []] weights: [[], [1.5, -0.25, -0.25], [], [2.25, -0.625, -0.625], [1.5, -0.25, -0.25], [], [1.4285714285714286, -0.21428571428571427, -0.21428571428571427], []]",
                   "description": "meeting in time range"
                 },
                 "description": "meeting in time range"
               },
-              "score": "valid (75%)",
+              "score": "valid (83%)",
               "description": "prefer [1.0] not meeting in time range"
             },
             {
               "condition": {
                 "evaluator": {
-                  "result": "values: [[[80.00]]] weights: [[null, null]]",
+                  "result": "values: [[[200.00]]] weights: [[null, null]]",
                   "description": "meeting minutes"
                 },
                 "description": "meeting minutes less than 120.00"
@@ -627,10 +627,10 @@
                 "terms": {
                   "fall 2018": {
                     "courses": [
+                      "BIB-110: Biblical Literature I",
                       "MAT-215: Discrete Mathematics for Computer Science",
                       "COS-121: Foundations of Computer Science",
-                      "COS-121: Foundations of Computer Science",
-                      "BIB-110: Biblical Literature I"
+                      "COS-121: Foundations of Computer Science"
                     ],
                     "termSegments": [
                       {
@@ -653,9 +653,9 @@
                   },
                   "spring 2019": {
                     "courses": [
-                      "COS-143: Interactive Webpage Development",
+                      "COS-109: Computer and Network Operations",
                       "COS-270: Selected Topics",
-                      "COS-109: Computer and Network Operations"
+                      "COS-143: Interactive Webpage Development"
                     ],
                     "termSegments": [
                       {
@@ -677,12 +677,12 @@
                   },
                   "fall 2019": {
                     "courses": [
-                      "MAT-240: Calculus III",
-                      "COS-265: Data Structures and Algorithms",
-                      "COS-243: Multi-tier Web Application Development",
-                      "COS-265: Data Structures and Algorithms",
                       "PHY-203: General Physics I",
-                      "PHY-203: General Physics I"
+                      "COS-265: Data Structures and Algorithms",
+                      "MAT-240: Calculus III",
+                      "PHY-203: General Physics I",
+                      "COS-243: Multi-tier Web Application Development",
+                      "COS-265: Data Structures and Algorithms"
                     ],
                     "termSegments": [
                       {
@@ -727,9 +727,9 @@
                     "courses": [
                       "COS-284: Introduction to Computer Systems",
                       "COS-280: Introduction to Artificial Intelligence",
-                      "MAT-311: Introduction to Data Science",
                       "COS-331: Data Communications",
-                      "MUS-280: Wind Ensemble"
+                      "MUS-280: Wind Ensemble",
+                      "MAT-311: Introduction to Data Science"
                     ],
                     "termSegments": [
                       {
@@ -783,13 +783,13 @@
                   },
                   "fall 2020": {
                     "courses": [
+                      "COS-232: Computer and Network Security I",
                       "MUS-280: Wind Ensemble",
                       "COS-310: Current Literature Survey",
+                      "COS-436: Parallel and Distributed Computing",
                       "COS-340: Software Engineering",
-                      "ENP-270: Selected Topics",
-                      "COS-232: Computer and Network Security I",
                       "HUM-330: Arts and Ideas",
-                      "COS-436: Parallel and Distributed Computing"
+                      "ENP-270: Selected Topics"
                     ],
                     "termSegments": [
                       {
@@ -832,13 +832,13 @@
                   },
                   "fall 2021": {
                     "courses": [
+                      "COS-493: Computer Science Senior Capstone",
                       "COS-453: Research II",
+                      "MUS-290: Symphony Orchestra",
+                      "COS-381: Computer Architecture",
                       "COS-435: Theory of Computation",
                       "COS-432: Software Reverse Engineering and Analysis",
-                      "COS-381: Computer Architecture",
-                      "COS-343: Database Systems",
-                      "MUS-290: Symphony Orchestra",
-                      "COS-493: Computer Science Senior Capstone"
+                      "COS-343: Database Systems"
                     ],
                     "termSegments": [
                       {
@@ -867,33 +867,33 @@
                   {
                     "constraint": {
                       "evaluator": {
-                        "result": "values: [[[10:50 AM]]] weights: [[1.4285714285714286, 1.4285714285714286]]",
+                        "result": "values: [[[0:50 PM, 0:50 PM]], [[10:50 AM, 10:50 AM]]] weights: [[1.5, 1.5], [1.4285714285714286, 1.4285714285714286]]",
                         "description": "day end time"
                       },
                       "description": "day end time less than 1:00 PM"
                     },
-                    "score": "valid (139%)",
+                    "score": "valid (94%)",
                     "description": "prefer [1.0] day end time less than 1:00 PM"
                   }
                 ],
-                "score": "valid (139%)",
+                "score": "valid (94%)",
                 "description": "Specification List"
               },
-              "score": "valid (139%)",
+              "score": "valid (94%)",
               "description": "for days where (meeting minutes less than 120.00)"
             }
           ],
-          "score": "valid (107%)",
+          "score": "valid (89%)",
           "description": "Specification List"
         },
-        "score": "valid (107%)",
+        "score": "valid (89%)",
         "description": "for terms where (credits less than 16.00)"
       },
       {
         "condition": {
           "left": {
             "evaluator": {
-              "result": "values: [[[1.00]]] weights: [[null, null]]",
+              "result": "values: [[[4.00]]] weights: [[null, null]]",
               "description": "courses"
             },
             "description": "courses greater than or equal to 2.00"
@@ -914,10 +914,10 @@
           "terms": {
             "fall 2018": {
               "courses": [
+                "BIB-110: Biblical Literature I",
                 "MAT-215: Discrete Mathematics for Computer Science",
                 "COS-121: Foundations of Computer Science",
-                "COS-121: Foundations of Computer Science",
-                "BIB-110: Biblical Literature I"
+                "COS-121: Foundations of Computer Science"
               ],
               "termSegments": [
                 {
@@ -940,9 +940,9 @@
             },
             "spring 2019": {
               "courses": [
-                "COS-143: Interactive Webpage Development",
+                "COS-109: Computer and Network Operations",
                 "COS-270: Selected Topics",
-                "COS-109: Computer and Network Operations"
+                "COS-143: Interactive Webpage Development"
               ],
               "termSegments": [
                 {
@@ -964,12 +964,12 @@
             },
             "fall 2019": {
               "courses": [
-                "MAT-240: Calculus III",
-                "COS-265: Data Structures and Algorithms",
-                "COS-243: Multi-tier Web Application Development",
-                "COS-265: Data Structures and Algorithms",
                 "PHY-203: General Physics I",
-                "PHY-203: General Physics I"
+                "COS-265: Data Structures and Algorithms",
+                "MAT-240: Calculus III",
+                "PHY-203: General Physics I",
+                "COS-243: Multi-tier Web Application Development",
+                "COS-265: Data Structures and Algorithms"
               ],
               "termSegments": [
                 {
@@ -1014,9 +1014,9 @@
               "courses": [
                 "COS-284: Introduction to Computer Systems",
                 "COS-280: Introduction to Artificial Intelligence",
-                "MAT-311: Introduction to Data Science",
                 "COS-331: Data Communications",
-                "MUS-280: Wind Ensemble"
+                "MUS-280: Wind Ensemble",
+                "MAT-311: Introduction to Data Science"
               ],
               "termSegments": [
                 {
@@ -1070,13 +1070,13 @@
             },
             "fall 2020": {
               "courses": [
+                "COS-232: Computer and Network Security I",
                 "MUS-280: Wind Ensemble",
                 "COS-310: Current Literature Survey",
+                "COS-436: Parallel and Distributed Computing",
                 "COS-340: Software Engineering",
-                "ENP-270: Selected Topics",
-                "COS-232: Computer and Network Security I",
                 "HUM-330: Arts and Ideas",
-                "COS-436: Parallel and Distributed Computing"
+                "ENP-270: Selected Topics"
               ],
               "termSegments": [
                 {
@@ -1119,13 +1119,13 @@
             },
             "fall 2021": {
               "courses": [
+                "COS-493: Computer Science Senior Capstone",
                 "COS-453: Research II",
+                "MUS-290: Symphony Orchestra",
+                "COS-381: Computer Architecture",
                 "COS-435: Theory of Computation",
                 "COS-432: Software Reverse Engineering and Analysis",
-                "COS-381: Computer Architecture",
-                "COS-343: Database Systems",
-                "MUS-290: Symphony Orchestra",
-                "COS-493: Computer Science Senior Capstone"
+                "COS-343: Database Systems"
               ],
               "termSegments": [
                 {
@@ -1154,7 +1154,7 @@
             {
               "constraint": {
                 "evaluator": {
-                  "result": "values: [[[False]], [[False]], [[False, False, False]], [[False]]] weights: [[1.5, 1.5], [2.25, 2.25], [1.5, 1.5], [1.4285714285714286, 1.4285714285714286]]",
+                  "result": "values: [[[False, False, False, False, False]], [[False, False, False, False, False]], [[False, False, False]], [[False, False, False, False, False]]] weights: [[1.5, 1.5], [2.25, 2.25], [1.5, 1.5], [1.4285714285714286, 1.4285714285714286]]",
                   "description": "meeting in time range"
                 },
                 "description": "meeting in time range"
@@ -1174,10 +1174,10 @@
           "terms": {
             "fall 2018": {
               "courses": [
+                "BIB-110: Biblical Literature I",
                 "MAT-215: Discrete Mathematics for Computer Science",
                 "COS-121: Foundations of Computer Science",
-                "COS-121: Foundations of Computer Science",
-                "BIB-110: Biblical Literature I"
+                "COS-121: Foundations of Computer Science"
               ],
               "termSegments": [
                 {
@@ -1200,9 +1200,9 @@
             },
             "spring 2019": {
               "courses": [
-                "COS-143: Interactive Webpage Development",
+                "COS-109: Computer and Network Operations",
                 "COS-270: Selected Topics",
-                "COS-109: Computer and Network Operations"
+                "COS-143: Interactive Webpage Development"
               ],
               "termSegments": [
                 {
@@ -1224,12 +1224,12 @@
             },
             "fall 2019": {
               "courses": [
-                "MAT-240: Calculus III",
-                "COS-265: Data Structures and Algorithms",
-                "COS-243: Multi-tier Web Application Development",
-                "COS-265: Data Structures and Algorithms",
                 "PHY-203: General Physics I",
-                "PHY-203: General Physics I"
+                "COS-265: Data Structures and Algorithms",
+                "MAT-240: Calculus III",
+                "PHY-203: General Physics I",
+                "COS-243: Multi-tier Web Application Development",
+                "COS-265: Data Structures and Algorithms"
               ],
               "termSegments": [
                 {
@@ -1274,9 +1274,9 @@
               "courses": [
                 "COS-284: Introduction to Computer Systems",
                 "COS-280: Introduction to Artificial Intelligence",
-                "MAT-311: Introduction to Data Science",
                 "COS-331: Data Communications",
-                "MUS-280: Wind Ensemble"
+                "MUS-280: Wind Ensemble",
+                "MAT-311: Introduction to Data Science"
               ],
               "termSegments": [
                 {
@@ -1330,13 +1330,13 @@
             },
             "fall 2020": {
               "courses": [
+                "COS-232: Computer and Network Security I",
                 "MUS-280: Wind Ensemble",
                 "COS-310: Current Literature Survey",
+                "COS-436: Parallel and Distributed Computing",
                 "COS-340: Software Engineering",
-                "ENP-270: Selected Topics",
-                "COS-232: Computer and Network Security I",
                 "HUM-330: Arts and Ideas",
-                "COS-436: Parallel and Distributed Computing"
+                "ENP-270: Selected Topics"
               ],
               "termSegments": [
                 {
@@ -1379,13 +1379,13 @@
             },
             "fall 2021": {
               "courses": [
+                "COS-493: Computer Science Senior Capstone",
                 "COS-453: Research II",
+                "MUS-290: Symphony Orchestra",
+                "COS-381: Computer Architecture",
                 "COS-435: Theory of Computation",
                 "COS-432: Software Reverse Engineering and Analysis",
-                "COS-381: Computer Architecture",
-                "COS-343: Database Systems",
-                "MUS-290: Symphony Orchestra",
-                "COS-493: Computer Science Senior Capstone"
+                "COS-343: Database Systems"
               ],
               "termSegments": [
                 {
@@ -1424,9 +1424,9 @@
         "description": "for days [Thursday]"
       }
     ],
-    "score": "valid (47%)",
+    "score": "valid (61%)",
     "description": "Specification List"
   },
-  "score": "valid (47%)",
+  "score": "valid (61%)",
   "description": "test.psl"
 }

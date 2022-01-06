@@ -1,5 +1,7 @@
 # COS 452/453: Directed Research, Research I/II
 
+[PSL Documentation](./documentation/README.md)
+
 Instructor: **Dr. Jonathan Denning & Dr. Jonathan Geisler**
 
 Credits **3**
