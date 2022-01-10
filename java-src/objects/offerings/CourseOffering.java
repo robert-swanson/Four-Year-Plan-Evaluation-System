@@ -92,19 +92,11 @@ public class CourseOffering implements Linkable {
     }
 
     public Date getStartDate() {
-        if (startDate == null) {
-            return null;
-        } else {
-            return startDate.getFirstDayOfWeek();
-        }
+        return startDate.getFirstDayOfWeek();
     }
 
     public Date getEndDate() {
-        if (endDate == null) {
-            return null;
-        } else {
-            return endDate.getFirstDayOfNextWeek();
-        }
+        return endDate.getFirstDayOfNextWeek();
     }
 
     public LinkedList<Meeting> getMeetings() {

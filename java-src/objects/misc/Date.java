@@ -5,6 +5,7 @@ import com.google.gson.*;
 import java.lang.reflect.Type;
 import java.time.DateTimeException;
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -45,15 +46,16 @@ public class Date implements Comparable<Date> {
     }
 
     private Calendar getCalendar() {
-        Calendar calendar = Calendar.getInstance();
+        Calendar calendar = new GregorianCalendar();
         calendar.clear();
-        calendar.set(year, month, day);
+        calendar.set(year, month-1, day);
+        calendar.getTime();
         return calendar;
     }
     public Date getFirstDayOfWeek() {
         Calendar calendar = getCalendar();
         calendar.set(Calendar.DAY_OF_WEEK, calendar.getFirstDayOfWeek());
-        return new Date(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DATE));
+        return new Date(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH)+1, calendar.get(Calendar.DATE));
     }
 
     public Date getFirstDayOfNextWeek() {

@@ -19,7 +19,7 @@ mv Four-Year-Plan-Evaluation-System pslAudit
 ## Setup IntelliJ:
 
 1. Open the project in IntelliJ
-2. Click “Trust Project”
+2. If asked, click “Trust Project”
 3. If you get an error popup saying “Invalid VCS root mapping”, 
    1. Click “Configure...”, 
    2. Click the red text
@@ -27,28 +27,36 @@ mv Four-Year-Plan-Evaluation-System pslAudit
    4. If you lose the popup, navigate to Preferences > Version Control > Directory Mappings, and complete steps 1-3
 4. Setup an SDK
    1. Navigate to File > Project Structure > SDKs
-   2. If there's nothing there, 
-      1. Click “+” > Download JDK... (there’s probably something there)
+   2. If there's nothing there (there’s probably something there)
+      1. Click “+” > Download JDK... 
       2. Select the newest version (probably default) and click download
    3. Click “Project” on the left side of the Project Structure window
       1. Set the SDK
       2. Ensure “Compiler Output” is set to something (eg `.../pslAudit/out`)
    4. Click “Modules” on the left side
-      1. Click on the “Sources” tab (just below the name of the project)
-         1. Click “+ Add Content Root”
-         2. Select the top-level project directory (eg `pslAudit`)
-      2. Click the “Dependencies” tab
-         1. Set the “Module SDK” to your installed SDK
-         2. Click “+” > “1 JARs or Directories...” to add each of the following libraries (hold shift to select multiple)
-         3. `lib/antlr-runtime-4.9.1.jar`
-         4. `lib/gson-2.8.6.jar`
-         5. `lib/java-getopt-1.0.13.jar`
+      1. If it says “Nothing to show”
+         1. Click “+”
+         2. Click ”New Module”
+         3. Click “Next”
+         4. Select the project directory for “Content Root”
+         5. Click “Finish”
+      2. Click on the “Sources” tab (just below the name of the project)
+      3. Click “+ Add Content Root”
+      4. Select the top-level project directory (eg `pslAudit`)
+      5. Click the “Dependencies” tab
+         1. Set the “Module SDK” to your installed SDK (not “Project SDK”)
+         2. Click “+” (underneath “Module SDK”)
+         3. Click “JARs or Directories...” to add each of the following libraries (hold shift to select multiple)
+         4. `lib/antlr-runtime-4.9.1.jar`
+         5. `lib/gson-2.8.6.jar`
+         6. `lib/java-getopt-1.0.13.jar`
    5. Click “OK” to save the changes and close the “Project Structure” window
 5. If you see a popup saying “Frameworks detected, Python framework is detected.” Click “configure” > “ok”
 6. Set the Run Configurations
    1. Click the drop down to the left of the run button
    2. Click “Edit Configurations”
-   3. For the configuration you want to configure, set the module (if it says “module no specified”) to the SDK you installed
+   3. For the configuration you want to configure, set the module (if it says “module not specified”) to the SDK you installed
+   4. Click “Ok”
 7. Setup ANTLR
    1. Install the plugin
       1. Open IntelliJ settings

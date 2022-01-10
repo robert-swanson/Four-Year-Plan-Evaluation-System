@@ -27,6 +27,7 @@ public class TermSubContext implements Explainable {
     Stack<Set<CourseOffering>> courseOfferingsStack;
     Stack<ArrayList<WeekSubContext>> weekSubContextsStack;
     private TermYear termYear;
+    Date termStartDate, termEndDate;
 
     // Initialization
 
@@ -39,8 +40,9 @@ public class TermSubContext implements Explainable {
 
         // Contextual
         TreeSet<Date> semesterChangeDates = getSemesterChangeDates(planTerm);
+        termStartDate = semesterChangeDates.first();
+        termEndDate = semesterChangeDates.last();
         setWeekSubContexts(semesterChangeDates);
-        setWeights();
     }
 
     TermSubContext(TermSubContext termSubContext, WeekSubContext weekSubContext, WeekdaySubContext weekdaySubContext) {
@@ -72,25 +74,27 @@ public class TermSubContext implements Explainable {
     }
 
     private void setWeekSubContexts(TreeSet<Date> semesterChangeDates) {
-        Date startDate = null;
         ArrayList<WeekSubContext> weekSubContexts = new ArrayList<>();
+        Date startDate = semesterChangeDates.first();
+        int totalWeeks = termStartDate.weeksDifference(termEndDate);
+        semesterChangeDates.remove(startDate);
         for (Date endDate : semesterChangeDates) {
-            weekSubContexts.add(createWeekSubContext(planTerm, startDate, endDate));
+            double weight = startDate.weeksDifference(endDate) / (double)totalWeeks;
+            weekSubContexts.add(createWeekSubContext(planTerm, startDate, endDate, weight));
             startDate = endDate;
         }
-        weekSubContexts.add(createWeekSubContext(planTerm, startDate, null)); // Last Segment
         weekSubContextsStack = new Stack<>();
         weekSubContextsStack.push(weekSubContexts);
     }
 
-    private WeekSubContext createWeekSubContext(PlanTerm planTerm, Date startDate, Date endDate) {
+    private WeekSubContext createWeekSubContext(PlanTerm planTerm, Date startDate, Date endDate, double weight) {
         LinkedList<Meeting> meetingsInSemesterSegment = new LinkedList<>();
         for (CourseOffering courseOffering : planTerm.getCourseOfferings()) {
             if (courseInWeekContext(startDate, endDate, courseOffering)) {
                 meetingsInSemesterSegment.addAll(courseOffering.getMeetings());
             }
         }
-        return new WeekSubContext(startDate, endDate, meetingsInSemesterSegment);
+        return new WeekSubContext(startDate, endDate, meetingsInSemesterSegment, weight);
     }
 
     private boolean courseInWeekContext(Date weekContextStart, Date weekContextEnd, CourseOffering courseOffering) {
@@ -99,25 +103,6 @@ public class TermSubContext implements Explainable {
         boolean endsTooEarly = courseEnd != null && weekContextStart != null && Date.datesInOrder(courseEnd, weekContextStart);
         boolean startsTooLate = courseStart != null && weekContextEnd != null && Date.datesInOrder(weekContextEnd, courseStart);
         return !(endsTooEarly || startsTooLate);
-    }
-
-    private void setWeights() {
-        int usedWeeks = 0, totalWeeks = SystemConfiguration.weeksInTermYear(planTerm.getTermYear());
-        for (WeekSubContext weekSubContext : getWeekSubContexts()) {
-            if (weekSubContext.startDate != null && weekSubContext.endDate != null) { // Not first or last segment
-                int segmentWeeks = weekSubContext.startDate.weeksDifference(weekSubContext.endDate);
-                usedWeeks += segmentWeeks;
-                weekSubContext.setWeight((double)segmentWeeks/totalWeeks);
-            }
-        }
-        // Finalizes Weights
-        if (getWeekSubContexts().size() == 1) { // 1 segment, must add one weight (100%)
-            getWeekSubContexts().get(0).setWeight(1.0);
-        } else { // >1 segments set first and last weight
-            double weight = ((double)totalWeeks-usedWeeks)/totalWeeks/2.0;
-            getWeekSubContexts().get(0).setWeight(weight); // First weight estimation
-            getWeekSubContexts().get(getWeekSubContexts().size()-1).setWeight(weight); // Last weight estimation
-        }
     }
 
     // Context Filtering

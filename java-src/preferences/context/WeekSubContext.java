@@ -19,10 +19,11 @@ public class WeekSubContext implements Explainable {
     // Contextual
     Stack<LinkedHashMap<Weekday, WeekdaySubContext>> weekdaySubcontextsStack;
 
-    public WeekSubContext(Date startDate, Date endDate, LinkedList<Meeting> meetings) {
+    public WeekSubContext(Date startDate, Date endDate, LinkedList<Meeting> meetings, double weight) {
         // Non-Contextual
         this.startDate = startDate;
         this.endDate = endDate;
+        this.weight = weight;
 
         // Contextual
         HashMap<Weekday, LinkedList<Meeting>> daysToMeetings = new HashMap<>();
@@ -102,11 +103,6 @@ public class WeekSubContext implements Explainable {
 
     public LinkedHashMap<Weekday, WeekdaySubContext> getWeekdaySubcontexts() {
         return weekdaySubcontextsStack.peek();
-    }
-
-    // Setters
-    public void setWeight(Double weight) {
-        this.weight = weight;
     }
 
     @Override

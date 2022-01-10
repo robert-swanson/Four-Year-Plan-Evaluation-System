@@ -7,3 +7,5 @@ venv
 out
 gen
 .Rproj.user
+result.json
+workspace.xml
