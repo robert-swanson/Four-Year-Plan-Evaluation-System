@@ -105,6 +105,10 @@ public class WeekSubContext implements Explainable {
         return weekdaySubcontextsStack.peek();
     }
 
+    public void assertPlanContext() {
+        assert weekdaySubcontextsStack.size() == 1 : "WeekSubContext's WeekdaySubContextsStack ≠ 1";
+    }
+
     @Override
     public WeekSubContextExplanation explainLastResult() {
         return new WeekSubContextExplanation(this);

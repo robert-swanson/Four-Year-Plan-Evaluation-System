@@ -194,6 +194,12 @@ public class TermSubContext implements Explainable {
         return termYear;
     }
 
+    public void assertPlanContext() {
+        assert weekSubContextsStack.size() == 1 : "TermSubContext's WeekSubContextsStack ≠ 1";
+        assert courseOfferingsStack.size() == 1 : "TermSubContext's CourseOfferingsStack ≠ 1";
+        getWeekSubContexts().forEach(WeekSubContext::assertPlanContext);
+    }
+
     @Override
     public TermSubContextExplanation explainLastResult() {
         return new TermSubContextExplanation(this);

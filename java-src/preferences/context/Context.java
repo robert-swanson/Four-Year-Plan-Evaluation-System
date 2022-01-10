@@ -124,7 +124,6 @@ public class Context implements Explainable {
         for (TermSubContext termSubContext : termSubContexts.peek().values()) {
             if (termSubContext.filterDays(weekdaySet)) {
                 newContext.put(termSubContext.getTermYear(), termSubContext);
-                termSubContext.duplicateStackTop();
             }
         }
 
@@ -190,8 +189,10 @@ public class Context implements Explainable {
     }
 
     public void assertPlanContext() {
-        assert contextLevelStack.size() == 1;
-        assert contextLevelStack.peek() == ContextLevel.fullPlan;
+        assert contextLevelStack.size() == 1 : "Context Level Stack ≠ 1";
+        assert termSubContexts.size() == 1 : "Term Sub Contexts Stack ≠ 1";
+        assert contextLevelStack.peek() == ContextLevel.fullPlan: "Context level isn't full plan";
+        getTermSubContexts().values().forEach(TermSubContext::assertPlanContext);
     }
 
 

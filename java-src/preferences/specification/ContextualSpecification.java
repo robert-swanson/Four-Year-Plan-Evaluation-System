@@ -5,6 +5,7 @@ import objects.misc.Weekday;
 import preferences.context.Condition;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
+import preferences.explanation.context.ContextExplanation;
 import preferences.explanation.specification.ContextualSpecificationResultExplanation;
 import preferences.explanation.specification.SpecificationResultExplanation;
 import preferences.scoring.Score;
@@ -21,7 +22,7 @@ public class ContextualSpecification extends Specification {
     private final Set<Weekday> weekdays;
     private final Set<TermYear> termYears;
 
-    private Context currentContext;
+    private ContextExplanation currentContextExplanation;
 
     private enum ContextualSpecificationType {
         condition, terms, days
@@ -56,7 +57,7 @@ public class ContextualSpecification extends Specification {
             case terms -> context.filterTerms(termYears);
             case days -> context.filterDays(weekdays);
         };
-        currentContext = context;
+        currentContextExplanation = context.explainLastResult();
         return applied;
     }
 
@@ -73,7 +74,7 @@ public class ContextualSpecification extends Specification {
 
     @Override
     public SpecificationResultExplanation explainLastResult() {
-        return new ContextualSpecificationResultExplanation(this, filterCondition, currentContext, specification);
+        return new ContextualSpecificationResultExplanation(this, filterCondition, currentContextExplanation, specification);
     }
 
     @Override
