@@ -13,6 +13,12 @@ public class Meeting {
     private Time startTime;
     private Time endTime;
 
+    public Meeting(ArrayList<Weekday> days, Time startTime, Time endTime) {
+        this.days = days;
+        this.startTime = startTime;
+        this.endTime = endTime;
+    }
+
     public ArrayList<Weekday> getDays() {
         return days;
     }

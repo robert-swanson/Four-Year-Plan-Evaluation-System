@@ -76,14 +76,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="removed angle brackets from week sub context description">
-      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added Random plan generation and some performance tests">
+      <change afterPath="$PROJECT_DIR$/java-src/generation/RandomGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-src/tests/EvaluationRepsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-src/tests/EvaluationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-src/tests/PSLCompileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/objects/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/catalog/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/objects/catalog/Catalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/catalog/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/objects/catalog/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/catalog/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/objects/catalog/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/misc/CatalogYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/objects/misc/CatalogYear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/misc/TermYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/objects/misc/TermYear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/misc/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/objects/misc/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/offerings/CourseOffering.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/objects/offerings/CourseOffering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/offerings/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/objects/offerings/Meeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/plan/PlanTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/objects/plan/PlanTerm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json/taylor/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/taylor/result.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +164,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="profiler.jvm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -176,9 +185,9 @@
       <recent name="preferences.evaluation.evaluators.meeting" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Taylor Data">
-    <configuration name="Taylor Data" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="Application.PSL">
+    <configuration name="Evaluation Test" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="tests.EvaluationTest" />
       <module name="cos453-research" />
       <option name="PROGRAM_PARAMETERS" value="--catalog json/taylor/catalog.json --offerings json/taylor/offerings.json --plan json/taylor/myPlan.json --psl test-input/full-test.psl --out json/taylor/result.json" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -186,19 +195,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="full test" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+    <configuration name="PSL Compile Test" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="tests.PSLCompileTest" />
       <module name="cos453-research" />
-      <option name="PROGRAM_PARAMETERS" value="--catalog json/examples/testCatalog.json --offerings json/examples/testOfferings.json --plan json/examples/testPlan.json --psl test-input/full-test.psl" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PSL Evaluation Reps Test" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="tests.EvaluationRepsTest" />
+      <module name="cos453-research" />
       <option name="VM_PARAMETERS" value="-ea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="my preferences" type="Application" factoryName="Application">
+    <configuration name="PSL" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="cos453-research" />
-      <option name="PROGRAM_PARAMETERS" value="--catalog json/examples/testCatalog.json --offerings json/examples/testOfferings.json --plan json/examples/testPlan.json --psl test-input/my-preferences.psl" />
+      <option name="PROGRAM_PARAMETERS" value="--catalog json/taylor/catalog.json --offerings json/taylor/offerings.json --plan json/taylor/myPlan.json --psl test-input/full-test.psl --out json/taylor/result.json" />
       <option name="VM_PARAMETERS" value="-ea" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -249,9 +264,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Taylor Data" />
-      <item itemvalue="Application.my preferences" />
-      <item itemvalue="Application.full test" />
+      <item itemvalue="Application.PSL" />
+      <item itemvalue="Application.PSL Compile Test" />
+      <item itemvalue="Application.PSL Evaluation Reps Test" />
+      <item itemvalue="Application.Evaluation Test" />
       <item itemvalue="Python.Generate Catalog" />
       <item itemvalue="Python.Generate Offerings" />
     </list>
@@ -349,7 +365,10 @@
       <workItem from="1641319181485" duration="441000" />
       <workItem from="1641325280086" duration="5341000" />
       <workItem from="1641406120426" duration="4102000" />
-      <workItem from="1641494345851" duration="5827000" />
+      <workItem from="1641494345851" duration="6171000" />
+      <workItem from="1641838017901" duration="19873000" />
+      <workItem from="1641916357550" duration="1508000" />
+      <workItem from="1641919950705" duration="18026000" />
     </task>
     <task id="LOCAL-00001" summary="Started java objects">
       <created>1619497519425</created>
@@ -582,7 +601,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637725121310</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="resolved bugs creating Term &amp; Week sub-contexts, integration test now compiles, evaluates, and explains without error">
+      <created>1641844034585</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1641844034585</updated>
+    </task>
+    <task id="LOCAL-00035" summary="added assert plan context and resolved context issue where extra context would be added for day filters">
+      <created>1641847245984</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1641847245984</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,9 +634,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added specification framework" />
-    <MESSAGE value="Select assignment" />
-    <MESSAGE value="Started mux assignment" />
     <MESSAGE value="Added specification framework (2)" />
     <MESSAGE value="DFA go" />
     <MESSAGE value="more mux" />
@@ -626,7 +656,10 @@
     <MESSAGE value="Changed evaluators back to subclasses, changed accumulators to static use, finished context evaluator explanation" />
     <MESSAGE value="Added evaluation results to explanation, added full spec and explanation" />
     <MESSAGE value="removed angle brackets from week sub context description" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed angle brackets from week sub context description" />
+    <MESSAGE value="resolved bugs creating Term &amp; Week sub-contexts, integration test now compiles, evaluates, and explains without error" />
+    <MESSAGE value="added assert plan context and resolved context issue where extra context would be added for day filters" />
+    <MESSAGE value="Added Random plan generation and some performance tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Random plan generation and some performance tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -694,21 +727,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java-src/objects/offerings/CourseOffering.java</url>
-          <line>49</line>
+          <line>68</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java-src/Main.java</url>
-          <line>72</line>
+          <line>73</line>
           <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java-src/objects/misc/Time.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="this.describe()" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

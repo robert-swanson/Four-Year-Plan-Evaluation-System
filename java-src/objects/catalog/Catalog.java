@@ -12,7 +12,7 @@ import java.util.LinkedHashMap;
 
 public class Catalog implements Linkable {
     final CatalogYear catalogYear;
-    private ArrayList<Department> departments;
+    public ArrayList<Department> departments;
 
     public Catalog(String catalogYear) throws JSONParseException {
         this.catalogYear = new CatalogYear(catalogYear);

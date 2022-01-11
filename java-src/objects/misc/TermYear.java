@@ -23,6 +23,24 @@ public class TermYear implements Comparable<TermYear> {
         catalogYear = new CatalogYear(term, termYearMatcher.group(2));
     }
 
+    public TermYear nextTermYear() {
+        return switch (term) {
+            case jterm -> new TermYear(Term.spring, catalogYear);
+            case spring -> new TermYear(Term.summer, catalogYear);
+            case summer -> new TermYear(Term.fall, catalogYear);
+            case fall -> new TermYear(Term.winter, catalogYear);
+            case winter -> new TermYear(Term.jterm, catalogYear.increment(1));
+        };
+    }
+
+
+    public boolean isSemester() {
+        return switch (term) {
+            case fall, spring -> true;
+            default -> false;
+        };
+    }
+
     @Override
     public int compareTo(TermYear o) {
         int yearDiff = year() - o.year();
@@ -43,6 +61,17 @@ public class TermYear implements Comparable<TermYear> {
                 default -> throw new JSONParseException(String.format("Unknown term '%s'", term));
             };
         }
+
+        public int intVal() {
+            return switch (this) {
+                case jterm -> 0;
+                case spring -> 1;
+                case summer -> 2;
+                case fall -> 3;
+                case winter -> 4;
+            };
+        }
+
     }
 
     public Term getTerm() {

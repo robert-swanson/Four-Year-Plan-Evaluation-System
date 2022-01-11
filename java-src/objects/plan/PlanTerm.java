@@ -73,6 +73,7 @@ public class PlanTerm implements Linkable {
         return courseOfferings;
     }
 
+
     public TermYear getTermYear() {
         return termYear;
     }

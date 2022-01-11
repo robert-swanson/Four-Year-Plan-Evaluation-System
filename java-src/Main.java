@@ -52,8 +52,9 @@ public class Main {
         try {
             parseFiles(catalogPath, offeringsPath, planPath); // Read JSON files and create objects
 
-            System.out.println("- Linking Objects");
-            Link.linkObjects(catalog, offerings, plansList); // Link objects and populate maps
+            System.out.println("- Linking Objects"); // Link objects and populate maps
+            Link link = new Link(catalog, offerings);
+            plansList.link(link);
 
             System.out.println("- Creating Context");
             Context context = new Context(plansList.getPlan(0));

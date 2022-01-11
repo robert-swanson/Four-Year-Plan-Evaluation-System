@@ -14,18 +14,18 @@ public class Course implements Linkable {
         this.courseID = courseID;
     }
 
-    enum OfferingPattern {
+    public enum OfferingPattern {
         always, fall, spring, jTerm, summer, oddFall, evenFall, oddSpring, evenSpring
     }
 
     final CourseID courseID;
-    private String name;
-    private String prefix;
-    private int number;
-    private String description;
-    private ArrayList<CourseID> prerequisites;
-    private OfferingPattern offeringPattern;
-    private ArrayList<String> courseTags;
+    public String name;
+    public String prefix;
+    public int number;
+    public String description;
+    public ArrayList<CourseID> prerequisites;
+    public OfferingPattern offeringPattern;
+    public ArrayList<String> courseTags;
 
     @Override
     public String toString() {

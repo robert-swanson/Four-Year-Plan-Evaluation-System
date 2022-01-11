@@ -43,6 +43,9 @@ public class CatalogYear {
         }
     }
 
+    public CatalogYear increment(int incrementer) {
+        return new CatalogYear(String.format("%d-%d", startYear+incrementer, endYear+incrementer));
+    }
 
     @Override
     public String toString() {

@@ -2,12 +2,12 @@ package objects.catalog;
 
 import java.util.ArrayList;
 
-class Department {
+public class Department {
     final String name;
     final String description;
-    private ArrayList<Course> courses;
+    public ArrayList<Course> courses;
 
-    Department(String name, String description) {
+    public Department(String name, String description) {
         this.name = name;
         this.description = description;
     }

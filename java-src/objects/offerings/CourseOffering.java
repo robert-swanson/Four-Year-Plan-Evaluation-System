@@ -13,10 +13,29 @@ import objects.misc.TermYear;
 import java.util.LinkedList;
 
 public class CourseOffering implements Linkable {
-    enum OfferingType { lecture, lab }
-    static class OfferingLocation {
+    public enum OfferingType { lecture, lab }
+    public static class OfferingLocation {
         String building;
         String roomNumber;
+
+        public OfferingLocation(String building, String roomNumber) {
+            this.building = building;
+            this.roomNumber = roomNumber;
+        }
+    }
+
+    public CourseOffering(SectionID crn, int section, OfferingType type, int credits, String[] professors, OfferingLocation offeringLocation, int numEnrolled, int maxEnrolled, Date startDate, Date endDate, LinkedList<Meeting> meetings) {
+        this.crn = crn;
+        this.section = section;
+        this.type = type;
+        this.credits = credits;
+        this.professors = professors;
+        this.location = offeringLocation;
+        this.numEnrolled = numEnrolled;
+        this.maxEnrolled = maxEnrolled;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.meetings = meetings;
     }
 
     private SectionID crn;

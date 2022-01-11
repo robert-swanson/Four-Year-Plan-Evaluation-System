@@ -34,6 +34,16 @@ public class Time implements Comparable<Time> {
         return hour23 * 60 + minutes;
     }
 
+    public Time addMinutes(int minutes) { // no wrapping to next day
+        int newMin = minutes + this.minutes;
+        int newHour23 = hour23 + newMin / 60;
+        newMin %= 60;
+        boolean newPM = newHour23 >= 11;
+        int newHour12 = newHour23 % 12 + 1;
+        return new Time(String.format("%d:%02d %s", newHour12, newMin, newPM ? "PM" : "AM"));
+    }
+
+
     @Override
     public String toString() {
         return String.format("%d:%02d %s", hour12, minutes, pm ? "PM" : "AM");
