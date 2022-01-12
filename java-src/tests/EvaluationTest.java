@@ -63,7 +63,7 @@ public class EvaluationTest {
         }
     }
 
-    private static double runTest(RandomGenerator generator, Specification specification) {
+    public static double runTest(RandomGenerator generator, Specification specification) {
         int numAverage = 10;
         int reps = 120;
         int totalMills = 0;

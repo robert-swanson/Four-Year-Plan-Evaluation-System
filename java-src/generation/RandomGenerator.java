@@ -66,7 +66,20 @@ public class RandomGenerator {
         return plan;
     }
 
-    private SectionID getRandomCourseOffering(TermYear termYear) {
+    public CourseID getRandomCourse() {
+        String department = generateDepartmentPrefix(random.nextInt(numDepartments));
+        return generateCourseID(department, random.nextInt(numCourses));
+    }
+
+    public SectionID getRandomCourseOffering() {
+        return getRandomCourseOffering(getRandomTermYear());
+    }
+
+    public TermYear getRandomTermYear() {
+        return generateTermYear(random.nextInt(numTerms));
+    }
+
+    public SectionID getRandomCourseOffering(TermYear termYear) {
         try {
             TermOfferings termOfferings = offerings.getOfferings(termYear);
             String department = generateDepartmentPrefix(random.nextInt(numDepartments));

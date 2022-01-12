@@ -50,6 +50,6 @@ public class PSLParsingContext {
 
     public ContextualSpecification getContextual() {
         assert specifications.size() == 1 && constraints.empty() && evaluators.empty();
-        return new ContextualSpecification(specifications.firstElement(), contextLevel, conditions, termYears, weekdays);
+        return new ContextualSpecification(specifications.firstElement(), contextLevel, conditions.peek(), termYears, weekdays);
     }
 }

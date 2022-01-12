@@ -28,20 +28,20 @@ public class ContextualSpecification extends Specification {
         condition, terms, days
     }
 
-    public ContextualSpecification(Specification specification, ContextLevel contextLevel, Stack<Condition> condition, Set<TermYear> termYears, Set<Weekday> weekdays) {
+    public ContextualSpecification(Specification specification, ContextLevel contextLevel, Condition condition, Set<TermYear> termYears, Set<Weekday> weekdays) {
         this.specification = specification;
         this.contextLevel = contextLevel;
 
         this.termYears = termYears;
         this.weekdays = weekdays;
 
-        if (!condition.isEmpty()) {
+        if (condition != null) {
             this.type = ContextualSpecificationType.condition;
-            this.filterCondition = condition.peek();
-        } else if (!termYears.isEmpty()) {
+            this.filterCondition = condition;
+        } else if (termYears != null && !termYears.isEmpty()) {
             this.type = ContextualSpecificationType.terms;
             this.filterCondition = null;
-        } else if (!weekdays.isEmpty()) {
+        } else if (termYears != null && !weekdays.isEmpty()) {
             this.type = ContextualSpecificationType.days;
             this.filterCondition = null;
         } else {
