@@ -1,5 +1,11 @@
 package preferences.explanation;
 
+import api.PSLInstance;
+import com.google.gson.Gson;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
 public abstract class Explanation {
     String description;
     public Explanation(Explainable explainable) {
@@ -14,5 +20,13 @@ public abstract class Explanation {
         public NotComputed() {
             super(null);
         }
+    }
+
+    public void writeToFile(String filePath) throws IOException {
+        Gson gson = PSLInstance.createGson();
+        String result = gson.toJson(this);
+        FileWriter fileWriter = new FileWriter(filePath, false);
+        fileWriter.write(result);
+        fileWriter.close();
     }
 }

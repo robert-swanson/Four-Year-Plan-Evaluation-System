@@ -15,29 +15,23 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 public class PSLCompiler {
-    private String filename;
-    private HashMap<String, Specification> symbols;
-    private HashMap<String, Specification> dependencies;
-    private HashMap<String, Double> priorities;
+    private final HashMap<String, Specification> dependencies;
 
-    public PSLCompiler(String filename) {
-        this.filename = filename;
-        priorities = new HashMap<>();
+    public PSLCompiler() {
         dependencies = new HashMap<>();
-        symbols = new HashMap<>();
     }
 
     public void addDependency(String dependencyFile) throws PSLCompileError {
         HashMap<String, Specification> importableSpecifications = compileFile(dependencyFile);
         importableSpecifications.forEach((s, specification) -> {
-            if (symbols.containsKey(s)) {
+            if (dependencies.containsKey(s)) {
                 throw new PSLCompileError.DuplicateSymbolDefinitionError(s, null);
             }
             dependencies.put(s, specification);
         });
     }
 
-    public FullSpecification compile() throws PSLCompileError {
+    public FullSpecification compile(String filename) throws PSLCompileError {
         String name = new File(filename).getName();
         LinkedHashMap<String, Specification> blocks = compileFile(filename);
         SpecificationList specificationList = new SpecificationList();

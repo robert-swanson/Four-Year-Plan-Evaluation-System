@@ -76,24 +76,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added SpecificationTests.java">
-      <change afterPath="$PROJECT_DIR$/java-src/psl/exceptions/ListenerError.java" afterDir="false" />
+    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added PSLInstance and IntegrationTest">
+      <change afterPath="$PROJECT_DIR$/java-src/api/PSLInstance.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/java-src/tests/IntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-src/tests/PSLCompilerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-input/dependencies.psl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/preferences/specification/SpecificationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/specification/SpecificationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/Explanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/explanation/Explanation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-src/psl/PSLCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/PSLCompiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/psl/PSLGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/PSLGrammar.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/psl/exceptions/PSLCompileError.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/exceptions/PSLCompileError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/psl/listener/PSLListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/listener/PSLListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/psl/listener/PSLParsingContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/listener/PSLParsingContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-src/tests/EvaluationRepsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/EvaluationRepsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-src/tests/EvaluationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/EvaluationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-src/tests/PSLCompileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/PSLCompileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json/taylor/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/taylor/result.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-input/my-preferences.psl" beforeDir="false" afterPath="$PROJECT_DIR$/test-input/my-preferences.psl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,8 +102,8 @@
         <option value="Enum" />
         <option value="Python Script" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -187,6 +180,9 @@
     <key name="MoveInnerDialog.RECENTS_KEY">
       <recent name="scoring.context" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="tests" />
     </key>
@@ -198,7 +194,7 @@
       <recent name="preferences.evaluation.evaluators.meeting" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PSL">
+  <component name="RunManager" selected="JUnit.IntegrationTest">
     <configuration name="Compile Test" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="tests.PSLCompileTest" />
       <module name="cos453-research" />
@@ -236,6 +232,22 @@
       <option name="MAIN_CLASS_NAME" value="tests.SpecificationTests" />
       <module name="cos453-research" />
       <option name="VM_PARAMETERS" value="-ea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cos453-research" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.IntegrationTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -290,9 +302,15 @@
       <item itemvalue="Application.Evaluation Reps Test" />
       <item itemvalue="Application.Evaluation Test" />
       <item itemvalue="Application.Specification Test" />
+      <item itemvalue="JUnit.IntegrationTest" />
       <item itemvalue="Python.Generate Catalog" />
       <item itemvalue="Python.Generate Offerings" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.IntegrationTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -652,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642010819734</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Fixed issue with contextual using terms or days lists, also added imports">
+      <created>1642092482967</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1642092482967</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -671,8 +696,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="DFA go" />
-    <MESSAGE value="more mux" />
     <MESSAGE value="Started DSL, implemented grammar for specifications (still need to implement constraints &amp; conditions)" />
     <MESSAGE value="Implemented constraints and conditions for DSL grammar" />
     <MESSAGE value="Implemented preferences" />
@@ -696,7 +719,9 @@
     <MESSAGE value="added assert plan context and resolved context issue where extra context would be added for day filters" />
     <MESSAGE value="Added Random plan generation and some performance tests" />
     <MESSAGE value="Added SpecificationTests.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SpecificationTests.java" />
+    <MESSAGE value="Fixed issue with contextual using terms or days lists, also added imports" />
+    <MESSAGE value="Added PSLInstance and IntegrationTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PSLInstance and IntegrationTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -761,11 +786,6 @@
           <line>68</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/java-src/Main.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -780,6 +800,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/cos452_3_research$Generate_Catalog.coverage" NAME="Generate Catalog Coverage Results" MODIFIED="1637029296904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/json/taylor/department-courses" />
+    <SUITE FILE_PATH="coverage/cos453_research$IntegrationTest.ic" NAME="IntegrationTest Coverage Results" MODIFIED="1642097431661" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/cos452_3_research$Generate_Offerings.coverage" NAME="Generate Offerings Coverage Results" MODIFIED="1637036966755" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/json/taylor/taylor-sections" />
   </component>
 </project>
