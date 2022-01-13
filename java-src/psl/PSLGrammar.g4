@@ -1,8 +1,8 @@
 grammar PSLGrammar;
 
 //start: block* EOF;
-start: globalImport* block* EOF;
-block: NAME priorityList? '{' localImport* specification* '}';
+start: (globalImport|comment)* (comment|block)* EOF;
+block: NAME priorityList? '{' (localImport|comment)* (comment|specification)* '}';
 
 globalImport: USE NAME DOT;
 localImport: USE NAME DOT;
@@ -22,7 +22,8 @@ specification:
     preferenceSpecification |
     specificationList |
     conditionalSpecification |
-    contextualSpecification;
+    contextualSpecification |
+    comment;
 
 // Requirements
 requirementSpecification: REQUIRE NOT? requirableConstraint DOT;

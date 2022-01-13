@@ -1,5 +1,13 @@
+[[ This is a comment at the beginning ]]
+
+[[
+    This is a multi-line comment
+    With multiple lines
+]]
+
 numeric_evaluators (strongly = 10) {
-    require 10 credits.
+    [[ This comment is at the beginning of a block ]]
+    require 10 credits. [[ This comment says something about this spec ]]
     require 10 credits from "COS-120", "COS-121", "COS-104".
     require 10 upper division credits.
     require 4 courses.
@@ -9,7 +17,10 @@ numeric_evaluators (strongly = 10) {
     require 4 courses with "Stefan Brandle".
     require 2 time blocks reserving 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM.
     require 8 terms.
+    [[ This comment is at the end of a block ]]
 }
+
+[[ This comment is in the middle ]]
 
 term_year_evaluators {
     require taking course "COS-120" in fall 2022.
@@ -120,3 +131,5 @@ constraints {
     prefer plan starting later.
     prefer plan starting earlier.
 }
+
+[[ This comment is at the end ]]

@@ -77,16 +77,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added PSLInstance and IntegrationTest">
-      <change afterPath="$PROJECT_DIR$/java-src/api/PSLInstance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-src/tests/IntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/Explanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/explanation/Explanation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/psl/PSLCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/PSLCompiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/tests/EvaluationRepsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/EvaluationRepsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/tests/EvaluationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/EvaluationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/tests/PSLCompileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/PSLCompileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/taylor/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/taylor/result.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/PSLGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/PSLGrammar.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/tests/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/IntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-input/full-test.psl" beforeDir="false" afterPath="$PROJECT_DIR$/test-input/full-test.psl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -677,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642092482967</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Added PSLInstance and IntegrationTest">
+      <created>1642097575184</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1642097575184</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -785,6 +786,11 @@
           <url>file://$PROJECT_DIR$/java-src/objects/offerings/CourseOffering.java</url>
           <line>68</line>
           <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java-src/tests/IntegrationTest.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="87" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
