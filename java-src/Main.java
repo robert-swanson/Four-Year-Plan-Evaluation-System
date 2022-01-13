@@ -4,8 +4,8 @@ import exceptions.JSONParseException;
 import gnu.getopt.Getopt;
 import gnu.getopt.LongOpt;
 import objects.Link;
-import objects.misc.*;
 import objects.catalog.Catalog;
+import objects.misc.*;
 import objects.offerings.Offerings;
 import objects.plan.Plan;
 import objects.plan.PlanTerm;
@@ -13,14 +13,14 @@ import objects.plan.PlansList;
 import preferences.context.Context;
 import preferences.explanation.Explanation;
 import preferences.explanation.specification.FullSpecificationResultExplanation;
-import preferences.scoring.Score;
-import preferences.specification.*;
+import preferences.specification.FullSpecification;
 import psl.PSLCompiler;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -30,12 +30,15 @@ public class Main {
 
     public static void main(String[] args) {
         String catalogPath = "", offeringsPath = "", planPath = "", pslPath = "", outPath = "";
+        ArrayList<String> dependencies = new ArrayList<>();
+
         LongOpt catalogOpt = new LongOpt("catalog", LongOpt.REQUIRED_ARGUMENT, null, 'c');
         LongOpt offeringsOpt = new LongOpt("offerings", LongOpt.REQUIRED_ARGUMENT, null, 'o');
         LongOpt planOpt = new LongOpt("plan", LongOpt.REQUIRED_ARGUMENT, null, 'p');
         LongOpt pslOpt = new LongOpt("psl", LongOpt.REQUIRED_ARGUMENT, null, 'l');
+        LongOpt depOpt = new LongOpt("dependency", LongOpt.REQUIRED_ARGUMENT, null, 'd');
         LongOpt outOpt = new LongOpt("out", LongOpt.REQUIRED_ARGUMENT, null, 't');
-        LongOpt[] longOpts = new LongOpt[]{catalogOpt, offeringsOpt, planOpt, pslOpt, outOpt};
+        LongOpt[] longOpts = new LongOpt[]{catalogOpt, offeringsOpt, planOpt, pslOpt, depOpt, outOpt};
 
         Getopt g = new Getopt("main", args, "", longOpts);
         while (g.getopt() != -1) {
@@ -44,7 +47,8 @@ public class Main {
                 case 1 -> offeringsPath = g.getOptarg();
                 case 2 -> planPath = g.getOptarg();
                 case 3 -> pslPath = g.getOptarg();
-                case 4 -> outPath = g.getOptarg();
+                case 4 -> dependencies.add(g.getOptarg());
+                case 5 -> outPath = g.getOptarg();
                 default -> System.out.printf("Unrecognized option: '%s'\n", g.getOptopt());
             }
         }
@@ -59,8 +63,14 @@ public class Main {
             System.out.println("- Creating Context");
             Context context = new Context(plansList.getPlan(0));
 
-            System.out.println("- Compiling Specification");
-            PSLCompiler compiler = new PSLCompiler(pslPath, null);
+            System.out.println("- Compiling Dependencies");
+            PSLCompiler compiler = new PSLCompiler(pslPath);
+            dependencies.forEach(dep -> {
+                System.out.printf("  - Compiling Dependency: %s\n", dep);
+                compiler.addDependency(dep);
+            });
+
+            System.out.printf("- Compiling Main PSL: %s\n", pslPath);
             FullSpecification compiledSpecification = compiler.compile();
 
             System.out.println("- Scoring Plan");

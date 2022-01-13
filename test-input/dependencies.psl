@@ -1,0 +1,21 @@
+bs_cs_2019 {
+    require taking course "COS-102".
+    require taking course "COS-103".
+    require taking course "COS-120".
+    require taking course "COS-121".
+    require taking course "COS-143".
+    require taking course "COS-232".
+    require taking course "COS-243".
+    require taking course "COS-265".
+    require taking course "COS-284".
+}
+
+data_science_minor_2019 {
+    require taking course "COS-121".
+    require taking course "COS-143".
+    require taking course "COS-236".
+    require taking course "MAT-151".
+    require taking course "MAT-210".
+    require taking course "MAT-311".
+    require taking course "MAT-382".
+}

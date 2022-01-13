@@ -1,8 +1,6 @@
 package tests;
 
 import generation.RandomGenerator;
-import gnu.getopt.Getopt;
-import gnu.getopt.LongOpt;
 import objects.plan.Plan;
 import preferences.context.Context;
 import preferences.specification.FullSpecification;
@@ -23,7 +21,7 @@ public class EvaluationTest {
         };
 
         try {
-            PSLCompiler compiler = new PSLCompiler(paths[0], null);
+            PSLCompiler compiler = new PSLCompiler(paths[0]);
             FullSpecification compiledSpecification = compiler.compile();
 //            runNumCoursesTest(compiledSpecification);
 //            runNumTermsTest(compiledSpecification);
@@ -85,9 +83,7 @@ public class EvaluationTest {
             }
         }
 
-        double mean = (double)totalMills / numAverage / 1000000.0;
         Collections.sort(times);
-        double median = times.get(times.size()/2)/1000000.0;
-        return median;
+        return times.get(times.size()/2)/1000000.0; // median
     }
 }

@@ -6,41 +6,46 @@ import org.antlr.v4.runtime.CommonTokenStream;
 import preferences.specification.FullSpecification;
 import preferences.specification.Specification;
 import preferences.specification.SpecificationList;
-import psl.exceptions.LinkingError;
 import psl.exceptions.PSLCompileError;
 import psl.listener.PSLListener;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class PSLCompiler {
     private String filename;
-    private String[] dependencies;
     private HashMap<String, Specification> symbols;
-    private ArrayList<SpecificationList> unresolvedSymbolSpecificationLists;
-    private ArrayList<String> unresolvedSymbols;
+    private HashMap<String, Specification> dependencies;
     private HashMap<String, Double> priorities;
 
-    public PSLCompiler(String filename, String[] dependencies) {
+    public PSLCompiler(String filename) {
         this.filename = filename;
-        this.dependencies = dependencies;
-
-        symbols = new HashMap<>();
-        unresolvedSymbolSpecificationLists = new ArrayList<>();
-        unresolvedSymbols = new ArrayList<>();
         priorities = new HashMap<>();
+        dependencies = new HashMap<>();
+        symbols = new HashMap<>();
+    }
+
+    public void addDependency(String dependencyFile) throws PSLCompileError {
+        HashMap<String, Specification> importableSpecifications = compileFile(dependencyFile);
+        importableSpecifications.forEach((s, specification) -> {
+            if (symbols.containsKey(s)) {
+                throw new PSLCompileError.DuplicateSymbolDefinitionError(s, null);
+            }
+            dependencies.put(s, specification);
+        });
     }
 
     public FullSpecification compile() throws PSLCompileError {
         String name = new File(filename).getName();
-        HashMap<String, Specification> blocks = compileFile(filename);
+        LinkedHashMap<String, Specification> blocks = compileFile(filename);
         SpecificationList specificationList = new SpecificationList();
         blocks.values().forEach(specificationList::addSpecification);
         return new FullSpecification(specificationList.getSimplifiedSpecification(), name);
     }
 
-    private HashMap<String,Specification> compileFile(String filename) throws PSLCompileError {
+    private LinkedHashMap<String, Specification> compileFile(String filename) throws PSLCompileError {
         CharStream charStream;
         try {
             charStream = CharStreams.fromFileName(filename);
@@ -52,24 +57,9 @@ public class PSLCompiler {
         CommonTokenStream tokenStream = new CommonTokenStream(lexer);
         PSLGrammarParser parser = new PSLGrammarParser(tokenStream);
 
-        PSLListener listener = new PSLListener();
+        PSLListener listener = new PSLListener(dependencies);
         parser.addParseListener(listener);
         parser.start();
         return listener.getBlocks();
-    }
-
-    private void linkSymbols() throws LinkingError {
-        Iterator<SpecificationList> specificationListIterator = unresolvedSymbolSpecificationLists.listIterator();
-        Iterator<String> symbolIterator = unresolvedSymbols.iterator();
-
-        while (specificationListIterator.hasNext() && symbolIterator.hasNext()) {
-            SpecificationList specificationList = specificationListIterator.next();
-            String symbol = symbolIterator.next();
-            if (symbols.containsKey(symbol)) {
-                specificationList.addSpecification(symbols.get(symbol));
-            } else {
-                throw new LinkingError(symbol);
-            }
-        }
     }
 }

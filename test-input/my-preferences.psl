@@ -1,4 +1,8 @@
+use bs_cs_2019.
+
 my_preferences (moderately = 3.0, strongly = 10.0) {
+    use data_science_minor_2019.
+
     require plan starting in fall 2018.
     require plan ending in fall 2021.
 
@@ -19,4 +23,5 @@ my_preferences (moderately = 3.0, strongly = 10.0) {
 
     prefer moderately not meeting at 3:00 PM - 3:50 PM.
     prefer moderately ending earlier.
+    prefer strongly starting at or after 4:00 PM.
 }

@@ -63,7 +63,7 @@ public class SpecificationList extends Specification {
         for (Specification specification : specifications) {
             Specification simplified = specification.getSimplifiedSpecification();
             if (simplified instanceof SpecificationList) {
-                newSpecifications.addAll(((SpecificationList) specification).specifications);
+                newSpecifications.addAll(((SpecificationList) simplified).specifications);
             } else {
                 newSpecifications.add(simplified);
             }

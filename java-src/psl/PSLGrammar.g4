@@ -1,9 +1,14 @@
 grammar PSLGrammar;
 
 //start: block* EOF;
-start: (block)+ EOF;
+start: globalImport* block* EOF;
+block: NAME priorityList? '{' localImport* specification* '}';
 
-block: NAME priorityList? '{' specification+ '}';
+globalImport: USE NAME DOT;
+localImport: USE NAME DOT;
+USE: 'use';
+
+comment: '[['~(']' | '_')*?']]';
 
 // Priority
 priority: NAME EQUALS (INT|FLOAT);
@@ -51,8 +56,6 @@ TERMS: 'terms';
 DAYS: 'days';
 WHERE: 'where';
 
-importStatement: USE '<' NAME '>' DOT;
-USE: 'use';
 
 
 // --- Condition ---

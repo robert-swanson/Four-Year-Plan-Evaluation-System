@@ -2,6 +2,8 @@ package psl.listener;
 
 import exceptions.JSONParseException;
 import objects.misc.*;
+import org.antlr.v4.runtime.ANTLRErrorStrategy;
+import org.antlr.v4.runtime.RecognitionException;
 import org.antlr.v4.runtime.tree.TerminalNode;
 import preferences.constraints.*;
 import preferences.evaluators.TermYearContextEvaluator;
@@ -20,19 +22,22 @@ import preferences.result.ScalableValue;
 import preferences.specification.*;
 import psl.PSLGrammarBaseListener;
 import psl.PSLGrammarParser;
+import psl.exceptions.PSLCompileError;
 
 import java.util.*;
 
 public class PSLListener extends PSLGrammarBaseListener {
     private final Stack<PSLParsingContext> parsingContextStack;
     private final HashMap<String, Double> priorities;
-    private final HashMap<String, Specification> blocks;
+    private final LinkedHashMap<String, Specification> blocks;
+    private final HashMap<String, Specification> dependencies;
 
-    public PSLListener() {
+    public PSLListener(HashMap<String, Specification> dependencies) {
         priorities = new HashMap<>();
         parsingContextStack = new Stack<>();
         parsingContextStack.push(new PSLParsingContext(ContextLevel.fullPlan));
-        blocks = new HashMap<>();
+        blocks = new LinkedHashMap<>();
+        this.dependencies = dependencies;
     }
 
     // Parsing Context Stack
@@ -51,7 +56,7 @@ public class PSLListener extends PSLGrammarBaseListener {
         return parsingContextStack.peek().contextLevel;
     }
 
-    public HashMap<String, Specification> getBlocks() {
+    public LinkedHashMap<String, Specification> getBlocks() {
         assert parsingContextStack.size() == 1;
         return blocks;
     }
@@ -95,17 +100,39 @@ public class PSLListener extends PSLGrammarBaseListener {
     }
 
     @Override
+    public void exitGlobalImport(PSLGrammarParser.GlobalImportContext ctx) {
+        String symbol = ctx.NAME().getText();
+        if (!dependencies.containsKey(symbol)) {
+            throw new PSLCompileError.DuplicateSymbolDefinitionError(symbol, ctx.start);
+        }
+        blocks.put(symbol, dependencies.get(symbol));
+    }
+
+    @Override
+    public void exitLocalImport(PSLGrammarParser.LocalImportContext ctx) {
+        String symbol = ctx.NAME().getText();
+        if (!dependencies.containsKey(symbol)) {
+            throw new PSLCompileError.DuplicateSymbolDefinitionError(symbol, ctx.start);
+        }
+        addSpecification(dependencies.get(symbol));
+    }
+
+    @Override
     public void exitPriority(PSLGrammarParser.PriorityContext ctx) {
         double value = (ctx.INT() == null ? Double.parseDouble(ctx.FLOAT().toString()) : Integer.parseInt(ctx.INT().toString()));
         String priorityName = ctx.NAME().toString();
-        assert !priorities.containsKey(priorityName);
+        if (priorities.containsKey(priorityName)) {
+            throw new PSLCompileError.PriorityRedeclarationError(priorityName, ctx.start);
+        }
         priorities.put(priorityName, value);
     }
 
     @Override
     public void exitBlock(PSLGrammarParser.BlockContext ctx) {
         String blockName = ctx.NAME().getText();
-        assert !blocks.containsKey(blockName) : String.format("Duplicate block name '%s'", blockName);
+        if (blocks.containsKey(blockName)) {
+            throw new PSLCompileError.DuplicateSymbolDefinitionError(blockName, ctx.start);
+        }
         blocks.put(blockName, popContext().getSpecificationList());
         pushContext(ContextLevel.fullPlan);
     }
@@ -160,10 +187,10 @@ public class PSLListener extends PSLGrammarBaseListener {
     // Contextual Specification
 
 
-//    @Override
-//    public void enterContextualSpecification(PSLGrammarParser.ContextualSpecificationContext ctx) {
+    @Override
+    public void enterContextualSpecification(PSLGrammarParser.ContextualSpecificationContext ctx) {
 //        pushContext();
-//    }
+    }
 
     @Override
     public void exitContextLevel(PSLGrammarParser.ContextLevelContext ctx) {
@@ -204,8 +231,8 @@ public class PSLListener extends PSLGrammarBaseListener {
     public void exitContextualSpecification(PSLGrammarParser.ContextualSpecificationContext ctx) {
         ContextualSpecification contextualSpecification = popContext().getContextual();
         addSpecification(contextualSpecification);
-
     }
+
 
     // --- Condition ---
 

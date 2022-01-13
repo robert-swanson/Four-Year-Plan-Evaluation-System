@@ -77,18 +77,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added SpecificationTests.java">
-      <change afterPath="$PROJECT_DIR$/java-src/tests/SpecificationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-src/psl/exceptions/ListenerError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-src/tests/IntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-src/tests/PSLCompilerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-input/dependencies.psl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/generation/RandomGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/generation/RandomGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/preferences/specification/ContextualSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/specification/ContextualSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/specification/SpecificationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/specification/SpecificationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/PSLCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/PSLCompiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/PSLGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/PSLGrammar.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/exceptions/PSLCompileError.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/exceptions/PSLCompileError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/listener/PSLListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/listener/PSLListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-src/psl/listener/PSLParsingContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/listener/PSLParsingContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/tests/EvaluationRepsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/EvaluationRepsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-src/tests/EvaluationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/EvaluationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/tests/PSLCompileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/PSLCompileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json/taylor/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/taylor/result.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-input/my-preferences.psl" beforeDir="false" afterPath="$PROJECT_DIR$/test-input/my-preferences.psl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -97,6 +110,7 @@
         <option value="Python Script" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -148,6 +162,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JAVA" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/json/taylor" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -164,8 +181,14 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/json/generation" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveInnerDialog.RECENTS_KEY">
       <recent name="scoring.context" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="tests" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="preferences.constraints" />
@@ -175,7 +198,7 @@
       <recent name="preferences.evaluation.evaluators.meeting" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Specification Test">
+  <component name="RunManager" selected="Application.PSL">
     <configuration name="Compile Test" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="tests.PSLCompileTest" />
       <module name="cos453-research" />
@@ -203,7 +226,7 @@
     <configuration name="PSL" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="cos453-research" />
-      <option name="PROGRAM_PARAMETERS" value="--catalog json/taylor/catalog.json --offerings json/taylor/offerings.json --plan json/taylor/myPlan.json --psl test-input/full-test.psl --out json/taylor/result.json" />
+      <option name="PROGRAM_PARAMETERS" value="--catalog json/taylor/catalog.json --offerings json/taylor/offerings.json --plan json/taylor/myPlan.json --psl test-input/my-preferences.psl --dependency test-input/dependencies.psl  --out json/taylor/result.json " />
       <option name="VM_PARAMETERS" value="-ea" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -368,7 +391,7 @@
       <workItem from="1641838017901" duration="19873000" />
       <workItem from="1641916357550" duration="1508000" />
       <workItem from="1641919950705" duration="18471000" />
-      <workItem from="1641960813333" duration="4875000" />
+      <workItem from="1641960813333" duration="21166000" />
     </task>
     <task id="LOCAL-00001" summary="Started java objects">
       <created>1619497519425</created>
@@ -622,7 +645,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641944567118</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Added SpecificationTests.java">
+      <created>1642010819733</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1642010819734</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -706,31 +736,25 @@
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="parsingContextStack.peek().evaluators.isEmpty()" language="JAVA" />
           <url>file://$PROJECT_DIR$/java-src/psl/listener/PSLListener.java</url>
-          <line>85</line>
+          <line>90</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java-src/psl/listener/PSLListener.java</url>
-          <line>242</line>
+          <line>269</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="parsingContextStack.peek().evaluators.isEmpty()" language="JAVA" />
           <url>file://$PROJECT_DIR$/java-src/psl/listener/PSLListener.java</url>
-          <line>81</line>
+          <line>86</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="parsingContextStack.peek().constraints.isEmpty()" language="JAVA" />
           <url>file://$PROJECT_DIR$/java-src/psl/listener/PSLListener.java</url>
-          <line>73</line>
+          <line>78</line>
           <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <condition expression="parsingContextStack.isEmpty()" language="JAVA" />
-          <url>file://$PROJECT_DIR$/java-src/psl/listener/PSLListener.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java-src/objects/offerings/CourseOffering.java</url>
@@ -739,11 +763,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/java-src/Main.java</url>
-          <line>73</line>
+          <line>83</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="ctx.getText()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

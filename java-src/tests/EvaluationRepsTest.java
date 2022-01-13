@@ -25,7 +25,7 @@ public class EvaluationRepsTest {
         boolean evaluateAll = true;
 
         try {
-            PSLCompiler compiler = new PSLCompiler(pslFilePath, null);
+            PSLCompiler compiler = new PSLCompiler(pslFilePath);
             FullSpecification compiledSpecification = compiler.compile();
             RandomGenerator generator = new RandomGenerator(1, 20, 8, 2);
 

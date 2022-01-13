@@ -28,7 +28,7 @@ public class PSLCompileTest {
 
     private static int timePSLParse(String filePath) {
         try {
-            PSLCompiler compiler = new PSLCompiler(filePath, null);
+            PSLCompiler compiler = new PSLCompiler(filePath);
             long startTime = System.nanoTime();
             FullSpecification compiledSpecification = compiler.compile();
             long endTime = System.nanoTime();
