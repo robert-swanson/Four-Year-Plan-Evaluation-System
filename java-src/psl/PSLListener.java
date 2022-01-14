@@ -1,17 +1,15 @@
-package psl.listener;
+package psl;
 
 import exceptions.JSONParseException;
 import objects.misc.*;
-import org.antlr.v4.runtime.ANTLRErrorStrategy;
-import org.antlr.v4.runtime.RecognitionException;
 import org.antlr.v4.runtime.tree.TerminalNode;
 import preferences.constraints.*;
-import preferences.evaluators.TermYearContextEvaluator;
 import preferences.context.Condition;
 import preferences.context.ContextLevel;
 import preferences.evaluators.BooleanContextEvaluator;
 import preferences.evaluators.ContextEvaluator;
 import preferences.evaluators.ScalableContextEvaluator;
+import preferences.evaluators.TermYearContextEvaluator;
 import preferences.evaluators.general.*;
 import preferences.evaluators.single.*;
 import preferences.evaluators.weekday.MeetingInTimeRangeEvaluator;
@@ -20,8 +18,6 @@ import preferences.evaluators.weekday.WeekdayEndTime;
 import preferences.evaluators.weekday.WeekdayStartTime;
 import preferences.result.ScalableValue;
 import preferences.specification.*;
-import psl.PSLGrammarBaseListener;
-import psl.PSLGrammarParser;
 import psl.exceptions.PSLCompileError;
 
 import java.util.*;
@@ -57,7 +53,7 @@ public class PSLListener extends PSLGrammarBaseListener {
     }
 
     public LinkedHashMap<String, Specification> getBlocks() {
-        assert parsingContextStack.size() == 1;
+        PSLCompileError.assertTrue(parsingContextStack.size() == 1, "Context stack should be size 1");
         return blocks;
     }
 
@@ -89,21 +85,15 @@ public class PSLListener extends PSLGrammarBaseListener {
 
     private ScalableContextEvaluator getScalableEvaluator() {
         ContextEvaluator evaluator = getContextEvaluator();
-        assert evaluator instanceof ScalableContextEvaluator : "Evaluator must be ScalableContextEvaluator";
+        PSLCompileError.assertTrue(evaluator instanceof ScalableContextEvaluator, "Evaluator must be ScalableContextEvaluator");
         return (ScalableContextEvaluator) evaluator;
-    }
-
-    private BooleanContextEvaluator getBooleanEvaluator() {
-        ContextEvaluator evaluator = getContextEvaluator();
-        assert evaluator instanceof BooleanContextEvaluator : "Evaluator must be BooleanContextEvaluator";
-        return (BooleanContextEvaluator) evaluator;
     }
 
     @Override
     public void exitGlobalImport(PSLGrammarParser.GlobalImportContext ctx) {
         String symbol = ctx.NAME().getText();
         if (!dependencies.containsKey(symbol)) {
-            throw new PSLCompileError.DuplicateSymbolDefinitionError(symbol, ctx.start);
+            throw new PSLCompileError.NonExistentImportError(symbol, ctx.start);
         }
         blocks.put(symbol, dependencies.get(symbol));
     }
@@ -112,7 +102,7 @@ public class PSLListener extends PSLGrammarBaseListener {
     public void exitLocalImport(PSLGrammarParser.LocalImportContext ctx) {
         String symbol = ctx.NAME().getText();
         if (!dependencies.containsKey(symbol)) {
-            throw new PSLCompileError.DuplicateSymbolDefinitionError(symbol, ctx.start);
+            throw new PSLCompileError.NonExistentImportError(symbol, ctx.start);
         }
         addSpecification(dependencies.get(symbol));
     }
@@ -152,7 +142,7 @@ public class PSLListener extends PSLGrammarBaseListener {
     public void exitPreferenceSpecification(PSLGrammarParser.PreferenceSpecificationContext ctx) {
         double weight = 1.0;
         if (ctx.NAME() != null) {
-            assert priorities.containsKey(ctx.NAME().toString()) : "Unknown Priority";
+            PSLCompileError.assertTrue(priorities.containsKey(ctx.NAME().toString()), "Unknown Priority", ctx.start);
             weight = priorities.get(ctx.NAME().toString());
         }
         boolean invert = ctx.NOT() != null;
@@ -195,7 +185,7 @@ public class PSLListener extends PSLGrammarBaseListener {
     @Override
     public void exitContextLevel(PSLGrammarParser.ContextLevelContext ctx) {
         if (ctx.TERMS() != null) {
-            assert getContextLevel() != ContextLevel.days : "Cannot move up to a broader context level";
+            PSLCompileError.assertTrue(getContextLevel() != ContextLevel.days, "Cannot move up to a broader context level", ctx.start);
             pushContext(ContextLevel.terms);
         } else {
             pushContext(ContextLevel.days);
@@ -204,7 +194,7 @@ public class PSLListener extends PSLGrammarBaseListener {
 
     @Override
     public void exitTermYearList(PSLGrammarParser.TermYearListContext ctx) {
-        assert getContextLevel() != ContextLevel.days : "Cannot move up to a broader context level";
+        PSLCompileError.assertTrue(getContextLevel() != ContextLevel.days, "Cannot move up to a broader context level", ctx.start);
         pushContext(ContextLevel.terms);
         ctx.termYear().forEach(termYearContext -> {
             try {
@@ -255,7 +245,7 @@ public class PSLListener extends PSLGrammarBaseListener {
     // Requireable Constraint
 
     private ScalableValue getValue(TerminalNode intVal, PSLGrammarParser.TimeContext time, PSLGrammarParser.TermYearContext termYearContext) {
-        ScalableValue value = null;
+        ScalableValue value;
         if (intVal != null) {
             value = new ScalableValue.Numeric(Double.parseDouble(intVal.getText()));
         } else if (time != null) {
@@ -264,10 +254,10 @@ public class PSLListener extends PSLGrammarBaseListener {
             try {
                 value = new ScalableValue.TermYearValue(new TermYear(termYearContext.getText()));
             } catch (JSONParseException e) {
-                assert false : "couldn't parse term year: " + termYearContext.getText();
+                throw new PSLCompileError(e.getMessage(), termYearContext.start);
             }
         } else {
-            assert false : "no listener support for evaluator type";
+            throw new PSLCompileError("no support for this kind of evaluator", null);
         }
         return value;
     }
@@ -325,7 +315,7 @@ public class PSLListener extends PSLGrammarBaseListener {
         } else if (evaluator instanceof TermYearContextEvaluator) {
             addConstraint(new BooleanConstraint((TermYearContextEvaluator) evaluator, getContextLevel()));
         } else {
-            assert false : "Couldn't cast to BooleanContextEvaluator or TermYearContextEvaluator";
+            throw new PSLCompileError("Couldn't cast to BooleanContextEvaluator or TermYearContextEvaluator", ctx.start);
         }
     }
 

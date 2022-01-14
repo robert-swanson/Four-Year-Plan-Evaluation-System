@@ -76,13 +76,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Developed API error handling">
-      <change afterPath="$PROJECT_DIR$/java-src/psl/exceptions/PSLSyntaxError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/api/PSLInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/api/PSLInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/api/SparkMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/api/SparkMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/exceptions/PSLInstanceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/exceptions/PSLInstanceException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/psl/PSLCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/PSLCompiler.java" afterDir="false" />
+    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added PSLCompileError.AssertionError and replaced all assertions, made integration tests actually fail on error">
+      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-src/psl/exceptions/ListenerError.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/exceptions/ListenerError.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-src/psl/exceptions/PSLCompileError.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/exceptions/PSLCompileError.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-src/psl/listener/PSLListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/PSLListener.java" afterDir="false" />
@@ -421,7 +416,7 @@
       <workItem from="1641916357550" duration="1508000" />
       <workItem from="1641919950705" duration="18471000" />
       <workItem from="1641960813333" duration="21166000" />
-      <workItem from="1642182684387" duration="13978000" />
+      <workItem from="1642182684387" duration="14047000" />
     </task>
     <task id="LOCAL-00001" summary="Started java objects">
       <created>1619497519425</created>
@@ -710,7 +705,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642192408775</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Added PSLCompileError.AssertionError and replaced all assertions, made integration tests actually fail on error">
+      <created>1642197673689</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1642197673689</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -729,7 +731,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finished DSL vertical slice, properly functioning listener and can print out specifications" />
     <MESSAGE value="Added test PSL cases including full spec" />
     <MESSAGE value="Theoretically implemented full DSL grammar, fully implemented full-test.psl with tests for evaluators, specifications, conditions, and constraints" />
     <MESSAGE value="Implemented listener and evaluator for the rest of General and all of Weekday, started Single" />
@@ -754,7 +755,8 @@
     <MESSAGE value="Added comments" />
     <MESSAGE value="Added PSL API" />
     <MESSAGE value="Developed API error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Developed API error handling" />
+    <MESSAGE value="Added PSLCompileError.AssertionError and replaced all assertions, made integration tests actually fail on error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PSLCompileError.AssertionError and replaced all assertions, made integration tests actually fail on error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

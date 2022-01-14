@@ -1,4 +1,4 @@
-package psl.listener;
+package psl;
 
 import objects.misc.CourseID;
 import objects.misc.TermYear;
