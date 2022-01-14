@@ -23,10 +23,13 @@ public abstract class Explanation {
     }
 
     public void writeToFile(String filePath) throws IOException {
-        Gson gson = PSLInstance.createGson();
-        String result = gson.toJson(this);
         FileWriter fileWriter = new FileWriter(filePath, false);
-        fileWriter.write(result);
+        fileWriter.write(toJSON());
         fileWriter.close();
+    }
+
+    public String toJSON(){
+        Gson gson = PSLInstance.createGson();
+        return gson.toJson(this);
     }
 }

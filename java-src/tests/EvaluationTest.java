@@ -22,7 +22,7 @@ public class EvaluationTest {
 
         try {
             PSLCompiler compiler = new PSLCompiler();
-            FullSpecification compiledSpecification = compiler.compile(paths[0]);
+            FullSpecification compiledSpecification = compiler.compileFile(paths[0]);
 //            runNumCoursesTest(compiledSpecification);
 //            runNumTermsTest(compiledSpecification);
             runNumOfferingsTest(compiledSpecification);

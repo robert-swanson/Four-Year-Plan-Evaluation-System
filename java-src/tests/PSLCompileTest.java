@@ -30,7 +30,7 @@ public class PSLCompileTest {
         try {
             PSLCompiler compiler = new PSLCompiler();
             long startTime = System.nanoTime();
-            FullSpecification compiledSpecification = compiler.compile(filePath);
+            FullSpecification compiledSpecification = compiler.compileFile(filePath);
             long endTime = System.nanoTime();
             System.out.printf("%s,%.2f\n", filePath, (endTime-startTime)/1000000.0);
             return (int)(endTime-startTime);

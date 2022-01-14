@@ -76,11 +76,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added PSLInstance and IntegrationTest">
+    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added PSL API">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-src/api/SparkMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-src/exceptions/PSLInstanceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/psl/PSLGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/PSLGrammar.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java-src/tests/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/IntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-input/full-test.psl" beforeDir="false" afterPath="$PROJECT_DIR$/test-input/full-test.psl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/api/PSLInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/api/PSLInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/Explanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/preferences/explanation/Explanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/PSLCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/psl/PSLCompiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/tests/EvaluationRepsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/EvaluationRepsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/tests/EvaluationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/EvaluationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/tests/PSLCompileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/java-src/tests/PSLCompileTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,10 +151,11 @@
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JAVA" />
@@ -156,9 +166,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/json/taylor" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.3739612" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="profiler.jvm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -188,7 +198,7 @@
       <recent name="preferences.evaluation.evaluators.meeting" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IntegrationTest">
+  <component name="RunManager" selected="Application.SparkApplication">
     <configuration name="Compile Test" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="tests.PSLCompileTest" />
       <module name="cos453-research" />
@@ -218,6 +228,14 @@
       <module name="cos453-research" />
       <option name="PROGRAM_PARAMETERS" value="--catalog json/taylor/catalog.json --offerings json/taylor/offerings.json --plan json/taylor/myPlan.json --psl test-input/my-preferences.psl --dependency test-input/dependencies.psl  --out json/taylor/result.json " />
       <option name="VM_PARAMETERS" value="-ea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SparkApplication" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="api.SparkMain" />
+      <module name="cos453-research" />
+      <option name="PROGRAM_PARAMETERS" value="--catalog json/taylor/catalog.json --offerings json/taylor/offerings.json" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -291,6 +309,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.SparkApplication" />
       <item itemvalue="Application.PSL" />
       <item itemvalue="Application.Compile Test" />
       <item itemvalue="Application.Evaluation Reps Test" />
@@ -404,6 +423,7 @@
       <workItem from="1641916357550" duration="1508000" />
       <workItem from="1641919950705" duration="18471000" />
       <workItem from="1641960813333" duration="21166000" />
+      <workItem from="1642182684387" duration="8805000" />
     </task>
     <task id="LOCAL-00001" summary="Started java objects">
       <created>1619497519425</created>
@@ -678,7 +698,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642097575184</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Added comments">
+      <created>1642102752078</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1642102752078</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -697,8 +724,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Started DSL, implemented grammar for specifications (still need to implement constraints &amp; conditions)" />
-    <MESSAGE value="Implemented constraints and conditions for DSL grammar" />
     <MESSAGE value="Implemented preferences" />
     <MESSAGE value="Finished DSL vertical slice, properly functioning listener and can print out specifications" />
     <MESSAGE value="Added test PSL cases including full spec" />
@@ -722,7 +747,9 @@
     <MESSAGE value="Added SpecificationTests.java" />
     <MESSAGE value="Fixed issue with contextual using terms or days lists, also added imports" />
     <MESSAGE value="Added PSLInstance and IntegrationTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added PSLInstance and IntegrationTest" />
+    <MESSAGE value="Added comments" />
+    <MESSAGE value="Added PSL API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PSL API" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -791,6 +818,16 @@
           <url>file://$PROJECT_DIR$/java-src/tests/IntegrationTest.java</url>
           <line>8</line>
           <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java-src/psl/PSLCompiler.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java-src/api/SparkMain.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="93" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

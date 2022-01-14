@@ -26,7 +26,7 @@ public class EvaluationRepsTest {
 
         try {
             PSLCompiler compiler = new PSLCompiler();
-            FullSpecification compiledSpecification = compiler.compile(pslFilePath);
+            FullSpecification compiledSpecification = compiler.compileFile(pslFilePath);
             RandomGenerator generator = new RandomGenerator(1, 20, 8, 2);
 
             for (int i = 0; i < reps; i++) {
