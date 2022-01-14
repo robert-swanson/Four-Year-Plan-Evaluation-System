@@ -7,7 +7,7 @@ import preferences.specification.FullSpecification;
 import preferences.specification.Specification;
 import preferences.specification.SpecificationList;
 import psl.exceptions.PSLCompileError;
-import psl.listener.PSLListener;
+import psl.exceptions.PSLSyntaxError;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -85,20 +85,13 @@ public class PSLCompiler {
     }
 
     private LinkedHashMap<String, Specification> compilePSLStream(CharStream charStream) throws PSLCompileError {
-        if (lexer == null) {
-            lexer = new PSLGrammarLexer(charStream);
-            tokenStream = new CommonTokenStream(lexer);
-            parser = new PSLGrammarParser(tokenStream);
-        } else {
-            lexer.setInputStream(charStream);
-//            tokenStream.setTokenSource(lexer);
-            parser.removeParseListeners();
-            lexer.reset();
-            parser.reset();
-        }
+        lexer = new PSLGrammarLexer(charStream);
+        tokenStream = new CommonTokenStream(lexer);
+        parser = new PSLGrammarParser(tokenStream);
 
         PSLListener listener = new PSLListener(dependencies);
         parser.addParseListener(listener);
+        parser.addErrorListener(PSLSyntaxError.INSTANCE);
         parser.start();
         return listener.getBlocks();
 

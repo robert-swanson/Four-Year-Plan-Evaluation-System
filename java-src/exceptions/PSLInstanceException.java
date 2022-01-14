@@ -1,6 +1,6 @@
 package exceptions;
 
-public abstract class PSLInstanceException extends Exception {
+public class PSLInstanceException extends Exception {
     public PSLInstanceException(String message) {
         super(message);
     }

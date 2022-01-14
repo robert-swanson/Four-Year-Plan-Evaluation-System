@@ -5,8 +5,7 @@ import gnu.getopt.LongOpt;
 import preferences.explanation.Explanation;
 import psl.exceptions.PSLCompileError;
 
-import static spark.Spark.get;
-import static spark.Spark.put;
+import static spark.Spark.*;
 
 public class SparkMain {
     public static void main(String[] args) throws Exception {
@@ -75,7 +74,7 @@ public class SparkMain {
             try {
                 instance.loadPSLString(request.body());
                 return "success";
-            } catch (PSLCompileError e) {
+            } catch (Exception e) {
                 response.status(400);
                 e.printStackTrace();
                 return e.toString();
@@ -85,6 +84,16 @@ public class SparkMain {
             try {
                 Explanation explanation = instance.evaluatePlansString(request.body());
                 return explanation.toJSON();
+            } catch (Exception e) {
+                response.status(400);
+                e.printStackTrace();
+                return e.toString();
+            }
+        });
+        delete("/reset", (request, response) -> {
+            try {
+                instance.reset();
+                return "success";
             } catch (Exception e) {
                 response.status(400);
                 e.printStackTrace();

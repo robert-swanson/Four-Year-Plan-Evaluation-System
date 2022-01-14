@@ -24,7 +24,9 @@ import java.nio.file.Path;
 
 public class PSLInstance {
     private Catalog catalog;
+    private String catalogFile;
     private Offerings offerings;
+    private String offeringsFile;
     private Link link;
 
     private FullSpecification specification;
@@ -33,7 +35,21 @@ public class PSLInstance {
     private static Gson gson;
 
     public PSLInstance(String catalogFile, String offeringsFile) throws Exception {
+        this.catalogFile = catalogFile;
+        this.offeringsFile = offeringsFile;
+
         createGson();
+        pslCompiler = new PSLCompiler();
+        loadCatalogFile(catalogFile);
+        loadOfferingsFile(offeringsFile);
+        linkCourses();
+    }
+
+    public void reset() throws Exception {
+        System.out.println("- Resetting PSL Instance");
+        if (offeringsFile == null || catalogFile == null) {
+            throw new PSLInstanceException("cannot reset unless catalog and offerings were loaded as file");
+        }
         pslCompiler = new PSLCompiler();
         loadCatalogFile(catalogFile);
         loadOfferingsFile(offeringsFile);
