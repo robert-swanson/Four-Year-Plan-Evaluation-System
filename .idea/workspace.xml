@@ -76,27 +76,150 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added PSLCompileError.AssertionError and replaced all assertions, made integration tests actually fail on error">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sparkjava_spark_core_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__gnu_getopt_java_getopt_1_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_3_6_v20151106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_3_6_v20151106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_3_6_v20151106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_3_6_v20151106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_3_6_v20151106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_3_6_v20151106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_3_6_v20151106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_3_6_v20151106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_3_6_v20151106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_3_6_v20151106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_3_6_v20151106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_server_9_3_6_v20151106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_servlet_9_3_6_v20151106.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_13.xml" afterDir="false" />
+    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Refactored project to match standard java directory structure">
+      <change afterPath="$PROJECT_DIR$/src/main/java/preferences/json/PropertyBasedInterfaceMarshal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/preferences/json/pslJSON.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/PSL-Grammar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/PSL-Grammar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/api/PSLInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/PSLInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/api/SparkMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/SparkMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/exceptions/CatalogException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/CatalogException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/exceptions/ContextException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/ContextException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/exceptions/JSONParseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/JSONParseException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/exceptions/LinkingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/LinkingException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/exceptions/OfferingException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/OfferingException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/exceptions/PSLInstanceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/PSLInstanceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/exceptions/PlanException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exceptions/PlanException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/generation/RandomGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/generation/RandomGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/Linkable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/Linkable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/catalog/Catalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/catalog/Catalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/catalog/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/catalog/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/catalog/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/catalog/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/misc/CatalogYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/misc/CatalogYear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/misc/CourseID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/misc/CourseID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/misc/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/misc/Date.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/misc/SectionID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/misc/SectionID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/misc/SystemConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/misc/SystemConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/misc/TermYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/misc/TermYear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/misc/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/misc/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/misc/TimeRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/misc/TimeRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/misc/Weekday.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/misc/Weekday.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/offerings/CourseOffering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/offerings/CourseOffering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/offerings/CourseOfferings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/offerings/CourseOfferings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/offerings/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/offerings/Meeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/offerings/Offerings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/offerings/Offerings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/offerings/TermOfferings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/offerings/TermOfferings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/plan/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/plan/Plan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/plan/PlanTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/plan/PlanTerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/objects/plan/PlansList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/plan/PlansList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/BooleanConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/BooleanConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/Constraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/Constraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/EqualConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/EqualConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/GreaterThanConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/GreaterThanConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/GreaterThanOrEqualConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/GreaterThanOrEqualConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/LessConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/LessConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/LessThanConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/LessThanConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/LessThanOrEqualConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/LessThanOrEqualConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/MoreConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/MoreConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/constraints/RequireableConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/RequireableConstraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/Condition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/Context.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/ContextLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/ContextLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/TermSubContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/TermSubContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/WeekSubContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/WeekSubContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/WeekdaySubContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/WeekdaySubContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/iterables/courseoffering/PlanCourseOfferingIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/iterables/courseoffering/PlanCourseOfferingIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/iterables/courseoffering/PlanTermCourseOfferingIterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/iterables/courseoffering/PlanTermCourseOfferingIterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/iterables/courseoffering/PlanTermWeekdayCourseOfferingIterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/iterables/courseoffering/PlanTermWeekdayCourseOfferingIterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/iterables/courseoffering/TermCourseOfferingIterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/iterables/courseoffering/TermCourseOfferingIterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/iterables/courseoffering/TermWeekdayCourseOfferingIterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/iterables/courseoffering/TermWeekdayCourseOfferingIterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/iterables/courseoffering/WeekdayCourseOfferingIterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/iterables/courseoffering/WeekdayCourseOfferingIterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/iterables/meeting/PlanMeetingIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/iterables/meeting/PlanMeetingIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/iterables/meeting/PlanTermMeetingIterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/iterables/meeting/PlanTermMeetingIterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/iterables/meeting/PlanTermWeekdayMeetingIterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/iterables/meeting/PlanTermWeekdayMeetingIterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/iterables/meeting/TermMeetingIterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/iterables/meeting/TermMeetingIterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/iterables/meeting/TermWeekdayMeetingIterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/iterables/meeting/TermWeekdayMeetingIterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/context/iterables/meeting/WeekdayMeetingIterable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/iterables/meeting/WeekdayMeetingIterable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/BooleanContextEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/BooleanContextEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/ContextEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/ContextEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/ScalableContextEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/ScalableContextEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/TermYearContextEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/TermYearContextEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/CourseOfferingAccumulatorEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/CourseOfferingAccumulatorEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/CoursesWithProfessorEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/CoursesWithProfessorEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/MeetingAccumulatorEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/MeetingAccumulatorEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/MeetingMinutesEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/MeetingMinutesEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCoursesEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCoursesFromSetEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesFromSetEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCreditsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCreditsFromSetEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsFromSetEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalUpperLevelCoursesEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCoursesEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalUpperLevelCreditsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCreditsEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CourseBeforeCourseEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CourseBeforeCourseEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CourseEndTimeEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CourseEndTimeEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CourseStartTimeEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CourseStartTimeEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CourseTermYearEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CourseTermYearEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/CoursesScheduledInSameSemester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CoursesScheduledInSameSemester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/FirstTermEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/FirstTermEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/LastTermEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/LastTermEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/NumTermsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/NumTermsEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/single/SingleCourseOfferingEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/SingleCourseOfferingEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/MeetingInTimeRangeEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/MeetingInTimeRangeEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/NumTimeBlocksEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/NumTimeBlocksEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/WeekdayEndTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/WeekdayEndTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/WeekdayMeetingEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/WeekdayMeetingEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/evaluators/weekday/WeekdayStartTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/WeekdayStartTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/Explainable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/Explainable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/Explanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/Explanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/constraints/ConstraintResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/constraints/ConstraintResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/constraints/ContextEvaluatorResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/constraints/ContextEvaluatorResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/context/ContextExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/context/ContextExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/context/TermSubContextExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/context/TermSubContextExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/context/WeekSubContextExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/context/WeekSubContextExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/context/WeekdaySubContextExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/context/WeekdaySubContextExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/specification/ConditionResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/specification/ConditionResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/specification/ConditionalClauseResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/specification/ConditionalClauseResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/specification/ConditionalSpecificationResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/specification/ConditionalSpecificationResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/specification/ContextualSpecificationResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/specification/ContextualSpecificationResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/specification/FullSpecificationResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/specification/FullSpecificationResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/specification/PreferenceSpecificationResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/specification/PreferenceSpecificationResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/specification/RequirementSpecificationResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/specification/RequirementSpecificationResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/specification/SpecificationListResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/specification/SpecificationListResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/explanation/specification/SpecificationResultExplanation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/explanation/specification/SpecificationResultExplanation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/result/DaysResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/result/DaysResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/result/PlanResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/result/PlanResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/result/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/result/ScalableValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/result/ScalableValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/result/TermsResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/result/TermsResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/result/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/result/Value.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/scoring/ConstraintQuantifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/scoring/ConstraintQuantifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/scoring/Score.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/scoring/Score.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/scoring/ScoreBound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/scoring/ScoreBound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/scoring/ScoreFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/scoring/ScoreFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/specification/ConditionalSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/ConditionalSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/specification/ContextualSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/ContextualSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/specification/FullSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/FullSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/specification/PreferenceSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/PreferenceSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/specification/RequirementSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/RequirementSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/specification/Specification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/Specification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/preferences/specification/SpecificationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/SpecificationList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/PSLCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLCompiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/PSLGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLGrammar.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/PSLListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/PSLParsingContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLParsingContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/exceptions/LinkingError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/exceptions/LinkingError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/exceptions/ListenerError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/exceptions/ListenerError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/exceptions/PSLCompileError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/exceptions/PSLCompileError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/psl/exceptions/PSLSyntaxError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/exceptions/PSLSyntaxError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/tests/EvaluationRepsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EvaluationRepsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/tests/EvaluationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EvaluationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/tests/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/tests/PSLCompileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PSLCompileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-src/tests/SpecificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SpecificationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/taylor/department-courses/com.txt" beforeDir="false" afterPath="$PROJECT_DIR$/json/taylor/department-courses/com.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json/taylor/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/taylor/result.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
@@ -131,20 +254,23 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCoursesFromSetEvaluator.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/java-src/preferences/result/DaysResult.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesFromSetEvaluator.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/preferences/result/DaysResult.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test-input/full-test.psl" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/java-src/Main.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/java-src/preferences/result/Value.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/java-src/preferences/result/ScalableValue.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/java-src/preferences/evaluators/general/CourseOfferingAccumulatorEvaluator.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/java-src/preferences/evaluators/general/TotalCreditsEvaluator.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/java-src/preferences/evaluators/ContextEvaluator.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/java-src/preferences/result/PlanResult.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/java-src/preferences/result/TermsResult.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/Main.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/preferences/result/Value.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/preferences/result/ScalableValue.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/preferences/evaluators/general/CourseOfferingAccumulatorEvaluator.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsEvaluator.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/preferences/evaluators/ContextEvaluator.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/preferences/result/PlanResult.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/preferences/result/TermsResult.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1riUGBLMYxaqF3jQlFpx9hCNLnP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -170,12 +296,12 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/json/taylor" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3739612" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -183,6 +309,7 @@
       <recent name="$PROJECT_DIR$/json/generation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/psl" />
       <recent name="$PROJECT_DIR$/json/generation" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -192,8 +319,8 @@
       <recent name="scoring.context" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="psl" />
       <recent name="" />
+      <recent name="psl" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="tests" />
@@ -206,7 +333,7 @@
       <recent name="preferences.evaluation.evaluators.meeting" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SparkApplication">
+  <component name="RunManager" selected="Application.PSL">
     <configuration name="Compile Test" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="tests.PSLCompileTest" />
       <module name="cos453-research" />
@@ -215,7 +342,7 @@
       </method>
     </configuration>
     <configuration name="Evaluation Reps Test" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="tests.EvaluationRepsTest" />
+      <option name="MAIN_CLASS_NAME" value="EvaluationRepsTest" />
       <module name="cos453-research" />
       <option name="VM_PARAMETERS" value="-ea" />
       <method v="2">
@@ -223,9 +350,18 @@
       </method>
     </configuration>
     <configuration name="Evaluation Test" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="tests.EvaluationTest" />
+      <option name="MAIN_CLASS_NAME" value="EvaluationTest" />
       <module name="cos453-research" />
       <option name="PROGRAM_PARAMETERS" value="--catalog json/taylor/catalog.json --offerings json/taylor/offerings.json --plan json/taylor/myPlan.json --psl test-input/full-test.psl --out json/taylor/result.json" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PSL-JSON" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="cos453-research" />
+      <option name="PROGRAM_PARAMETERS" value="--catalog json/taylor/catalog.json --offerings json/taylor/offerings.json --plan json/taylor/myPlan.json --psl-json json/taylor/result.json --dependency test-input/dependencies.psl --out json/taylor/result.json" />
       <option name="VM_PARAMETERS" value="-ea" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -249,7 +385,7 @@
       </method>
     </configuration>
     <configuration name="Specification Test" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="tests.SpecificationTests" />
+      <option name="MAIN_CLASS_NAME" value="SpecificationTests" />
       <module name="cos453-research" />
       <option name="VM_PARAMETERS" value="-ea" />
       <method v="2">
@@ -271,6 +407,29 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="psl" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="Generate Catalog" type="PythonConfigurationType" factoryName="Python">
       <module name="cos452&amp;3-research" />
@@ -319,11 +478,13 @@
     <list>
       <item itemvalue="Application.SparkApplication" />
       <item itemvalue="Application.PSL" />
+      <item itemvalue="Application.PSL-JSON" />
       <item itemvalue="Application.Compile Test" />
       <item itemvalue="Application.Evaluation Reps Test" />
       <item itemvalue="Application.Evaluation Test" />
       <item itemvalue="Application.Specification Test" />
       <item itemvalue="JUnit.IntegrationTest" />
+      <item itemvalue="Maven.psl" />
       <item itemvalue="Python.Generate Catalog" />
       <item itemvalue="Python.Generate Offerings" />
     </list>
@@ -431,7 +592,9 @@
       <workItem from="1641916357550" duration="1508000" />
       <workItem from="1641919950705" duration="18471000" />
       <workItem from="1641960813333" duration="21166000" />
-      <workItem from="1642182684387" duration="16119000" />
+      <workItem from="1642182684387" duration="21945000" />
+      <workItem from="1642562248314" duration="3430000" />
+      <workItem from="1642565765552" duration="1164000" />
     </task>
     <task id="LOCAL-00001" summary="Started java objects">
       <created>1619497519425</created>
@@ -734,7 +897,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642197736278</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Converted library dependencies to maven">
+      <created>1642352709245</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1642352709245</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -753,8 +923,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added test PSL cases including full spec" />
-    <MESSAGE value="Theoretically implemented full DSL grammar, fully implemented full-test.psl with tests for evaluators, specifications, conditions, and constraints" />
     <MESSAGE value="Implemented listener and evaluator for the rest of General and all of Weekday, started Single" />
     <MESSAGE value="Implemented lastTerm, firstTerm, numTerms" />
     <MESSAGE value="Added TermYear listener" />
@@ -778,7 +946,9 @@
     <MESSAGE value="Added PSL API" />
     <MESSAGE value="Developed API error handling" />
     <MESSAGE value="Added PSLCompileError.AssertionError and replaced all assertions, made integration tests actually fail on error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added PSLCompileError.AssertionError and replaced all assertions, made integration tests actually fail on error" />
+    <MESSAGE value="Converted library dependencies to maven" />
+    <MESSAGE value="Refactored project to match standard java directory structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored project to match standard java directory structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -817,41 +987,46 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="parsingContextStack.peek().evaluators.isEmpty()" language="JAVA" />
-          <url>file://$PROJECT_DIR$/java-src/psl/PSLListener.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/psl/PSLListener.java</url>
           <line>88</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/java-src/psl/PSLListener.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/psl/PSLListener.java</url>
           <line>267</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="parsingContextStack.peek().evaluators.isEmpty()" language="JAVA" />
-          <url>file://$PROJECT_DIR$/java-src/psl/PSLListener.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/psl/PSLListener.java</url>
           <line>84</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="parsingContextStack.peek().constraints.isEmpty()" language="JAVA" />
-          <url>file://$PROJECT_DIR$/java-src/psl/PSLListener.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/psl/PSLListener.java</url>
           <line>76</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/java-src/objects/offerings/CourseOffering.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/objects/offerings/CourseOffering.java</url>
           <line>68</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/java-src/tests/IntegrationTest.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/IntegrationTest.java</url>
           <line>8</line>
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/java-src/api/SparkMain.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/api/SparkMain.java</url>
           <line>77</line>
           <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="98" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

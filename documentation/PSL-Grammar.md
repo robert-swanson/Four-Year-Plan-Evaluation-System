@@ -2,7 +2,7 @@
 
 [TOC]
 
-> The PSL grammar is defined in the [`PSLGrammar.g4`](../java-src/psl/PSLGrammar.g4) ANTLR file and ignores whitespace.
+> The PSL grammar is defined in the [`PSLGrammar.g4`](dev/rswanson/cos453-research/src/main/java/psl/PSLGrammar.g4) ANTLR file and ignores whitespace.
 
 A PSL file is composed of a list of named blocks. Each block defines a set of named priorities (defined in parenthesis) to be optionally used by included preferences. The block then includes a list of `Specification` type statements.
 
