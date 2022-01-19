@@ -88,6 +88,6 @@ public class DaysResult<ValueType extends Value> extends Result<ValueType> {
 
     @Override
     public String describe() {
-        return String.format("values: %s weights: %s", values.toString(), weights.toString());
+        return String.format("values: %s weights: %s", values, weights);
     }
 }

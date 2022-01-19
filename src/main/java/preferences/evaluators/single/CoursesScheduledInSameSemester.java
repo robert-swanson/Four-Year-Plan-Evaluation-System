@@ -22,7 +22,7 @@ public class CoursesScheduledInSameSemester extends BooleanContextEvaluator {
     public Result getValue(Context context) {
         PlanCourseOfferingIterator iterator = context.courseOfferingIterator();
         String description = "Checks to see that any of these courses are scheduled in the same semester";
-        String explanation = "All classes scheduled in same semester: ";
+        StringBuilder explanation = new StringBuilder("All classes scheduled in same semester: ");
         TermYear sharedTermYear = null;
         Value value = Value.TRUE;
 
@@ -31,9 +31,9 @@ public class CoursesScheduledInSameSemester extends BooleanContextEvaluator {
                 if (sharedTermYear == null) {
                     sharedTermYear = iterator.getCurrentTermYear();
                 } else if (sharedTermYear.equals(iterator.getCurrentTermYear())) {
-                    explanation += String.format(" %s, ", sharedTermYear);
+                    explanation.append(String.format(" %s, ", sharedTermYear));
                 } else {
-                    explanation = String.format("Earlier classes were scheduled for %s, but %s was scheduled for %s", sharedTermYear, courseOffering.getCourse().getCourseID(), iterator.getCurrentTermYear());
+                    explanation = new StringBuilder(String.format("Earlier classes were scheduled for %s, but %s was scheduled for %s", sharedTermYear, courseOffering.getCourse().getCourseID(), iterator.getCurrentTermYear()));
                     lastResult = new PlanResult<>(Value.FALSE);
                 }
             }
