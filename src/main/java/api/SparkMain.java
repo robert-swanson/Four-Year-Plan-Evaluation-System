@@ -1,5 +1,8 @@
 package api;
 
+import exceptions.JSONParseException;
+import exceptions.LinkingException;
+import exceptions.PSLInstanceException;
 import gnu.getopt.Getopt;
 import gnu.getopt.LongOpt;
 import preferences.explanation.Explanation;
@@ -8,7 +11,8 @@ import psl.exceptions.PSLCompileError;
 import static spark.Spark.*;
 
 public class SparkMain {
-    public static void main(String[] args) throws Exception {
+
+    private static PSLInstance loadFromArgs(String[] args) throws Exception {
         String catalogPath = "", offeringsPath = "";
 
         LongOpt catalogOpt = new LongOpt("catalog", LongOpt.REQUIRED_ARGUMENT, null, 'c');
@@ -23,43 +27,47 @@ public class SparkMain {
                 default -> System.out.printf("Unrecognized option: '%s'\n", g.getOptopt());
             }
         }
+        return new PSLInstance(catalogPath, offeringsPath);
+    }
 
-        PSLInstance instance = new PSLInstance(catalogPath, offeringsPath);
+    public static void main(String[] args) throws Exception {
+        PSLInstance instance;
+        if (args.length > 0) {
+            instance = loadFromArgs(args);
+        } else {
+            instance = new PSLInstance();
+        }
 
-
-//        put("/initialize/catalog", (request, response) -> {
-//            try {
-//                instance.loadCatalogString(request.body());
-//                response.body("success");
-//            } catch (JSONParseException e) {
-//                response.status(400);
-//                response.body(e.toString());
-//            }
-//            return response;
-//        });
-//        put("/initialize/offerings", (request, response) -> {
-//            try {
-//                instance.loadOfferingsString(request.body());
-//                response.body("success");
-//            } catch (JSONParseException e) {
-//                response.status(400);
-//                response.body(e.toString());
-//            }
-//            return response;
-//        });
-//        put("/initialize/link", (request, response) -> {
-//            try {
-//                instance.linkCourses();
-//                response.body("success");
-//            } catch (PSLInstanceException e) {
-//                response.status(424);
-//                response.body(e.toString());
-//            } catch (LinkingException e) {
-//                response.status(422);
-//                response.body(e.toString());
-//            }
-//            return response;
-//        });
+        put("/initialize/catalog", (request, response) -> {
+            try {
+                instance.loadCatalogString(request.body());
+                return "success";
+            } catch (JSONParseException e) {
+                response.status(400);
+                return e.toString();
+            }
+        });
+        put("/initialize/offerings", (request, response) -> {
+            try {
+                instance.loadOfferingsString(request.body());
+                return "success";
+            } catch (JSONParseException e) {
+                response.status(400);
+                return e.toString();
+            }
+        });
+        put("/initialize/link", (request, response) -> {
+            try {
+                instance.linkCourses();
+                return "success";
+            } catch (PSLInstanceException e) {
+                response.status(424);
+                return e.toString();
+            } catch (LinkingException e) {
+                response.status(422);
+                return e.toString();
+            }
+        });
         put("/configure/add-dependency", (request, response) -> {
             try {
                 instance.addDependencyString(request.body());

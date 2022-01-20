@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cos453-research" />
+        <module name="psl" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cos453-research" target="17" />
+      <module name="psl" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>
