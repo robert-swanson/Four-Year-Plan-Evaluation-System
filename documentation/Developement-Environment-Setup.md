@@ -66,7 +66,7 @@ mv Four-Year-Plan-Evaluation-System pslAudit
    2. Generate ANTLR recognizer
       1. Navigate to the `java-src/psl/PSLGrammar.g4`
       2. Right click the file and click “Generate ANTLR Recognizer”
-      3. You should see a message saying “parser for PSLGrammar.g4 generated to ...”
+      3. You should see a message saying “psl for PSLGrammar.g4 generated to ...”
       4. Right Click the `gen` directory that now exists in your project directory
          1. Click “Mark Directory as”
          2. Click “Generated Sources Root”

@@ -3,11 +3,13 @@ package psl;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
+import psl.antlr.PSLGrammarLexer;
+import psl.antlr.PSLGrammarParser;
+import psl.exceptions.PSLCompileError;
+import psl.exceptions.PSLSyntaxError;
 import preferences.specification.FullSpecification;
 import preferences.specification.Specification;
 import preferences.specification.SpecificationList;
-import psl.exceptions.PSLCompileError;
-import psl.exceptions.PSLSyntaxError;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -16,6 +18,7 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+
 
 public class PSLCompiler {
     private final HashMap<String, Specification> dependencies;

@@ -45,6 +45,9 @@ public class SparkMain {
             } catch (JSONParseException e) {
                 response.status(400);
                 return e.toString();
+            } catch (Exception e) {
+                response.status(500);
+                return e.toString();
             }
         });
         put("/initialize/offerings", (request, response) -> {
@@ -53,6 +56,9 @@ public class SparkMain {
                 return "success";
             } catch (JSONParseException e) {
                 response.status(400);
+                return e.toString();
+            } catch (Exception e) {
+                response.status(500);
                 return e.toString();
             }
         });
@@ -66,6 +72,9 @@ public class SparkMain {
             } catch (LinkingException e) {
                 response.status(422);
                 return e.toString();
+            } catch (Exception e) {
+                response.status(500);
+                return e.toString();
             }
         });
         put("/configure/add-dependency", (request, response) -> {
@@ -76,6 +85,9 @@ public class SparkMain {
                 response.status(400);
                 e.printStackTrace();
                 return e.toString();
+            } catch (Exception e) {
+                response.status(500);
+                return e.toString();
             }
         });
         put("/configure/set-specification", (request, response) -> {
@@ -83,7 +95,7 @@ public class SparkMain {
                 instance.loadPSLString(request.body());
                 return "success";
             } catch (Exception e) {
-                response.status(400);
+                response.status(500);
                 e.printStackTrace();
                 return e.toString();
             }
@@ -93,7 +105,7 @@ public class SparkMain {
                 Explanation explanation = instance.evaluatePlansString(request.body());
                 return explanation.toJSON();
             } catch (Exception e) {
-                response.status(400);
+                response.status(500);
                 e.printStackTrace();
                 return e.toString();
             }
@@ -103,7 +115,7 @@ public class SparkMain {
                 instance.reset();
                 return "success";
             } catch (Exception e) {
-                response.status(400);
+                response.status(500);
                 e.printStackTrace();
                 return e.toString();
             }

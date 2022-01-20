@@ -3,6 +3,9 @@ package psl;
 import exceptions.JSONParseException;
 import objects.misc.*;
 import org.antlr.v4.runtime.tree.TerminalNode;
+import psl.antlr.PSLGrammarBaseListener;
+import psl.antlr.PSLGrammarParser;
+import psl.exceptions.PSLCompileError;
 import preferences.constraints.*;
 import preferences.context.Condition;
 import preferences.context.ContextLevel;
@@ -18,7 +21,6 @@ import preferences.evaluators.weekday.WeekdayEndTime;
 import preferences.evaluators.weekday.WeekdayStartTime;
 import preferences.result.ScalableValue;
 import preferences.specification.*;
-import psl.exceptions.PSLCompileError;
 
 import java.util.*;
 
