@@ -26,7 +26,7 @@ Homework Time: **218 hours**
 - [Presentation](./documents/Presentation.pdf) (Homework Time: 13 hours)
 - [Poster](./documents/Poster.pdf) (Homework Time: 3 hours)
 
-## PSL Project
+## PSL Project <img src="./documentation/logo/sizes/logo_32@2x.png" alt="logo_32@2x" style="zoom:50%;" />
 
 This research project explores degree planning for students based on a customized set of requirements and preferences. It defines a domain specific language called PSL (preference specification language) to express the specification. It comes with a compiler that can take in this specification and evaluate degree plans accordingly.
 
