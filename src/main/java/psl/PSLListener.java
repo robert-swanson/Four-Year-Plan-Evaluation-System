@@ -3,11 +3,15 @@ package psl;
 import exceptions.JSONParseException;
 import objects.misc.*;
 import org.antlr.v4.runtime.tree.TerminalNode;
+import preferences.condition.ConstraintCondition;
+import preferences.value.NumericValue;
+import preferences.value.TermYearValue;
+import preferences.value.TimeValue;
 import psl.antlr.PSLGrammarBaseListener;
 import psl.antlr.PSLGrammarParser;
 import psl.exceptions.PSLCompileError;
 import preferences.constraints.*;
-import preferences.context.Condition;
+import preferences.condition.Condition;
 import preferences.context.ContextLevel;
 import preferences.evaluators.BooleanContextEvaluator;
 import preferences.evaluators.ContextEvaluator;
@@ -19,7 +23,7 @@ import preferences.evaluators.weekday.MeetingInTimeRangeEvaluator;
 import preferences.evaluators.weekday.NumTimeBlocksEvaluator;
 import preferences.evaluators.weekday.WeekdayEndTime;
 import preferences.evaluators.weekday.WeekdayStartTime;
-import preferences.result.ScalableValue;
+import preferences.value.ScalableValue;
 import preferences.specification.*;
 import psl.exceptions.PSLParsingError;
 
@@ -232,7 +236,7 @@ public class PSLListener extends PSLGrammarBaseListener {
     @Override
     public void exitCondition(PSLGrammarParser.ConditionContext ctx) {
         if (ctx.requirableConstraint() != null) {
-            addCondition(new Condition.ConstraintCondition((RequireableConstraint) getConstraint()));
+            addCondition(new ConstraintCondition((RequireableConstraint) getConstraint()));
         } else if (ctx.AND() != null) {
             Condition right = getCondition(), left = getCondition();
             addCondition(left.and(right));
@@ -250,12 +254,12 @@ public class PSLListener extends PSLGrammarBaseListener {
     private ScalableValue getValue(TerminalNode intVal, PSLGrammarParser.TimeContext time, PSLGrammarParser.TermYearContext termYearContext) {
         ScalableValue value;
         if (intVal != null) {
-            value = new ScalableValue.Numeric(Double.parseDouble(intVal.getText()));
+            value = new NumericValue(Double.parseDouble(intVal.getText()));
         } else if (time != null) {
-            value = new ScalableValue.TimeValue(new Time(time.getText()));
+            value = new TimeValue(new Time(time.getText()));
         } else if (termYearContext != null) {
             try {
-                value = new ScalableValue.TermYearValue(new TermYear(termYearContext.getText()));
+                value = new TermYearValue(new TermYear(termYearContext.getText()));
             } catch (JSONParseException e) {
                 throw new PSLParsingError(e.getMessage(), termYearContext.start);
             }

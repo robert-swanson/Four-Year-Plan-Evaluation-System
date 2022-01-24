@@ -3,9 +3,9 @@ package preferences.constraints;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
 import preferences.evaluators.ScalableContextEvaluator;
-import preferences.explanation.constraints.ConstraintResultExplanation;
 import preferences.result.Result;
-import preferences.result.ScalableValue;
+import preferences.scoring.SigmoidScoringFunction;
+import preferences.value.ScalableValue;
 import preferences.scoring.ScoreBound;
 import preferences.scoring.ScoreFunction;
 
@@ -16,7 +16,7 @@ public class LessConstraint extends Constraint {
         super(scalableContextEvaluator, ConstraintType.more, contextLevel);
         double average = scalableContextEvaluator.getAverage(contextLevel);
         double dev = scalableContextEvaluator.getDeviance(contextLevel);
-        scoreFunction = new ScoreFunction.Proportional(new ScoreBound(ScoreBound.BoundType.soft, average+dev/2.0), new ScoreBound(ScoreBound.BoundType.soft, average-dev/2.0));
+        scoreFunction = new SigmoidScoringFunction(new ScoreBound(ScoreBound.BoundType.soft, average+dev/2.0), new ScoreBound(ScoreBound.BoundType.soft, average-dev/2.0));
     }
 
     @Override

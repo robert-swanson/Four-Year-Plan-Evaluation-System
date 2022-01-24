@@ -12,7 +12,7 @@ import java.io.IOException;
 public class FullSpecification extends Specification {
     Specification specification;
     Context lastContext;
-    transient String name;
+    String name;
 
     public FullSpecification(Specification specification, String name) {
         this.specification = specification;
@@ -21,7 +21,8 @@ public class FullSpecification extends Specification {
 
     public FullSpecification(String json) {
         Gson gson = PSLInstance.createGson();
-        gson.fromJson(json, FullSpecification.class);
+        this.specification = gson.fromJson(json, FullSpecification.class);
+        this.name = "from JSON";
     }
 
     public void writeToFile(String filePath) throws IOException {

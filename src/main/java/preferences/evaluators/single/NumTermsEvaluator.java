@@ -6,7 +6,7 @@ import preferences.context.ContextLevel;
 import preferences.evaluators.ScalableContextEvaluator;
 import preferences.result.PlanResult;
 import preferences.result.Result;
-import preferences.result.ScalableValue;
+import preferences.value.NumericValue;
 
 import java.util.Set;
 
@@ -14,7 +14,7 @@ public class NumTermsEvaluator extends ScalableContextEvaluator {
     @Override
     public Result getValue(Context context) {
         Set<TermYear> terms = context.getTerms();
-        lastResult = new PlanResult<>(new ScalableValue.Numeric(terms.size()));
+        lastResult = new PlanResult<>(new NumericValue(terms.size()));
         return lastResult;
     }
 

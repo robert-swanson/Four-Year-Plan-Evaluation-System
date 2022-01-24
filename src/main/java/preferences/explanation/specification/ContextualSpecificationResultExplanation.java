@@ -1,7 +1,6 @@
 package preferences.explanation.specification;
 
-import preferences.context.Condition;
-import preferences.context.Context;
+import preferences.condition.Condition;
 import preferences.explanation.Explanation;
 import preferences.explanation.context.ContextExplanation;
 import preferences.specification.ContextualSpecification;

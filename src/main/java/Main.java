@@ -1,11 +1,8 @@
 import api.PSLInstance;
 import gnu.getopt.Getopt;
 import gnu.getopt.LongOpt;
-import preferences.explanation.Explanation;
 import preferences.specification.FullSpecification;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 
 public class Main {
@@ -39,15 +36,12 @@ public class Main {
         try {
             PSLInstance pslInstance = new PSLInstance(catalogPath, offeringsPath);
             dependencies.forEach(pslInstance::addDependencyFile);
-            FullSpecification specification;
             if (!pslPath.equals("")) {
-                specification = pslInstance.loadPSLFile(pslPath);
+                pslInstance.loadPSLFile(pslPath);
             } else {
-                String json = Files.readString(Path.of(pslJSON));
-                specification = new FullSpecification(json);
+                pslInstance.loadPSLJsonFile(pslJSON);
             }
-
-            Explanation explanation = pslInstance.evaluatePlanFile(planPath);
+            FullSpecification specification = pslInstance.evaluatePlanFile(planPath);
 //            explanation.writeToFile(outPath);
             specification.writeToFile(outPath);
         } catch (Exception e) {

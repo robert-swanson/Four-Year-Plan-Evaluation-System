@@ -8,7 +8,7 @@ import preferences.evaluators.BooleanContextEvaluator;
 import preferences.context.iterables.courseoffering.PlanCourseOfferingIterator;
 import preferences.result.PlanResult;
 import preferences.result.Result;
-import preferences.result.Value;
+import preferences.value.Value;
 
 public class CourseBeforeCourseEvaluator extends BooleanContextEvaluator {
     final private CourseID first, second;

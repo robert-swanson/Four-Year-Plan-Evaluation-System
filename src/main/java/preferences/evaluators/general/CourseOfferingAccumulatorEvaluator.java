@@ -6,6 +6,7 @@ import preferences.evaluators.ScalableContextEvaluator;
 import preferences.context.iterables.courseoffering.PlanTermCourseOfferingIterable;
 import preferences.context.iterables.courseoffering.TermCourseOfferingIterable;
 import preferences.result.*;
+import preferences.value.NumericValue;
 
 public abstract class CourseOfferingAccumulatorEvaluator extends ScalableContextEvaluator {
     public interface CourseOfferingAttribute {
@@ -20,18 +21,18 @@ public abstract class CourseOfferingAccumulatorEvaluator extends ScalableContext
         };
     }
 
-    static PlanResult<ScalableValue.Numeric> getPlanValue(Context context, String description, CourseOfferingAttribute courseOfferingAttribute) {
+    static PlanResult<NumericValue> getPlanValue(Context context, String description, CourseOfferingAttribute courseOfferingAttribute) {
         int accumulator = 0;
         StringBuilder explanation = new StringBuilder();
         for (CourseOffering courseOffering : context.courseOfferingIterator()) {
             accumulator += courseOfferingAttribute.get(courseOffering);
             explanation.append(String.format("  class \"%s\"\n", courseOffering));
         }
-        return new PlanResult<>(new ScalableValue.Numeric(accumulator));
+        return new PlanResult<>(new NumericValue(accumulator));
     }
 
-    static TermsResult<ScalableValue.Numeric> getTermsValue(Context context, String description, CourseOfferingAttribute courseOfferingAttribute) {
-        TermsResult<ScalableValue.Numeric> result = new TermsResult<>(description);
+    static TermsResult<NumericValue> getTermsValue(Context context, String description, CourseOfferingAttribute courseOfferingAttribute) {
+        TermsResult<NumericValue> result = new TermsResult<>(description);
         StringBuilder explanation = new StringBuilder();
         PlanTermCourseOfferingIterable iterable = context.termCourseOfferingIterable();
         for (TermCourseOfferingIterable termCourseOfferingIterable : iterable) {
@@ -41,13 +42,13 @@ public abstract class CourseOfferingAccumulatorEvaluator extends ScalableContext
                 accumulator += courseOfferingAttribute.get(courseOffering);
                 explanation.append(String.format("      %s\n", courseOffering));
             }
-            result.addValue(new ScalableValue.Numeric(accumulator));
+            result.addValue(new NumericValue(accumulator));
             explanation.append(String.format("      Term Count: %.2f\n", accumulator));
         }
         return result;
     }
 
-    private static DaysResult<ScalableValue.Numeric> getDaysValue(Context context, String description, CourseOfferingAttribute courseOfferingAttribute) {
+    private static DaysResult<NumericValue> getDaysValue(Context context, String description, CourseOfferingAttribute courseOfferingAttribute) {
         return MeetingAccumulatorEvaluator.getDaysValue(context, description, meeting -> courseOfferingAttribute.get(meeting.getCourseOffering()));
     }
 }

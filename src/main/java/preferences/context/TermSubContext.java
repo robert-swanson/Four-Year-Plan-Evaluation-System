@@ -6,6 +6,7 @@ import objects.misc.Weekday;
 import objects.offerings.CourseOffering;
 import objects.offerings.Meeting;
 import objects.plan.PlanTerm;
+import preferences.condition.Condition;
 import preferences.explanation.Explainable;
 import preferences.explanation.context.TermSubContextExplanation;
 import preferences.context.iterables.courseoffering.TermCourseOfferingIterable;

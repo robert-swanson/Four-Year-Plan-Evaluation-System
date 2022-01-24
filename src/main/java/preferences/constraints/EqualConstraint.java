@@ -2,12 +2,11 @@ package preferences.constraints;
 
 import preferences.context.Context;
 import preferences.context.ContextLevel;
-import preferences.evaluators.ContextEvaluator;
 import preferences.evaluators.ScalableContextEvaluator;
-import preferences.explanation.constraints.ConstraintResultExplanation;
 import preferences.result.Result;
-import preferences.result.ScalableValue;
-import preferences.result.Value;
+import preferences.scoring.OptimumScoringFunction;
+import preferences.value.ScalableValue;
+import preferences.value.Value;
 import preferences.scoring.ScoreBound;
 import preferences.scoring.ScoreFunction;
 
@@ -18,13 +17,8 @@ public class EqualConstraint extends RequireableConstraint {
     public EqualConstraint(ScalableContextEvaluator scalableContextEvaluator, Value value, ContextLevel contextLevel) {
         super(scalableContextEvaluator, ConstraintType.equal, contextLevel);
         this.expectedValue = value;
-
-        if (value instanceof ScalableValue) {
-            double middle = ((ScalableValue)value).getScalableValue();
-            scoreFunction = new ScoreFunction.Optimum(middle, new ScoreBound(ScoreBound.BoundType.soft, scalableContextEvaluator.getDeviance(contextLevel)));
-        } else {
-            scoreFunction = new ScoreFunction.Boolean();
-        }
+        double middle = ((ScalableValue)value).getScalableValue();
+        scoreFunction = new OptimumScoringFunction(middle, new ScoreBound(ScoreBound.BoundType.soft, scalableContextEvaluator.getDeviance(contextLevel)));
     }
 
     @Override

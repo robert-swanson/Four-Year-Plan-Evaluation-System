@@ -2,11 +2,10 @@ package preferences.constraints;
 
 import preferences.context.Context;
 import preferences.context.ContextLevel;
-import preferences.evaluators.ContextEvaluator;
 import preferences.evaluators.ScalableContextEvaluator;
-import preferences.explanation.constraints.ConstraintResultExplanation;
 import preferences.result.Result;
-import preferences.result.ScalableValue;
+import preferences.scoring.SigmoidScoringFunction;
+import preferences.value.ScalableValue;
 import preferences.scoring.ScoreBound;
 import preferences.scoring.ScoreFunction;
 
@@ -18,7 +17,7 @@ public class LessThanOrEqualConstraint extends RequireableConstraint {
         super(scalableContextEvaluator, ConstraintType.greaterThanOrEqual, contextLevel);
         this.minimumValue = value;
         double firstQuartile = value.getScalableValue();
-        scoreFunction = new ScoreFunction.Proportional(new ScoreBound(ScoreBound.BoundType.soft, firstQuartile - scalableContextEvaluator.getDeviance(contextLevel)), new ScoreBound(ScoreBound.BoundType.soft, firstQuartile));
+        scoreFunction = new SigmoidScoringFunction(new ScoreBound(ScoreBound.BoundType.soft, firstQuartile - scalableContextEvaluator.getDeviance(contextLevel)), new ScoreBound(ScoreBound.BoundType.soft, firstQuartile));
     }
 
     @Override

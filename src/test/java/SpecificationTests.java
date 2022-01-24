@@ -1,13 +1,14 @@
 import generation.RandomGenerator;
 import objects.misc.CourseID;
+import preferences.condition.ConstraintCondition;
 import preferences.constraints.BooleanConstraint;
 import preferences.constraints.GreaterThanOrEqualConstraint;
-import preferences.context.Condition;
+import preferences.condition.Condition;
 import preferences.context.ContextLevel;
 import preferences.evaluators.TermYearContextEvaluator;
 import preferences.evaluators.general.TotalCreditsEvaluator;
 import preferences.evaluators.single.CourseTermYearEvaluator;
-import preferences.result.ScalableValue;
+import preferences.value.NumericValue;
 import preferences.specification.*;
 
 public class SpecificationTests {
@@ -54,8 +55,8 @@ public class SpecificationTests {
             RequirementSpecification requirementSpecification = new RequirementSpecification(booleanConstraint, false);
 
             TotalCreditsEvaluator creditsEvaluator = new TotalCreditsEvaluator();
-            GreaterThanOrEqualConstraint constraint = new GreaterThanOrEqualConstraint(creditsEvaluator, new ScalableValue.Numeric(3), ContextLevel.days);
-            Condition condition = new Condition.ConstraintCondition(constraint);
+            GreaterThanOrEqualConstraint constraint = new GreaterThanOrEqualConstraint(creditsEvaluator, new NumericValue(3), ContextLevel.days);
+            Condition condition = new ConstraintCondition(constraint);
 
             ContextualSpecification contextualSpecification = new ContextualSpecification(requirementSpecification, ContextLevel.days, condition, null, null);
             specificationList.addSpecification(contextualSpecification);
@@ -77,8 +78,8 @@ public class SpecificationTests {
 
         for (int i = 0; i < numFilters; i++) {
             TotalCreditsEvaluator creditsEvaluator = new TotalCreditsEvaluator();
-            GreaterThanOrEqualConstraint constraint = new GreaterThanOrEqualConstraint(creditsEvaluator, new ScalableValue.Numeric(3), ContextLevel.days);
-            Condition condition = new Condition.ConstraintCondition(constraint);
+            GreaterThanOrEqualConstraint constraint = new GreaterThanOrEqualConstraint(creditsEvaluator, new NumericValue(3), ContextLevel.days);
+            Condition condition = new ConstraintCondition(constraint);
 
             lastSpecification = new ContextualSpecification(lastSpecification, ContextLevel.days, condition, null, null);
 

@@ -1,6 +1,6 @@
 package preferences.specification;
 
-import preferences.context.Condition;
+import preferences.condition.Condition;
 import preferences.context.Context;
 import preferences.explanation.specification.ConditionalClauseResultExplanation;
 import preferences.explanation.Explainable;

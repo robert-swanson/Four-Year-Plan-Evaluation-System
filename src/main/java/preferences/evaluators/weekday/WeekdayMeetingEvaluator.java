@@ -9,7 +9,7 @@ import preferences.context.iterables.meeting.TermWeekdayMeetingIterable;
 import preferences.context.iterables.meeting.WeekdayMeetingIterable;
 import preferences.result.DaysResult;
 import preferences.result.Result;
-import preferences.result.Value;
+import preferences.value.Value;
 
 import java.util.ArrayList;
 

@@ -6,8 +6,8 @@ import preferences.context.Context;
 import preferences.context.ContextLevel;
 import preferences.result.PlanResult;
 import preferences.result.Result;
-import preferences.result.ScalableValue;
-import preferences.result.Value;
+import preferences.value.NullValue;
+import preferences.value.TermYearValue;
 
 import java.util.Set;
 
@@ -24,9 +24,9 @@ public class LastTermEvaluator extends TermYearContextEvaluator {
             }
         }
         if (last == null) {
-            lastResult = new PlanResult<>(Value.NULL);
+            lastResult = new PlanResult<>(new NullValue("No terms in plan"));
         } else {
-            lastResult = new PlanResult<>(new ScalableValue.TermYearValue(last));
+            lastResult = new PlanResult<>(new TermYearValue(last));
         }
         return lastResult;
     }

@@ -1,6 +1,7 @@
 package preferences.result;
 
 import preferences.explanation.Explanation;
+import preferences.value.Value;
 
 import java.util.ArrayList;
 

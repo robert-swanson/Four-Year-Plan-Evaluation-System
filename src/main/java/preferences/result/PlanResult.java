@@ -1,15 +1,16 @@
 package preferences.result;
 
 import preferences.explanation.Explanation;
+import preferences.value.Value;
 
 public class PlanResult<ValueType extends Value> extends Result<ValueType> {
-    private final ValueType value;
+    private final Value value;
 
-    public PlanResult(ValueType value) {
+    public PlanResult(Value value) {
         this.value = value;
     }
 
-    public ValueType getValue() {
+    public Value getValue() {
         return value;
     }
 

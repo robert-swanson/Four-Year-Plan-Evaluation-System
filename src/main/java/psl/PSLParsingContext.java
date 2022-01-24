@@ -5,7 +5,7 @@ import objects.misc.TermYear;
 import objects.misc.TimeRange;
 import objects.misc.Weekday;
 import preferences.constraints.Constraint;
-import preferences.context.Condition;
+import preferences.condition.Condition;
 import preferences.context.ContextLevel;
 import preferences.evaluators.ContextEvaluator;
 import preferences.specification.ConditionalSpecification;

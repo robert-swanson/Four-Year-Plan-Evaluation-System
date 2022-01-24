@@ -1,6 +1,7 @@
 package preferences.result;
 
 import preferences.explanation.Explainable;
+import preferences.value.Value;
 
 public abstract class Result<ValueType extends Value> implements Explainable {
     protected Double calculatedScore;

@@ -12,11 +12,19 @@ import objects.offerings.Offerings;
 import objects.plan.Plan;
 import objects.plan.PlanTerm;
 import objects.plan.PlansList;
+import preferences.constraints.Constraint;
+import preferences.constraints.RequireableConstraint;
+import preferences.condition.Condition;
 import preferences.context.Context;
-import preferences.explanation.Explanation;
+import preferences.evaluators.ContextEvaluator;
+import preferences.json.FullSpecificationDeserializer;
 import preferences.json.PropertyBasedInterfaceMarshal;
+import preferences.result.Result;
+import preferences.scoring.ScoreFunction;
 import preferences.specification.FullSpecification;
 import preferences.specification.Specification;
+import preferences.value.ScalableValue;
+import preferences.value.Value;
 import psl.PSLCompiler;
 import psl.exceptions.PSLCompileError;
 
@@ -63,6 +71,8 @@ public class PSLInstance {
         pslCompiler = new PSLCompiler();
     }
 
+    // ---------- Catalog ----------
+
     public void loadCatalogString(String catalogJson) throws JSONParseException {
         System.out.println("- Reading Catalog JSON");
         try {
@@ -81,6 +91,8 @@ public class PSLInstance {
             throw new JSONParseException(String.format("Loading catalog file '%s': %s", catalogFile, e.getMessage()));
         }
     }
+
+    // ---------- Offerings --------
 
     public void loadOfferingsString(String offeringsJson) throws JSONParseException {
         System.out.println("- Reading Course Offerings JSON");
@@ -101,6 +113,8 @@ public class PSLInstance {
         }
     }
 
+    // ---------- Link -------------
+
     public void linkCourses() throws PSLInstanceException, LinkingException {
         System.out.println("- Linking Offerings to Courses");
         if (catalog == null) {
@@ -110,6 +124,8 @@ public class PSLInstance {
         }
         link = new Link(catalog, offerings);
     }
+
+    // ---------- Dependencies -----
 
     public void addDependencyString(String dependencyPSL) throws PSLCompileError {
         System.out.println("- Compiling Dependency PSL string");
@@ -121,9 +137,12 @@ public class PSLInstance {
         pslCompiler.addDependencyFile(dependencyFile);
     }
 
-    public void loadPSLString(String psl) throws PSLCompileError {
+    // ---------- PSL --------------
+
+    public FullSpecification loadPSLString(String psl) throws PSLCompileError {
         System.out.println("- Compiling Main PSL String");
         specification = pslCompiler.compileString(psl);
+        return specification;
     }
     public FullSpecification loadPSLFile(String pslFile) throws PSLCompileError {
         System.out.printf("- Compiling Main PSL: %s\n", pslFile);
@@ -131,7 +150,23 @@ public class PSLInstance {
         return specification;
     }
 
-    public Explanation evaluatePlanFile(String planFile) throws Exception {
+    // ---------- PSL JSON ---------
+
+    public FullSpecification loadPSLJsonFile(String pslJSONFile) throws IOException {
+        System.out.printf("- Compiling Main PSL JSON File: %s", pslJSONFile);
+        String json = Files.readString(Path.of(pslJSONFile));
+        return loadPSLJsonString(json);
+    }
+
+    public FullSpecification loadPSLJsonString(String pslJSON) {
+        System.out.println("- Compiling Main PSL JSON String");
+        specification = new FullSpecification(pslJSON);
+        return specification;
+    }
+
+    // ---------- Evaluate Plan ----
+
+    public FullSpecification evaluatePlanFile(String planFile) throws Exception {
         System.out.printf("- Evaluating Plan: %s\n", planFile);
         try {
             String plansString = Files.readString(Path.of(planFile));
@@ -141,7 +176,7 @@ public class PSLInstance {
         }
     }
 
-    public Explanation evaluatePlansString(String plansJson) throws Exception {
+    public FullSpecification evaluatePlansString(String plansJson) throws Exception {
         if (link == null) {
             throw new PSLInstanceException.PSLInstanceNotReadyException("needs to be linked");
         } else if (specification == null) {
@@ -157,8 +192,10 @@ public class PSLInstance {
 
         context.assertPlanContext();
         System.out.printf("- Plan is %s (took %.4fs)\n", specification.getLastResult().describe(), (endTime-startTime)/1000.0);
-        return specification.explainLastResult();
+        return specification;
     }
+
+    // ---------- Create GSON ---------
 
     public static Gson createGson() {
         if (gson != null) return gson;
@@ -193,9 +230,16 @@ public class PSLInstance {
         gb.registerTypeAdapter(PlanTerm.class, new PlanTerm.Deserializer());
 
         // PSL JSON
+        gb.registerTypeAdapter(FullSpecification.class, new FullSpecificationDeserializer());
+
         PropertyBasedInterfaceMarshal marshal = new PropertyBasedInterfaceMarshal();
-        gb.registerTypeAdapter(Specification.class, new PropertyBasedInterfaceMarshal());
-//        gb.registerTypeAdapter(Specification.class, new pslJSON.SpecificationDeserializer());
+        Class[] classes = new Class[] {
+                Specification.class, Constraint.class, RequireableConstraint.class, ContextEvaluator.class,
+                Result.class, Value.class, ScalableValue.class, ScoreFunction.class, Condition.class
+        };
+        for (Class c: classes) {
+            gb.registerTypeAdapter(c, marshal);
+        }
 
         gson = gb.setPrettyPrinting().create();
         return gson;

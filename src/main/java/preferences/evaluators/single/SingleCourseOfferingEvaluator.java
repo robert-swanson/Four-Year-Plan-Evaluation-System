@@ -5,6 +5,8 @@ import objects.offerings.CourseOffering;
 import preferences.context.Context;
 import preferences.evaluators.ContextEvaluator;
 import preferences.result.*;
+import preferences.value.NullValue;
+import preferences.value.Value;
 
 public abstract class SingleCourseOfferingEvaluator extends ContextEvaluator {
     public interface CourseOfferingValue {
@@ -17,6 +19,6 @@ public abstract class SingleCourseOfferingEvaluator extends ContextEvaluator {
                 return new PlanResult<>(courseOfferingValue.getValue(courseOffering));
             }
         }
-        return new PlanResult<>(Value.NULL);
+        return new PlanResult<>(new NullValue(String.format("Course '%s' isn't scheduled in this context", courseID)));
     }
 }

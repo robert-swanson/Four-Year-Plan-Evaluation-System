@@ -3,7 +3,7 @@ package preferences.evaluators;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
 import preferences.result.Result;
-import preferences.result.ScalableValue;
+import preferences.value.ScalableValue;
 
 public abstract class ScalableContextEvaluator extends ContextEvaluator {
     public abstract double getDeviance(ContextLevel contextLevel);

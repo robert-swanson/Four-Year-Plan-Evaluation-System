@@ -5,7 +5,7 @@ import objects.offerings.Meeting;
 import preferences.context.Context;
 import preferences.evaluators.BooleanContextEvaluator;
 import preferences.result.Result;
-import preferences.result.Value;
+import preferences.value.Value;
 
 public class MeetingInTimeRangeEvaluator extends BooleanContextEvaluator {
     private final TimeRange timeRange;

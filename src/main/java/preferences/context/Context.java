@@ -4,6 +4,7 @@ import objects.misc.TermYear;
 import objects.misc.Weekday;
 import objects.plan.Plan;
 import objects.plan.PlanTerm;
+import preferences.condition.Condition;
 import preferences.explanation.Explainable;
 import preferences.explanation.context.ContextExplanation;
 import preferences.context.iterables.courseoffering.PlanCourseOfferingIterator;

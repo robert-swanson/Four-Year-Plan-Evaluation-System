@@ -2,7 +2,7 @@ package preferences.specification;
 
 import objects.misc.TermYear;
 import objects.misc.Weekday;
-import preferences.context.Condition;
+import preferences.condition.Condition;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
 import preferences.explanation.context.ContextExplanation;

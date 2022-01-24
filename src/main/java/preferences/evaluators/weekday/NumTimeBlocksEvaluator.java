@@ -6,7 +6,7 @@ import preferences.context.Context;
 import preferences.context.ContextLevel;
 import preferences.evaluators.ScalableContextEvaluator;
 import preferences.result.Result;
-import preferences.result.ScalableValue;
+import preferences.value.NumericValue;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -40,7 +40,7 @@ public class NumTimeBlocksEvaluator extends ScalableContextEvaluator {
                     latestEndTime = end;
                 }
             }
-            return new ScalableValue.Numeric(timeBlocks);
+            return new NumericValue(timeBlocks);
         });
         return lastResult;
     }

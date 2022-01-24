@@ -6,7 +6,7 @@ import preferences.context.Context;
 import preferences.context.ContextLevel;
 import preferences.evaluators.ScalableContextEvaluator;
 import preferences.result.Result;
-import preferences.result.ScalableValue;
+import preferences.value.TimeValue;
 
 public class WeekdayStartTime extends ScalableContextEvaluator {
 
@@ -20,7 +20,7 @@ public class WeekdayStartTime extends ScalableContextEvaluator {
                     start = meetingStart;
                 }
             }
-            return new ScalableValue.TimeValue(start);
+            return new TimeValue(start);
         });
         return lastResult;
     }

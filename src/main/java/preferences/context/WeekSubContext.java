@@ -3,6 +3,7 @@ package preferences.context;
 import objects.misc.Date;
 import objects.misc.Weekday;
 import objects.offerings.Meeting;
+import preferences.condition.Condition;
 import preferences.explanation.Explainable;
 import preferences.explanation.context.WeekSubContextExplanation;
 

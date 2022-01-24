@@ -8,8 +8,9 @@ import preferences.context.ContextLevel;
 import preferences.context.iterables.courseoffering.PlanCourseOfferingIterator;
 import preferences.result.PlanResult;
 import preferences.result.Result;
-import preferences.result.ScalableValue;
-import preferences.result.Value;
+import preferences.value.NullValue;
+import preferences.value.TermYearValue;
+import preferences.value.Value;
 
 public class CourseTermYearEvaluator extends TermYearContextEvaluator {
     final private CourseID courseID;
@@ -23,13 +24,13 @@ public class CourseTermYearEvaluator extends TermYearContextEvaluator {
         String description = "The earliest term-year when a course is scheduled";
         for (CourseOffering courseOffering : iterator) {
             if (courseID.equals(courseOffering.getCourse().getCourseID())) {
-                Value v = new ScalableValue.TermYearValue(iterator.getCurrentTermYear());
+                Value v = new TermYearValue(iterator.getCurrentTermYear());
                 String explanation = courseOffering.toString();
                 lastResult = new PlanResult<>(v);
                 return lastResult;
             }
         }
-        lastResult = new PlanResult<>(Value.NULL);
+        lastResult = new PlanResult<>(new NullValue(String.format("Course '%s' isn't scheduled in this context", courseID)));
         return lastResult;
     }
 

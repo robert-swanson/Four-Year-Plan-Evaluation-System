@@ -5,7 +5,7 @@ import exceptions.LinkingException;
 import exceptions.PSLInstanceException;
 import gnu.getopt.Getopt;
 import gnu.getopt.LongOpt;
-import preferences.explanation.Explanation;
+import preferences.specification.FullSpecification;
 import psl.exceptions.PSLCompileError;
 
 import static spark.Spark.*;
@@ -103,7 +103,7 @@ public class SparkMain {
         });
         post("/evaluate-plans", (request, response) -> {
             try {
-                Explanation explanation = instance.evaluatePlansString(request.body());
+                FullSpecification explanation = instance.evaluatePlansString(request.body());
                 return explanation.toJSON();
             } catch (Exception e) {
                 response.status(500);
