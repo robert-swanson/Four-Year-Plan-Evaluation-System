@@ -76,30 +76,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Configured for Google cloud run">
+    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Refactored antlr gen code to psl package">
+      <change afterPath="$PROJECT_DIR$/src/main/java/psl/exceptions/PSLParsingError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/psl/exceptions/PSLSyntaxErrorListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/Developement-Environment-Setup.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Developement-Environment-Setup.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/PSL-Grammar.md" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/PSL-Grammar.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/json/taylor/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/taylor/result.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/PSLInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/PSLInstance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/SparkMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/SparkMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/PSLCompiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/PSLGrammar.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/PSLListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLParsingContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/PSLParsingContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/exceptions/LinkingError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/exceptions/LinkingError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/exceptions/ListenerError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/exceptions/ListenerError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/exceptions/PSLCompileError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/exceptions/PSLCompileError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/exceptions/PSLSyntaxError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parser/exceptions/PSLSyntaxError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EvaluationRepsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EvaluationRepsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EvaluationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EvaluationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PSLCompileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PSLCompileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLCompiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLGrammar.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/psl/exceptions/LinkingError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/exceptions/LinkingError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/psl/exceptions/PSLCompileError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/exceptions/PSLCompileError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/psl/exceptions/PSLSyntaxError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/exceptions/PSLSyntaxError.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,6 +183,9 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="psl.exceptions.PSLParsingError" />
+    </key>
     <key name="MoveInnerDialog.RECENTS_KEY">
       <recent name="scoring.context" />
     </key>
@@ -216,7 +209,7 @@
       <command value="mvn deploy" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IntegrationTest">
+  <component name="RunManager" selected="Shell Script.Cloud Deploy">
     <configuration name="Compile Test" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -349,26 +342,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Cloud Build" type="ShConfigurationType">
-      <option name="SCRIPT_TEXT" value="mvn compile jib:build" />
+    <configuration name="Cloud Deploy" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="mvn compile jib:build &amp;&amp; gcloud run deploy psl-api --image gcr.io/envisage-planner/psl-api --platform managed" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="mvn" />
       <option name="SCRIPT_OPTIONS" value="compile jib:build" />
-      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="EXECUTE_IN_TERMINAL" value="true" />
-      <option name="EXECUTE_SCRIPT_FILE" value="false" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="Cloud Run" type="ShConfigurationType">
-      <option name="SCRIPT_TEXT" value="gcloud run deploy psl-api --image gcr.io/envisage-planner/psl-api --platform managed" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
-      <option name="SCRIPT_PATH" value="" />
-      <option name="SCRIPT_OPTIONS" value="" />
       <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
       <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
@@ -390,8 +368,7 @@
       <item itemvalue="JUnit.IntegrationTest" />
       <item itemvalue="Python.Generate Catalog" />
       <item itemvalue="Python.Generate Offerings" />
-      <item itemvalue="Shell Script.Cloud Build" />
-      <item itemvalue="Shell Script.Cloud Run" />
+      <item itemvalue="Shell Script.Cloud Deploy" />
     </list>
     <recent_temporary>
       <list>
@@ -501,7 +478,7 @@
       <workItem from="1642562248314" duration="3430000" />
       <workItem from="1642565765552" duration="14344000" />
       <workItem from="1642706500666" duration="3050000" />
-      <workItem from="1642709659899" duration="1776000" />
+      <workItem from="1642709659899" duration="9789000" />
     </task>
     <task id="LOCAL-00001" summary="Started java objects">
       <created>1619497519425</created>
@@ -832,7 +809,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642637183235</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Refactored antlr gen code to psl package">
+      <created>1642711638225</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1642711638225</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -851,7 +835,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added TermYear listener" />
     <MESSAGE value="Implemented remaining evaluators, successfully parses full-test.psl" />
     <MESSAGE value="Implemented minimum compiler and test setup" />
     <MESSAGE value="Passes my-preferences.psl syntatic and symantic test" />
@@ -876,7 +859,8 @@
     <MESSAGE value="Refactored project to match standard java directory structure" />
     <MESSAGE value="Flash, this one is for you (finishing the last commit)" />
     <MESSAGE value="Configured for Google cloud run" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configured for Google cloud run" />
+    <MESSAGE value="Refactored antlr gen code to psl package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored antlr gen code to psl package" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -914,21 +898,15 @@
           <option name="timeStamp" value="48" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/parser/PSLListener.java</url>
-          <line>267</line>
+          <url>file://$PROJECT_DIR$/src/main/java/psl/PSLListener.java</url>
+          <line>268</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="parsingContextStack.peek().evaluators.isEmpty()" language="JAVA" />
-          <url>file://$PROJECT_DIR$/src/main/java/parser/PSLListener.java</url>
-          <line>84</line>
+          <url>file://$PROJECT_DIR$/src/main/java/psl/PSLListener.java</url>
+          <line>85</line>
           <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <condition expression="parsingContextStack.peek().constraints.isEmpty()" language="JAVA" />
-          <url>file://$PROJECT_DIR$/src/main/java/parser/PSLListener.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/objects/offerings/CourseOffering.java</url>
@@ -962,18 +940,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/SparkMain.java</url>
-          <line>97</line>
+          <line>98</line>
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/SparkMain.java</url>
-          <line>107</line>
+          <line>108</line>
           <option name="timeStamp" value="105" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/api/SparkMain.java</url>
-          <line>117</line>
+          <line>118</line>
           <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/psl/PSLCompiler.java</url>
+          <line>105</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/psl/exceptions/PSLSyntaxError.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/psl/antlr/PSLGrammarParser.java</url>
+          <line>1642</line>
+          <option name="timeStamp" value="114" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

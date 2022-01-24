@@ -3,13 +3,14 @@ package psl;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
-import psl.antlr.PSLGrammarLexer;
-import psl.antlr.PSLGrammarParser;
-import psl.exceptions.PSLCompileError;
-import psl.exceptions.PSLSyntaxError;
 import preferences.specification.FullSpecification;
 import preferences.specification.Specification;
 import preferences.specification.SpecificationList;
+import psl.antlr.PSLGrammarLexer;
+import psl.antlr.PSLGrammarParser;
+import psl.exceptions.PSLCompileError;
+import psl.exceptions.PSLParsingError;
+import psl.exceptions.PSLSyntaxErrorListener;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -32,25 +33,21 @@ public class PSLCompiler {
     }
 
     public void addDependencyPSLString(String dependencyPSL) throws PSLCompileError {
-        try {
-            HashMap<String, Specification> importableSpecifications;
-            importableSpecifications = compilePSLString(dependencyPSL);
-            importableSpecifications.forEach((s, specification) -> {
-                if (dependencies.containsKey(s)) {
-                    throw new PSLCompileError.DuplicateSymbolDefinitionError(s, null);
-                }
-                dependencies.put(s, specification);
-            });
-        } catch (IOException e) {
-            throw new PSLCompileError("parsing string", null);
-        }
+        HashMap<String, Specification> importableSpecifications;
+        importableSpecifications = compilePSLString(dependencyPSL);
+        importableSpecifications.forEach((s, specification) -> {
+            if (dependencies.containsKey(s)) {
+                throw new PSLParsingError.DuplicateSymbolDefinitionError(s, null);
+            }
+            dependencies.put(s, specification);
+        });
     }
 
     public void addDependencyFile(String dependencyFile) throws PSLCompileError {
         HashMap<String, Specification> importableSpecifications = compilePSLFile(dependencyFile);
         importableSpecifications.forEach((s, specification) -> {
             if (dependencies.containsKey(s)) {
-                throw new PSLCompileError.DuplicateSymbolDefinitionError(s, null);
+                throw new PSLParsingError.DuplicateSymbolDefinitionError(s, null);
             }
             dependencies.put(s, specification);
         });
@@ -64,17 +61,22 @@ public class PSLCompiler {
         return new FullSpecification(specificationList.getSimplifiedSpecification(), name);
     }
 
-    public FullSpecification compileString(String psl) throws IOException {
+    public FullSpecification compileString(String psl) {
         LinkedHashMap<String, Specification> blocks = compilePSLString(psl);
         SpecificationList specificationList = new SpecificationList();
         blocks.values().forEach(specificationList::addSpecification);
         return new FullSpecification(specificationList.getSimplifiedSpecification(), "PSL from string");
     }
 
-    private LinkedHashMap<String, Specification> compilePSLString(String psl) throws IOException {
-            InputStream stream = new ByteArrayInputStream(psl.getBytes(StandardCharsets.UTF_8));
-            CharStream charStream = CharStreams.fromStream(stream);
-            return compilePSLStream(charStream);
+    private LinkedHashMap<String, Specification> compilePSLString(String psl) {
+        InputStream stream = new ByteArrayInputStream(psl.getBytes(StandardCharsets.UTF_8));
+        CharStream charStream;
+        try {
+            charStream = CharStreams.fromStream(stream);
+        } catch (IOException e) {
+            throw new PSLCompileError("error converting string to stream");
+        }
+        return compilePSLStream(charStream);
     }
 
     private LinkedHashMap<String, Specification> compilePSLFile(String filename) throws PSLCompileError {
@@ -93,9 +95,21 @@ public class PSLCompiler {
         parser = new PSLGrammarParser(tokenStream);
 
         PSLListener listener = new PSLListener(dependencies);
+        PSLSyntaxErrorListener errorListener = new PSLSyntaxErrorListener();
+
         parser.addParseListener(listener);
-        parser.addErrorListener(PSLSyntaxError.INSTANCE);
-        parser.start();
+        parser.addErrorListener(errorListener);
+
+        try {
+            parser.start();
+        } catch (Exception e) {
+            int numErrors = errorListener.getExceptionLog().size();
+            if (numErrors == 0) {
+                throw e;
+            } else {
+                throw errorListener.getExceptionLog().get(0);
+            }
+        }
         return listener.getBlocks();
 
     }

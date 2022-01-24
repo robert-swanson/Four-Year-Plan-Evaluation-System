@@ -87,6 +87,7 @@ public class SparkMain {
                 return e.toString();
             } catch (Exception e) {
                 response.status(500);
+                e.printStackTrace();
                 return e.toString();
             }
         });
@@ -100,7 +101,7 @@ public class SparkMain {
                 return e.toString();
             }
         });
-        get("/evaluate-plans", (request, response) -> {
+        post("/evaluate-plans", (request, response) -> {
             try {
                 Explanation explanation = instance.evaluatePlansString(request.body());
                 return explanation.toJSON();

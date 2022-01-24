@@ -1,8 +1,17 @@
 grammar PSLGrammar;
 
+@lexer::members {
+  @Override
+  public void reportError(RecognitionException e) {
+    throw new RuntimeException("I quit!\n" + e.getMessage());
+  }
+}
+
+
 //start: block* EOF;
 start: (globalImport|comment)* (comment|block)* EOF;
 block: NAME priorityList? '{' (localImport|comment)* (comment|specification)* '}';
+
 
 globalImport: USE NAME DOT;
 localImport: USE NAME DOT;

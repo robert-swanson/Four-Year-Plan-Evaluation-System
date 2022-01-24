@@ -123,11 +123,7 @@ public class PSLInstance {
 
     public void loadPSLString(String psl) throws PSLCompileError {
         System.out.println("- Compiling Main PSL String");
-        try {
-            specification = pslCompiler.compileString(psl);
-        } catch (IOException e) {
-            throw new PSLCompileError("Parsing String", null);
-        }
+        specification = pslCompiler.compileString(psl);
     }
     public FullSpecification loadPSLFile(String pslFile) throws PSLCompileError {
         System.out.printf("- Compiling Main PSL: %s\n", pslFile);

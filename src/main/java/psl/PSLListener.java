@@ -21,6 +21,7 @@ import preferences.evaluators.weekday.WeekdayEndTime;
 import preferences.evaluators.weekday.WeekdayStartTime;
 import preferences.result.ScalableValue;
 import preferences.specification.*;
+import psl.exceptions.PSLParsingError;
 
 import java.util.*;
 
@@ -95,7 +96,7 @@ public class PSLListener extends PSLGrammarBaseListener {
     public void exitGlobalImport(PSLGrammarParser.GlobalImportContext ctx) {
         String symbol = ctx.NAME().getText();
         if (!dependencies.containsKey(symbol)) {
-            throw new PSLCompileError.NonExistentImportError(symbol, ctx.start);
+            throw new PSLParsingError.NonExistentImportError(symbol, ctx.start);
         }
         blocks.put(symbol, dependencies.get(symbol));
     }
@@ -104,7 +105,7 @@ public class PSLListener extends PSLGrammarBaseListener {
     public void exitLocalImport(PSLGrammarParser.LocalImportContext ctx) {
         String symbol = ctx.NAME().getText();
         if (!dependencies.containsKey(symbol)) {
-            throw new PSLCompileError.NonExistentImportError(symbol, ctx.start);
+            throw new PSLParsingError.NonExistentImportError(symbol, ctx.start);
         }
         addSpecification(dependencies.get(symbol));
     }
@@ -114,7 +115,7 @@ public class PSLListener extends PSLGrammarBaseListener {
         double value = (ctx.INT() == null ? Double.parseDouble(ctx.FLOAT().toString()) : Integer.parseInt(ctx.INT().toString()));
         String priorityName = ctx.NAME().toString();
         if (priorities.containsKey(priorityName)) {
-            throw new PSLCompileError.PriorityRedeclarationError(priorityName, ctx.start);
+            throw new PSLParsingError.PriorityRedeclarationError(priorityName, ctx.start);
         }
         priorities.put(priorityName, value);
     }
@@ -123,7 +124,7 @@ public class PSLListener extends PSLGrammarBaseListener {
     public void exitBlock(PSLGrammarParser.BlockContext ctx) {
         String blockName = ctx.NAME().getText();
         if (blocks.containsKey(blockName)) {
-            throw new PSLCompileError.DuplicateSymbolDefinitionError(blockName, ctx.start);
+            throw new PSLParsingError.DuplicateSymbolDefinitionError(blockName, ctx.start);
         }
         blocks.put(blockName, popContext().getSpecificationList());
         pushContext(ContextLevel.fullPlan);
@@ -144,7 +145,7 @@ public class PSLListener extends PSLGrammarBaseListener {
     public void exitPreferenceSpecification(PSLGrammarParser.PreferenceSpecificationContext ctx) {
         double weight = 1.0;
         if (ctx.NAME() != null) {
-            PSLCompileError.assertTrue(priorities.containsKey(ctx.NAME().toString()), "Unknown Priority", ctx.start);
+            PSLParsingError.assertTrue(priorities.containsKey(ctx.NAME().toString()), "Unknown Priority", ctx.start);
             weight = priorities.get(ctx.NAME().toString());
         }
         boolean invert = ctx.NOT() != null;
@@ -187,7 +188,7 @@ public class PSLListener extends PSLGrammarBaseListener {
     @Override
     public void exitContextLevel(PSLGrammarParser.ContextLevelContext ctx) {
         if (ctx.TERMS() != null) {
-            PSLCompileError.assertTrue(getContextLevel() != ContextLevel.days, "Cannot move up to a broader context level", ctx.start);
+            PSLParsingError.assertTrue(getContextLevel() != ContextLevel.days, "Cannot move up to a broader context level", ctx.start);
             pushContext(ContextLevel.terms);
         } else {
             pushContext(ContextLevel.days);
@@ -196,7 +197,7 @@ public class PSLListener extends PSLGrammarBaseListener {
 
     @Override
     public void exitTermYearList(PSLGrammarParser.TermYearListContext ctx) {
-        PSLCompileError.assertTrue(getContextLevel() != ContextLevel.days, "Cannot move up to a broader context level", ctx.start);
+        PSLParsingError.assertTrue(getContextLevel() != ContextLevel.days, "Cannot move up to a broader context level", ctx.start);
         pushContext(ContextLevel.terms);
         ctx.termYear().forEach(termYearContext -> {
             try {
@@ -256,10 +257,10 @@ public class PSLListener extends PSLGrammarBaseListener {
             try {
                 value = new ScalableValue.TermYearValue(new TermYear(termYearContext.getText()));
             } catch (JSONParseException e) {
-                throw new PSLCompileError(e.getMessage(), termYearContext.start);
+                throw new PSLParsingError(e.getMessage(), termYearContext.start);
             }
         } else {
-            throw new PSLCompileError("no support for this kind of evaluator", null);
+            throw new PSLParsingError("no support for this kind of evaluator", null);
         }
         return value;
     }
@@ -317,7 +318,7 @@ public class PSLListener extends PSLGrammarBaseListener {
         } else if (evaluator instanceof TermYearContextEvaluator) {
             addConstraint(new BooleanConstraint((TermYearContextEvaluator) evaluator, getContextLevel()));
         } else {
-            throw new PSLCompileError("Couldn't cast to BooleanContextEvaluator or TermYearContextEvaluator", ctx.start);
+            throw new PSLParsingError("Couldn't cast to BooleanContextEvaluator or TermYearContextEvaluator", ctx.start);
         }
     }
 
