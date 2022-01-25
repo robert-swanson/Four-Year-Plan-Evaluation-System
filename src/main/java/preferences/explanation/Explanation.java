@@ -1,6 +1,6 @@
 package preferences.explanation;
 
-import api.PSLInstance;
+import api.instance.AppInstance;
 import com.google.gson.Gson;
 
 import java.io.FileWriter;
@@ -29,7 +29,7 @@ public abstract class Explanation {
     }
 
     public String toJSON(){
-        Gson gson = PSLInstance.createGson();
+        Gson gson = AppInstance.createGson();
         return gson.toJson(this);
     }
 }

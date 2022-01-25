@@ -1,6 +1,6 @@
 package preferences.specification;
 
-import api.PSLInstance;
+import api.instance.AppInstance;
 import com.google.gson.Gson;
 import preferences.context.Context;
 import preferences.explanation.specification.FullSpecificationResultExplanation;
@@ -20,7 +20,7 @@ public class FullSpecification extends Specification {
     }
 
     public FullSpecification(String json) {
-        Gson gson = PSLInstance.createGson();
+        Gson gson = AppInstance.createGson();
         this.specification = gson.fromJson(json, FullSpecification.class);
         this.name = "from JSON";
     }
@@ -32,7 +32,7 @@ public class FullSpecification extends Specification {
     }
 
     public String toJSON() {
-        Gson gson = PSLInstance.createGson();
+        Gson gson = AppInstance.createGson();
         return gson.toJson(this);
     }
 

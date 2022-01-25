@@ -12,10 +12,10 @@ import java.util.Collections;
 public class EvaluationTest {
     public static void main(String[] args) {
         String[] paths = {
-                "test-input/full-test.psl",
-                "test-input/test.psl",
-                "test-input/my-preferences.psl",
-                "test-input/simple.psl",
+                "assets/psl/full-test.psl",
+                "assets/psl/test.psl",
+                "assets/psl/my-preferences.psl",
+                "assets/psl/simple.psl",
         };
 
         try {

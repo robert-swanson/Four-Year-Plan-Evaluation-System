@@ -40,7 +40,7 @@ public class RandomGenerator {
 
     public Plan generateRandomPlan() {
         LinkedHashMap<TermYear, PlanTerm> termsMap = new LinkedHashMap<>();
-        Plan plan = new Plan(-1, "randomly generated plan", termsMap);
+        Plan plan = new Plan(-1, "randomly generated plan", termsMap, "random");
         for (int termI = 0; termI < numTerms; termI++) {
             TermYear termYear = generateTermYear(termI);
             ArrayList<SectionID> sectionArray = new ArrayList<>();

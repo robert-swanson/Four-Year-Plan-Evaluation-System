@@ -1,43 +1,43 @@
-import api.PSLInstance;
+import api.instance.LocalInstance;
 import org.junit.jupiter.api.Test;
+import preferences.specification.FullSpecification;
 
 public class IntegrationTest {
-    static PSLInstance pslInstance;
+    static LocalInstance appInstance;
 
-    PSLInstance getPslInstance() throws Exception {
-        if (pslInstance == null) {
-            pslInstance = new PSLInstance("json/taylor/catalog.json", "json/taylor/offerings.json");
-            pslInstance.addDependencyFile("test-input/dependencies.psl");
+    LocalInstance getLocalInstance() throws Exception {
+        if (appInstance == null) {
+            appInstance = new LocalInstance("assets/json/catalog.json", "assets/json/offerings.json");
+            appInstance.addDependencyFile("assets/psl/dependencies.psl");
         }
-        return pslInstance;
+        return appInstance;
     }
 
     @Test
     void fullTest() throws Exception {
-        PSLInstance pslInstance = getPslInstance();
-        pslInstance.loadPSLFile("test-input/full-test.psl");
-        pslInstance.evaluatePlanFile("json/taylor/myPlan.json");
+        LocalInstance instance = getLocalInstance();
+        FullSpecification specification = instance.loadPSLFile("assets/psl/full-test.psl");
+        instance.evaluatePlansFile("assets/json/myPlan.json", specification, true);
     }
 
     @Test
     void myPreferences() throws Exception {
-        PSLInstance pslInstance = getPslInstance();
-        pslInstance.loadPSLFile("test-input/my-preferences.psl");
-        pslInstance.evaluatePlanFile("json/taylor/myPlan.json");
+        LocalInstance instance = getLocalInstance();
+        FullSpecification specification = instance.loadPSLFile("assets/psl/my-preferences.psl");
+        instance.evaluatePlansFile("assets/json/myPlan.json", specification, true);
     }
 
     @Test
     void simple() throws Exception {
-        PSLInstance pslInstance = getPslInstance();
-        pslInstance.loadPSLFile("test-input/simple.psl");
-        pslInstance.evaluatePlanFile("json/taylor/myPlan.json");
+        LocalInstance instance = getLocalInstance();
+        FullSpecification specification = instance.loadPSLFile("assets/psl/simple.psl");
+        instance.evaluatePlansFile("assets/json/myPlan.json", specification, true);
     }
 
     @Test
     void test() throws Exception {
-        PSLInstance pslInstance = new PSLInstance("json/taylor/catalog.json", "json/taylor/offerings.json");
-        pslInstance.addDependencyFile("test-input/dependencies.psl");
-        pslInstance.loadPSLFile("test-input/test.psl");
-        pslInstance.evaluatePlanFile("json/taylor/myPlan.json");
+        LocalInstance instance = getLocalInstance();
+        FullSpecification specification = instance.loadPSLFile("assets/psl/test.psl");
+        instance.evaluatePlansFile("assets/json/myPlan.json", specification, true);
     }
 }

@@ -6,5 +6,5 @@ venv
 *.iml
 out
 .Rproj.user
-json/taylor/result.json
+assets/json/result.json
 workspace.xml

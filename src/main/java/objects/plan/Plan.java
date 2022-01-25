@@ -17,6 +17,7 @@ import java.util.Map;
 public class Plan implements Linkable {
     private double score;
     private String comments;
+    public final String id;
     private LinkedHashMap<TermYear, PlanTerm> terms;
 
     public Iterable<PlanTerm> getTerms(){
@@ -24,10 +25,11 @@ public class Plan implements Linkable {
     }
     public LinkedHashMap<TermYear, PlanTerm> getTermsMap() { return terms; }
 
-    public Plan(double score, String comments, LinkedHashMap<TermYear, PlanTerm> terms) {
+    public Plan(double score, String comments, LinkedHashMap<TermYear, PlanTerm> terms, String id) {
         this.score = score;
         this.comments = comments;
         this.terms = terms;
+        this.id = id;
     }
 
     public static final String SCORE = "score";
@@ -75,7 +77,8 @@ public class Plan implements Linkable {
             } catch (JSONParseException e) {
                 throw new JsonParseException(e.getMessage());
             }
-            return new Plan(score, comments, terms);
+            String id = object.get("id").getAsString();
+            return new Plan(score, comments, terms, id);
         }
     }
     private transient Link link;

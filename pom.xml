@@ -79,7 +79,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>api.SparkMain</mainClass>
+                            <mainClass>SparkMain</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -96,6 +96,11 @@
 
     <!-- library dependencies -->
     <dependencies>
+        <dependency>
+            <groupId>io.github.cdimascio</groupId>
+            <artifactId>dotenv-java</artifactId>
+            <version>2.2.0</version>
+        </dependency>
         <dependency>
             <groupId>com.sparkjava</groupId>
             <artifactId>spark-core</artifactId>
