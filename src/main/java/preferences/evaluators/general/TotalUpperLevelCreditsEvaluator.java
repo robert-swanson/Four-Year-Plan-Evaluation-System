@@ -2,10 +2,11 @@ package preferences.evaluators.general;
 
 import preferences.context.Context;
 import preferences.context.ContextLevel;
-import preferences.evaluators.ScalableContextEvaluator;
+import preferences.evaluators.NumericContextEvaluator;
 import preferences.result.Result;
+import psl.PSLGenerator;
 
-public class TotalUpperLevelCreditsEvaluator extends ScalableContextEvaluator {
+public class TotalUpperLevelCreditsEvaluator extends NumericContextEvaluator {
     @Override
     public Result getValue(Context context) {
         lastResult = CourseOfferingAccumulatorEvaluator.getValue(context, "Total upper level credits", courseOffering -> courseOffering.getCourse().getNumber() >= 300 ? courseOffering.getCredits() : 0);
@@ -23,7 +24,7 @@ public class TotalUpperLevelCreditsEvaluator extends ScalableContextEvaluator {
     }
 
     @Override
-    public String describe() {
-        return "upper level credits";
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL("upper division credits");
     }
 }

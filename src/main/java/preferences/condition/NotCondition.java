@@ -3,6 +3,7 @@ package preferences.condition;
 import preferences.context.Context;
 import preferences.explanation.Explanation;
 import preferences.explanation.specification.ConditionResultExplanation;
+import psl.PSLGenerator;
 
 public class NotCondition extends Condition {
     private final Condition condition;
@@ -23,12 +24,7 @@ public class NotCondition extends Condition {
     }
 
     @Override
-    public String describe() {
-        return String.format("not %s", condition);
-    }
-
-    @Override
-    public String toString() {
-        return String.format("not %s", condition);
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(String.format("not %s", condition.toPSL()));
     }
 }

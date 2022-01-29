@@ -1,4 +1,4 @@
-package api.answer;
+package api;
 
 import api.instance.AppInstance;
 import com.google.gson.JsonArray;
@@ -20,8 +20,8 @@ public class EvaluationAnswer {
         JsonObject thisAnswer = new JsonObject();
 
         JsonElement score = AppInstance.createGson().toJsonTree(answer.getLastResult());
-        thisAnswer.add("lastScore", score);
         thisAnswer.addProperty("id", planID);
+        thisAnswer.add("lastScore", score);
 
         if (explain) {
             JsonElement explanation = AppInstance.createGson().toJsonTree(answer);

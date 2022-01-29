@@ -4,10 +4,10 @@ import preferences.context.Context;
 import preferences.explanation.constraints.ContextEvaluatorResultExplanation;
 import preferences.explanation.Explainable;
 import preferences.result.Result;
+import psl.PSLComponent;
 
-public abstract class ContextEvaluator implements Explainable {
+public abstract class ContextEvaluator implements Explainable, PSLComponent {
     abstract public Result getValue(Context context);
-    public abstract String describe();
 
     public ContextEvaluatorResultExplanation explainLastResult() {
         return new ContextEvaluatorResultExplanation(this);
@@ -20,6 +20,11 @@ public abstract class ContextEvaluator implements Explainable {
 
     @Override
     public String toString() {
-        return describe();
+        return toPSL();
     }
+
+    public String describe() {
+        return toPSL();
+    }
+
 }

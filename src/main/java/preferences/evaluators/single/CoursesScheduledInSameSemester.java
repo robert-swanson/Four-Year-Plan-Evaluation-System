@@ -9,6 +9,7 @@ import preferences.context.iterables.courseoffering.PlanCourseOfferingIterator;
 import preferences.result.PlanResult;
 import preferences.result.Result;
 import preferences.value.Value;
+import psl.PSLGenerator;
 
 import java.util.Set;
 
@@ -43,7 +44,7 @@ public class CoursesScheduledInSameSemester extends BooleanContextEvaluator {
     }
 
     @Override
-    public String describe() {
-        return String.format("%s scheduled in same semester", courseIDS);
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(String.format("taking %s together", CourseID.setToString(courseIDS)));
     }
 }

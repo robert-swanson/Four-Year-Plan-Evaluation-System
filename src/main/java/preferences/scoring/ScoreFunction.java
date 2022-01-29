@@ -1,5 +1,7 @@
 package preferences.scoring;
 
-public interface ScoreFunction {
+import preferences.explanation.Explainable;
+
+public interface ScoreFunction extends Explainable {
     double score(double value);
 }

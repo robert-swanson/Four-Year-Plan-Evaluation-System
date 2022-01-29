@@ -31,12 +31,12 @@ import java.util.*;
 
 public class PSLListener extends PSLGrammarBaseListener {
     private final Stack<PSLParsingContext> parsingContextStack;
-    private final HashMap<String, Double> priorities;
+    private final LinkedHashMap<String, Double> priorities;
     private final LinkedHashMap<String, Specification> blocks;
     private final HashMap<String, Specification> dependencies;
 
     public PSLListener(HashMap<String, Specification> dependencies) {
-        priorities = new HashMap<>();
+        priorities = new LinkedHashMap<>();
         parsingContextStack = new Stack<>();
         parsingContextStack.push(new PSLParsingContext(ContextLevel.fullPlan));
         blocks = new LinkedHashMap<>();
@@ -130,8 +130,11 @@ public class PSLListener extends PSLGrammarBaseListener {
         if (blocks.containsKey(blockName)) {
             throw new PSLParsingError.DuplicateSymbolDefinitionError(blockName, ctx.start);
         }
-        blocks.put(blockName, popContext().getSpecificationList());
+        ArrayList<PreferenceSpecification.Priority> prioritiesList = new ArrayList<>();
+        priorities.forEach((key, value) -> prioritiesList.add(new PreferenceSpecification.Priority(value, key)));
+        blocks.put(blockName, popContext().getBlock(blockName, prioritiesList));
         pushContext(ContextLevel.fullPlan);
+        priorities.clear();
     }
 
     // --- Specifications ---
@@ -148,12 +151,14 @@ public class PSLListener extends PSLGrammarBaseListener {
     @Override
     public void exitPreferenceSpecification(PSLGrammarParser.PreferenceSpecificationContext ctx) {
         double weight = 1.0;
+        String name = "";
         if (ctx.NAME() != null) {
-            PSLParsingError.assertTrue(priorities.containsKey(ctx.NAME().toString()), "Unknown Priority", ctx.start);
+            name = ctx.NAME().toString();
+            PSLParsingError.assertTrue(priorities.containsKey(name), "Unknown Priority", ctx.start);
             weight = priorities.get(ctx.NAME().toString());
         }
         boolean invert = ctx.NOT() != null;
-        PreferenceSpecification preference = new PreferenceSpecification(getConstraint(), weight, invert);
+        PreferenceSpecification preference = new PreferenceSpecification(getConstraint(), new PreferenceSpecification.Priority(weight, name), invert);
         addSpecification(preference);
     }
 
@@ -243,7 +248,7 @@ public class PSLListener extends PSLGrammarBaseListener {
         } else if (ctx.OR() != null) {
             Condition right = getCondition(), left = getCondition();
             addCondition(left.or(right));
-        } else { // NOT
+        } else if (ctx.NOT() != null) { // NOT
             addCondition(getCondition().not());
         }
     }
@@ -378,8 +383,9 @@ public class PSLListener extends PSLGrammarBaseListener {
 
     @Override
     public void exitNumCoursesWithProfessor(PSLGrammarParser.NumCoursesWithProfessorContext ctx) {
-        String professor = ctx.professor().getText();
-        addEvaluator(new CoursesWithProfessorEvaluator(professor));
+        StringBuilder builder = new StringBuilder();
+        ctx.professor().NAME().forEach(node -> builder.append(node.getText()).append(" "));
+        addEvaluator(new CoursesWithProfessorEvaluator(builder.substring(0,builder.length()-1)));
     }
 
     @Override
@@ -397,6 +403,11 @@ public class PSLListener extends PSLGrammarBaseListener {
     @Override
     public void exitTermsInPlan(PSLGrammarParser.TermsInPlanContext ctx) {
         addEvaluator(new NumTermsEvaluator());
+    }
+
+    @Override
+    public void exitPrerequisiteViolations(PSLGrammarParser.PrerequisiteViolationsContext ctx) {
+        addEvaluator(new NumPrerequisiteViolationsEvaluator());
     }
 
     // TermYear

@@ -4,17 +4,18 @@ import objects.misc.Time;
 import objects.offerings.Meeting;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
-import preferences.evaluators.ScalableContextEvaluator;
+import preferences.evaluators.TimeContextEvaluator;
 import preferences.result.Result;
 import preferences.value.TimeValue;
+import psl.PSLGenerator;
 
-public class WeekdayStartTime extends ScalableContextEvaluator {
+public class WeekdayStartTime extends TimeContextEvaluator {
 
     @Override
     public Result getValue(Context context) {
         lastResult = WeekdayMeetingEvaluator.getValue(context, "Weekday Start Time", (meetings, weekday) -> {
             Time start = null;
-            for (Meeting meeting: meetings) {
+            for (Meeting meeting : meetings) {
                 Time meetingStart = meeting.getStartTime();
                 if (start == null || meetingStart.compareTo(start) < 0) {
                     start = meetingStart;
@@ -32,11 +33,12 @@ public class WeekdayStartTime extends ScalableContextEvaluator {
 
     @Override
     public double getAverage(ContextLevel contextLevel) {
-        return 60*9;
+        return 60 * 9;
     }
 
     @Override
-    public String describe() {
-        return "day start time";
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL("starting");
     }
 }
+

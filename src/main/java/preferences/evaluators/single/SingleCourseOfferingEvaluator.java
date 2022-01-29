@@ -3,12 +3,13 @@ package preferences.evaluators.single;
 import objects.misc.CourseID;
 import objects.offerings.CourseOffering;
 import preferences.context.Context;
-import preferences.evaluators.ContextEvaluator;
-import preferences.result.*;
+import preferences.evaluators.TermYearContextEvaluator;
+import preferences.result.PlanResult;
+import preferences.result.Result;
 import preferences.value.NullValue;
 import preferences.value.Value;
 
-public abstract class SingleCourseOfferingEvaluator extends ContextEvaluator {
+public abstract class SingleCourseOfferingEvaluator extends TermYearContextEvaluator {
     public interface CourseOfferingValue {
         Value getValue(CourseOffering courseOffering);
     }

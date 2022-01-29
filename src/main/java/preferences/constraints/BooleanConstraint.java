@@ -7,6 +7,7 @@ import preferences.evaluators.TermYearContextEvaluator;
 import preferences.result.Result;
 import preferences.value.BooleanValue;
 import preferences.value.Value;
+import psl.PSLGenerator;
 
 public class BooleanConstraint extends RequireableConstraint {
 
@@ -41,12 +42,7 @@ public class BooleanConstraint extends RequireableConstraint {
     }
 
     @Override
-    public String describe() {
-        return contextEvaluator.toString();
-    }
-
-    @Override
-    public String toString() {
-        return describe();
+    public void generatePSL(PSLGenerator generator) {
+        contextEvaluator.generatePSL(generator);
     }
 }

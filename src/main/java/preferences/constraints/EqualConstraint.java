@@ -2,13 +2,16 @@ package preferences.constraints;
 
 import preferences.context.Context;
 import preferences.context.ContextLevel;
+import preferences.evaluators.NumericContextEvaluator;
 import preferences.evaluators.ScalableContextEvaluator;
+import preferences.evaluators.TermYearContextEvaluator;
+import preferences.evaluators.TimeContextEvaluator;
 import preferences.result.Result;
 import preferences.scoring.OptimumScoringFunction;
-import preferences.value.ScalableValue;
-import preferences.value.Value;
 import preferences.scoring.ScoreBound;
 import preferences.scoring.ScoreFunction;
+import preferences.value.*;
+import psl.PSLGenerator;
 
 public class EqualConstraint extends RequireableConstraint {
     private final ScoreFunction scoreFunction;
@@ -33,19 +36,20 @@ public class EqualConstraint extends RequireableConstraint {
     }
 
     @Override
-    public String describe() {
-        return String.format("%s equals %s", contextEvaluator, expectedValue);
-    }
-
-    @Override
-    public String toString() {
-        return describe();
-    }
-
-    @Override
     public boolean fulfilled(Context context) {
         Result result = contextEvaluator.getValue(context);
         result.checkResult(expectedValue::equals, this.toString());
         return result.getCalculatedCheck();
+    }
+
+    @Override
+    public void generatePSL(PSLGenerator generator) {
+        if (contextEvaluator instanceof NumericContextEvaluator) {
+            generate(generator, "", expectedValue, contextEvaluator);
+        } else if (contextEvaluator instanceof TimeContextEvaluator) {
+            generate(generator, contextEvaluator, "at", expectedValue);
+        } else if (contextEvaluator instanceof TermYearContextEvaluator) {
+            generate(generator, contextEvaluator, "in", expectedValue);
+        }
     }
 }

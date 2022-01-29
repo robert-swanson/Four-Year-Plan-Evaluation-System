@@ -2,12 +2,16 @@ package preferences.constraints;
 
 import preferences.context.Context;
 import preferences.context.ContextLevel;
+import preferences.evaluators.NumericContextEvaluator;
 import preferences.evaluators.ScalableContextEvaluator;
+import preferences.evaluators.TermYearContextEvaluator;
+import preferences.evaluators.TimeContextEvaluator;
 import preferences.result.Result;
-import preferences.scoring.SigmoidScoringFunction;
-import preferences.value.ScalableValue;
 import preferences.scoring.ScoreBound;
 import preferences.scoring.ScoreFunction;
+import preferences.scoring.SigmoidScoringFunction;
+import preferences.value.ScalableValue;
+import psl.PSLGenerator;
 
 public class LessConstraint extends Constraint {
     private final ScoreFunction scoreFunction;
@@ -20,19 +24,20 @@ public class LessConstraint extends Constraint {
     }
 
     @Override
-    public String describe() {
-        return String.format("less %s", contextEvaluator);
-    }
-
-    @Override
-    public String toString() {
-        return describe();
-    }
-
-    @Override
     public double score(Context context) {
         Result result = contextEvaluator.getValue(context);
         result.scoreResult(value -> scoreFunction.score(((ScalableValue)value).getScalableValue()), scoreFunction.toString(), this.toString());
         return result.getLastScore();
+    }
+
+    @Override
+    public void generatePSL(PSLGenerator generator) {
+        if (contextEvaluator instanceof NumericContextEvaluator) {
+            generate(generator, "less",  contextEvaluator, null);
+        } else if (contextEvaluator instanceof TimeContextEvaluator) {
+            generate(generator, contextEvaluator, "earlier", null);
+        } else if (contextEvaluator instanceof TermYearContextEvaluator) {
+            generate(generator, contextEvaluator, "earlier", null);
+        }
     }
 }

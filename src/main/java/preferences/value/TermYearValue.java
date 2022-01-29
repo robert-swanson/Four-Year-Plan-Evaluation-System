@@ -1,6 +1,7 @@
 package preferences.value;
 
 import objects.misc.TermYear;
+import psl.PSLGenerator;
 
 public class TermYearValue extends ScalableValue {
     private final TermYear termYear;
@@ -24,7 +25,7 @@ public class TermYearValue extends ScalableValue {
 
     @Override
     public String toString() {
-        return termYear.toString();
+        return toPSL();
     }
 
     @Override
@@ -44,5 +45,10 @@ public class TermYearValue extends ScalableValue {
     @Override
     public int hashCode() {
         return termYear.hashCode();
+    }
+
+    @Override
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(termYear.toString());
     }
 }

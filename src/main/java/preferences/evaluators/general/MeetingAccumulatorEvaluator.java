@@ -4,13 +4,16 @@ import objects.offerings.Meeting;
 import preferences.context.Context;
 import preferences.context.WeekSubContext;
 import preferences.context.iterables.meeting.*;
-import preferences.evaluators.ScalableContextEvaluator;
-import preferences.result.*;
+import preferences.evaluators.NumericContextEvaluator;
+import preferences.result.DaysResult;
+import preferences.result.PlanResult;
+import preferences.result.Result;
+import preferences.result.TermsResult;
 import preferences.value.NumericValue;
 
 import java.util.ArrayList;
 
-public abstract class MeetingAccumulatorEvaluator extends ScalableContextEvaluator {
+public abstract class MeetingAccumulatorEvaluator extends NumericContextEvaluator {
     public interface MeetingAttribute {
         double get(Meeting meeting);
     }
@@ -24,27 +27,29 @@ public abstract class MeetingAccumulatorEvaluator extends ScalableContextEvaluat
     }
 
     static PlanResult<NumericValue> getPlanValue(Context context, String description, MeetingAttribute meetingAttribute) {
-        int accumulator = 0;
+        double accumulator = 0;
         StringBuilder explanation = new StringBuilder();
         for (Meeting meeting : context.meetingIterator()) {
-            accumulator += meetingAttribute.get(meeting);
-            explanation.append(String.format("  class \"%s\"\n", meeting));
+            double inc = meetingAttribute.get(meeting);
+            accumulator += inc;
+            if (inc != 0) explanation.append(String.format("- %s = %.2f\n", meeting, inc));
         }
-        return new PlanResult<>(new NumericValue(accumulator));
+        return new PlanResult<>(new NumericValue(accumulator).setExplanation(explanation));
     }
 
     static TermsResult<NumericValue> getTermsValue(Context context, String description, MeetingAttribute meetingAttribute) {
         TermsResult<NumericValue> result = new TermsResult<>(description);
-        StringBuilder explanation = new StringBuilder();
         PlanTermMeetingIterable iterable = context.termMeetingIterable();
         for (TermMeetingIterable termMeetingIterable : iterable) {
-            explanation.append(String.format("    %s:\n", iterable.getTermYear().toString()));
+            StringBuilder explanation = new StringBuilder();
             double accumulator = 0;
             for (Meeting meeting : termMeetingIterable) {
-                accumulator += meetingAttribute.get(meeting);
-                explanation.append(String.format("      %s\n", meeting));
+                double inc = meetingAttribute.get(meeting);
+                accumulator += inc;
+                if (inc != 0) explanation.append(String.format("- %s = %.2f\n", meeting, inc));
             }
-            result.addValue(new NumericValue(accumulator));
+            explanation.append(String.format("= %.2f\n", accumulator));
+            result.addValue((NumericValue) new NumericValue(accumulator).setExplanation(explanation));
             explanation.append(String.format("      Term Count: %.2f\n", accumulator));
         }
         return result;
@@ -52,7 +57,6 @@ public abstract class MeetingAccumulatorEvaluator extends ScalableContextEvaluat
 
     static DaysResult<NumericValue> getDaysValue(Context context, String description, MeetingAttribute meetingAttribute) {
         DaysResult<NumericValue> result = new DaysResult<>();
-        StringBuilder explanation = new StringBuilder();
         PlanTermWeekdayMeetingIterable termIterator = context.termWeekdayMeetingIterable();
         for (TermWeekdayMeetingIterable termWeekdayMeetingIterable : termIterator) {
             WeekSubContext currentWeek = null;
@@ -60,9 +64,9 @@ public abstract class MeetingAccumulatorEvaluator extends ScalableContextEvaluat
             ArrayList<NumericValue> currentWeekValue = new ArrayList<>();
             ArrayList<Double> weights = new ArrayList<>();
 
-            explanation.append(String.format("  %s:\n", termIterator.getTermYear()));
             for (WeekdayMeetingIterable weekdayMeetingIterable : termWeekdayMeetingIterable) {
                 double accumulator = 0;
+                StringBuilder explanation = new StringBuilder();
 
                 if (!termWeekdayMeetingIterable.getCurrentWeekSubContext().equals(currentWeek)) {
                     if (currentWeek != null) {
@@ -71,18 +75,15 @@ public abstract class MeetingAccumulatorEvaluator extends ScalableContextEvaluat
                     }
                     currentWeek = termWeekdayMeetingIterable.getCurrentWeekSubContext();
                     weights.add(currentWeek.getWeight());
-                    explanation.append(String.format("    Week %d %s\n", weights.size(), currentWeek));
                 }
-
-                explanation.append(String.format("      %s\n", termWeekdayMeetingIterable.getCurrentWeekday()));
 
                 for (Meeting meeting : weekdayMeetingIterable) {
-                    accumulator += meetingAttribute.get(meeting);
-                    explanation.append(String.format("        %s\n", meeting));
+                    double inc = meetingAttribute.get(meeting);
+                    accumulator += inc;
+                    if (inc != 0) explanation.append(String.format("- %s = %.2f\n", meeting, inc));
                 }
-
-                currentWeekValue.add(new NumericValue(accumulator));
-                explanation.append(String.format("        Day Count: %.2f\n", accumulator));
+                explanation.append(String.format("= %.2f\n", accumulator));
+                currentWeekValue.add((NumericValue) new NumericValue(accumulator).setExplanation(explanation));
             }
             if (currentWeek != null) {
                 termValues.add(currentWeekValue);

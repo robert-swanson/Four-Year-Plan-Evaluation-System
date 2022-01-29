@@ -5,15 +5,16 @@ import objects.misc.TermYear;
 import objects.misc.Weekday;
 import objects.offerings.CourseOffering;
 import objects.offerings.Meeting;
+import objects.plan.Plan;
 import objects.plan.PlanTerm;
 import preferences.condition.Condition;
-import preferences.explanation.Explainable;
-import preferences.explanation.context.TermSubContextExplanation;
 import preferences.context.iterables.courseoffering.TermCourseOfferingIterable;
 import preferences.context.iterables.courseoffering.TermWeekdayCourseOfferingIterable;
 import preferences.context.iterables.courseoffering.WeekdayCourseOfferingIterable;
 import preferences.context.iterables.meeting.TermMeetingIterable;
 import preferences.context.iterables.meeting.TermWeekdayMeetingIterable;
+import preferences.explanation.Explainable;
+import preferences.explanation.context.TermSubContextExplanation;
 
 import java.util.*;
 
@@ -23,6 +24,7 @@ import java.util.*;
 
 public class TermSubContext implements Explainable {
     // Non Contextual
+    transient Plan plan;
     PlanTerm planTerm;
     Stack<Set<CourseOffering>> courseOfferingsStack;
     Stack<ArrayList<WeekSubContext>> weekSubContextsStack;
@@ -31,8 +33,9 @@ public class TermSubContext implements Explainable {
 
     // Initialization
 
-    public TermSubContext(PlanTerm planTerm) {
+    public TermSubContext(PlanTerm planTerm, Plan plan) {
         // Non-Contextual
+        this.plan = plan;
         this.planTerm = planTerm;
         courseOfferingsStack = new Stack<>();
         courseOfferingsStack.push(new HashSet<>(planTerm.getCourseOfferings()));
@@ -45,7 +48,8 @@ public class TermSubContext implements Explainable {
         setWeekSubContexts(semesterChangeDates);
     }
 
-    TermSubContext(TermSubContext termSubContext, WeekSubContext weekSubContext, WeekdaySubContext weekdaySubContext) {
+    TermSubContext(TermSubContext termSubContext, WeekSubContext weekSubContext, WeekdaySubContext weekdaySubContext, Plan plan) {
+        this.plan = plan;
         planTerm = null;
         courseOfferingsStack = null; // TODO may need to set course offerings, but I'm pretty sure not, so will leave it out
 
@@ -94,7 +98,7 @@ public class TermSubContext implements Explainable {
                 meetingsInSemesterSegment.addAll(courseOffering.getMeetings());
             }
         }
-        return new WeekSubContext(startDate, endDate, meetingsInSemesterSegment, weight);
+        return new WeekSubContext(startDate, endDate, meetingsInSemesterSegment, weight, plan);
     }
 
     private boolean courseInWeekContext(Date weekContextStart, Date weekContextEnd, CourseOffering courseOffering) {

@@ -5,9 +5,11 @@ import com.google.gson.Gson;
 import preferences.context.Context;
 import preferences.explanation.specification.FullSpecificationResultExplanation;
 import preferences.scoring.Score;
+import psl.PSLGenerator;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.LinkedList;
 
 public class FullSpecification extends Specification {
     Specification specification;
@@ -25,9 +27,26 @@ public class FullSpecification extends Specification {
         this.name = "from JSON";
     }
 
-    public void writeToFile(String filePath) throws IOException {
+    public void writePSLJSON(String filePath) throws IOException {
         FileWriter fileWriter = new FileWriter(filePath, false);
         fileWriter.write(toJSON());
+        fileWriter.close();
+    }
+
+    public void writePSL(String filePath) throws IOException {
+        FileWriter fileWriter = new FileWriter(filePath, false);
+        LinkedList<Specification> specifications = new LinkedList<>();
+        if (specification instanceof SpecificationList) {
+            specifications = ((SpecificationList)specification).specifications;
+        } else {
+            specifications.add(specification);
+        }
+
+        for (Specification specification : specifications) {
+            fileWriter.write(specification.toPSL());
+            fileWriter.write("\n");
+        }
+
         fileWriter.close();
     }
 
@@ -57,5 +76,10 @@ public class FullSpecification extends Specification {
     @Override
     public Specification getSimplifiedSpecification() {
         return new FullSpecification(specification.getSimplifiedSpecification(), name);
+    }
+
+    @Override
+    public void generatePSL(PSLGenerator generator) {
+        specification.generatePSL(generator);
     }
 }

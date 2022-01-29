@@ -6,6 +6,7 @@ import preferences.context.Context;
 import preferences.evaluators.BooleanContextEvaluator;
 import preferences.result.Result;
 import preferences.value.Value;
+import psl.PSLGenerator;
 
 public class MeetingInTimeRangeEvaluator extends BooleanContextEvaluator {
     private final TimeRange timeRange;
@@ -29,7 +30,7 @@ public class MeetingInTimeRangeEvaluator extends BooleanContextEvaluator {
 
 
     @Override
-    public String describe() {
-        return "meeting in time range";
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(String.format("meeting at %s", timeRange.toString()));
     }
 }

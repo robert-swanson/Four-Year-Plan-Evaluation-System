@@ -6,10 +6,12 @@ import preferences.explanation.specification.ConditionalClauseResultExplanation;
 import preferences.explanation.Explainable;
 import preferences.explanation.specification.ConditionalSpecificationResultExplanation;
 import preferences.scoring.Score;
+import psl.PSLGenerator;
 
 import java.util.LinkedList;
 
 public class ConditionalSpecification extends Specification {
+
     public static class ConditionalClause implements Explainable {
         public final Condition condition;
         public final Specification specification;
@@ -75,17 +77,17 @@ public class ConditionalSpecification extends Specification {
         return "Conditional Specification";
     }
 
-
     @Override
-    public String toString() {
-        StringBuilder builder = new StringBuilder(String.format("if %s then %s", conditionalClauses.getFirst().condition, conditionalClauses.getFirst().specification));
+    public void generatePSL(PSLGenerator generator) {
         for (ConditionalClause clause : conditionalClauses) {
-            if (clause.condition.equals(Condition.True)) {
-                builder.append(String.format("\notherwise %s", clause.specification));
+            if (clause == conditionalClauses.getFirst()) {
+                generator.addPSL(String.format("if %s then ", conditionalClauses.getFirst().condition.toPSL()));
+            } else if (clause.condition.equals(Condition.True)) {
+                generator.addPSL("otherwise ");
             } else if (clause != conditionalClauses.getFirst()) {
-                builder.append(String.format("\notherwise if %s then %s", clause.condition, clause.specification));
+                generator.addPSL(String.format("otherwise if %s then ", clause.condition.toPSL()));
             }
+            clause.specification.generatePSL(generator);
         }
-        return builder.toString();
     }
 }

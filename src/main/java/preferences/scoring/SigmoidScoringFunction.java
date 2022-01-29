@@ -1,5 +1,7 @@
 package preferences.scoring;
 
+import preferences.explanation.Explanation;
+
 public class SigmoidScoringFunction implements ScoreFunction {
     ScoreBound lower, upper;
     double middle;
@@ -20,16 +22,6 @@ public class SigmoidScoringFunction implements ScoreFunction {
         }
     }
 
-    @Override
-    public String toString() {
-        if (lower.type == upper.type) {
-            return String.format("Proportional with %s bounds at %.2f (lower) and %.2f (upper)", lower.type.toString(), lower.value, upper.value);
-        } else {
-            return String.format("Proportional with a %s lower bound at %.2f and %s upper bound at %.2f", lower.type.toString(), lower.value, upper.type.toString(), upper.value);
-        }
-    }
-
-
     private double sigmoid(double value) {
         return 1 / (1 + Math.pow(9, -value));
     }
@@ -40,5 +32,24 @@ public class SigmoidScoringFunction implements ScoreFunction {
 
     private double normalize(double value, double lower, double upper) {
         return (value - lower) / (upper - lower) - 0.5;
+    }
+
+    @Override
+    public Explanation explainLastResult() {
+        return null;
+    }
+
+    @Override
+    public String describe() {
+        if (lower.type == upper.type) {
+            return String.format("Proportional with %s bounds at %.2f (lower) and %.2f (upper)", lower.type.toString(), lower.value, upper.value);
+        } else {
+            return String.format("Proportional with a %s lower bound at %.2f and %s upper bound at %.2f", lower.type.toString(), lower.value, upper.type.toString(), upper.value);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return describe();
     }
 }

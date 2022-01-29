@@ -3,10 +3,11 @@ package preferences.evaluators.general;
 import objects.offerings.CourseOffering;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
-import preferences.evaluators.ScalableContextEvaluator;
-import preferences.result.*;
+import preferences.evaluators.NumericContextEvaluator;
+import preferences.result.Result;
+import psl.PSLGenerator;
 
-public class TotalCreditsEvaluator extends ScalableContextEvaluator {
+public class TotalCreditsEvaluator extends NumericContextEvaluator {
     @Override
     public Result getValue(Context context) {
         lastResult = CourseOfferingAccumulatorEvaluator.getValue(context, "Total credits", CourseOffering::getCredits);
@@ -24,7 +25,7 @@ public class TotalCreditsEvaluator extends ScalableContextEvaluator {
     }
 
     @Override
-    public String describe() {
-        return "credits";
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL("credits");
     }
 }

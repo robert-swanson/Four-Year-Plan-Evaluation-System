@@ -5,7 +5,7 @@
     With multiple lines
 ]]
 
-numeric_evaluators (strongly = 10) {
+numeric_evaluators (strongly = 10.00300, moderately = 12.2, another = 0, bob = 5.5) {
     [[ This comment is at the beginning of a block ]]
     require 10 credits. [[ This comment says something about this spec ]]
     require 10 credits from "COS-120", "COS-121", "COS-104".
@@ -17,6 +17,7 @@ numeric_evaluators (strongly = 10) {
     require 4 courses with "Stefan Brandle".
     require 2 time blocks reserving 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM.
     require 8 terms.
+    require 0 prerequisite violations.
     [[ This comment is at the end of a block ]]
 }
 
@@ -88,16 +89,16 @@ specifications {
 conditions {
     if 8 credits then {
         require 8 credits.
-    } otherwise if (8 credits) then {
-        require 8 credits.
+    } otherwise if (9 credits) then {
+        require 9 credits.
     } otherwise if (8 credits and 8 credits) then {
-        require 8 credits.
+        require 10 credits.
     } otherwise if (8 credits or 8 credits) then {
-        require 8 credits.
+        require 11 credits.
     } otherwise if not 8 credits then {
-        require 8 credits.
+        require 12 credits.
     } otherwise if (not 8 credits and (8 credits or 8 credits)) then {
-        require 8 credits.
+        require 13 credits.
     }
 }
 

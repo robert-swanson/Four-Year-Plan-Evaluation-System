@@ -9,6 +9,7 @@ import preferences.explanation.context.ContextExplanation;
 import preferences.explanation.specification.ContextualSpecificationResultExplanation;
 import preferences.explanation.specification.SpecificationResultExplanation;
 import preferences.scoring.Score;
+import psl.PSLGenerator;
 
 import java.util.Set;
 
@@ -22,6 +23,7 @@ public class ContextualSpecification extends Specification {
     private final Set<TermYear> termYears;
 
     private ContextExplanation currentContextExplanation;
+
 
     private enum ContextualSpecificationType {
         condition, terms, days
@@ -88,14 +90,19 @@ public class ContextualSpecification extends Specification {
     @Override
     public String describe() {
         return switch (type) {
-            case condition -> String.format("for %s where (%s)", contextLevel.toString(), filterCondition.toString());
+            case condition -> String.format("for %s where %s", contextLevel.toString(), filterCondition.describe());
             case terms -> String.format("for terms %s", termYears);
             case days -> String.format("for days %s", weekdays);
         };
     }
 
     @Override
-    public String toString() {
-        return describe() + " " + specification.toString();
+    public void generatePSL(PSLGenerator generator) {
+        switch (type) {
+            case condition -> generator.addPSL(String.format("for %s where %s ", contextLevel, filterCondition.toPSL()));
+            case terms -> generator.addPSL(String.format("for %s ", termYears));
+            case days -> generator.addPSL(String.format("for %s ", weekdays));
+        }
+        specification.generatePSL(generator);
     }
 }

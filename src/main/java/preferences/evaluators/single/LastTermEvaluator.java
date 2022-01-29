@@ -8,6 +8,7 @@ import preferences.result.PlanResult;
 import preferences.result.Result;
 import preferences.value.NullValue;
 import preferences.value.TermYearValue;
+import psl.PSLGenerator;
 
 import java.util.Set;
 
@@ -42,7 +43,7 @@ public class LastTermEvaluator extends TermYearContextEvaluator {
     }
 
     @Override
-    public String describe() {
-        return "last term";
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL("plan ending");
     }
 }

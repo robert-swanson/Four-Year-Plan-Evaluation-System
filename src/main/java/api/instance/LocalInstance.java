@@ -1,6 +1,6 @@
 package api.instance;
 
-import api.answer.EvaluationAnswer;
+import api.EvaluationAnswer;
 import gnu.getopt.Getopt;
 import gnu.getopt.LongOpt;
 import preferences.specification.FullSpecification;
@@ -71,6 +71,7 @@ public class LocalInstance extends AppInstance {
             } else {
                 specification = instance.loadPSLJSONFile(pslJSON);
             }
+            specification.writePSL("assets/psl/generated.psl");
             EvaluationAnswer answer = instance.evaluatePlansFile(planPath, specification, true);
             answer.writeToFile(outPath);
         } catch (Exception e) {

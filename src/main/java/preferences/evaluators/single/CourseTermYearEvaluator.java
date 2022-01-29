@@ -11,6 +11,7 @@ import preferences.result.Result;
 import preferences.value.NullValue;
 import preferences.value.TermYearValue;
 import preferences.value.Value;
+import psl.PSLGenerator;
 
 public class CourseTermYearEvaluator extends TermYearContextEvaluator {
     final private CourseID courseID;
@@ -45,7 +46,7 @@ public class CourseTermYearEvaluator extends TermYearContextEvaluator {
     }
 
     @Override
-    public String describe() {
-        return String.format("%s scheduled", courseID);
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(String.format("taking course %s", courseID));
     }
 }

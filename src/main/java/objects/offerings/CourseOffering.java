@@ -74,6 +74,10 @@ public class CourseOffering implements Linkable {
         meetings.forEach(meeting -> meeting.setCourseOffering(this));
     }
 
+    public TermYear getTermYear() {
+        return termYear;
+    }
+
     public Course getCourse() {
         return course;
     }

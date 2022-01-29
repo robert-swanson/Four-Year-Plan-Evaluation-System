@@ -1,5 +1,7 @@
 package preferences.value;
 
+import psl.PSLGenerator;
+
 public class BooleanValue extends Value {
     public final boolean value;
 
@@ -9,6 +11,11 @@ public class BooleanValue extends Value {
 
     @Override
     public String toString() {
-        return value ? "True" : "False";
+        return toPSL();
+    }
+
+    @Override
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(Boolean.toString(value));
     }
 }

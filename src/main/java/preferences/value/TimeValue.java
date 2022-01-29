@@ -1,6 +1,7 @@
 package preferences.value;
 
 import objects.misc.Time;
+import psl.PSLGenerator;
 
 import java.util.Objects;
 
@@ -13,7 +14,7 @@ public class TimeValue extends ScalableValue {
 
     @Override
     public String toString() {
-        return value.toString();
+        return toPSL();
     }
 
     @Override
@@ -38,5 +39,10 @@ public class TimeValue extends ScalableValue {
     @Override
     public int hashCode() {
         return Objects.hash(value);
+    }
+
+    @Override
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(value.toString());
     }
 }

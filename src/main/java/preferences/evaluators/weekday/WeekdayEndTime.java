@@ -4,11 +4,12 @@ import objects.misc.Time;
 import objects.offerings.Meeting;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
-import preferences.evaluators.ScalableContextEvaluator;
+import preferences.evaluators.TimeContextEvaluator;
 import preferences.result.Result;
 import preferences.value.TimeValue;
+import psl.PSLGenerator;
 
-public class WeekdayEndTime extends ScalableContextEvaluator {
+public class WeekdayEndTime extends TimeContextEvaluator {
 
     @Override
     public Result getValue(Context context) {
@@ -36,7 +37,7 @@ public class WeekdayEndTime extends ScalableContextEvaluator {
     }
 
     @Override
-    public String describe() {
-        return "day end time";
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL("ending");
     }
 }

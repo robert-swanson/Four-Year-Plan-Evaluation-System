@@ -3,6 +3,7 @@ package preferences.json;
 // Cite: https://stackoverflow.com/a/9106351/6658911
 
 import com.google.gson.*;
+import preferences.explanation.Explainable;
 
 import java.lang.reflect.Type;
 
@@ -24,9 +25,14 @@ public class PropertyBasedInterfaceMarshal implements JsonSerializer<Object>, Js
 
     @Override
     public JsonElement serialize(Object object, Type type, JsonSerializationContext jsonSerializationContext) {
+        JsonObject jsonObject = new JsonObject();
+        if (object instanceof Explainable) {
+            jsonObject.addProperty("description", ((Explainable)object).describe());
+        }
         JsonElement jsonEle = jsonSerializationContext.serialize(object, object.getClass());
-        jsonEle.getAsJsonObject().addProperty(CLASS_META_KEY, object.getClass().getCanonicalName());
-        return jsonEle;
+        jsonEle.getAsJsonObject().entrySet().forEach(entry -> jsonObject.add(entry.getKey(), entry.getValue()));
+        jsonObject.addProperty(CLASS_META_KEY, object.getClass().getCanonicalName());
+        return jsonObject;
     }
 
 }

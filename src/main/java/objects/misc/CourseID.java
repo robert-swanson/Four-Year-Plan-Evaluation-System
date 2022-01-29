@@ -4,6 +4,7 @@ import com.google.gson.*;
 
 import java.lang.reflect.Type;
 import java.util.Objects;
+import java.util.Set;
 
 public class CourseID {
     final String id;
@@ -28,7 +29,12 @@ public class CourseID {
 
     @Override
     public String toString() {
-        return id;
+        return String.format("\"%s\"",id);
+    }
+
+    public static String setToString(Set<CourseID> set) {
+        String str = set.toString();
+        return str.substring(1, str.length()-1);
     }
 
     @Override

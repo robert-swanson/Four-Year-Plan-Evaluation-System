@@ -1,10 +1,12 @@
 package preferences.value;
 
+import psl.PSLGenerator;
+
 import java.util.Objects;
 
 public class NumericValue extends ScalableValue {
     private final double value;
-    private final boolean printAsInt;
+    private final transient boolean printAsInt;
 
     public NumericValue(double v) {
         value = v;
@@ -51,5 +53,14 @@ public class NumericValue extends ScalableValue {
     @Override
     public int hashCode() {
         return Objects.hash(value);
+    }
+
+    @Override
+    public void generatePSL(PSLGenerator generator) {
+        if (value == (int)value) {
+            generator.addPSL(Integer.toString((int) value));
+        } else {
+            generator.addPSL(Double.toString(value));
+        }
     }
 }

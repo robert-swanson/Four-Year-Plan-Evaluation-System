@@ -8,10 +8,7 @@ import preferences.constraints.Constraint;
 import preferences.condition.Condition;
 import preferences.context.ContextLevel;
 import preferences.evaluators.ContextEvaluator;
-import preferences.specification.ConditionalSpecification;
-import preferences.specification.ContextualSpecification;
-import preferences.specification.Specification;
-import preferences.specification.SpecificationList;
+import preferences.specification.*;
 import psl.exceptions.ListenerError;
 
 import java.util.*;
@@ -71,6 +68,12 @@ public class PSLParsingContext {
         timeRanges = new ArrayList<>();
         termYears = new HashSet<>();
         weekdays = new HashSet<>();
+    }
+
+    public BlockSpecification getBlock(String name, ArrayList<PreferenceSpecification.Priority> priorities) {
+        ContextAssertionError.assertSpecificationList(this);
+        SpecificationList list = new SpecificationList(new LinkedList<>(specifications));
+        return new BlockSpecification(name, list, priorities);
     }
 
     public SpecificationList getSpecificationList() {

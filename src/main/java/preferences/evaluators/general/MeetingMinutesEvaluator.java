@@ -3,10 +3,11 @@ package preferences.evaluators.general;
 import objects.offerings.Meeting;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
-import preferences.evaluators.ScalableContextEvaluator;
+import preferences.evaluators.NumericContextEvaluator;
 import preferences.result.Result;
+import psl.PSLGenerator;
 
-public class MeetingMinutesEvaluator extends ScalableContextEvaluator {
+public class MeetingMinutesEvaluator extends NumericContextEvaluator {
     @Override
     public Result getValue(Context context) {
         lastResult = MeetingAccumulatorEvaluator.getValue(context, "Total meeting time minutes", Meeting::getMeetingMinutes);
@@ -24,7 +25,7 @@ public class MeetingMinutesEvaluator extends ScalableContextEvaluator {
     }
 
     @Override
-    public String describe() {
-        return "meeting minutes";
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL("meeting minutes");
     }
 }

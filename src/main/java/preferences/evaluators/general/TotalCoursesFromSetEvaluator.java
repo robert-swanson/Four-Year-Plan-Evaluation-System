@@ -3,14 +3,14 @@ package preferences.evaluators.general;
 import objects.misc.CourseID;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
-import preferences.evaluators.ScalableContextEvaluator;
-import preferences.result.*;
+import preferences.evaluators.NumericContextEvaluator;
+import preferences.result.Result;
+import psl.PSLGenerator;
 
 import java.util.Set;
 
-public class TotalCoursesFromSetEvaluator extends ScalableContextEvaluator {
+public class TotalCoursesFromSetEvaluator extends NumericContextEvaluator {
     Set<CourseID> courseIDSet;
-
     public TotalCoursesFromSetEvaluator(Set<CourseID> courseSet) {
         courseIDSet = courseSet;
     }
@@ -33,7 +33,7 @@ public class TotalCoursesFromSetEvaluator extends ScalableContextEvaluator {
     }
 
     @Override
-    public String describe() {
-        return String.format("courses from %s", courseIDSet.toString());
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(String.format("courses from %s", CourseID.setToString(courseIDSet)));
     }
 }

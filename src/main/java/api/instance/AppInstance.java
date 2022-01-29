@@ -1,6 +1,6 @@
 package api.instance;
 
-import api.answer.EvaluationAnswer;
+import api.EvaluationAnswer;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import exceptions.JSONParseException;

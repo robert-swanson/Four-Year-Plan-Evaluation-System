@@ -1,5 +1,7 @@
 package preferences.scoring;
 
+import preferences.explanation.Explanation;
+
 public class OptimumScoringFunction implements ScoreFunction {
     double middle;
     ScoreBound lowerDeviance, upperDeviance;
@@ -14,15 +16,6 @@ public class OptimumScoringFunction implements ScoreFunction {
         this.middle = middle;
         this.lowerDeviance = deviance;
         this.upperDeviance = deviance;
-    }
-
-    @Override
-    public String toString() {
-        if (lowerDeviance == upperDeviance) {
-            return String.format("Optimum Function centered at %.2f with %s deviance of %.2f", middle, lowerDeviance.type, lowerDeviance.value);
-        } else {
-            return String.format("Optimum Function centered at %.2f with %s lower deviance of %.2f, and %s upper deviance of %.2f", middle, lowerDeviance.type, lowerDeviance.value, upperDeviance.type, upperDeviance.value);
-        }
     }
 
     @Override
@@ -46,5 +39,24 @@ public class OptimumScoringFunction implements ScoreFunction {
 
     private double normalize(double value, double middle, double deviance) {
         return (value - middle) / deviance;
+    }
+
+    @Override
+    public Explanation explainLastResult() {
+        return null;
+    }
+
+    @Override
+    public String describe() {
+        if (lowerDeviance == upperDeviance) {
+            return String.format("Optimum Function centered at %.2f with %s deviance of %.2f", middle, lowerDeviance.type, lowerDeviance.value);
+        } else {
+            return String.format("Optimum Function centered at %.2f with %s lower deviance of %.2f, and %s upper deviance of %.2f", middle, lowerDeviance.type, lowerDeviance.value, upperDeviance.type, upperDeviance.value);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return describe();
     }
 }

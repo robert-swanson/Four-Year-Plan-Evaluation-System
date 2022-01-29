@@ -2,10 +2,11 @@ package preferences.evaluators.general;
 
 import preferences.context.Context;
 import preferences.context.ContextLevel;
-import preferences.evaluators.ScalableContextEvaluator;
+import preferences.evaluators.NumericContextEvaluator;
 import preferences.result.Result;
+import psl.PSLGenerator;
 
-public class CoursesWithProfessorEvaluator extends ScalableContextEvaluator {
+public class CoursesWithProfessorEvaluator extends NumericContextEvaluator {
     private String professor;
 
     public CoursesWithProfessorEvaluator(String professor) {
@@ -16,7 +17,9 @@ public class CoursesWithProfessorEvaluator extends ScalableContextEvaluator {
     public Result getValue(Context context) {
         lastResult = CourseOfferingAccumulatorEvaluator.getValue(context, String.format("Total courses with %s", professor), courseOffering -> {
             for (String thisProf : courseOffering.getProfessors()) {
-                if (professor.equals(thisProf)) return 1;
+                if (professor.equals(thisProf)) {
+                    return 1;
+                }
             }
             return 0;
         });
@@ -34,7 +37,7 @@ public class CoursesWithProfessorEvaluator extends ScalableContextEvaluator {
     }
 
     @Override
-    public String describe() {
-        return "courses";
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(String.format("courses with \"%s\"", professor));
     }
 }

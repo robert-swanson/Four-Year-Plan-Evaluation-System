@@ -65,7 +65,7 @@ public class PSLCompiler {
         LinkedHashMap<String, Specification> blocks = compilePSLString(psl);
         SpecificationList specificationList = new SpecificationList();
         blocks.values().forEach(specificationList::addSpecification);
-        return new FullSpecification(specificationList.getSimplifiedSpecification(), "PSL from string");
+        return new FullSpecification(specificationList, "PSL from string");
     }
 
     private LinkedHashMap<String, Specification> compilePSLString(String psl) {

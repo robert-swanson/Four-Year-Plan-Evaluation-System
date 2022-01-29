@@ -3,11 +3,12 @@ package preferences.evaluators.single;
 import objects.misc.CourseID;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
-import preferences.evaluators.ScalableContextEvaluator;
+import preferences.evaluators.TimeContextEvaluator;
 import preferences.result.Result;
 import preferences.value.TimeValue;
+import psl.PSLGenerator;
 
-public class CourseStartTimeEvaluator extends ScalableContextEvaluator {
+public class CourseStartTimeEvaluator extends TimeContextEvaluator {
     CourseID courseID;
     public CourseStartTimeEvaluator(CourseID courseID) {
         this.courseID = courseID;
@@ -31,7 +32,7 @@ public class CourseStartTimeEvaluator extends ScalableContextEvaluator {
     }
 
     @Override
-    public String describe() {
-        return "course start time";
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(String.format("%s starting", courseID));
     }
 }

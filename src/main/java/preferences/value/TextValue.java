@@ -1,5 +1,7 @@
 package preferences.value;
 
+import psl.PSLGenerator;
+
 import java.util.Objects;
 
 public class TextValue extends Value {
@@ -11,7 +13,7 @@ public class TextValue extends Value {
 
     @Override
     public String toString() {
-        return String.format("\"%s\"", value);
+        return toPSL();
     }
 
     @Override
@@ -25,5 +27,10 @@ public class TextValue extends Value {
     @Override
     public int hashCode() {
         return Objects.hash(value);
+    }
+
+    @Override
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(value);
     }
 }

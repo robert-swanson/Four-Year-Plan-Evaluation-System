@@ -3,6 +3,7 @@ package preferences.condition;
 import preferences.constraints.RequireableConstraint;
 import preferences.context.Context;
 import preferences.explanation.Explanation;
+import psl.PSLGenerator;
 
 public class ConstraintCondition extends Condition {
     RequireableConstraint requireableConstraint;
@@ -16,10 +17,6 @@ public class ConstraintCondition extends Condition {
         return requireableConstraint.fulfilled(context);
     }
 
-    @Override
-    public String describe() {
-        return requireableConstraint.toString();
-    }
 
     @Override
     public Explanation explainLastResult() {
@@ -27,7 +24,7 @@ public class ConstraintCondition extends Condition {
     }
 
     @Override
-    public String toString() {
-        return requireableConstraint.toString();
+    public void generatePSL(PSLGenerator generator) {
+        requireableConstraint.generatePSL(generator);
     }
 }

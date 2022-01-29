@@ -3,6 +3,7 @@ package preferences.condition;
 import preferences.context.Context;
 import preferences.explanation.Explanation;
 import preferences.explanation.specification.ConditionResultExplanation;
+import psl.PSLGenerator;
 
 public class AndCondition extends Condition {
     private final Condition left;
@@ -26,11 +27,11 @@ public class AndCondition extends Condition {
 
     @Override
     public String describe() {
-        return String.format("(%s and %s)", left, right);
+        return toPSL();
     }
 
     @Override
-    public String toString() {
-        return describe();
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(String.format("(%s and %s)", left.toPSL(), right.toPSL()));
     }
 }

@@ -2,7 +2,7 @@ package api.instance;
 
 import api.SpecificationCache;
 import api.SpecificationID;
-import api.answer.EvaluationAnswer;
+import api.EvaluationAnswer;
 import exceptions.JSONParseException;
 import exceptions.LinkingException;
 import exceptions.PSLInstanceException;
@@ -181,8 +181,7 @@ public class ServerInstance extends AppInstance {
             try {
                 SpecificationID id = new SpecificationID(request.params(":id"), request.params(":version"));
                 FullSpecification specification = instance.requestPSLJson(id, false);
-//                return specification.toPSL();
-                return "not implemented";
+                return specification.toPSL();
             } catch (Exception e) {
                 return handleError(e, response);
             }

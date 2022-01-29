@@ -5,6 +5,7 @@ import preferences.context.Context;
 import preferences.explanation.specification.RequirementSpecificationResultExplanation;
 import preferences.explanation.specification.SpecificationResultExplanation;
 import preferences.scoring.Score;
+import psl.PSLGenerator;
 
 public class RequirementSpecification extends Specification {
     private final RequireableConstraint requireableConstraint;
@@ -37,11 +38,11 @@ public class RequirementSpecification extends Specification {
 
     @Override
     public String describe() {
-        return String.format("require %s%s", invert ? "not " : "", requireableConstraint);
+        return toPSL().replaceAll("\n$","");
     }
 
     @Override
-    public String toString() {
-        return describe() + ".\n";
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(String.format("require %s%s.\n", invert ? "not " : "", requireableConstraint.toPSL()));
     }
 }

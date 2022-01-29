@@ -4,6 +4,7 @@ import preferences.context.Context;
 import preferences.explanation.specification.SpecificationListResultExplanation;
 import preferences.explanation.specification.SpecificationResultExplanation;
 import preferences.scoring.Score;
+import psl.PSLGenerator;
 
 import java.util.LinkedList;
 
@@ -77,9 +78,11 @@ public class SpecificationList extends Specification {
     }
 
     @Override
-    public String toString() {
-        StringBuilder builder = new StringBuilder("{\n");
-        specifications.forEach(specification -> builder.append(specification.toString()));
-        return builder.append("}\n").toString();
+    public void generatePSL(PSLGenerator generator) {
+        generator.indent();
+        generator.addPSL("{\n");
+        specifications.forEach(specification -> specification.generatePSL(generator));
+        generator.dedent();
+        generator.addPSL("}\n");
     }
 }

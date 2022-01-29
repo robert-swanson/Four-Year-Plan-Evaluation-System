@@ -1,5 +1,7 @@
 package preferences.value;
 
+import psl.PSLGenerator;
+
 public class NullValue extends Value {
     String reason;
 
@@ -10,5 +12,10 @@ public class NullValue extends Value {
     @Override
     public String toString() {
         return "Null: " + reason;
+    }
+
+    @Override
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL("Null");
     }
 }

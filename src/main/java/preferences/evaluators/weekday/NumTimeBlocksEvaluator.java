@@ -4,14 +4,15 @@ import objects.misc.Time;
 import objects.misc.TimeRange;
 import preferences.context.Context;
 import preferences.context.ContextLevel;
-import preferences.evaluators.ScalableContextEvaluator;
+import preferences.evaluators.NumericContextEvaluator;
 import preferences.result.Result;
 import preferences.value.NumericValue;
+import psl.PSLGenerator;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class NumTimeBlocksEvaluator extends ScalableContextEvaluator {
+public class NumTimeBlocksEvaluator extends NumericContextEvaluator {
     ArrayList<TimeRange> reservedTimeBlocks;
     int maxBufferMinutes;
 
@@ -56,7 +57,11 @@ public class NumTimeBlocksEvaluator extends ScalableContextEvaluator {
     }
 
     @Override
-    public String describe() {
-        return "time blocks";
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL("time blocks");
+        if (!reservedTimeBlocks.isEmpty()) {
+            String str = reservedTimeBlocks.toString();
+            generator.addPSL(String.format(" reserving %s", str.substring(1, str.length()-1)));
+        }
     }
 }

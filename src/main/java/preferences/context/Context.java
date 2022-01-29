@@ -21,7 +21,7 @@ import java.util.Stack;
 
 public class Context implements Explainable {
     // Non-Contextual
-    private final Plan plan;
+    private transient final Plan plan;
 
     // Contextual
     private final Stack<ContextLevel> contextLevelStack;
@@ -38,13 +38,13 @@ public class Context implements Explainable {
         termSubContexts = new Stack<>();
         LinkedHashMap<TermYear, TermSubContext> termSubContextLinkedHashMap = new LinkedHashMap<>();
         for (Map.Entry<TermYear, PlanTerm> entry : plan.getTermsMap().entrySet()) {
-            termSubContextLinkedHashMap.put(entry.getKey(), new TermSubContext(entry.getValue()));
+            termSubContextLinkedHashMap.put(entry.getKey(), new TermSubContext(entry.getValue(), plan));
         }
         termSubContexts.push(termSubContextLinkedHashMap);
     }
 
-    private Context(TermSubContext termSubContext) { // Used for Terms Context Filtering
-        plan = null;
+    private Context(TermSubContext termSubContext, Plan plan) { // Used for Terms Context Filtering
+        this.plan = plan;
         contextLevelStack = new Stack<>();
         contextLevelStack.push(ContextLevel.terms);
         termSubContexts = new Stack<>();
@@ -53,11 +53,11 @@ public class Context implements Explainable {
         termSubContexts.push(termSubContextLinkedHashMap);
     }
 
-    protected Context(TermSubContext termSubContext, WeekSubContext weekSubContext, WeekdaySubContext weekdaySubContext) { // Used for Weekday Context Filtering
-        plan = null;
+    protected Context(TermSubContext termSubContext, WeekSubContext weekSubContext, WeekdaySubContext weekdaySubContext, Plan plan) { // Used for Weekday Context Filtering
+        this.plan = plan;
         contextLevelStack = new Stack<>();
         contextLevelStack.push(ContextLevel.days);
-        TermSubContext singleWeekdayTerm = new TermSubContext(termSubContext, weekSubContext, weekdaySubContext);
+        TermSubContext singleWeekdayTerm = new TermSubContext(termSubContext, weekSubContext, weekdaySubContext, plan);
         LinkedHashMap<TermYear, TermSubContext> singleWeekdayContext = new LinkedHashMap<>();
         singleWeekdayContext.put(termSubContext.getTermYear(), singleWeekdayTerm);
         termSubContexts = new Stack<>();
@@ -70,7 +70,7 @@ public class Context implements Explainable {
         if (contextLevel == ContextLevel.terms) {
             LinkedHashMap<TermYear, TermSubContext> newContext = new LinkedHashMap<>();
             for (TermSubContext termSubContext : termSubContexts.peek().values()) {
-                Context tempContext = new Context(termSubContext);
+                Context tempContext = new Context(termSubContext, plan);
                 if (condition.evaluate(tempContext)) {
                     newContext.put(termSubContext.getTermYear(), termSubContext);
                 }
@@ -183,6 +183,10 @@ public class Context implements Explainable {
     // Getters
     public ContextLevel getContextLevel() {
         return contextLevelStack.peek();
+    }
+
+    public Plan getPlan() {
+        return plan;
     }
 
     public LinkedHashMap<TermYear, TermSubContext> getTermSubContexts() {

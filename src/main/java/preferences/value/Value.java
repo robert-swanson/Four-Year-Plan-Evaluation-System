@@ -1,6 +1,8 @@
 package preferences.value;
 
-public abstract class Value {
+import psl.PSLComponent;
+
+public abstract class Value implements PSLComponent {
     public static BooleanValue TRUE = new BooleanValue(true);
     public static BooleanValue FALSE = new BooleanValue(false);
 
@@ -8,4 +10,12 @@ public abstract class Value {
         return !(this instanceof NullValue);
     }
 
+    private String explanation;
+    public Value setExplanation(String explanation) {
+        this.explanation = explanation;
+        return this;
+    }
+    public Value setExplanation(StringBuilder builder) {
+        return setExplanation(builder.toString());
+    }
 }

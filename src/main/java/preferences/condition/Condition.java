@@ -4,10 +4,10 @@ import preferences.context.Context;
 import preferences.explanation.Explainable;
 import preferences.explanation.Explanation;
 import preferences.scoring.Score;
+import psl.PSLComponent;
 
-public abstract class Condition implements Explainable {
+public abstract class Condition implements Explainable, PSLComponent {
     public abstract boolean evaluate(Context context);
-    public abstract String describe();
     public abstract Explanation explainLastResult();
     private Score lastScore;
 
@@ -28,4 +28,14 @@ public abstract class Condition implements Explainable {
     }
 
     public static Condition True = new TrueCondition();
+
+    @Override
+    public String toString() {
+        return toPSL();
+    }
+
+    @Override
+    public String describe() {
+        return toPSL();
+    }
 }

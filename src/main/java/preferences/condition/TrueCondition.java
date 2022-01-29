@@ -2,6 +2,7 @@ package preferences.condition;
 
 import preferences.context.Context;
 import preferences.explanation.Explanation;
+import psl.PSLGenerator;
 
 class TrueCondition extends Condition {
     TrueCondition() {
@@ -30,5 +31,10 @@ class TrueCondition extends Condition {
     @Override
     public String toString() {
         return "TRUE";
+    }
+
+    @Override
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL("TRUE");
     }
 }

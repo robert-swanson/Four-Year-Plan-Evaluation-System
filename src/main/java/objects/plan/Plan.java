@@ -5,14 +5,13 @@ import exceptions.JSONParseException;
 import exceptions.PlanException;
 import objects.Linkable;
 import objects.Link;
+import objects.misc.CourseID;
 import objects.misc.TermYear;
 import objects.offerings.CourseOffering;
 import objects.offerings.TermOfferings;
 
 import java.lang.reflect.Type;
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Plan implements Linkable {
     private double score;
@@ -81,13 +80,35 @@ public class Plan implements Linkable {
             return new Plan(score, comments, terms, id);
         }
     }
+
+    private transient HashMap<CourseID, ArrayList<CourseOffering>> courseMap;
     private transient Link link;
     @Override
     public void link(Link l) throws PlanException {
+        courseMap = new HashMap<>();
         link = l;
         for (PlanTerm planTerm: terms.values()) {
             planTerm.link(l);
+
+            planTerm.getCourseOfferings().forEach(courseOffering -> {
+                CourseID courseID = courseOffering.getCourse().getCourseID();
+                if (!courseMap.containsKey(courseID)) {
+                    courseMap.put(courseID, new ArrayList<>());
+                }
+                courseMap.get(courseID).add(courseOffering);
+            });
         }
+    }
+
+    public HashMap<CourseID, ArrayList<CourseOffering>> getCourseMap() {
+        return courseMap;
+    }
+
+    public CourseOffering getOffering(CourseID courseID) {
+        if (courseMap.containsKey(courseID)) {
+            return courseMap.get(courseID).get(0);
+        }
+        return null;
     }
 
     public double getScore() {

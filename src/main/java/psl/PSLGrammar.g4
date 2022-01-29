@@ -1,13 +1,5 @@
 grammar PSLGrammar;
 
-@lexer::members {
-  @Override
-  public void reportError(RecognitionException e) {
-    throw new RuntimeException("I quit!\n" + e.getMessage());
-  }
-}
-
-
 //start: block* EOF;
 start: (globalImport|comment)* (comment|block)* EOF;
 block: NAME priorityList? '{' (localImport|comment)* (comment|specification)* '}';
@@ -17,7 +9,7 @@ globalImport: USE NAME DOT;
 localImport: USE NAME DOT;
 USE: 'use';
 
-comment: '[['~(']' | '_')*?']]';
+comment: '[['~(']]' | '_')*?']]';
 
 // Priority
 priority: NAME EQUALS (INT|FLOAT);
@@ -140,7 +132,7 @@ lessConstraint:
 numericEvaluator:
     totalCredits | totalCreditsFromSet | upperDivisionCredits | totalCourses |
     totalCoursesFromSet | upperDivisionCourses | meetingMinutes |
-    numCoursesWithProfessor | numTimeBlocks | termsInPlan ;
+    numCoursesWithProfessor | numTimeBlocks | termsInPlan | prerequisiteViolations ;
 
 totalCourses: COURSES;
 totalCoursesFromSet: COURSE_FROM courseList;
@@ -152,10 +144,12 @@ meetingMinutes: MEETING MINUTES;
 numCoursesWithProfessor: COURSES WITH professor;
 numTimeBlocks: TIME_BLOCKS (RESERVING timeRangeList)?;
 termsInPlan: TERMS;
+prerequisiteViolations: PREREQUISITE_VIOLATIONS;
 
 COURSE_FROM: 'courses from';
 TIME_BLOCKS: 'time blocks';
 RESERVING: 'reserving';
+PREREQUISITE_VIOLATIONS: 'prerequisite violations';
 
 // Term Year Evaluators
 termYearEvaluators: courseTermYear | planStart | planEnd;

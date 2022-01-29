@@ -3,6 +3,7 @@ package preferences.context;
 import objects.misc.Date;
 import objects.misc.Weekday;
 import objects.offerings.Meeting;
+import objects.plan.Plan;
 import preferences.condition.Condition;
 import preferences.explanation.Explainable;
 import preferences.explanation.context.WeekSubContextExplanation;
@@ -14,14 +15,16 @@ import java.util.*;
  */
 public class WeekSubContext implements Explainable {
     // Non-Contextual
+    transient Plan plan;
     Date startDate, endDate;
     Double weight;
 
     // Contextual
     Stack<LinkedHashMap<Weekday, WeekdaySubContext>> weekdaySubcontextsStack;
 
-    public WeekSubContext(Date startDate, Date endDate, LinkedList<Meeting> meetings, double weight) {
+    public WeekSubContext(Date startDate, Date endDate, LinkedList<Meeting> meetings, double weight, Plan plan) {
         // Non-Contextual
+        this.plan = plan;
         this.startDate = startDate;
         this.endDate = endDate;
         this.weight = weight;
@@ -60,7 +63,7 @@ public class WeekSubContext implements Explainable {
     public boolean applyContextFilter(Condition condition, TermSubContext termSubContext) {
         LinkedHashMap<Weekday, WeekdaySubContext> newContext = new LinkedHashMap<>();
         for (WeekdaySubContext weekdaySubContext : weekdaySubcontextsStack.peek().values()) {
-            Context tempContext = new Context(termSubContext, this, weekdaySubContext);
+            Context tempContext = new Context(termSubContext, this, weekdaySubContext, plan);
             if (condition.evaluate(tempContext)) {
                 newContext.put(weekdaySubContext.weekday, weekdaySubContext);
             }

@@ -9,6 +9,7 @@ import preferences.context.iterables.courseoffering.PlanCourseOfferingIterator;
 import preferences.result.PlanResult;
 import preferences.result.Result;
 import preferences.value.Value;
+import psl.PSLGenerator;
 
 public class CourseBeforeCourseEvaluator extends BooleanContextEvaluator {
     final private CourseID first, second;
@@ -49,12 +50,12 @@ public class CourseBeforeCourseEvaluator extends BooleanContextEvaluator {
         } else {
             explanation = String.format("Prerequisite (%s: %s) is scheduled before Post-requisite (%s: %s)", first, firstTermYear, second, secondTearmYear);
         }
-        lastResult = new PlanResult<>(value);
+        lastResult = new PlanResult<>(value.setExplanation(explanation));
         return lastResult;
     }
 
     @Override
-    public String describe() {
-        return String.format("course %s before %s", first, second);
+    public void generatePSL(PSLGenerator generator) {
+        generator.addPSL(String.format("taking %s before %s", first, second));
     }
 }
