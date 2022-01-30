@@ -63,6 +63,53 @@
                   "class": "preferences.specification.RequirementSpecification"
                 },
                 {
+                  "description": "require 1 credit.",
+                  "requireableConstraint": {
+                    "description": "1 credit",
+                    "scoreFunction": {
+                      "description": "Optimum Function centered at 1.00 with soft deviance of 20.00",
+                      "middle": 1.0,
+                      "lowerDeviance": {
+                        "type": "soft",
+                        "value": 20.0
+                      },
+                      "upperDeviance": {
+                        "type": "soft",
+                        "value": 20.0
+                      },
+                      "class": "preferences.scoring.OptimumScoringFunction"
+                    },
+                    "expectedValue": {
+                      "value": 1.0,
+                      "class": "preferences.value.NumericValue"
+                    },
+                    "constraintType": "equal",
+                    "contextEvaluator": {
+                      "description": "credits",
+                      "lastResult": {
+                        "description": "36.00",
+                        "value": {
+                          "value": 36.0,
+                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                          "class": "preferences.value.NumericValue"
+                        },
+                        "calculatedCheck": false,
+                        "class": "preferences.result.PlanResult"
+                      },
+                      "class": "preferences.evaluators.general.TotalCreditsEvaluator"
+                    },
+                    "contextLevel": "fullPlan",
+                    "class": "preferences.constraints.EqualConstraint"
+                  },
+                  "invert": false,
+                  "lastScore": {
+                    "accum": 0.0,
+                    "max": 0.0,
+                    "isValid": false
+                  },
+                  "class": "preferences.specification.RequirementSpecification"
+                },
+                {
                   "description": "require 10 credits from \"COS-104\", \"COS-121\", \"COS-120\".",
                   "requireableConstraint": {
                     "description": "10 credits from \"COS-104\", \"COS-121\", \"COS-120\"",
@@ -81,6 +128,58 @@
                     },
                     "expectedValue": {
                       "value": 10.0,
+                      "class": "preferences.value.NumericValue"
+                    },
+                    "constraintType": "equal",
+                    "contextEvaluator": {
+                      "description": "credits from \"COS-104\", \"COS-121\", \"COS-120\"",
+                      "courseIDSet": [
+                        "COS-104",
+                        "COS-121",
+                        "COS-120"
+                      ],
+                      "lastResult": {
+                        "description": "4.00",
+                        "value": {
+                          "value": 4.0,
+                          "explanation": "- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n\u003d 4.00\n",
+                          "class": "preferences.value.NumericValue"
+                        },
+                        "calculatedCheck": false,
+                        "class": "preferences.result.PlanResult"
+                      },
+                      "class": "preferences.evaluators.general.TotalCreditsFromSetEvaluator"
+                    },
+                    "contextLevel": "fullPlan",
+                    "class": "preferences.constraints.EqualConstraint"
+                  },
+                  "invert": false,
+                  "lastScore": {
+                    "accum": 0.0,
+                    "max": 0.0,
+                    "isValid": false
+                  },
+                  "class": "preferences.specification.RequirementSpecification"
+                },
+                {
+                  "description": "require 1 credit from \"COS-104\", \"COS-121\", \"COS-120\".",
+                  "requireableConstraint": {
+                    "description": "1 credit from \"COS-104\", \"COS-121\", \"COS-120\"",
+                    "scoreFunction": {
+                      "description": "Optimum Function centered at 1.00 with soft deviance of 2.25",
+                      "middle": 1.0,
+                      "lowerDeviance": {
+                        "type": "soft",
+                        "value": 2.25
+                      },
+                      "upperDeviance": {
+                        "type": "soft",
+                        "value": 2.25
+                      },
+                      "class": "preferences.scoring.OptimumScoringFunction"
+                    },
+                    "expectedValue": {
+                      "value": 1.0,
                       "class": "preferences.value.NumericValue"
                     },
                     "constraintType": "equal",
@@ -209,6 +308,53 @@
                   "class": "preferences.specification.RequirementSpecification"
                 },
                 {
+                  "description": "require 1 course.",
+                  "requireableConstraint": {
+                    "description": "1 course",
+                    "scoreFunction": {
+                      "description": "Optimum Function centered at 1.00 with soft deviance of 5.00",
+                      "middle": 1.0,
+                      "lowerDeviance": {
+                        "type": "soft",
+                        "value": 5.0
+                      },
+                      "upperDeviance": {
+                        "type": "soft",
+                        "value": 5.0
+                      },
+                      "class": "preferences.scoring.OptimumScoringFunction"
+                    },
+                    "expectedValue": {
+                      "value": 1.0,
+                      "class": "preferences.value.NumericValue"
+                    },
+                    "constraintType": "equal",
+                    "contextEvaluator": {
+                      "description": "courses",
+                      "lastResult": {
+                        "description": "42.00",
+                        "value": {
+                          "value": 42.0,
+                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 1.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n- \"MAT-215\": Discrete Mathematics for Computer Science (fall 2018) \u003d 1.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 1.00\n- \"COS-143\": Interactive Webpage Development (spring 2019) \u003d 1.00\n- \"HNR-225\": Honors Colloquium (spring 2019) \u003d 1.00\n- \"COS-109\": Computer and Network Operations (spring 2019) \u003d 1.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 1.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 1.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 1.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 1.00\n- \"COS-243\": Multi-tier Web Application Development (fall 2019) \u003d 1.00\n- \"MAT-240\": Calculus III (fall 2019) \u003d 1.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 1.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 1.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 1.00\n- \"COS-284\": Introduction to Computer Systems (spring 2020) \u003d 1.00\n- \"COS-331\": Data Communications (spring 2020) \u003d 1.00\n- \"MAT-311\": Introduction to Data Science (spring 2020) \u003d 1.00\n- \"COS-280\": Introduction to Artificial Intelligence (spring 2020) \u003d 1.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 1.00\n- \"COS-340\": Software Engineering (fall 2020) \u003d 1.00\n- \"COS-436\": Parallel and Distributed Computing (fall 2020) \u003d 1.00\n- \"COS-310\": Current Literature Survey (fall 2020) \u003d 1.00\n- \"HUM-330\": Arts and Ideas (fall 2020) \u003d 1.00\n- \"COS-232\": Computer and Network Security I (fall 2020) \u003d 1.00\n- \"MUS-280\": Wind Ensemble (fall 2020) \u003d 1.00\n- \"COS-421\": Operating Systems (spring 2021) \u003d 1.00\n- \"SYS-411\": Machine Learning (spring 2021) \u003d 1.00\n- \"MUS-290\": Symphony Orchestra (spring 2021) \u003d 1.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 1.00\n- \"COS-452\": Research I (spring 2021) \u003d 1.00\n- \"COS-382\": Language Structures (spring 2021) \u003d 1.00\n- \"COS-453\": Research II (fall 2021) \u003d 1.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 1.00\n- \"COS-343\": Database Systems (fall 2021) \u003d 1.00\n- \"COS-493\": Computer Science Senior Capstone (fall 2021) \u003d 1.00\n- \"MUS-290\": Symphony Orchestra (fall 2021) \u003d 1.00\n- \"COS-432\": Software Reverse Engineering and Analysis (fall 2021) \u003d 1.00\n- \"COS-435\": Theory of Computation (fall 2021) \u003d 1.00\n\u003d 42.00\n",
+                          "class": "preferences.value.NumericValue"
+                        },
+                        "calculatedCheck": false,
+                        "class": "preferences.result.PlanResult"
+                      },
+                      "class": "preferences.evaluators.general.TotalCoursesEvaluator"
+                    },
+                    "contextLevel": "fullPlan",
+                    "class": "preferences.constraints.EqualConstraint"
+                  },
+                  "invert": false,
+                  "lastScore": {
+                    "accum": 0.0,
+                    "max": 0.0,
+                    "isValid": false
+                  },
+                  "class": "preferences.specification.RequirementSpecification"
+                },
+                {
                   "description": "require 10 credits from \"COS-104\", \"COS-121\", \"COS-120\".",
                   "requireableConstraint": {
                     "description": "10 credits from \"COS-104\", \"COS-121\", \"COS-120\"",
@@ -261,12 +407,12 @@
                   "class": "preferences.specification.RequirementSpecification"
                 },
                 {
-                  "description": "require 10 credits from \"COS-104\", \"COS-121\", \"COS-120\".",
+                  "description": "require 1 credit from \"COS-104\", \"COS-121\", \"COS-120\".",
                   "requireableConstraint": {
-                    "description": "10 credits from \"COS-104\", \"COS-121\", \"COS-120\"",
+                    "description": "1 credit from \"COS-104\", \"COS-121\", \"COS-120\"",
                     "scoreFunction": {
-                      "description": "Optimum Function centered at 10.00 with soft deviance of 2.25",
-                      "middle": 10.0,
+                      "description": "Optimum Function centered at 1.00 with soft deviance of 2.25",
+                      "middle": 1.0,
                       "lowerDeviance": {
                         "type": "soft",
                         "value": 2.25
@@ -278,7 +424,7 @@
                       "class": "preferences.scoring.OptimumScoringFunction"
                     },
                     "expectedValue": {
-                      "value": 10.0,
+                      "value": 1.0,
                       "class": "preferences.value.NumericValue"
                     },
                     "constraintType": "equal",
@@ -365,12 +511,12 @@
                   "class": "preferences.specification.RequirementSpecification"
                 },
                 {
-                  "description": "require 4 courses from \"COS-104\", \"COS-121\", \"COS-120\".",
+                  "description": "require 1 course from \"COS-104\", \"COS-121\", \"COS-120\".",
                   "requireableConstraint": {
-                    "description": "4 courses from \"COS-104\", \"COS-121\", \"COS-120\"",
+                    "description": "1 course from \"COS-104\", \"COS-121\", \"COS-120\"",
                     "scoreFunction": {
-                      "description": "Optimum Function centered at 4.00 with soft deviance of 0.75",
-                      "middle": 4.0,
+                      "description": "Optimum Function centered at 1.00 with soft deviance of 0.75",
+                      "middle": 1.0,
                       "lowerDeviance": {
                         "type": "soft",
                         "value": 0.75
@@ -382,7 +528,7 @@
                       "class": "preferences.scoring.OptimumScoringFunction"
                     },
                     "expectedValue": {
-                      "value": 4.0,
+                      "value": 1.0,
                       "class": "preferences.value.NumericValue"
                     },
                     "constraintType": "equal",
@@ -469,58 +615,6 @@
                   "class": "preferences.specification.RequirementSpecification"
                 },
                 {
-                  "description": "require 3 courses from \"COS-104\", \"COS-121\", \"COS-120\".",
-                  "requireableConstraint": {
-                    "description": "3 courses from \"COS-104\", \"COS-121\", \"COS-120\"",
-                    "scoreFunction": {
-                      "description": "Optimum Function centered at 3.00 with soft deviance of 0.75",
-                      "middle": 3.0,
-                      "lowerDeviance": {
-                        "type": "soft",
-                        "value": 0.75
-                      },
-                      "upperDeviance": {
-                        "type": "soft",
-                        "value": 0.75
-                      },
-                      "class": "preferences.scoring.OptimumScoringFunction"
-                    },
-                    "expectedValue": {
-                      "value": 3.0,
-                      "class": "preferences.value.NumericValue"
-                    },
-                    "constraintType": "equal",
-                    "contextEvaluator": {
-                      "description": "courses from \"COS-104\", \"COS-121\", \"COS-120\"",
-                      "courseIDSet": [
-                        "COS-104",
-                        "COS-121",
-                        "COS-120"
-                      ],
-                      "lastResult": {
-                        "description": "2.00",
-                        "value": {
-                          "value": 2.0,
-                          "explanation": "- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n\u003d 2.00\n",
-                          "class": "preferences.value.NumericValue"
-                        },
-                        "calculatedCheck": false,
-                        "class": "preferences.result.PlanResult"
-                      },
-                      "class": "preferences.evaluators.general.TotalCoursesFromSetEvaluator"
-                    },
-                    "contextLevel": "fullPlan",
-                    "class": "preferences.constraints.EqualConstraint"
-                  },
-                  "invert": false,
-                  "lastScore": {
-                    "accum": 0.0,
-                    "max": 0.0,
-                    "isValid": false
-                  },
-                  "class": "preferences.specification.RequirementSpecification"
-                },
-                {
                   "description": "require 4 upper division courses.",
                   "requireableConstraint": {
                     "description": "4 upper division courses",
@@ -539,6 +633,53 @@
                     },
                     "expectedValue": {
                       "value": 4.0,
+                      "class": "preferences.value.NumericValue"
+                    },
+                    "constraintType": "equal",
+                    "contextEvaluator": {
+                      "description": "upper division courses",
+                      "lastResult": {
+                        "description": "18.00",
+                        "value": {
+                          "value": 18.0,
+                          "explanation": "- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 1.00\n- \"COS-331\": Data Communications (spring 2020) \u003d 1.00\n- \"MAT-311\": Introduction to Data Science (spring 2020) \u003d 1.00\n- \"COS-340\": Software Engineering (fall 2020) \u003d 1.00\n- \"COS-436\": Parallel and Distributed Computing (fall 2020) \u003d 1.00\n- \"COS-310\": Current Literature Survey (fall 2020) \u003d 1.00\n- \"HUM-330\": Arts and Ideas (fall 2020) \u003d 1.00\n- \"COS-421\": Operating Systems (spring 2021) \u003d 1.00\n- \"SYS-411\": Machine Learning (spring 2021) \u003d 1.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 1.00\n- \"COS-452\": Research I (spring 2021) \u003d 1.00\n- \"COS-382\": Language Structures (spring 2021) \u003d 1.00\n- \"COS-453\": Research II (fall 2021) \u003d 1.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 1.00\n- \"COS-343\": Database Systems (fall 2021) \u003d 1.00\n- \"COS-493\": Computer Science Senior Capstone (fall 2021) \u003d 1.00\n- \"COS-432\": Software Reverse Engineering and Analysis (fall 2021) \u003d 1.00\n- \"COS-435\": Theory of Computation (fall 2021) \u003d 1.00\n\u003d 18.00\n",
+                          "class": "preferences.value.NumericValue"
+                        },
+                        "calculatedCheck": false,
+                        "class": "preferences.result.PlanResult"
+                      },
+                      "class": "preferences.evaluators.general.TotalUpperLevelCoursesEvaluator"
+                    },
+                    "contextLevel": "fullPlan",
+                    "class": "preferences.constraints.EqualConstraint"
+                  },
+                  "invert": false,
+                  "lastScore": {
+                    "accum": 0.0,
+                    "max": 0.0,
+                    "isValid": false
+                  },
+                  "class": "preferences.specification.RequirementSpecification"
+                },
+                {
+                  "description": "require 1 upper division course.",
+                  "requireableConstraint": {
+                    "description": "1 upper division course",
+                    "scoreFunction": {
+                      "description": "Optimum Function centered at 1.00 with soft deviance of 5.00",
+                      "middle": 1.0,
+                      "lowerDeviance": {
+                        "type": "soft",
+                        "value": 5.0
+                      },
+                      "upperDeviance": {
+                        "type": "soft",
+                        "value": 5.0
+                      },
+                      "class": "preferences.scoring.OptimumScoringFunction"
+                    },
+                    "expectedValue": {
+                      "value": 1.0,
                       "class": "preferences.value.NumericValue"
                     },
                     "constraintType": "equal",
@@ -663,9 +804,57 @@
                   "class": "preferences.specification.RequirementSpecification"
                 },
                 {
-                  "description": "require 2 time blocks reserving 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM.",
+                  "description": "require 1 course with \"Stefan Brandle\".",
                   "requireableConstraint": {
-                    "description": "2 time blocks reserving 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM",
+                    "description": "1 course with \"Stefan Brandle\"",
+                    "scoreFunction": {
+                      "description": "Optimum Function centered at 1.00 with soft deviance of 3.00",
+                      "middle": 1.0,
+                      "lowerDeviance": {
+                        "type": "soft",
+                        "value": 3.0
+                      },
+                      "upperDeviance": {
+                        "type": "soft",
+                        "value": 3.0
+                      },
+                      "class": "preferences.scoring.OptimumScoringFunction"
+                    },
+                    "expectedValue": {
+                      "value": 1.0,
+                      "class": "preferences.value.NumericValue"
+                    },
+                    "constraintType": "equal",
+                    "contextEvaluator": {
+                      "description": "courses with \"Stefan Brandle\"",
+                      "professor": "Stefan Brandle",
+                      "lastResult": {
+                        "description": "0.00",
+                        "value": {
+                          "value": 0.0,
+                          "explanation": "\u003d 0.00\n",
+                          "class": "preferences.value.NumericValue"
+                        },
+                        "calculatedCheck": false,
+                        "class": "preferences.result.PlanResult"
+                      },
+                      "class": "preferences.evaluators.general.CoursesWithProfessorEvaluator"
+                    },
+                    "contextLevel": "fullPlan",
+                    "class": "preferences.constraints.EqualConstraint"
+                  },
+                  "invert": false,
+                  "lastScore": {
+                    "accum": 0.0,
+                    "max": 0.0,
+                    "isValid": false
+                  },
+                  "class": "preferences.specification.RequirementSpecification"
+                },
+                {
+                  "description": "require 2 time blocks reserving 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM, 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM.",
+                  "requireableConstraint": {
+                    "description": "2 time blocks reserving 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM, 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM",
                     "scoreFunction": {
                       "description": "Optimum Function centered at 2.00 with soft deviance of 2.00",
                       "middle": 2.0,
@@ -685,8 +874,253 @@
                     },
                     "constraintType": "equal",
                     "contextEvaluator": {
-                      "description": "time blocks reserving 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM",
+                      "description": "time blocks reserving 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM, 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM",
                       "reservedTimeBlocks": [
+                        {
+                          "start": "10:00 AM",
+                          "end": "10:50 AM"
+                        },
+                        {
+                          "start": "12:00 PM",
+                          "end": "1:00 PM"
+                        },
+                        {
+                          "start": "10:00 AM",
+                          "end": "10:50 AM"
+                        },
+                        {
+                          "start": "12:00 PM",
+                          "end": "1:00 PM"
+                        }
+                      ],
+                      "maxBufferMinutes": 10,
+                      "lastResult": {
+                        "description": "values: [[[4, 4, 3, 4]], [[3, 5, 4, 5, 2]], [[5, 4, 5, 5]], [[3, 3, 3, 3, 3]], [[7, 7, 7]], [[7, 2, 7, 3, 7]], [[6, 2, 6, 2, 5]], [[6, 3, 6, 4, 5]]] weights: [[1.0, 1.0], [1.0, 1.0], [1.0, 1.0], [1.0, 1.0], [1.0, 1.0], [1.0, 1.0], [1.0, 1.0], [1.0, 1.0]]",
+                        "values": [
+                          [
+                            [
+                              {
+                                "value": 4.0
+                              },
+                              {
+                                "value": 4.0
+                              },
+                              {
+                                "value": 3.0
+                              },
+                              {
+                                "value": 4.0
+                              }
+                            ]
+                          ],
+                          [
+                            [
+                              {
+                                "value": 3.0
+                              },
+                              {
+                                "value": 5.0
+                              },
+                              {
+                                "value": 4.0
+                              },
+                              {
+                                "value": 5.0
+                              },
+                              {
+                                "value": 2.0
+                              }
+                            ]
+                          ],
+                          [
+                            [
+                              {
+                                "value": 5.0
+                              },
+                              {
+                                "value": 4.0
+                              },
+                              {
+                                "value": 5.0
+                              },
+                              {
+                                "value": 5.0
+                              }
+                            ]
+                          ],
+                          [
+                            [
+                              {
+                                "value": 3.0
+                              },
+                              {
+                                "value": 3.0
+                              },
+                              {
+                                "value": 3.0
+                              },
+                              {
+                                "value": 3.0
+                              },
+                              {
+                                "value": 3.0
+                              }
+                            ]
+                          ],
+                          [
+                            [
+                              {
+                                "value": 7.0
+                              },
+                              {
+                                "value": 7.0
+                              },
+                              {
+                                "value": 7.0
+                              }
+                            ]
+                          ],
+                          [
+                            [
+                              {
+                                "value": 7.0
+                              },
+                              {
+                                "value": 2.0
+                              },
+                              {
+                                "value": 7.0
+                              },
+                              {
+                                "value": 3.0
+                              },
+                              {
+                                "value": 7.0
+                              }
+                            ]
+                          ],
+                          [
+                            [
+                              {
+                                "value": 6.0
+                              },
+                              {
+                                "value": 2.0
+                              },
+                              {
+                                "value": 6.0
+                              },
+                              {
+                                "value": 2.0
+                              },
+                              {
+                                "value": 5.0
+                              }
+                            ]
+                          ],
+                          [
+                            [
+                              {
+                                "value": 6.0
+                              },
+                              {
+                                "value": 3.0
+                              },
+                              {
+                                "value": 6.0
+                              },
+                              {
+                                "value": 4.0
+                              },
+                              {
+                                "value": 5.0
+                              }
+                            ]
+                          ]
+                        ],
+                        "weights": [
+                          [
+                            1.0,
+                            1.0
+                          ],
+                          [
+                            1.0,
+                            1.0
+                          ],
+                          [
+                            1.0,
+                            1.0
+                          ],
+                          [
+                            1.0,
+                            1.0
+                          ],
+                          [
+                            1.0,
+                            1.0
+                          ],
+                          [
+                            1.0,
+                            1.0
+                          ],
+                          [
+                            1.0,
+                            1.0
+                          ],
+                          [
+                            1.0,
+                            1.0
+                          ]
+                        ],
+                        "calculatedCheck": false,
+                        "class": "preferences.result.DaysResult"
+                      },
+                      "class": "preferences.evaluators.weekday.NumTimeBlocksEvaluator"
+                    },
+                    "contextLevel": "fullPlan",
+                    "class": "preferences.constraints.EqualConstraint"
+                  },
+                  "invert": false,
+                  "lastScore": {
+                    "accum": 0.0,
+                    "max": 0.0,
+                    "isValid": false
+                  },
+                  "class": "preferences.specification.RequirementSpecification"
+                },
+                {
+                  "description": "require 1 time block reserving 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM, 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM.",
+                  "requireableConstraint": {
+                    "description": "1 time block reserving 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM, 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM",
+                    "scoreFunction": {
+                      "description": "Optimum Function centered at 1.00 with soft deviance of 2.00",
+                      "middle": 1.0,
+                      "lowerDeviance": {
+                        "type": "soft",
+                        "value": 2.0
+                      },
+                      "upperDeviance": {
+                        "type": "soft",
+                        "value": 2.0
+                      },
+                      "class": "preferences.scoring.OptimumScoringFunction"
+                    },
+                    "expectedValue": {
+                      "value": 1.0,
+                      "class": "preferences.value.NumericValue"
+                    },
+                    "constraintType": "equal",
+                    "contextEvaluator": {
+                      "description": "time blocks reserving 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM, 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM",
+                      "reservedTimeBlocks": [
+                        {
+                          "start": "10:00 AM",
+                          "end": "10:50 AM"
+                        },
+                        {
+                          "start": "12:00 PM",
+                          "end": "1:00 PM"
+                        },
                         {
                           "start": "10:00 AM",
                           "end": "10:50 AM"
@@ -975,6 +1409,53 @@
                     },
                     "contextLevel": "fullPlan",
                     "class": "preferences.constraints.EqualConstraint"
+                  },
+                  "invert": false,
+                  "lastScore": {
+                    "accum": 0.0,
+                    "max": 0.0,
+                    "isValid": true
+                  },
+                  "class": "preferences.specification.RequirementSpecification"
+                },
+                {
+                  "description": "require 1 or less prerequisite violation.",
+                  "requireableConstraint": {
+                    "description": "1 or less prerequisite violation",
+                    "scoreFunction": {
+                      "description": "Proportional with soft bounds at -2.00 (lower) and 1.00 (upper)",
+                      "lower": {
+                        "type": "soft",
+                        "value": -2.0
+                      },
+                      "upper": {
+                        "type": "soft",
+                        "value": 1.0
+                      },
+                      "middle": 3.0,
+                      "class": "preferences.scoring.SigmoidScoringFunction"
+                    },
+                    "maximumValue": {
+                      "value": 1.0,
+                      "class": "preferences.value.NumericValue"
+                    },
+                    "constraintType": "greaterThanOrEqual",
+                    "contextEvaluator": {
+                      "description": "prerequisite violations",
+                      "lastResult": {
+                        "description": "0",
+                        "value": {
+                          "value": 0.0,
+                          "explanation": "",
+                          "class": "preferences.value.NumericValue"
+                        },
+                        "calculatedCheck": true,
+                        "class": "preferences.result.PlanResult"
+                      },
+                      "class": "preferences.evaluators.single.NumPrerequisiteViolationsEvaluator"
+                    },
+                    "contextLevel": "fullPlan",
+                    "class": "preferences.constraints.LessThanOrEqualConstraint"
                   },
                   "invert": false,
                   "lastScore": {

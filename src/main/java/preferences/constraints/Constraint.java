@@ -38,11 +38,11 @@ public abstract class Constraint implements Explainable, PSLComponent {
 
     protected void generate(PSLGenerator generator, String first, PSLComponent second, PSLComponent third) {
         if (first.isBlank()) {
-            generator.addPSL(String.format("%s %s", second.toPSL(), third.toPSL()));
+            generator.addPSL(String.format("%s %s", second.toPSL(third), third.toPSL(second)));
         } else if (third == null) {
             generator.addPSL(String.format("%s %s", first, second.toPSL()));
         } else {
-            generator.addPSL(String.format("%s %s %s", first, second.toPSL(), third.toPSL()));
+            generator.addPSL(String.format("%s %s %s", first, second.toPSL(third), third.toPSL(second)));
         }
     }
 
@@ -50,11 +50,11 @@ public abstract class Constraint implements Explainable, PSLComponent {
         if (third == null) {
             generator.addPSL(String.format("%s %s", first.toPSL(), second));
         } else {
-            generator.addPSL(String.format("%s %s %s", first.toPSL(), second, third.toPSL()));
+            generator.addPSL(String.format("%s %s %s", first.toPSL(third), second, third.toPSL(first)));
         }
     }
 
     protected void generate(PSLGenerator generator, PSLComponent first, PSLComponent second, String third) {
-        generator.addPSL(String.format("%s %s %s", first.toPSL(), second.toPSL(), third));
+        generator.addPSL(String.format("%s %s %s", first.toPSL(second), second.toPSL(first), third));
     }
 }

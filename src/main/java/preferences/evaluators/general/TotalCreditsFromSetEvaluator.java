@@ -34,6 +34,6 @@ public class TotalCreditsFromSetEvaluator extends NumericContextEvaluator {
 
     @Override
     public void generatePSL(PSLGenerator generator) {
-        generator.addPSL(String.format("credits from %s", CourseID.setToString(courseIDSet)));
+        generator.addPSL(String.format("%s from %s", generator.plural ? "credits" : "credit", CourseID.setToString(courseIDSet)));
     }
 }

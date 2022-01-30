@@ -26,6 +26,6 @@ public class TotalCreditsEvaluator extends NumericContextEvaluator {
 
     @Override
     public void generatePSL(PSLGenerator generator) {
-        generator.addPSL("credits");
+        generator.addPSL(generator.plural ? "credits" : "credit");
     }
 }

@@ -25,6 +25,6 @@ public class TotalUpperLevelCreditsEvaluator extends NumericContextEvaluator {
 
     @Override
     public void generatePSL(PSLGenerator generator) {
-        generator.addPSL("upper division credits");
+        generator.addPSL(generator.plural ? "upper division credits" : "upper division credit");
     }
 }

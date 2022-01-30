@@ -63,6 +63,6 @@ public class NumPrerequisiteViolationsEvaluator extends NumericContextEvaluator 
 
     @Override
     public void generatePSL(PSLGenerator generator) {
-        generator.addPSL("prerequisite violations");
+        generator.addPSL(generator.plural ? "prerequisite violations" : "prerequisite violation");
     }
 }

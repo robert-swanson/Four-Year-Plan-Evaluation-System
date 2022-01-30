@@ -38,6 +38,6 @@ public class CoursesWithProfessorEvaluator extends NumericContextEvaluator {
 
     @Override
     public void generatePSL(PSLGenerator generator) {
-        generator.addPSL(String.format("courses with \"%s\"", professor));
+        generator.addPSL(String.format("%s with \"%s\"", generator.plural ? "courses" : "course", professor));
     }
 }

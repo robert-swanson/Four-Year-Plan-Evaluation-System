@@ -20,7 +20,7 @@ student_preferences (moderately=2.0, strongly=10.0) {
         }
     }
 
-    for days where (at least 2 courses or not meeting at 12:00 PM - 12:50 PM) {
+    for days where (2 or more courses or not meeting at 12:00 PM - 12:50 PM) {
         prefer meeting at 11:00 AM - 11:50 AM.
     }
 

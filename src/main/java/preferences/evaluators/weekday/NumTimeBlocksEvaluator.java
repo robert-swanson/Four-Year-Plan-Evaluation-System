@@ -58,7 +58,7 @@ public class NumTimeBlocksEvaluator extends NumericContextEvaluator {
 
     @Override
     public void generatePSL(PSLGenerator generator) {
-        generator.addPSL("time blocks");
+        generator.addPSL(generator.plural ? "time blocks" : "time block");
         if (!reservedTimeBlocks.isEmpty()) {
             String str = reservedTimeBlocks.toString();
             generator.addPSL(String.format(" reserving %s", str.substring(1, str.length()-1)));

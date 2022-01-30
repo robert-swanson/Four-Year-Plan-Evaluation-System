@@ -3,6 +3,7 @@ package psl;
 public class PSLGenerator {
     StringBuilder blockBuilder, pslBuilder;
     private int currentIndentation = 0;
+    public boolean plural = true;
 
     public PSLGenerator() {
         blockBuilder = new StringBuilder();
@@ -30,6 +31,8 @@ public class PSLGenerator {
     public String numToString(double num) {
         return Double.toString(num).replaceAll("0*$", "").replaceAll("\\.$", "");
     }
+
+
 
     @Override
     public String toString() {

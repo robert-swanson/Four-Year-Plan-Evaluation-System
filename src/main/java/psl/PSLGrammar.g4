@@ -55,6 +55,7 @@ contextLevel: TERMS|DAYS;
 FOR: 'for';
 PLAN: 'plan';
 TERMS: 'terms';
+TERM: 'term';
 DAYS: 'days';
 WHERE: 'where';
 
@@ -134,22 +135,21 @@ numericEvaluator:
     totalCoursesFromSet | upperDivisionCourses | meetingMinutes |
     numCoursesWithProfessor | numTimeBlocks | termsInPlan | prerequisiteViolations ;
 
-totalCourses: COURSES;
-totalCoursesFromSet: COURSE_FROM courseList;
-totalCredits: CREDITS;
-totalCreditsFromSet: CREDITS FROM courseList;
-upperDivisionCourses: UPPER_DIVISION COURSES;
-upperDivisionCredits: UPPER_DIVISION CREDITS;
+totalCourses: COURSES | COURSE;
+totalCoursesFromSet: (COURSES | COURSE) FROM courseList;
+totalCredits: CREDITS | CREDIT;
+totalCreditsFromSet: (CREDITS | CREDIT) FROM courseList;
+upperDivisionCourses: UPPER_DIVISION (COURSES | COURSE);
+upperDivisionCredits: UPPER_DIVISION (CREDITS | CREDIT);
 meetingMinutes: MEETING MINUTES;
-numCoursesWithProfessor: COURSES WITH professor;
+numCoursesWithProfessor: (COURSES | COURSE) WITH professor;
 numTimeBlocks: TIME_BLOCKS (RESERVING timeRangeList)?;
-termsInPlan: TERMS;
+termsInPlan: TERMS | TERM;
 prerequisiteViolations: PREREQUISITE_VIOLATIONS;
 
-COURSE_FROM: 'courses from';
-TIME_BLOCKS: 'time blocks';
+TIME_BLOCKS: 'time blocks' | 'time block';
 RESERVING: 'reserving';
-PREREQUISITE_VIOLATIONS: 'prerequisite violations';
+PREREQUISITE_VIOLATIONS: 'prerequisite violations' | 'prerequisite violation';
 
 // Term Year Evaluators
 termYearEvaluators: courseTermYear | planStart | planEnd;
@@ -187,6 +187,7 @@ TAKING: 'taking';
 MEETING: 'meeting';
 HOURS: 'hours';
 MINUTES: 'minutes';
+CREDIT: 'credit';
 CREDITS: 'credits';
 COURSES: 'courses';
 COURSE: 'course';

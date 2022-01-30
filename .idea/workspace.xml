@@ -76,16 +76,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Implemented PSL generation">
-      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
+    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added singular wording to evaluators">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/json/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/result.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/psl/full-test.psl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/psl/full-test.psl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/constraints/GreaterThanOrEqualConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/GreaterThanOrEqualConstraint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/constraints/LessThanOrEqualConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/LessThanOrEqualConstraint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/value/NumericValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/value/NumericValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/psl/test.psl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/psl/test.psl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/constraints/Constraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/Constraint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/CoursesWithProfessorEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/CoursesWithProfessorEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesFromSetEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesFromSetEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsFromSetEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsFromSetEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCoursesEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCoursesEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCreditsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCreditsEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/NumPrerequisiteViolationsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/NumPrerequisiteViolationsEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/NumTimeBlocksEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/NumTimeBlocksEvaluator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLGrammar.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +217,7 @@
       <command value="mvn deploy" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.PSL">
+  <component name="RunManager" selected="JUnit.IntegrationTest">
     <configuration name="Compile Test" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -565,14 +573,7 @@
       <workItem from="1643224499626" duration="3077000" />
       <workItem from="1643386528665" duration="30000" />
       <workItem from="1643386598491" duration="36253000" />
-      <workItem from="1643508201355" duration="2676000" />
-    </task>
-    <task id="LOCAL-00005" summary="Implemented term context total credit evaluator and added error handling, and changed json format for plans and offerings to use TermYear instead of Term">
-      <created>1629936373282</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1629936373282</updated>
+      <workItem from="1643508201355" duration="5607000" />
     </task>
     <task id="LOCAL-00006" summary="Simplified evaluation by using universal offering iteratable">
       <created>1629940057323</created>
@@ -910,7 +911,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643489323168</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Added 'no' keyword to represent 0, reworded ≥ and ≤ constraints to x or less/x or more">
+      <created>1643511172450</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1643511172451</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -932,8 +940,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added explanation system, restructured modules" />
-    <MESSAGE value="evaluators as interfaces (non-building)" />
     <MESSAGE value="Changed evaluators back to subclasses, changed accumulators to static use, finished context evaluator explanation" />
     <MESSAGE value="Added evaluation results to explanation, added full spec and explanation" />
     <MESSAGE value="removed angle brackets from week sub context description" />
@@ -957,7 +963,9 @@
     <MESSAGE value="Initial deployment of PSL-JSON" />
     <MESSAGE value="Implemented envisage API, ServerInstance.java, LocalInstance.java" />
     <MESSAGE value="Implemented PSL generation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented PSL generation" />
+    <MESSAGE value="Added 'no' keyword to represent 0, reworded ≥ and ≤ constraints to x or less/x or more" />
+    <MESSAGE value="Added singular wording to evaluators" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added singular wording to evaluators" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1022,7 +1030,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/psl/antlr/PSLGrammarParser.java</url>
-          <line>1641</line>
+          <line>1640</line>
           <option name="timeStamp" value="114" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
