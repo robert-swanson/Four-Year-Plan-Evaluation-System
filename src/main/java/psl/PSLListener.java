@@ -256,7 +256,7 @@ public class PSLListener extends PSLGrammarBaseListener {
     // --- Constraint ---
     // Requireable Constraint
 
-    private ScalableValue getValue(TerminalNode intVal, PSLGrammarParser.TimeContext time, PSLGrammarParser.TermYearContext termYearContext) {
+    private ScalableValue getValue(TerminalNode intVal, PSLGrammarParser.TimeContext time, PSLGrammarParser.TermYearContext termYearContext, TerminalNode no) {
         ScalableValue value;
         if (intVal != null) {
             value = new NumericValue(Double.parseDouble(intVal.getText()));
@@ -268,6 +268,8 @@ public class PSLListener extends PSLGrammarBaseListener {
             } catch (JSONParseException e) {
                 throw new PSLParsingError(e.getMessage(), termYearContext.start);
             }
+        } else if (no != null) {
+            value = new NumericValue(0);
         } else {
             throw new PSLParsingError("no support for this kind of evaluator", null);
         }
@@ -286,35 +288,35 @@ public class PSLListener extends PSLGrammarBaseListener {
 
     @Override
     public void exitEqualConstraint(PSLGrammarParser.EqualConstraintContext ctx) {
-        ScalableValue value = getValue(ctx.INT(), ctx.time(), ctx.termYear());
+        ScalableValue value = getValue(ctx.INT(), ctx.time(), ctx.termYear(), ctx.NO());
         Constraint constraint = new EqualConstraint(getScalableEvaluator(), value, getContextLevel());
         addConstraint(constraint);
     }
 
     @Override
     public void exitGreaterThanConstraint(PSLGrammarParser.GreaterThanConstraintContext ctx) {
-        ScalableValue value = getValue(ctx.INT(), ctx.time(), ctx.termYear());
+        ScalableValue value = getValue(ctx.INT(), ctx.time(), ctx.termYear(), ctx.NO());
         Constraint constraint = new GreaterThanConstraint(getScalableEvaluator(), value, getContextLevel());
         addConstraint(constraint);
     }
 
     @Override
     public void exitGreaterThanOrEqualConstraint(PSLGrammarParser.GreaterThanOrEqualConstraintContext ctx) {
-        ScalableValue value = getValue(ctx.INT(), ctx.time(), ctx.termYear());
+        ScalableValue value = getValue(ctx.INT(), ctx.time(), ctx.termYear(), ctx.NO());
         Constraint constraint = new GreaterThanOrEqualConstraint(getScalableEvaluator(), value, getContextLevel());
         addConstraint(constraint);
     }
 
     @Override
     public void exitLessThanConstraint(PSLGrammarParser.LessThanConstraintContext ctx) {
-        ScalableValue value = getValue(ctx.INT(), ctx.time(), ctx.termYear());
+        ScalableValue value = getValue(ctx.INT(), ctx.time(), ctx.termYear(), ctx.NO());
         Constraint constraint = new LessThanConstraint(getScalableEvaluator(), value, getContextLevel());
         addConstraint(constraint);
     }
 
     @Override
     public void exitLessThanOrEqualConstraint(PSLGrammarParser.LessThanOrEqualConstraintContext ctx) {
-        ScalableValue value = getValue(ctx.INT(), ctx.time(), ctx.termYear());
+        ScalableValue value = getValue(ctx.INT(), ctx.time(), ctx.termYear(), ctx.NO());
         Constraint constraint = new LessThanOrEqualConstraint(getScalableEvaluator(), value, getContextLevel());
         addConstraint(constraint);
     }

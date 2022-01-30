@@ -5,19 +5,24 @@
     With multiple lines
 ]]
 
-numeric_evaluators (strongly = 10.00300, moderately = 12.2, another = 0, bob = 5.5) {
+numeric_evaluators (strongly = 10.00300, moderately = 12.2, another = 1, bob = 5.5) {
     [[ This comment is at the beginning of a block ]]
     require 10 credits. [[ This comment says something about this spec ]]
     require 10 credits from "COS-120", "COS-121", "COS-104".
     require 10 upper division credits.
     require 4 courses.
+    require 10 credits from "COS-120", "COS-121", "COS-104".
+    require 10 credits from "COS-120", "COS-121", "COS-104".
     require 4 courses from "COS-120", "COS-121", "COS-104".
+    require 4 courses from "COS-120", "COS-121", "COS-104".
+    require no courses from "COS-120", "COS-121", "COS-104".
+    require 3 courses from "COS-120", "COS-121", "COS-104".
     require 4 upper division courses.
     require 120 meeting minutes.
     require 4 courses with "Stefan Brandle".
     require 2 time blocks reserving 10:00 AM - 10:50 AM, 12:00 PM - 1:00 PM.
     require 8 terms.
-    require 0 prerequisite violations.
+    require no prerequisite violations.
     [[ This comment is at the end of a block ]]
 }
 
@@ -105,9 +110,9 @@ conditions {
 constraints {
     require 8 credits.
     require more than 8 credits.
-    require at least 8 credits.
+    require 8 or more credits.
     require less than 8 credits.
-    require no more than 8 credits.
+    require 8 or less credits.
 
     require starting at 10:00 AM.
     require starting after 10:00 AM.

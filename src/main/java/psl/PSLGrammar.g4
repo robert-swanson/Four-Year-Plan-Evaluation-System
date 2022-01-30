@@ -80,31 +80,31 @@ requirableConstraint:
     ;
 
 equalConstraint:
-    (INT numericEvaluator) |
+    ((INT|NO) numericEvaluator) |
     (timeEvaluators AT time) |
     (termYearEvaluators IN termYear)
     ;
 
 greaterThanConstraint:
-    (MORE_ THAN INT numericEvaluator) |
+    (MORE_ THAN (INT|NO) numericEvaluator) |
     (timeEvaluators AFTER time) |
     (termYearEvaluators AFTER termYear)
     ;
 
 greaterThanOrEqualConstraint:
-    (AT LEAST INT numericEvaluator) |
+    ((INT|NO) OR MORE_ numericEvaluator ) |
     (timeEvaluators AT OR AFTER time) |
     (termYearEvaluators ON OR AFTER termYear)
     ;
 
 lessThanConstraint:
-    (LESS THAN INT numericEvaluator) |
+    (LESS THAN (INT|NO) numericEvaluator) |
     (timeEvaluators BEFORE time) |
     (termYearEvaluators BEFORE termYear)
     ;
 
 lessThanOrEqualConstraint:
-    (NO MORE_ THAN INT numericEvaluator) |
+    ((INT|NO) OR LESS numericEvaluator ) |
     (timeEvaluators AT OR BEFORE time) |
     (termYearEvaluators ON OR BEFORE termYear)
     ;

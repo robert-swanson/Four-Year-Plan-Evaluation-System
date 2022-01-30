@@ -76,87 +76,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Implemented envisage API, ServerInstance.java, LocalInstance.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/NumericContextEvaluator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/TimeContextEvaluator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/NumPrerequisiteViolationsEvaluator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/BlockSpecification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/psl/PSLComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/psl/PSLGenerator.java" afterDir="false" />
+    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Implemented PSL generation">
+      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/json/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/result.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/psl/full-test.psl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/psl/full-test.psl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/answer/EvaluationAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/EvaluationAnswer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/instance/AppInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/instance/AppInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/instance/LocalInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/instance/LocalInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/instance/ServerInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/instance/ServerInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/misc/CourseID.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/misc/CourseID.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/offerings/CourseOffering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/offerings/CourseOffering.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/objects/plan/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/objects/plan/Plan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/condition/AndCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/condition/AndCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/condition/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/condition/Condition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/condition/ConstraintCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/condition/ConstraintCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/condition/NotCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/condition/NotCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/condition/OrCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/condition/OrCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/condition/TrueCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/condition/TrueCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/constraints/BooleanConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/BooleanConstraint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/constraints/Constraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/Constraint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/constraints/EqualConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/EqualConstraint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/constraints/GreaterThanConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/GreaterThanConstraint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/preferences/constraints/GreaterThanOrEqualConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/GreaterThanOrEqualConstraint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/constraints/LessConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/LessConstraint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/constraints/LessThanConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/LessThanConstraint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/preferences/constraints/LessThanOrEqualConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/LessThanOrEqualConstraint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/constraints/MoreConstraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/MoreConstraint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/context/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/context/TermSubContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/TermSubContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/context/WeekSubContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/WeekSubContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/ContextEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/ContextEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/CourseOfferingAccumulatorEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/CourseOfferingAccumulatorEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/CoursesWithProfessorEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/CoursesWithProfessorEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/MeetingAccumulatorEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/MeetingAccumulatorEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/MeetingMinutesEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/MeetingMinutesEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesFromSetEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesFromSetEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsFromSetEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsFromSetEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCoursesEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCoursesEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCreditsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCreditsEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CourseBeforeCourseEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CourseBeforeCourseEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CourseEndTimeEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CourseEndTimeEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CourseStartTimeEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CourseStartTimeEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CourseTermYearEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CourseTermYearEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CoursesScheduledInSameSemester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/CoursesScheduledInSameSemester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/FirstTermEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/FirstTermEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/LastTermEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/LastTermEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/NumTermsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/NumTermsEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/SingleCourseOfferingEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/SingleCourseOfferingEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/MeetingInTimeRangeEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/MeetingInTimeRangeEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/NumTimeBlocksEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/NumTimeBlocksEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/WeekdayEndTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/WeekdayEndTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/WeekdayStartTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/WeekdayStartTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/json/PropertyBasedInterfaceMarshal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/json/PropertyBasedInterfaceMarshal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/scoring/OptimumScoringFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/scoring/OptimumScoringFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/scoring/ScoreFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/scoring/ScoreFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/scoring/SigmoidScoringFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/scoring/SigmoidScoringFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/specification/ConditionalSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/ConditionalSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/specification/ContextualSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/ContextualSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/specification/FullSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/FullSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/specification/PreferenceSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/PreferenceSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/specification/RequirementSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/RequirementSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/specification/Specification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/Specification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/specification/SpecificationList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/SpecificationList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/value/BooleanValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/value/BooleanValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/value/NullValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/value/NullValue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/preferences/value/NumericValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/value/NumericValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/value/TermYearValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/value/TermYearValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/value/TextValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/value/TextValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/value/TimeValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/value/TimeValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/value/Value.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/value/Value.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLCompiler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLGrammar.g4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLParsingContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLParsingContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -635,14 +564,8 @@
       <workItem from="1643146232310" duration="7599000" />
       <workItem from="1643224499626" duration="3077000" />
       <workItem from="1643386528665" duration="30000" />
-      <workItem from="1643386598491" duration="34486000" />
-    </task>
-    <task id="LOCAL-00004" summary="Fully implemented full plan credits">
-      <created>1629915705234</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1629915705234</updated>
+      <workItem from="1643386598491" duration="36253000" />
+      <workItem from="1643508201355" duration="2676000" />
     </task>
     <task id="LOCAL-00005" summary="Implemented term context total credit evaluator and added error handling, and changed json format for plans and offerings to use TermYear instead of Term">
       <created>1629936373282</created>
@@ -980,7 +903,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643154857341</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Implemented PSL generation">
+      <created>1643489323167</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1643489323168</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1002,7 +932,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added TU catalog and offering information, got to the point of execution w/o errors" />
     <MESSAGE value="Added explanation system, restructured modules" />
     <MESSAGE value="evaluators as interfaces (non-building)" />
     <MESSAGE value="Changed evaluators back to subclasses, changed accumulators to static use, finished context evaluator explanation" />
@@ -1027,7 +956,8 @@
     <MESSAGE value="Made error handling less robust" />
     <MESSAGE value="Initial deployment of PSL-JSON" />
     <MESSAGE value="Implemented envisage API, ServerInstance.java, LocalInstance.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented envisage API, ServerInstance.java, LocalInstance.java" />
+    <MESSAGE value="Implemented PSL generation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented PSL generation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1066,7 +996,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/psl/PSLListener.java</url>
-          <line>277</line>
+          <line>279</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

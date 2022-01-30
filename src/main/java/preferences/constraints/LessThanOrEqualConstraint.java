@@ -41,7 +41,7 @@ public class LessThanOrEqualConstraint extends RequireableConstraint {
     @Override
     public void generatePSL(PSLGenerator generator) {
         if (contextEvaluator instanceof NumericContextEvaluator) {
-            generate(generator, "no more than", maximumValue, contextEvaluator);
+            generate(generator, maximumValue, "or less", contextEvaluator);
         } else if (contextEvaluator instanceof TimeContextEvaluator) {
             generate(generator, contextEvaluator, "at or before", maximumValue);
         } else if (contextEvaluator instanceof TermYearContextEvaluator) {

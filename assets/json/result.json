@@ -43,7 +43,7 @@
                         "description": "36.00",
                         "value": {
                           "value": 36.0,
-                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                           "class": "preferences.value.NumericValue"
                         },
                         "calculatedCheck": false,
@@ -189,13 +189,117 @@
                         "description": "42.00",
                         "value": {
                           "value": 42.0,
-                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 1.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n- \"MAT-215\": Discrete Mathematics for Computer Science (fall 2018) \u003d 1.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 1.00\n- \"HNR-225\": Honors Colloquium (spring 2019) \u003d 1.00\n- \"COS-143\": Interactive Webpage Development (spring 2019) \u003d 1.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 1.00\n- \"COS-109\": Computer and Network Operations (spring 2019) \u003d 1.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 1.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 1.00\n- \"COS-243\": Multi-tier Web Application Development (fall 2019) \u003d 1.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 1.00\n- \"MAT-240\": Calculus III (fall 2019) \u003d 1.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 1.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 1.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 1.00\n- \"COS-284\": Introduction to Computer Systems (spring 2020) \u003d 1.00\n- \"MAT-311\": Introduction to Data Science (spring 2020) \u003d 1.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"COS-280\": Introduction to Artificial Intelligence (spring 2020) \u003d 1.00\n- \"COS-331\": Data Communications (spring 2020) \u003d 1.00\n- \"COS-232\": Computer and Network Security I (fall 2020) \u003d 1.00\n- \"HUM-330\": Arts and Ideas (fall 2020) \u003d 1.00\n- \"COS-340\": Software Engineering (fall 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 1.00\n- \"MUS-280\": Wind Ensemble (fall 2020) \u003d 1.00\n- \"COS-310\": Current Literature Survey (fall 2020) \u003d 1.00\n- \"COS-436\": Parallel and Distributed Computing (fall 2020) \u003d 1.00\n- \"MUS-290\": Symphony Orchestra (spring 2021) \u003d 1.00\n- \"COS-382\": Language Structures (spring 2021) \u003d 1.00\n- \"SYS-411\": Machine Learning (spring 2021) \u003d 1.00\n- \"COS-421\": Operating Systems (spring 2021) \u003d 1.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 1.00\n- \"COS-452\": Research I (spring 2021) \u003d 1.00\n- \"COS-435\": Theory of Computation (fall 2021) \u003d 1.00\n- \"COS-493\": Computer Science Senior Capstone (fall 2021) \u003d 1.00\n- \"COS-343\": Database Systems (fall 2021) \u003d 1.00\n- \"COS-432\": Software Reverse Engineering and Analysis (fall 2021) \u003d 1.00\n- \"COS-453\": Research II (fall 2021) \u003d 1.00\n- \"MUS-290\": Symphony Orchestra (fall 2021) \u003d 1.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 1.00\n\u003d 42.00\n",
+                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 1.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n- \"MAT-215\": Discrete Mathematics for Computer Science (fall 2018) \u003d 1.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 1.00\n- \"COS-143\": Interactive Webpage Development (spring 2019) \u003d 1.00\n- \"HNR-225\": Honors Colloquium (spring 2019) \u003d 1.00\n- \"COS-109\": Computer and Network Operations (spring 2019) \u003d 1.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 1.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 1.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 1.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 1.00\n- \"COS-243\": Multi-tier Web Application Development (fall 2019) \u003d 1.00\n- \"MAT-240\": Calculus III (fall 2019) \u003d 1.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 1.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 1.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 1.00\n- \"COS-284\": Introduction to Computer Systems (spring 2020) \u003d 1.00\n- \"COS-331\": Data Communications (spring 2020) \u003d 1.00\n- \"MAT-311\": Introduction to Data Science (spring 2020) \u003d 1.00\n- \"COS-280\": Introduction to Artificial Intelligence (spring 2020) \u003d 1.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 1.00\n- \"COS-340\": Software Engineering (fall 2020) \u003d 1.00\n- \"COS-436\": Parallel and Distributed Computing (fall 2020) \u003d 1.00\n- \"COS-310\": Current Literature Survey (fall 2020) \u003d 1.00\n- \"HUM-330\": Arts and Ideas (fall 2020) \u003d 1.00\n- \"COS-232\": Computer and Network Security I (fall 2020) \u003d 1.00\n- \"MUS-280\": Wind Ensemble (fall 2020) \u003d 1.00\n- \"COS-421\": Operating Systems (spring 2021) \u003d 1.00\n- \"SYS-411\": Machine Learning (spring 2021) \u003d 1.00\n- \"MUS-290\": Symphony Orchestra (spring 2021) \u003d 1.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 1.00\n- \"COS-452\": Research I (spring 2021) \u003d 1.00\n- \"COS-382\": Language Structures (spring 2021) \u003d 1.00\n- \"COS-453\": Research II (fall 2021) \u003d 1.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 1.00\n- \"COS-343\": Database Systems (fall 2021) \u003d 1.00\n- \"COS-493\": Computer Science Senior Capstone (fall 2021) \u003d 1.00\n- \"MUS-290\": Symphony Orchestra (fall 2021) \u003d 1.00\n- \"COS-432\": Software Reverse Engineering and Analysis (fall 2021) \u003d 1.00\n- \"COS-435\": Theory of Computation (fall 2021) \u003d 1.00\n\u003d 42.00\n",
                           "class": "preferences.value.NumericValue"
                         },
                         "calculatedCheck": false,
                         "class": "preferences.result.PlanResult"
                       },
                       "class": "preferences.evaluators.general.TotalCoursesEvaluator"
+                    },
+                    "contextLevel": "fullPlan",
+                    "class": "preferences.constraints.EqualConstraint"
+                  },
+                  "invert": false,
+                  "lastScore": {
+                    "accum": 0.0,
+                    "max": 0.0,
+                    "isValid": false
+                  },
+                  "class": "preferences.specification.RequirementSpecification"
+                },
+                {
+                  "description": "require 10 credits from \"COS-104\", \"COS-121\", \"COS-120\".",
+                  "requireableConstraint": {
+                    "description": "10 credits from \"COS-104\", \"COS-121\", \"COS-120\"",
+                    "scoreFunction": {
+                      "description": "Optimum Function centered at 10.00 with soft deviance of 2.25",
+                      "middle": 10.0,
+                      "lowerDeviance": {
+                        "type": "soft",
+                        "value": 2.25
+                      },
+                      "upperDeviance": {
+                        "type": "soft",
+                        "value": 2.25
+                      },
+                      "class": "preferences.scoring.OptimumScoringFunction"
+                    },
+                    "expectedValue": {
+                      "value": 10.0,
+                      "class": "preferences.value.NumericValue"
+                    },
+                    "constraintType": "equal",
+                    "contextEvaluator": {
+                      "description": "credits from \"COS-104\", \"COS-121\", \"COS-120\"",
+                      "courseIDSet": [
+                        "COS-104",
+                        "COS-121",
+                        "COS-120"
+                      ],
+                      "lastResult": {
+                        "description": "4.00",
+                        "value": {
+                          "value": 4.0,
+                          "explanation": "- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n\u003d 4.00\n",
+                          "class": "preferences.value.NumericValue"
+                        },
+                        "calculatedCheck": false,
+                        "class": "preferences.result.PlanResult"
+                      },
+                      "class": "preferences.evaluators.general.TotalCreditsFromSetEvaluator"
+                    },
+                    "contextLevel": "fullPlan",
+                    "class": "preferences.constraints.EqualConstraint"
+                  },
+                  "invert": false,
+                  "lastScore": {
+                    "accum": 0.0,
+                    "max": 0.0,
+                    "isValid": false
+                  },
+                  "class": "preferences.specification.RequirementSpecification"
+                },
+                {
+                  "description": "require 10 credits from \"COS-104\", \"COS-121\", \"COS-120\".",
+                  "requireableConstraint": {
+                    "description": "10 credits from \"COS-104\", \"COS-121\", \"COS-120\"",
+                    "scoreFunction": {
+                      "description": "Optimum Function centered at 10.00 with soft deviance of 2.25",
+                      "middle": 10.0,
+                      "lowerDeviance": {
+                        "type": "soft",
+                        "value": 2.25
+                      },
+                      "upperDeviance": {
+                        "type": "soft",
+                        "value": 2.25
+                      },
+                      "class": "preferences.scoring.OptimumScoringFunction"
+                    },
+                    "expectedValue": {
+                      "value": 10.0,
+                      "class": "preferences.value.NumericValue"
+                    },
+                    "constraintType": "equal",
+                    "contextEvaluator": {
+                      "description": "credits from \"COS-104\", \"COS-121\", \"COS-120\"",
+                      "courseIDSet": [
+                        "COS-104",
+                        "COS-121",
+                        "COS-120"
+                      ],
+                      "lastResult": {
+                        "description": "4.00",
+                        "value": {
+                          "value": 4.0,
+                          "explanation": "- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n\u003d 4.00\n",
+                          "class": "preferences.value.NumericValue"
+                        },
+                        "calculatedCheck": false,
+                        "class": "preferences.result.PlanResult"
+                      },
+                      "class": "preferences.evaluators.general.TotalCreditsFromSetEvaluator"
                     },
                     "contextLevel": "fullPlan",
                     "class": "preferences.constraints.EqualConstraint"
@@ -261,6 +365,162 @@
                   "class": "preferences.specification.RequirementSpecification"
                 },
                 {
+                  "description": "require 4 courses from \"COS-104\", \"COS-121\", \"COS-120\".",
+                  "requireableConstraint": {
+                    "description": "4 courses from \"COS-104\", \"COS-121\", \"COS-120\"",
+                    "scoreFunction": {
+                      "description": "Optimum Function centered at 4.00 with soft deviance of 0.75",
+                      "middle": 4.0,
+                      "lowerDeviance": {
+                        "type": "soft",
+                        "value": 0.75
+                      },
+                      "upperDeviance": {
+                        "type": "soft",
+                        "value": 0.75
+                      },
+                      "class": "preferences.scoring.OptimumScoringFunction"
+                    },
+                    "expectedValue": {
+                      "value": 4.0,
+                      "class": "preferences.value.NumericValue"
+                    },
+                    "constraintType": "equal",
+                    "contextEvaluator": {
+                      "description": "courses from \"COS-104\", \"COS-121\", \"COS-120\"",
+                      "courseIDSet": [
+                        "COS-104",
+                        "COS-121",
+                        "COS-120"
+                      ],
+                      "lastResult": {
+                        "description": "2.00",
+                        "value": {
+                          "value": 2.0,
+                          "explanation": "- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n\u003d 2.00\n",
+                          "class": "preferences.value.NumericValue"
+                        },
+                        "calculatedCheck": false,
+                        "class": "preferences.result.PlanResult"
+                      },
+                      "class": "preferences.evaluators.general.TotalCoursesFromSetEvaluator"
+                    },
+                    "contextLevel": "fullPlan",
+                    "class": "preferences.constraints.EqualConstraint"
+                  },
+                  "invert": false,
+                  "lastScore": {
+                    "accum": 0.0,
+                    "max": 0.0,
+                    "isValid": false
+                  },
+                  "class": "preferences.specification.RequirementSpecification"
+                },
+                {
+                  "description": "require no courses from \"COS-104\", \"COS-121\", \"COS-120\".",
+                  "requireableConstraint": {
+                    "description": "no courses from \"COS-104\", \"COS-121\", \"COS-120\"",
+                    "scoreFunction": {
+                      "description": "Optimum Function centered at 0.00 with soft deviance of 0.75",
+                      "middle": 0.0,
+                      "lowerDeviance": {
+                        "type": "soft",
+                        "value": 0.75
+                      },
+                      "upperDeviance": {
+                        "type": "soft",
+                        "value": 0.75
+                      },
+                      "class": "preferences.scoring.OptimumScoringFunction"
+                    },
+                    "expectedValue": {
+                      "value": 0.0,
+                      "class": "preferences.value.NumericValue"
+                    },
+                    "constraintType": "equal",
+                    "contextEvaluator": {
+                      "description": "courses from \"COS-104\", \"COS-121\", \"COS-120\"",
+                      "courseIDSet": [
+                        "COS-104",
+                        "COS-121",
+                        "COS-120"
+                      ],
+                      "lastResult": {
+                        "description": "2.00",
+                        "value": {
+                          "value": 2.0,
+                          "explanation": "- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n\u003d 2.00\n",
+                          "class": "preferences.value.NumericValue"
+                        },
+                        "calculatedCheck": false,
+                        "class": "preferences.result.PlanResult"
+                      },
+                      "class": "preferences.evaluators.general.TotalCoursesFromSetEvaluator"
+                    },
+                    "contextLevel": "fullPlan",
+                    "class": "preferences.constraints.EqualConstraint"
+                  },
+                  "invert": false,
+                  "lastScore": {
+                    "accum": 0.0,
+                    "max": 0.0,
+                    "isValid": false
+                  },
+                  "class": "preferences.specification.RequirementSpecification"
+                },
+                {
+                  "description": "require 3 courses from \"COS-104\", \"COS-121\", \"COS-120\".",
+                  "requireableConstraint": {
+                    "description": "3 courses from \"COS-104\", \"COS-121\", \"COS-120\"",
+                    "scoreFunction": {
+                      "description": "Optimum Function centered at 3.00 with soft deviance of 0.75",
+                      "middle": 3.0,
+                      "lowerDeviance": {
+                        "type": "soft",
+                        "value": 0.75
+                      },
+                      "upperDeviance": {
+                        "type": "soft",
+                        "value": 0.75
+                      },
+                      "class": "preferences.scoring.OptimumScoringFunction"
+                    },
+                    "expectedValue": {
+                      "value": 3.0,
+                      "class": "preferences.value.NumericValue"
+                    },
+                    "constraintType": "equal",
+                    "contextEvaluator": {
+                      "description": "courses from \"COS-104\", \"COS-121\", \"COS-120\"",
+                      "courseIDSet": [
+                        "COS-104",
+                        "COS-121",
+                        "COS-120"
+                      ],
+                      "lastResult": {
+                        "description": "2.00",
+                        "value": {
+                          "value": 2.0,
+                          "explanation": "- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 1.00\n\u003d 2.00\n",
+                          "class": "preferences.value.NumericValue"
+                        },
+                        "calculatedCheck": false,
+                        "class": "preferences.result.PlanResult"
+                      },
+                      "class": "preferences.evaluators.general.TotalCoursesFromSetEvaluator"
+                    },
+                    "contextLevel": "fullPlan",
+                    "class": "preferences.constraints.EqualConstraint"
+                  },
+                  "invert": false,
+                  "lastScore": {
+                    "accum": 0.0,
+                    "max": 0.0,
+                    "isValid": false
+                  },
+                  "class": "preferences.specification.RequirementSpecification"
+                },
+                {
                   "description": "require 4 upper division courses.",
                   "requireableConstraint": {
                     "description": "4 upper division courses",
@@ -288,7 +548,7 @@
                         "description": "18.00",
                         "value": {
                           "value": 18.0,
-                          "explanation": "- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 1.00\n- \"MAT-311\": Introduction to Data Science (spring 2020) \u003d 1.00\n- \"COS-331\": Data Communications (spring 2020) \u003d 1.00\n- \"HUM-330\": Arts and Ideas (fall 2020) \u003d 1.00\n- \"COS-340\": Software Engineering (fall 2020) \u003d 1.00\n- \"COS-310\": Current Literature Survey (fall 2020) \u003d 1.00\n- \"COS-436\": Parallel and Distributed Computing (fall 2020) \u003d 1.00\n- \"COS-382\": Language Structures (spring 2021) \u003d 1.00\n- \"SYS-411\": Machine Learning (spring 2021) \u003d 1.00\n- \"COS-421\": Operating Systems (spring 2021) \u003d 1.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 1.00\n- \"COS-452\": Research I (spring 2021) \u003d 1.00\n- \"COS-435\": Theory of Computation (fall 2021) \u003d 1.00\n- \"COS-493\": Computer Science Senior Capstone (fall 2021) \u003d 1.00\n- \"COS-343\": Database Systems (fall 2021) \u003d 1.00\n- \"COS-432\": Software Reverse Engineering and Analysis (fall 2021) \u003d 1.00\n- \"COS-453\": Research II (fall 2021) \u003d 1.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 1.00\n\u003d 18.00\n",
+                          "explanation": "- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 1.00\n- \"COS-331\": Data Communications (spring 2020) \u003d 1.00\n- \"MAT-311\": Introduction to Data Science (spring 2020) \u003d 1.00\n- \"COS-340\": Software Engineering (fall 2020) \u003d 1.00\n- \"COS-436\": Parallel and Distributed Computing (fall 2020) \u003d 1.00\n- \"COS-310\": Current Literature Survey (fall 2020) \u003d 1.00\n- \"HUM-330\": Arts and Ideas (fall 2020) \u003d 1.00\n- \"COS-421\": Operating Systems (spring 2021) \u003d 1.00\n- \"SYS-411\": Machine Learning (spring 2021) \u003d 1.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 1.00\n- \"COS-452\": Research I (spring 2021) \u003d 1.00\n- \"COS-382\": Language Structures (spring 2021) \u003d 1.00\n- \"COS-453\": Research II (fall 2021) \u003d 1.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 1.00\n- \"COS-343\": Database Systems (fall 2021) \u003d 1.00\n- \"COS-493\": Computer Science Senior Capstone (fall 2021) \u003d 1.00\n- \"COS-432\": Software Reverse Engineering and Analysis (fall 2021) \u003d 1.00\n- \"COS-435\": Theory of Computation (fall 2021) \u003d 1.00\n\u003d 18.00\n",
                           "class": "preferences.value.NumericValue"
                         },
                         "calculatedCheck": false,
@@ -678,9 +938,9 @@
                   "class": "preferences.specification.RequirementSpecification"
                 },
                 {
-                  "description": "require 0 prerequisite violations.",
+                  "description": "require no prerequisite violations.",
                   "requireableConstraint": {
-                    "description": "0 prerequisite violations",
+                    "description": "no prerequisite violations",
                     "scoreFunction": {
                       "description": "Optimum Function centered at 0.00 with soft deviance of 3.00",
                       "middle": 0.0,
@@ -741,7 +1001,7 @@
                 "name": "moderately"
               },
               {
-                "weight": 0.0,
+                "weight": 1.0,
                 "name": "another"
               },
               {
@@ -1852,7 +2112,7 @@
                         "description": "36.00",
                         "value": {
                           "value": 36.0,
-                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                           "class": "preferences.value.NumericValue"
                         },
                         "calculatedCheck": false,
@@ -1899,7 +2159,7 @@
                         "description": "36.00",
                         "value": {
                           "value": 36.0,
-                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                           "class": "preferences.value.NumericValue"
                         },
                         "calculatedScore": 0.09605469883050075,
@@ -1953,7 +2213,7 @@
                             "description": "36.00",
                             "value": {
                               "value": 36.0,
-                              "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                              "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                               "class": "preferences.value.NumericValue"
                             },
                             "calculatedScore": 0.09605469883050075,
@@ -2016,7 +2276,7 @@
                               "description": "36.00",
                               "value": {
                                 "value": 36.0,
-                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                 "class": "preferences.value.NumericValue"
                               },
                               "calculatedCheck": false,
@@ -2091,7 +2351,7 @@
                               "description": "36.00",
                               "value": {
                                 "value": 36.0,
-                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                 "class": "preferences.value.NumericValue"
                               },
                               "calculatedCheck": false,
@@ -2166,7 +2426,7 @@
                               "description": "36.00",
                               "value": {
                                 "value": 36.0,
-                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                 "class": "preferences.value.NumericValue"
                               },
                               "calculatedCheck": false,
@@ -2245,7 +2505,7 @@
                               "description": "36.00",
                               "value": {
                                 "value": 36.0,
-                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                 "class": "preferences.value.NumericValue"
                               },
                               "calculatedCheck": false,
@@ -2305,7 +2565,7 @@
                               "description": "36.00",
                               "value": {
                                 "value": 36.0,
-                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                 "class": "preferences.value.NumericValue"
                               },
                               "calculatedCheck": false,
@@ -2386,7 +2646,7 @@
                               "description": "36.00",
                               "value": {
                                 "value": 36.0,
-                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                 "class": "preferences.value.NumericValue"
                               },
                               "calculatedCheck": false,
@@ -2467,7 +2727,7 @@
                               "description": "36.00",
                               "value": {
                                 "value": 36.0,
-                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                 "class": "preferences.value.NumericValue"
                               },
                               "calculatedCheck": false,
@@ -2613,8 +2873,8 @@
                         "courses": [
                           "\"BIB-110\": Biblical Literature I",
                           "\"COS-121\": Foundations of Computer Science",
-                          "\"COS-121\": Foundations of Computer Science",
-                          "\"MAT-215\": Discrete Mathematics for Computer Science"
+                          "\"MAT-215\": Discrete Mathematics for Computer Science",
+                          "\"COS-121\": Foundations of Computer Science"
                         ],
                         "termSegments": [
                           {
@@ -2658,12 +2918,12 @@
                       },
                       "spring 2019": {
                         "courses": [
-                          "\"COS-270\": Selected Topics",
-                          "\"HNR-225\": Honors Colloquium",
-                          "\"COS-143\": Interactive Webpage Development",
                           "\"MAT-230\": Calculus II",
+                          "\"COS-143\": Interactive Webpage Development",
+                          "\"HNR-225\": Honors Colloquium",
                           "\"COS-109\": Computer and Network Operations",
-                          "\"KIN-100\": Fitness for Life"
+                          "\"KIN-100\": Fitness for Life",
+                          "\"COS-270\": Selected Topics"
                         ],
                         "termSegments": [
                           {
@@ -2715,11 +2975,11 @@
                       },
                       "fall 2019": {
                         "courses": [
-                          "\"PHY-203\": General Physics I",
+                          "\"COS-265\": Data Structures and Algorithms",
+                          "\"COS-265\": Data Structures and Algorithms",
                           "\"COS-243\": Multi-tier Web Application Development",
-                          "\"COS-265\": Data Structures and Algorithms",
                           "\"MAT-240\": Calculus III",
-                          "\"COS-265\": Data Structures and Algorithms",
+                          "\"PHY-203\": General Physics I",
                           "\"PHY-203\": General Physics I"
                         ],
                         "termSegments": [
@@ -2814,10 +3074,10 @@
                       "spring 2020": {
                         "courses": [
                           "\"COS-284\": Introduction to Computer Systems",
+                          "\"COS-331\": Data Communications",
                           "\"MAT-311\": Introduction to Data Science",
-                          "\"MUS-280\": Wind Ensemble",
                           "\"COS-280\": Introduction to Artificial Intelligence",
-                          "\"COS-331\": Data Communications"
+                          "\"MUS-280\": Wind Ensemble"
                         ],
                         "termSegments": [
                           {
@@ -2861,13 +3121,13 @@
                       },
                       "fall 2020": {
                         "courses": [
-                          "\"COS-232\": Computer and Network Security I",
-                          "\"HUM-330\": Arts and Ideas",
-                          "\"COS-340\": Software Engineering",
                           "\"ENP-270\": Selected Topics",
-                          "\"MUS-280\": Wind Ensemble",
+                          "\"COS-340\": Software Engineering",
+                          "\"COS-436\": Parallel and Distributed Computing",
                           "\"COS-310\": Current Literature Survey",
-                          "\"COS-436\": Parallel and Distributed Computing"
+                          "\"HUM-330\": Arts and Ideas",
+                          "\"COS-232\": Computer and Network Security I",
+                          "\"MUS-280\": Wind Ensemble"
                         ],
                         "termSegments": [
                           {
@@ -2925,12 +3185,12 @@
                       },
                       "spring 2021": {
                         "courses": [
-                          "\"MUS-290\": Symphony Orchestra",
-                          "\"COS-382\": Language Structures",
-                          "\"SYS-411\": Machine Learning",
                           "\"COS-421\": Operating Systems",
+                          "\"SYS-411\": Machine Learning",
+                          "\"MUS-290\": Symphony Orchestra",
                           "\"COS-370\": Selected Topics",
-                          "\"COS-452\": Research I"
+                          "\"COS-452\": Research I",
+                          "\"COS-382\": Language Structures"
                         ],
                         "termSegments": [
                           {
@@ -2985,13 +3245,13 @@
                       },
                       "fall 2021": {
                         "courses": [
-                          "\"COS-435\": Theory of Computation",
-                          "\"COS-493\": Computer Science Senior Capstone",
-                          "\"COS-343\": Database Systems",
-                          "\"COS-432\": Software Reverse Engineering and Analysis",
                           "\"COS-453\": Research II",
+                          "\"COS-381\": Computer Architecture",
+                          "\"COS-343\": Database Systems",
+                          "\"COS-493\": Computer Science Senior Capstone",
                           "\"MUS-290\": Symphony Orchestra",
-                          "\"COS-381\": Computer Architecture"
+                          "\"COS-432\": Software Reverse Engineering and Analysis",
+                          "\"COS-435\": Theory of Computation"
                         ],
                         "termSegments": [
                           {
@@ -3145,8 +3405,8 @@
                         "courses": [
                           "\"BIB-110\": Biblical Literature I",
                           "\"COS-121\": Foundations of Computer Science",
-                          "\"COS-121\": Foundations of Computer Science",
-                          "\"MAT-215\": Discrete Mathematics for Computer Science"
+                          "\"MAT-215\": Discrete Mathematics for Computer Science",
+                          "\"COS-121\": Foundations of Computer Science"
                         ],
                         "termSegments": [
                           {
@@ -3190,12 +3450,12 @@
                       },
                       "spring 2019": {
                         "courses": [
-                          "\"COS-270\": Selected Topics",
-                          "\"HNR-225\": Honors Colloquium",
-                          "\"COS-143\": Interactive Webpage Development",
                           "\"MAT-230\": Calculus II",
+                          "\"COS-143\": Interactive Webpage Development",
+                          "\"HNR-225\": Honors Colloquium",
                           "\"COS-109\": Computer and Network Operations",
-                          "\"KIN-100\": Fitness for Life"
+                          "\"KIN-100\": Fitness for Life",
+                          "\"COS-270\": Selected Topics"
                         ],
                         "termSegments": [
                           {
@@ -3247,11 +3507,11 @@
                       },
                       "fall 2019": {
                         "courses": [
-                          "\"PHY-203\": General Physics I",
+                          "\"COS-265\": Data Structures and Algorithms",
+                          "\"COS-265\": Data Structures and Algorithms",
                           "\"COS-243\": Multi-tier Web Application Development",
-                          "\"COS-265\": Data Structures and Algorithms",
                           "\"MAT-240\": Calculus III",
-                          "\"COS-265\": Data Structures and Algorithms",
+                          "\"PHY-203\": General Physics I",
                           "\"PHY-203\": General Physics I"
                         ],
                         "termSegments": [
@@ -3346,10 +3606,10 @@
                       "spring 2020": {
                         "courses": [
                           "\"COS-284\": Introduction to Computer Systems",
+                          "\"COS-331\": Data Communications",
                           "\"MAT-311\": Introduction to Data Science",
-                          "\"MUS-280\": Wind Ensemble",
                           "\"COS-280\": Introduction to Artificial Intelligence",
-                          "\"COS-331\": Data Communications"
+                          "\"MUS-280\": Wind Ensemble"
                         ],
                         "termSegments": [
                           {
@@ -3393,13 +3653,13 @@
                       },
                       "fall 2020": {
                         "courses": [
-                          "\"COS-232\": Computer and Network Security I",
-                          "\"HUM-330\": Arts and Ideas",
-                          "\"COS-340\": Software Engineering",
                           "\"ENP-270\": Selected Topics",
-                          "\"MUS-280\": Wind Ensemble",
+                          "\"COS-340\": Software Engineering",
+                          "\"COS-436\": Parallel and Distributed Computing",
                           "\"COS-310\": Current Literature Survey",
-                          "\"COS-436\": Parallel and Distributed Computing"
+                          "\"HUM-330\": Arts and Ideas",
+                          "\"COS-232\": Computer and Network Security I",
+                          "\"MUS-280\": Wind Ensemble"
                         ],
                         "termSegments": [
                           {
@@ -3457,12 +3717,12 @@
                       },
                       "spring 2021": {
                         "courses": [
-                          "\"MUS-290\": Symphony Orchestra",
-                          "\"COS-382\": Language Structures",
-                          "\"SYS-411\": Machine Learning",
                           "\"COS-421\": Operating Systems",
+                          "\"SYS-411\": Machine Learning",
+                          "\"MUS-290\": Symphony Orchestra",
                           "\"COS-370\": Selected Topics",
-                          "\"COS-452\": Research I"
+                          "\"COS-452\": Research I",
+                          "\"COS-382\": Language Structures"
                         ],
                         "termSegments": [
                           {
@@ -3517,13 +3777,13 @@
                       },
                       "fall 2021": {
                         "courses": [
-                          "\"COS-435\": Theory of Computation",
-                          "\"COS-493\": Computer Science Senior Capstone",
-                          "\"COS-343\": Database Systems",
-                          "\"COS-432\": Software Reverse Engineering and Analysis",
                           "\"COS-453\": Research II",
+                          "\"COS-381\": Computer Architecture",
+                          "\"COS-343\": Database Systems",
+                          "\"COS-493\": Computer Science Senior Capstone",
                           "\"MUS-290\": Symphony Orchestra",
-                          "\"COS-381\": Computer Architecture"
+                          "\"COS-432\": Software Reverse Engineering and Analysis",
+                          "\"COS-435\": Theory of Computation"
                         ],
                         "termSegments": [
                           {
@@ -3804,12 +4064,12 @@
                       },
                       "spring 2019": {
                         "courses": [
-                          "\"COS-270\": Selected Topics",
-                          "\"HNR-225\": Honors Colloquium",
-                          "\"COS-143\": Interactive Webpage Development",
                           "\"MAT-230\": Calculus II",
+                          "\"COS-143\": Interactive Webpage Development",
+                          "\"HNR-225\": Honors Colloquium",
                           "\"COS-109\": Computer and Network Operations",
-                          "\"KIN-100\": Fitness for Life"
+                          "\"KIN-100\": Fitness for Life",
+                          "\"COS-270\": Selected Topics"
                         ],
                         "termSegments": [
                           {
@@ -3847,9 +4107,9 @@
                       },
                       "fall 2019": {
                         "courses": [
+                          "\"COS-265\": Data Structures and Algorithms",
                           "\"COS-243\": Multi-tier Web Application Development",
                           "\"MAT-240\": Calculus III",
-                          "\"COS-265\": Data Structures and Algorithms",
                           "\"PHY-203\": General Physics I"
                         ],
                         "termSegments": [
@@ -4036,8 +4296,8 @@
                         "courses": [
                           "\"BIB-110\": Biblical Literature I",
                           "\"COS-121\": Foundations of Computer Science",
-                          "\"COS-121\": Foundations of Computer Science",
-                          "\"MAT-215\": Discrete Mathematics for Computer Science"
+                          "\"MAT-215\": Discrete Mathematics for Computer Science",
+                          "\"COS-121\": Foundations of Computer Science"
                         ],
                         "termSegments": [
                           {
@@ -4081,12 +4341,12 @@
                       },
                       "spring 2019": {
                         "courses": [
-                          "\"COS-270\": Selected Topics",
-                          "\"HNR-225\": Honors Colloquium",
-                          "\"COS-143\": Interactive Webpage Development",
                           "\"MAT-230\": Calculus II",
+                          "\"COS-143\": Interactive Webpage Development",
+                          "\"HNR-225\": Honors Colloquium",
                           "\"COS-109\": Computer and Network Operations",
-                          "\"KIN-100\": Fitness for Life"
+                          "\"KIN-100\": Fitness for Life",
+                          "\"COS-270\": Selected Topics"
                         ],
                         "termSegments": [
                           {
@@ -4138,11 +4398,11 @@
                       },
                       "fall 2019": {
                         "courses": [
-                          "\"PHY-203\": General Physics I",
+                          "\"COS-265\": Data Structures and Algorithms",
+                          "\"COS-265\": Data Structures and Algorithms",
                           "\"COS-243\": Multi-tier Web Application Development",
-                          "\"COS-265\": Data Structures and Algorithms",
                           "\"MAT-240\": Calculus III",
-                          "\"COS-265\": Data Structures and Algorithms",
+                          "\"PHY-203\": General Physics I",
                           "\"PHY-203\": General Physics I"
                         ],
                         "termSegments": [
@@ -4237,10 +4497,10 @@
                       "spring 2020": {
                         "courses": [
                           "\"COS-284\": Introduction to Computer Systems",
+                          "\"COS-331\": Data Communications",
                           "\"MAT-311\": Introduction to Data Science",
-                          "\"MUS-280\": Wind Ensemble",
                           "\"COS-280\": Introduction to Artificial Intelligence",
-                          "\"COS-331\": Data Communications"
+                          "\"MUS-280\": Wind Ensemble"
                         ],
                         "termSegments": [
                           {
@@ -4284,13 +4544,13 @@
                       },
                       "fall 2020": {
                         "courses": [
-                          "\"COS-232\": Computer and Network Security I",
-                          "\"HUM-330\": Arts and Ideas",
-                          "\"COS-340\": Software Engineering",
                           "\"ENP-270\": Selected Topics",
-                          "\"MUS-280\": Wind Ensemble",
+                          "\"COS-340\": Software Engineering",
+                          "\"COS-436\": Parallel and Distributed Computing",
                           "\"COS-310\": Current Literature Survey",
-                          "\"COS-436\": Parallel and Distributed Computing"
+                          "\"HUM-330\": Arts and Ideas",
+                          "\"COS-232\": Computer and Network Security I",
+                          "\"MUS-280\": Wind Ensemble"
                         ],
                         "termSegments": [
                           {
@@ -4348,12 +4608,12 @@
                       },
                       "spring 2021": {
                         "courses": [
-                          "\"MUS-290\": Symphony Orchestra",
-                          "\"COS-382\": Language Structures",
-                          "\"SYS-411\": Machine Learning",
                           "\"COS-421\": Operating Systems",
+                          "\"SYS-411\": Machine Learning",
+                          "\"MUS-290\": Symphony Orchestra",
                           "\"COS-370\": Selected Topics",
-                          "\"COS-452\": Research I"
+                          "\"COS-452\": Research I",
+                          "\"COS-382\": Language Structures"
                         ],
                         "termSegments": [
                           {
@@ -4408,13 +4668,13 @@
                       },
                       "fall 2021": {
                         "courses": [
-                          "\"COS-435\": Theory of Computation",
-                          "\"COS-493\": Computer Science Senior Capstone",
-                          "\"COS-343\": Database Systems",
-                          "\"COS-432\": Software Reverse Engineering and Analysis",
                           "\"COS-453\": Research II",
+                          "\"COS-381\": Computer Architecture",
+                          "\"COS-343\": Database Systems",
+                          "\"COS-493\": Computer Science Senior Capstone",
                           "\"MUS-290\": Symphony Orchestra",
-                          "\"COS-381\": Computer Architecture"
+                          "\"COS-432\": Software Reverse Engineering and Analysis",
+                          "\"COS-435\": Theory of Computation"
                         ],
                         "termSegments": [
                           {
@@ -4658,8 +4918,8 @@
                         "courses": [
                           "\"BIB-110\": Biblical Literature I",
                           "\"COS-121\": Foundations of Computer Science",
-                          "\"COS-121\": Foundations of Computer Science",
-                          "\"MAT-215\": Discrete Mathematics for Computer Science"
+                          "\"MAT-215\": Discrete Mathematics for Computer Science",
+                          "\"COS-121\": Foundations of Computer Science"
                         ],
                         "termSegments": [
                           {
@@ -4703,12 +4963,12 @@
                       },
                       "spring 2019": {
                         "courses": [
-                          "\"COS-270\": Selected Topics",
-                          "\"HNR-225\": Honors Colloquium",
-                          "\"COS-143\": Interactive Webpage Development",
                           "\"MAT-230\": Calculus II",
+                          "\"COS-143\": Interactive Webpage Development",
+                          "\"HNR-225\": Honors Colloquium",
                           "\"COS-109\": Computer and Network Operations",
-                          "\"KIN-100\": Fitness for Life"
+                          "\"KIN-100\": Fitness for Life",
+                          "\"COS-270\": Selected Topics"
                         ],
                         "termSegments": [
                           {
@@ -4760,11 +5020,11 @@
                       },
                       "fall 2019": {
                         "courses": [
-                          "\"PHY-203\": General Physics I",
+                          "\"COS-265\": Data Structures and Algorithms",
+                          "\"COS-265\": Data Structures and Algorithms",
                           "\"COS-243\": Multi-tier Web Application Development",
-                          "\"COS-265\": Data Structures and Algorithms",
                           "\"MAT-240\": Calculus III",
-                          "\"COS-265\": Data Structures and Algorithms",
+                          "\"PHY-203\": General Physics I",
                           "\"PHY-203\": General Physics I"
                         ],
                         "termSegments": [
@@ -4859,10 +5119,10 @@
                       "spring 2020": {
                         "courses": [
                           "\"COS-284\": Introduction to Computer Systems",
+                          "\"COS-331\": Data Communications",
                           "\"MAT-311\": Introduction to Data Science",
-                          "\"MUS-280\": Wind Ensemble",
                           "\"COS-280\": Introduction to Artificial Intelligence",
-                          "\"COS-331\": Data Communications"
+                          "\"MUS-280\": Wind Ensemble"
                         ],
                         "termSegments": [
                           {
@@ -4906,13 +5166,13 @@
                       },
                       "fall 2020": {
                         "courses": [
-                          "\"COS-232\": Computer and Network Security I",
-                          "\"HUM-330\": Arts and Ideas",
-                          "\"COS-340\": Software Engineering",
                           "\"ENP-270\": Selected Topics",
-                          "\"MUS-280\": Wind Ensemble",
+                          "\"COS-340\": Software Engineering",
+                          "\"COS-436\": Parallel and Distributed Computing",
                           "\"COS-310\": Current Literature Survey",
-                          "\"COS-436\": Parallel and Distributed Computing"
+                          "\"HUM-330\": Arts and Ideas",
+                          "\"COS-232\": Computer and Network Security I",
+                          "\"MUS-280\": Wind Ensemble"
                         ],
                         "termSegments": [
                           {
@@ -4970,12 +5230,12 @@
                       },
                       "spring 2021": {
                         "courses": [
-                          "\"MUS-290\": Symphony Orchestra",
-                          "\"COS-382\": Language Structures",
-                          "\"SYS-411\": Machine Learning",
                           "\"COS-421\": Operating Systems",
+                          "\"SYS-411\": Machine Learning",
+                          "\"MUS-290\": Symphony Orchestra",
                           "\"COS-370\": Selected Topics",
-                          "\"COS-452\": Research I"
+                          "\"COS-452\": Research I",
+                          "\"COS-382\": Language Structures"
                         ],
                         "termSegments": [
                           {
@@ -5030,13 +5290,13 @@
                       },
                       "fall 2021": {
                         "courses": [
-                          "\"COS-435\": Theory of Computation",
-                          "\"COS-493\": Computer Science Senior Capstone",
-                          "\"COS-343\": Database Systems",
-                          "\"COS-432\": Software Reverse Engineering and Analysis",
                           "\"COS-453\": Research II",
+                          "\"COS-381\": Computer Architecture",
+                          "\"COS-343\": Database Systems",
+                          "\"COS-493\": Computer Science Senior Capstone",
                           "\"MUS-290\": Symphony Orchestra",
-                          "\"COS-381\": Computer Architecture"
+                          "\"COS-432\": Software Reverse Engineering and Analysis",
+                          "\"COS-435\": Theory of Computation"
                         ],
                         "termSegments": [
                           {
@@ -5145,7 +5405,7 @@
                               "description": "36.00",
                               "value": {
                                 "value": 36.0,
-                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                 "class": "preferences.value.NumericValue"
                               },
                               "calculatedCheck": false,
@@ -5226,7 +5486,7 @@
                               "description": "36.00",
                               "value": {
                                 "value": 36.0,
-                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                 "class": "preferences.value.NumericValue"
                               },
                               "calculatedCheck": false,
@@ -5309,7 +5569,7 @@
                                 "description": "36.00",
                                 "value": {
                                   "value": 36.0,
-                                  "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                  "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                   "class": "preferences.value.NumericValue"
                                 },
                                 "calculatedCheck": false,
@@ -5425,7 +5685,7 @@
                                 "description": "36.00",
                                 "value": {
                                   "value": 36.0,
-                                  "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                  "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                   "class": "preferences.value.NumericValue"
                                 },
                                 "calculatedCheck": false,
@@ -5466,7 +5726,7 @@
                                 "description": "36.00",
                                 "value": {
                                   "value": 36.0,
-                                  "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                  "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                   "class": "preferences.value.NumericValue"
                                 },
                                 "calculatedCheck": false,
@@ -5551,7 +5811,7 @@
                                 "description": "36.00",
                                 "value": {
                                   "value": 36.0,
-                                  "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                  "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                   "class": "preferences.value.NumericValue"
                                 },
                                 "calculatedCheck": false,
@@ -5597,7 +5857,7 @@
                                   "description": "36.00",
                                   "value": {
                                     "value": 36.0,
-                                    "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                                    "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                                     "class": "preferences.value.NumericValue"
                                   },
                                   "calculatedCheck": false,
@@ -5821,7 +6081,7 @@
                         "description": "36.00",
                         "value": {
                           "value": 36.0,
-                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                           "class": "preferences.value.NumericValue"
                         },
                         "calculatedCheck": false,
@@ -5868,7 +6128,7 @@
                         "description": "36.00",
                         "value": {
                           "value": 36.0,
-                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                           "class": "preferences.value.NumericValue"
                         },
                         "calculatedCheck": true,
@@ -5888,9 +6148,9 @@
                   "class": "preferences.specification.RequirementSpecification"
                 },
                 {
-                  "description": "require at least 8 credits.",
+                  "description": "require 8 or more credits.",
                   "requireableConstraint": {
-                    "description": "at least 8 credits",
+                    "description": "8 or more credits",
                     "scoreFunction": {
                       "description": "Proportional with soft bounds at -12.00 (lower) and 8.00 (upper)",
                       "lower": {
@@ -5915,7 +6175,7 @@
                         "description": "36.00",
                         "value": {
                           "value": 36.0,
-                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                           "class": "preferences.value.NumericValue"
                         },
                         "calculatedCheck": true,
@@ -5962,7 +6222,7 @@
                         "description": "36.00",
                         "value": {
                           "value": 36.0,
-                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                           "class": "preferences.value.NumericValue"
                         },
                         "calculatedCheck": false,
@@ -5982,9 +6242,9 @@
                   "class": "preferences.specification.RequirementSpecification"
                 },
                 {
-                  "description": "require no more than 8 credits.",
+                  "description": "require 8 or less credits.",
                   "requireableConstraint": {
-                    "description": "no more than 8 credits",
+                    "description": "8 or less credits",
                     "scoreFunction": {
                       "description": "Proportional with soft bounds at -12.00 (lower) and 8.00 (upper)",
                       "lower": {
@@ -6009,7 +6269,7 @@
                         "description": "36.00",
                         "value": {
                           "value": 36.0,
-                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                           "class": "preferences.value.NumericValue"
                         },
                         "calculatedCheck": false,
@@ -7630,7 +7890,7 @@
                         "description": "36.00",
                         "value": {
                           "value": 36.0,
-                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                           "class": "preferences.value.NumericValue"
                         },
                         "calculatedScore": 9.820617764123582E-5,
@@ -7677,7 +7937,7 @@
                         "description": "36.00",
                         "value": {
                           "value": 36.0,
-                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
+                          "explanation": "- \"BIB-110\": Biblical Literature I (fall 2018) \u003d 3.00\n- \"COS-121\": Foundations of Computer Science (fall 2018) \u003d 4.00\n- \"MAT-230\": Calculus II (spring 2019) \u003d 4.00\n- \"KIN-100\": Fitness for Life (spring 2019) \u003d 2.00\n- \"COS-270\": Selected Topics (spring 2019) \u003d 3.00\n- \"COS-265\": Data Structures and Algorithms (fall 2019) \u003d 4.00\n- \"PHY-203\": General Physics I (fall 2019) \u003d 4.00\n- \"REL-313\": Historic Christian Belief (jterm 2020) \u003d 3.00\n- \"MUS-280\": Wind Ensemble (spring 2020) \u003d 1.00\n- \"ENP-270\": Selected Topics (fall 2020) \u003d 2.00\n- \"COS-370\": Selected Topics (spring 2021) \u003d 3.00\n- \"COS-381\": Computer Architecture (fall 2021) \u003d 3.00\n\u003d 36.00\n",
                           "class": "preferences.value.NumericValue"
                         },
                         "calculatedScore": 0.9999017938223588,
@@ -8297,31 +8557,6 @@
                     ]
                   },
                   {
-                    "crn": "13054",
-                    "section": 3,
-                    "credits": 0,
-                    "professors": [
-                      "Brandle, Siegfried"
-                    ],
-                    "location": {
-                      "building": "EULER",
-                      "roomNumber": "201"
-                    },
-                    "numEnrolled": 14,
-                    "maxEnrolled": 0,
-                    "startDate": "2018-8-27",
-                    "endDate": "2018-12-13",
-                    "meetings": [
-                      {
-                        "days": [
-                          "thursday"
-                        ],
-                        "startTime": "1:00 PM",
-                        "endTime": "2:50 PM"
-                      }
-                    ]
-                  },
-                  {
                     "crn": "13052",
                     "section": 1,
                     "credits": 4,
@@ -8372,6 +8607,31 @@
                         ],
                         "startTime": "3:00 PM",
                         "endTime": "3:50 PM"
+                      }
+                    ]
+                  },
+                  {
+                    "crn": "13054",
+                    "section": 3,
+                    "credits": 0,
+                    "professors": [
+                      "Brandle, Siegfried"
+                    ],
+                    "location": {
+                      "building": "EULER",
+                      "roomNumber": "201"
+                    },
+                    "numEnrolled": 14,
+                    "maxEnrolled": 0,
+                    "startDate": "2018-8-27",
+                    "endDate": "2018-12-13",
+                    "meetings": [
+                      {
+                        "days": [
+                          "thursday"
+                        ],
+                        "startTime": "1:00 PM",
+                        "endTime": "2:50 PM"
                       }
                     ]
                   }
@@ -8517,82 +8777,6 @@
               "courseOfferingsStack": [
                 [
                   {
-                    "crn": "37455",
-                    "section": 1,
-                    "credits": 3,
-                    "professors": [
-                      "Dalcher, Steven"
-                    ],
-                    "location": {
-                      "building": "EULER",
-                      "roomNumber": "218"
-                    },
-                    "numEnrolled": 6,
-                    "maxEnrolled": 0,
-                    "startDate": "2019-1-29",
-                    "endDate": "2019-5-16",
-                    "meetings": [
-                      {
-                        "days": [
-                          "tuesday",
-                          "thursday"
-                        ],
-                        "startTime": "8:00 AM",
-                        "endTime": "9:20 AM"
-                      }
-                    ]
-                  },
-                  {
-                    "crn": "36578",
-                    "section": 2,
-                    "credits": 0,
-                    "professors": [
-                      "Peterson, Amy"
-                    ],
-                    "location": {
-                      "building": "OSL"
-                    },
-                    "numEnrolled": 11,
-                    "maxEnrolled": 0,
-                    "startDate": "2019-1-29",
-                    "endDate": "2019-5-16",
-                    "meetings": [
-                      {
-                        "days": [
-                          "wednesday"
-                        ],
-                        "startTime": "2:00 PM",
-                        "endTime": "2:50 PM"
-                      }
-                    ]
-                  },
-                  {
-                    "crn": "37454",
-                    "section": 1,
-                    "credits": 0,
-                    "professors": [
-                      "Hibschman, Joshua"
-                    ],
-                    "location": {
-                      "building": "EULER",
-                      "roomNumber": "218"
-                    },
-                    "numEnrolled": 14,
-                    "maxEnrolled": 0,
-                    "startDate": "2019-1-29",
-                    "endDate": "2019-5-16",
-                    "meetings": [
-                      {
-                        "days": [
-                          "tuesday",
-                          "thursday"
-                        ],
-                        "startTime": "2:00 PM",
-                        "endTime": "3:20 PM"
-                      }
-                    ]
-                  },
-                  {
                     "crn": "37389",
                     "section": 2,
                     "credits": 4,
@@ -8623,6 +8807,56 @@
                         ],
                         "startTime": "0:00 PM",
                         "endTime": "0:50 PM"
+                      }
+                    ]
+                  },
+                  {
+                    "crn": "37454",
+                    "section": 1,
+                    "credits": 0,
+                    "professors": [
+                      "Hibschman, Joshua"
+                    ],
+                    "location": {
+                      "building": "EULER",
+                      "roomNumber": "218"
+                    },
+                    "numEnrolled": 14,
+                    "maxEnrolled": 0,
+                    "startDate": "2019-1-29",
+                    "endDate": "2019-5-16",
+                    "meetings": [
+                      {
+                        "days": [
+                          "tuesday",
+                          "thursday"
+                        ],
+                        "startTime": "2:00 PM",
+                        "endTime": "3:20 PM"
+                      }
+                    ]
+                  },
+                  {
+                    "crn": "36578",
+                    "section": 2,
+                    "credits": 0,
+                    "professors": [
+                      "Peterson, Amy"
+                    ],
+                    "location": {
+                      "building": "OSL"
+                    },
+                    "numEnrolled": 11,
+                    "maxEnrolled": 0,
+                    "startDate": "2019-1-29",
+                    "endDate": "2019-5-16",
+                    "meetings": [
+                      {
+                        "days": [
+                          "wednesday"
+                        ],
+                        "startTime": "2:00 PM",
+                        "endTime": "2:50 PM"
                       }
                     ]
                   },
@@ -8675,6 +8909,32 @@
                         ],
                         "startTime": "9:00 AM",
                         "endTime": "9:50 AM"
+                      }
+                    ]
+                  },
+                  {
+                    "crn": "37455",
+                    "section": 1,
+                    "credits": 3,
+                    "professors": [
+                      "Dalcher, Steven"
+                    ],
+                    "location": {
+                      "building": "EULER",
+                      "roomNumber": "218"
+                    },
+                    "numEnrolled": 6,
+                    "maxEnrolled": 0,
+                    "startDate": "2019-1-29",
+                    "endDate": "2019-5-16",
+                    "meetings": [
+                      {
+                        "days": [
+                          "tuesday",
+                          "thursday"
+                        ],
+                        "startTime": "8:00 AM",
+                        "endTime": "9:20 AM"
                       }
                     ]
                   }
@@ -8842,18 +9102,17 @@
               "courseOfferingsStack": [
                 [
                   {
-                    "crn": "13019",
-                    "section": 2,
+                    "crn": "17551",
+                    "section": 3,
                     "credits": 0,
                     "professors": [
-                      "Davis, Robert",
-                      "Staritz, Peter"
+                      "Denning, Jonathan"
                     ],
                     "location": {
                       "building": "EULER",
-                      "roomNumber": "243"
+                      "roomNumber": "218"
                     },
-                    "numEnrolled": 16,
+                    "numEnrolled": 12,
                     "maxEnrolled": 0,
                     "startDate": "2019-8-26",
                     "endDate": "2019-12-12",
@@ -8862,8 +9121,35 @@
                         "days": [
                           "tuesday"
                         ],
-                        "startTime": "9:00 AM",
-                        "endTime": "10:50 AM"
+                        "startTime": "2:00 PM",
+                        "endTime": "3:50 PM"
+                      }
+                    ]
+                  },
+                  {
+                    "crn": "13294",
+                    "section": 1,
+                    "credits": 4,
+                    "professors": [
+                      "Denning, Jonathan"
+                    ],
+                    "location": {
+                      "building": "EULER",
+                      "roomNumber": "200"
+                    },
+                    "numEnrolled": 29,
+                    "maxEnrolled": 0,
+                    "startDate": "2019-8-26",
+                    "endDate": "2019-12-12",
+                    "meetings": [
+                      {
+                        "days": [
+                          "monday",
+                          "wednesday",
+                          "friday"
+                        ],
+                        "startTime": "0:00 PM",
+                        "endTime": "0:50 PM"
                       }
                     ]
                   },
@@ -8891,31 +9177,6 @@
                         ],
                         "startTime": "9:00 AM",
                         "endTime": "9:50 AM"
-                      }
-                    ]
-                  },
-                  {
-                    "crn": "17551",
-                    "section": 3,
-                    "credits": 0,
-                    "professors": [
-                      "Denning, Jonathan"
-                    ],
-                    "location": {
-                      "building": "EULER",
-                      "roomNumber": "218"
-                    },
-                    "numEnrolled": 12,
-                    "maxEnrolled": 0,
-                    "startDate": "2019-8-26",
-                    "endDate": "2019-12-12",
-                    "meetings": [
-                      {
-                        "days": [
-                          "tuesday"
-                        ],
-                        "startTime": "2:00 PM",
-                        "endTime": "3:50 PM"
                       }
                     ]
                   },
@@ -8948,29 +9209,28 @@
                     ]
                   },
                   {
-                    "crn": "13294",
-                    "section": 1,
-                    "credits": 4,
+                    "crn": "13019",
+                    "section": 2,
+                    "credits": 0,
                     "professors": [
-                      "Denning, Jonathan"
+                      "Davis, Robert",
+                      "Staritz, Peter"
                     ],
                     "location": {
                       "building": "EULER",
-                      "roomNumber": "200"
+                      "roomNumber": "243"
                     },
-                    "numEnrolled": 29,
+                    "numEnrolled": 16,
                     "maxEnrolled": 0,
                     "startDate": "2019-8-26",
                     "endDate": "2019-12-12",
                     "meetings": [
                       {
                         "days": [
-                          "monday",
-                          "wednesday",
-                          "friday"
+                          "tuesday"
                         ],
-                        "startTime": "0:00 PM",
-                        "endTime": "0:50 PM"
+                        "startTime": "9:00 AM",
+                        "endTime": "10:50 AM"
                       }
                     ]
                   },
@@ -9353,6 +9613,33 @@
                     ]
                   },
                   {
+                    "crn": "36765",
+                    "section": 1,
+                    "credits": 0,
+                    "professors": [
+                      "Stanley, Dannie"
+                    ],
+                    "location": {
+                      "building": "EULER",
+                      "roomNumber": "218"
+                    },
+                    "numEnrolled": 19,
+                    "maxEnrolled": 0,
+                    "startDate": "2020-2-3",
+                    "endDate": "2020-5-21",
+                    "meetings": [
+                      {
+                        "days": [
+                          "monday",
+                          "wednesday",
+                          "friday"
+                        ],
+                        "startTime": "2:00 PM",
+                        "endTime": "2:50 PM"
+                      }
+                    ]
+                  },
+                  {
                     "crn": "37556",
                     "section": 1,
                     "credits": 0,
@@ -9376,33 +9663,6 @@
                         ],
                         "startTime": "1:00 PM",
                         "endTime": "1:50 PM"
-                      }
-                    ]
-                  },
-                  {
-                    "crn": "30335",
-                    "section": 1,
-                    "credits": 1,
-                    "professors": [
-                      "Bade, Christopher"
-                    ],
-                    "location": {
-                      "building": "SHM",
-                      "roomNumber": "148"
-                    },
-                    "numEnrolled": 10,
-                    "maxEnrolled": 0,
-                    "startDate": "2020-2-3",
-                    "endDate": "2020-5-21",
-                    "meetings": [
-                      {
-                        "days": [
-                          "monday",
-                          "wednesday",
-                          "friday"
-                        ],
-                        "startTime": "3:00 PM",
-                        "endTime": "3:50 PM"
                       }
                     ]
                   },
@@ -9434,17 +9694,17 @@
                     ]
                   },
                   {
-                    "crn": "36765",
+                    "crn": "30335",
                     "section": 1,
-                    "credits": 0,
+                    "credits": 1,
                     "professors": [
-                      "Stanley, Dannie"
+                      "Bade, Christopher"
                     ],
                     "location": {
-                      "building": "EULER",
-                      "roomNumber": "218"
+                      "building": "SHM",
+                      "roomNumber": "148"
                     },
-                    "numEnrolled": 19,
+                    "numEnrolled": 10,
                     "maxEnrolled": 0,
                     "startDate": "2020-2-3",
                     "endDate": "2020-5-21",
@@ -9455,8 +9715,8 @@
                           "wednesday",
                           "friday"
                         ],
-                        "startTime": "2:00 PM",
-                        "endTime": "2:50 PM"
+                        "startTime": "3:00 PM",
+                        "endTime": "3:50 PM"
                       }
                     ]
                   }
@@ -9645,86 +9905,6 @@
               "courseOfferingsStack": [
                 [
                   {
-                    "crn": "18487",
-                    "section": 2,
-                    "credits": 0,
-                    "professors": [
-                      "Stanley, Dannie"
-                    ],
-                    "location": {
-                      "building": "EULER",
-                      "roomNumber": "218"
-                    },
-                    "numEnrolled": 8,
-                    "maxEnrolled": 0,
-                    "startDate": "2020-8-19",
-                    "endDate": "2020-12-3",
-                    "meetings": [
-                      {
-                        "days": [
-                          "monday",
-                          "wednesday",
-                          "friday"
-                        ],
-                        "startTime": "1:00 PM",
-                        "endTime": "1:50 PM"
-                      }
-                    ]
-                  },
-                  {
-                    "crn": "13223",
-                    "section": 1,
-                    "credits": 0,
-                    "professors": [
-                      "Smith, Rachel"
-                    ],
-                    "location": {
-                      "building": "MMVA",
-                      "roomNumber": "008"
-                    },
-                    "numEnrolled": 11,
-                    "maxEnrolled": 0,
-                    "startDate": "2020-8-19",
-                    "endDate": "2020-12-3",
-                    "meetings": [
-                      {
-                        "days": [
-                          "tuesday",
-                          "thursday"
-                        ],
-                        "startTime": "11:00 AM",
-                        "endTime": "0:50 PM"
-                      }
-                    ]
-                  },
-                  {
-                    "crn": "17513",
-                    "section": 1,
-                    "credits": 0,
-                    "professors": [
-                      "Stanley, Dannie"
-                    ],
-                    "location": {
-                      "building": "EULER",
-                      "roomNumber": "218"
-                    },
-                    "numEnrolled": 8,
-                    "maxEnrolled": 0,
-                    "startDate": "2020-8-19",
-                    "endDate": "2020-12-3",
-                    "meetings": [
-                      {
-                        "days": [
-                          "monday",
-                          "wednesday",
-                          "friday"
-                        ],
-                        "startTime": "11:00 AM",
-                        "endTime": "11:50 AM"
-                      }
-                    ]
-                  },
-                  {
                     "crn": "18582",
                     "section": 1,
                     "credits": 2,
@@ -9759,17 +9939,17 @@
                     ]
                   },
                   {
-                    "crn": "17162",
-                    "section": 2,
+                    "crn": "17513",
+                    "section": 1,
                     "credits": 0,
                     "professors": [
-                      "Bade, Christopher"
+                      "Stanley, Dannie"
                     ],
                     "location": {
-                      "building": "SHM",
-                      "roomNumber": "148"
+                      "building": "EULER",
+                      "roomNumber": "218"
                     },
-                    "numEnrolled": 4,
+                    "numEnrolled": 8,
                     "maxEnrolled": 0,
                     "startDate": "2020-8-19",
                     "endDate": "2020-12-3",
@@ -9780,8 +9960,35 @@
                           "wednesday",
                           "friday"
                         ],
-                        "startTime": "3:00 PM",
-                        "endTime": "3:50 PM"
+                        "startTime": "11:00 AM",
+                        "endTime": "11:50 AM"
+                      }
+                    ]
+                  },
+                  {
+                    "crn": "18490",
+                    "section": 1,
+                    "credits": 0,
+                    "professors": [
+                      "Nurkkala, Thomas"
+                    ],
+                    "location": {
+                      "building": "EULER",
+                      "roomNumber": "200"
+                    },
+                    "numEnrolled": 10,
+                    "maxEnrolled": 0,
+                    "startDate": "2020-8-19",
+                    "endDate": "2020-12-3",
+                    "meetings": [
+                      {
+                        "days": [
+                          "monday",
+                          "wednesday",
+                          "friday"
+                        ],
+                        "startTime": "2:00 PM",
+                        "endTime": "2:50 PM"
                       }
                     ]
                   },
@@ -9811,17 +10018,43 @@
                     ]
                   },
                   {
-                    "crn": "18490",
+                    "crn": "13223",
                     "section": 1,
                     "credits": 0,
                     "professors": [
-                      "Nurkkala, Thomas"
+                      "Smith, Rachel"
+                    ],
+                    "location": {
+                      "building": "MMVA",
+                      "roomNumber": "008"
+                    },
+                    "numEnrolled": 11,
+                    "maxEnrolled": 0,
+                    "startDate": "2020-8-19",
+                    "endDate": "2020-12-3",
+                    "meetings": [
+                      {
+                        "days": [
+                          "tuesday",
+                          "thursday"
+                        ],
+                        "startTime": "11:00 AM",
+                        "endTime": "0:50 PM"
+                      }
+                    ]
+                  },
+                  {
+                    "crn": "18487",
+                    "section": 2,
+                    "credits": 0,
+                    "professors": [
+                      "Stanley, Dannie"
                     ],
                     "location": {
                       "building": "EULER",
-                      "roomNumber": "200"
+                      "roomNumber": "218"
                     },
-                    "numEnrolled": 10,
+                    "numEnrolled": 8,
                     "maxEnrolled": 0,
                     "startDate": "2020-8-19",
                     "endDate": "2020-12-3",
@@ -9832,8 +10065,35 @@
                           "wednesday",
                           "friday"
                         ],
-                        "startTime": "2:00 PM",
-                        "endTime": "2:50 PM"
+                        "startTime": "1:00 PM",
+                        "endTime": "1:50 PM"
+                      }
+                    ]
+                  },
+                  {
+                    "crn": "17162",
+                    "section": 2,
+                    "credits": 0,
+                    "professors": [
+                      "Bade, Christopher"
+                    ],
+                    "location": {
+                      "building": "SHM",
+                      "roomNumber": "148"
+                    },
+                    "numEnrolled": 4,
+                    "maxEnrolled": 0,
+                    "startDate": "2020-8-19",
+                    "endDate": "2020-12-3",
+                    "meetings": [
+                      {
+                        "days": [
+                          "monday",
+                          "wednesday",
+                          "friday"
+                        ],
+                        "startTime": "3:00 PM",
+                        "endTime": "3:50 PM"
                       }
                     ]
                   }
@@ -10061,43 +10321,17 @@
               "courseOfferingsStack": [
                 [
                   {
-                    "crn": "36909",
-                    "section": 2,
-                    "credits": 0,
-                    "professors": [
-                      "Bade, Christopher"
-                    ],
-                    "location": {
-                      "building": "SHM",
-                      "roomNumber": "148"
-                    },
-                    "numEnrolled": 11,
-                    "maxEnrolled": 0,
-                    "startDate": "2021-2-1",
-                    "endDate": "2021-5-13",
-                    "meetings": [
-                      {
-                        "days": [
-                          "monday",
-                          "wednesday"
-                        ],
-                        "startTime": "4:00 PM",
-                        "endTime": "5:30 PM"
-                      }
-                    ]
-                  },
-                  {
-                    "crn": "37883",
+                    "crn": "37884",
                     "section": 1,
                     "credits": 0,
                     "professors": [
-                      "Denning, Jonathan"
+                      "Geisler, Jonathan"
                     ],
                     "location": {
                       "building": "EULER",
                       "roomNumber": "200"
                     },
-                    "numEnrolled": 21,
+                    "numEnrolled": 23,
                     "maxEnrolled": 0,
                     "startDate": "2021-2-1",
                     "endDate": "2021-5-13",
@@ -10108,8 +10342,8 @@
                           "wednesday",
                           "friday"
                         ],
-                        "startTime": "9:00 AM",
-                        "endTime": "9:50 AM"
+                        "startTime": "3:00 PM",
+                        "endTime": "3:50 PM"
                       }
                     ]
                   },
@@ -10140,17 +10374,17 @@
                     ]
                   },
                   {
-                    "crn": "37884",
-                    "section": 1,
+                    "crn": "36909",
+                    "section": 2,
                     "credits": 0,
                     "professors": [
-                      "Geisler, Jonathan"
+                      "Bade, Christopher"
                     ],
                     "location": {
-                      "building": "EULER",
-                      "roomNumber": "200"
+                      "building": "SHM",
+                      "roomNumber": "148"
                     },
-                    "numEnrolled": 23,
+                    "numEnrolled": 11,
                     "maxEnrolled": 0,
                     "startDate": "2021-2-1",
                     "endDate": "2021-5-13",
@@ -10158,11 +10392,10 @@
                       {
                         "days": [
                           "monday",
-                          "wednesday",
-                          "friday"
+                          "wednesday"
                         ],
-                        "startTime": "3:00 PM",
-                        "endTime": "3:50 PM"
+                        "startTime": "4:00 PM",
+                        "endTime": "5:30 PM"
                       }
                     ]
                   },
@@ -10217,6 +10450,33 @@
                         ],
                         "startTime": "0:00 PM",
                         "endTime": "0:50 PM"
+                      }
+                    ]
+                  },
+                  {
+                    "crn": "37883",
+                    "section": 1,
+                    "credits": 0,
+                    "professors": [
+                      "Denning, Jonathan"
+                    ],
+                    "location": {
+                      "building": "EULER",
+                      "roomNumber": "200"
+                    },
+                    "numEnrolled": 21,
+                    "maxEnrolled": 0,
+                    "startDate": "2021-2-1",
+                    "endDate": "2021-5-13",
+                    "meetings": [
+                      {
+                        "days": [
+                          "monday",
+                          "wednesday",
+                          "friday"
+                        ],
+                        "startTime": "9:00 AM",
+                        "endTime": "9:50 AM"
                       }
                     ]
                   }
@@ -10420,17 +10680,42 @@
               "courseOfferingsStack": [
                 [
                   {
-                    "crn": "18685",
+                    "crn": "17064",
                     "section": 1,
                     "credits": 0,
                     "professors": [
-                      "Hibschman, Joshua"
+                      "Geisler, Jonathan"
                     ],
                     "location": {
                       "building": "EULER",
                       "roomNumber": "200"
                     },
-                    "numEnrolled": 20,
+                    "numEnrolled": 5,
+                    "maxEnrolled": 0,
+                    "startDate": "2021-8-30",
+                    "endDate": "2021-12-16",
+                    "meetings": [
+                      {
+                        "days": [
+                          "tuesday"
+                        ],
+                        "startTime": "10:00 AM",
+                        "endTime": "10:50 AM"
+                      }
+                    ]
+                  },
+                  {
+                    "crn": "18084",
+                    "section": 1,
+                    "credits": 3,
+                    "professors": [
+                      "Geisler, Jonathan"
+                    ],
+                    "location": {
+                      "building": "EULER",
+                      "roomNumber": "200"
+                    },
+                    "numEnrolled": 22,
                     "maxEnrolled": 0,
                     "startDate": "2021-8-30",
                     "endDate": "2021-12-16",
@@ -10441,33 +10726,8 @@
                           "wednesday",
                           "friday"
                         ],
-                        "startTime": "11:00 AM",
-                        "endTime": "11:50 AM"
-                      }
-                    ]
-                  },
-                  {
-                    "crn": "18527",
-                    "section": 1,
-                    "credits": 0,
-                    "professors": [
-                      "Geisler, Jonathan"
-                    ],
-                    "location": {
-                      "building": "EULER",
-                      "roomNumber": "200"
-                    },
-                    "numEnrolled": 33,
-                    "maxEnrolled": 0,
-                    "startDate": "2021-8-30",
-                    "endDate": "2021-12-16",
-                    "meetings": [
-                      {
-                        "days": [
-                          "thursday"
-                        ],
-                        "startTime": "2:00 PM",
-                        "endTime": "3:20 PM"
+                        "startTime": "9:00 AM",
+                        "endTime": "9:50 AM"
                       }
                     ]
                   },
@@ -10499,33 +10759,7 @@
                     ]
                   },
                   {
-                    "crn": "18737",
-                    "section": 1,
-                    "credits": 0,
-                    "professors": [
-                      "Stanley, Dannie"
-                    ],
-                    "location": {
-                      "building": "EULER",
-                      "roomNumber": "103"
-                    },
-                    "numEnrolled": 10,
-                    "maxEnrolled": 0,
-                    "startDate": "2021-8-30",
-                    "endDate": "2021-12-16",
-                    "meetings": [
-                      {
-                        "days": [
-                          "tuesday",
-                          "thursday"
-                        ],
-                        "startTime": "11:00 AM",
-                        "endTime": "0:20 PM"
-                      }
-                    ]
-                  },
-                  {
-                    "crn": "17064",
+                    "crn": "18527",
                     "section": 1,
                     "credits": 0,
                     "professors": [
@@ -10535,17 +10769,17 @@
                       "building": "EULER",
                       "roomNumber": "200"
                     },
-                    "numEnrolled": 5,
+                    "numEnrolled": 33,
                     "maxEnrolled": 0,
                     "startDate": "2021-8-30",
                     "endDate": "2021-12-16",
                     "meetings": [
                       {
                         "days": [
-                          "tuesday"
+                          "thursday"
                         ],
-                        "startTime": "10:00 AM",
-                        "endTime": "10:50 AM"
+                        "startTime": "2:00 PM",
+                        "endTime": "3:20 PM"
                       }
                     ]
                   },
@@ -10576,17 +10810,43 @@
                     ]
                   },
                   {
-                    "crn": "18084",
+                    "crn": "18737",
                     "section": 1,
-                    "credits": 3,
+                    "credits": 0,
                     "professors": [
-                      "Geisler, Jonathan"
+                      "Stanley, Dannie"
+                    ],
+                    "location": {
+                      "building": "EULER",
+                      "roomNumber": "103"
+                    },
+                    "numEnrolled": 10,
+                    "maxEnrolled": 0,
+                    "startDate": "2021-8-30",
+                    "endDate": "2021-12-16",
+                    "meetings": [
+                      {
+                        "days": [
+                          "tuesday",
+                          "thursday"
+                        ],
+                        "startTime": "11:00 AM",
+                        "endTime": "0:20 PM"
+                      }
+                    ]
+                  },
+                  {
+                    "crn": "18685",
+                    "section": 1,
+                    "credits": 0,
+                    "professors": [
+                      "Hibschman, Joshua"
                     ],
                     "location": {
                       "building": "EULER",
                       "roomNumber": "200"
                     },
-                    "numEnrolled": 22,
+                    "numEnrolled": 20,
                     "maxEnrolled": 0,
                     "startDate": "2021-8-30",
                     "endDate": "2021-12-16",
@@ -10597,8 +10857,8 @@
                           "wednesday",
                           "friday"
                         ],
-                        "startTime": "9:00 AM",
-                        "endTime": "9:50 AM"
+                        "startTime": "11:00 AM",
+                        "endTime": "11:50 AM"
                       }
                     ]
                   }

@@ -57,7 +57,9 @@ public class NumericValue extends ScalableValue {
 
     @Override
     public void generatePSL(PSLGenerator generator) {
-        if (value == (int)value) {
+        if (value == 0) {
+            generator.addPSL("no");
+        } else if (value == (int)value) {
             generator.addPSL(Integer.toString((int) value));
         } else {
             generator.addPSL(Double.toString(value));
