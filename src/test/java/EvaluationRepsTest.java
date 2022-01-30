@@ -8,7 +8,7 @@ import psl.exceptions.PSLCompileError;
 public class EvaluationRepsTest {
     public static void main(String[] args) {
         String[] paths = {
-                "assets/psl/full-test.psl",
+                "assets/psl/full-grammar.psl",
                 "assets/psl/test.psl",
                 "assets/psl/my-preferences.psl",
                 "assets/psl/simple.psl",

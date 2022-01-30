@@ -1,0 +1,5 @@
+term_year_evaluators {
+    require taking course "COS-120" in fall 2022.
+    require plan starting in fall 2018.
+    require plan ending in spring 2022.
+}

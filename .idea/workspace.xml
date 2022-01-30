@@ -77,23 +77,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added singular wording to evaluators">
+      <change afterPath="$PROJECT_DIR$/src/test/java/PSLUnitTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testAssets/tests/boolean-evaluators.psl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testAssets/tests/comments.psl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testAssets/tests/conditional-specification.psl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testAssets/tests/conditions.psl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testAssets/tests/constraints.psl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testAssets/tests/contextual-specification.psl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testAssets/tests/numeric-evaluators.psl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testAssets/tests/preferences.psl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testAssets/tests/requirements.psl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testAssets/tests/specification-list.psl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testAssets/tests/term-year-evaluators.psl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testAssets/tests/time-evaluators.psl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/result.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/psl/full-test.psl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/psl/full-test.psl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/psl/test.psl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/psl/test.psl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/constraints/Constraint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/constraints/Constraint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/CoursesWithProfessorEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/CoursesWithProfessorEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesFromSetEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCoursesFromSetEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsFromSetEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalCreditsFromSetEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCoursesEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCoursesEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCreditsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/general/TotalUpperLevelCreditsEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/NumPrerequisiteViolationsEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/single/NumPrerequisiteViolationsEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/NumTimeBlocksEvaluator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/evaluators/weekday/NumTimeBlocksEvaluator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLGrammar.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/instance/AppInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/instance/AppInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/specification/ContextualSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/ContextualSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EvaluationRepsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EvaluationRepsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EvaluationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EvaluationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IntegrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PSLCompileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PSLCompileTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +169,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/parser" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/json/taylor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/testAssets/manual" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -173,9 +177,11 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/test/testAssets/tests/contextual-specification.psl" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/testAssets/manual" />
       <recent name="$PROJECT_DIR$/json/taylor" />
       <recent name="$PROJECT_DIR$/json/generation" />
     </key>
@@ -217,7 +223,7 @@
       <command value="mvn deploy" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IntegrationTest">
+  <component name="RunManager" selected="JUnit.PSLUnitTests">
     <configuration name="Compile Test" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -358,7 +364,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PSLUnitTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="psl" />
       <extension name="coverage">
         <pattern>
@@ -379,7 +385,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-17" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IntegrationTest" />
+      <option name="MAIN_CLASS_NAME" value="PSLUnitTests" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
@@ -453,14 +459,14 @@
       <item itemvalue="Application.Evaluation Reps Test" />
       <item itemvalue="Application.Evaluation Test" />
       <item itemvalue="Application.Specification Test" />
-      <item itemvalue="JUnit.IntegrationTest" />
       <item itemvalue="Python.Generate Catalog" />
       <item itemvalue="Python.Generate Offerings" />
       <item itemvalue="Shell Script.Cloud Deploy" />
+      <item itemvalue="JUnit.PSLUnitTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IntegrationTest" />
+        <item itemvalue="JUnit.PSLUnitTests" />
       </list>
     </recent_temporary>
   </component>
@@ -574,13 +580,7 @@
       <workItem from="1643386528665" duration="30000" />
       <workItem from="1643386598491" duration="36253000" />
       <workItem from="1643508201355" duration="5607000" />
-    </task>
-    <task id="LOCAL-00006" summary="Simplified evaluation by using universal offering iteratable">
-      <created>1629940057323</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1629940057323</updated>
+      <workItem from="1643571899582" duration="2878000" />
     </task>
     <task id="LOCAL-00007" summary="Implemented and debugged context with credit evaluator, working with all three context levels">
       <created>1631040961059</created>
@@ -918,7 +918,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643511172451</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Added singular wording to evaluators">
+      <created>1643571998269</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1643571998270</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

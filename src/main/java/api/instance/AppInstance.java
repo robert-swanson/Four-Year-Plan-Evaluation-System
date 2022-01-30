@@ -79,7 +79,7 @@ public abstract class AppInstance {
         pslCompiler.addDependencyPSLString(dependencyPSL);
     }
 
-    protected FullSpecification loadPSLString(String psl) throws PSLCompileError {
+    public FullSpecification loadPSLString(String psl) throws PSLCompileError {
         System.out.println("- Compiling Main PSL String");
         return pslCompiler.compileString(psl);
     }

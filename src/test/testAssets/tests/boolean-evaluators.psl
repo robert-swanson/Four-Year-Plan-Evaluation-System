@@ -1,0 +1,6 @@
+boolean_evaluators {
+    require not meeting at 12:00 PM - 12:50 PM.
+    require taking "COS-120" before "COS-265".
+    require taking "COS-121", "COS-265" together.
+    require taking course "COS-121".
+}

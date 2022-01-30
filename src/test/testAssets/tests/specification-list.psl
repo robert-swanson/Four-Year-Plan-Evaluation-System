@@ -1,0 +1,10 @@
+specification_list {
+    {}
+    {
+        require 10 credits.
+    }
+    {
+        require 10 credits.
+        require 20 credits.
+    }
+}

@@ -1,0 +1,38 @@
+contextual_specification {
+    for terms where more than 15 credits require 15 credits.
+    for terms where more than 15 credits {
+        require 15 credits.
+    }
+    for days where more than 5 credits {
+        require 5 credits.
+    }
+    for terms where more than 15 credits {
+        for days where more than 5 credits {
+            require 5 credits.
+        }
+    }
+
+    for sundays, mondays, tuesdays, wednesdays, thursdays, fridays, saturdays {
+        require 1 credit.
+    }
+
+    for mondays {
+        require 1 credit.
+    }
+
+    for fall 2018, spring 2021 {
+        require 16 credits.
+    }
+
+    for fall 2018 {
+        require 16 credits.
+    }
+
+    for terms where more than 15 credits {
+        if 10 credits then {
+            for days where more than 5 credits {
+                require 5 credits.
+            }
+        }
+    }
+}

@@ -91,6 +91,14 @@ specifications {
         }
     }
 
+    for mondays, wednesdays, fridays {
+        require 1 credit.
+    }
+
+    for fall 2018 {
+        require 16 credits.
+    }
+
     for terms where more than 15 credits {
         if 10 credits then {
             for days where more than 5 credits {

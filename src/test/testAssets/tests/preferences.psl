@@ -1,0 +1,4 @@
+preferences (strongly = 10.5, moderately = 5) {
+    prefer 10 credits.
+    prefer strongly 5 credits.
+}

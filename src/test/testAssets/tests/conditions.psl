@@ -1,0 +1,15 @@
+conditions {
+    if 8 credits then {
+        require 8 credits.
+    } otherwise if (9 credits) then {
+        require 9 credits.
+    } otherwise if (8 credits and 8 credits) then {
+        require 10 credits.
+    } otherwise if (8 credits or 8 credits) then {
+        require 11 credits.
+    } otherwise if not 8 credits then {
+        require 12 credits.
+    } otherwise if (not 8 credits and (8 credits or 8 credits)) then {
+        require 13 credits.
+    }
+}

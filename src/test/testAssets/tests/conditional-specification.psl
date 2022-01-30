@@ -1,0 +1,13 @@
+conditional_specification {
+    if 10 credits then require 10 credits.
+    otherwise if 12 credits then require 12 credits.
+    otherwise if 14 credits then require 14 credits.
+    otherwise require 16 credits.
+    if 10 credits then {
+        require 10 credits.
+    } otherwise if 12 credits then {
+        require 12 credits.
+    } otherwise if 14 credits then {
+        require 14 credits.
+    }
+}

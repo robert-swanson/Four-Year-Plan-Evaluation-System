@@ -91,17 +91,28 @@ public class ContextualSpecification extends Specification {
     public String describe() {
         return switch (type) {
             case condition -> String.format("for %s where %s", contextLevel.toString(), filterCondition.describe());
-            case terms -> String.format("for terms %s", termYears);
-            case days -> String.format("for days %s", weekdays);
+            case terms -> String.format("for terms %s", termYearsPSL());
+            case days -> String.format("for days %s", weekdaysPSL());
         };
+    }
+
+    private String termYearsPSL() {
+        String str = termYears.toString();
+        return str.substring(1, str.length()-1);
+    }
+
+    private String weekdaysPSL() {
+        StringBuilder builder = new StringBuilder();
+        weekdays.forEach(weekday -> builder.append(String.format("%ss, ", weekday)));
+        return builder.substring(0, builder.length()-2).toLowerCase();
     }
 
     @Override
     public void generatePSL(PSLGenerator generator) {
         switch (type) {
             case condition -> generator.addPSL(String.format("for %s where %s ", contextLevel, filterCondition.toPSL()));
-            case terms -> generator.addPSL(String.format("for %s ", termYears));
-            case days -> generator.addPSL(String.format("for %s ", weekdays));
+            case terms -> generator.addPSL(String.format("for %s ", termYearsPSL()));
+            case days -> generator.addPSL(String.format("for %s ", weekdaysPSL()));
         }
         specification.generatePSL(generator);
     }

@@ -1,0 +1,7 @@
+time_evaluators {
+    require starting at 9:00 AM.
+    require ending at 3:00 PM.
+
+    require "COS-120" starting at 9:00 AM.
+    require "COS-120" ending at 9:50 AM.
+}

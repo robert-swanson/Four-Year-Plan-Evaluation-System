@@ -1,0 +1,30 @@
+constraints {
+    require 8 credits.
+    require more than 8 credits.
+    require 8 or more credits.
+    require less than 8 credits.
+    require 8 or less credits.
+
+    require starting at 10:00 AM.
+    require starting after 10:00 AM.
+    require starting at or after 10:00 AM.
+    require starting before 10:00 AM.
+    require starting at or before 10:00 AM.
+
+    require plan starting in fall 2020.
+    require plan starting after fall 2020.
+    require plan starting on or after fall 2020.
+    require plan starting before fall 2020.
+    require plan starting on or before fall 2020.
+
+    require not meeting at 10:00 AM - 12:00 AM.
+
+    prefer more credits.
+    prefer less credits.
+
+    prefer starting later.
+    prefer starting earlier.
+
+    prefer plan starting later.
+    prefer plan starting earlier.
+}

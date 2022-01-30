@@ -1,0 +1,13 @@
+[[ This is a comment at the beginning ]]
+
+[[
+    This is a multi-line comment
+    With multiple lines
+]]
+
+comments {
+    [[ This comment is at the beginning of a block ]]
+    require 10 credits. [[ This comment says something about this spec ]]
+    require 1 credit.
+    require 10 credits from "COS-120", "COS-121", "COS-104".
+}
