@@ -24,5 +24,9 @@ student_preferences (moderately=2.0, strongly=10.0) {
         prefer meeting at 11:00 AM - 11:50 AM.
     }
 
+    for each term {
+        require 10 credits.
+    }
+
     for thursdays prefer strongly not meeting at 2:00 PM - 4:00 PM.
 }

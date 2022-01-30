@@ -20,6 +20,8 @@ contextual_specification {
         require 1 credit.
     }
 
+    for each day require less than 3 courses.
+
     for fall 2018, spring 2021 {
         require 16 credits.
     }
@@ -34,5 +36,9 @@ contextual_specification {
                 require 5 credits.
             }
         }
+    }
+
+    for each term {
+        require 17 or less credits.
     }
 }

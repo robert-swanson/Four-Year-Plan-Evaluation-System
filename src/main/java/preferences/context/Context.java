@@ -64,6 +64,15 @@ public class Context implements Explainable {
         termSubContexts.push(singleWeekdayContext);
     }
 
+    public boolean applyAllFilter(ContextLevel contextLevel) {
+        assert !(getContextLevel() == ContextLevel.days && contextLevel == ContextLevel.terms) : "cannot broaden context level";
+        assert contextLevel != ContextLevel.fullPlan : "cannot filter to full plan";
+
+        termSubContexts.push(getTermSubContexts());
+        contextLevelStack.push(contextLevel);
+        return true;
+    }
+
     // returns false if no change due to empty resulting context
     public boolean applyContextFilter(Condition condition, ContextLevel contextLevel) {
         assert contextLevel != ContextLevel.fullPlan;
@@ -139,8 +148,10 @@ public class Context implements Explainable {
 
     public void unapplyContextFilter() {
         LinkedHashMap<TermYear, TermSubContext> oldTerms = termSubContexts.pop();
-        if (contextLevelStack.pop() == ContextLevel.days) {
-                oldTerms.values().forEach(TermSubContext::popContext);
+        ContextLevel oldContextLevel = contextLevelStack.pop();
+        if (oldTerms != getTermSubContexts() && oldContextLevel == ContextLevel.days) {
+            // Not popping 'for each' and is popping days level
+            oldTerms.values().forEach(TermSubContext::popContext);
         }
     }
 

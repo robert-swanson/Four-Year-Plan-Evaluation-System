@@ -196,6 +196,16 @@ public class PSLListener extends PSLGrammarBaseListener {
 
     @Override
     public void exitContextLevel(PSLGrammarParser.ContextLevelContext ctx) {
+        if (ctx.TERM() != null) {
+            PSLParsingError.assertTrue(getContextLevel() != ContextLevel.days, "Cannot move up to a broader context level", ctx.start);
+            pushContext(ContextLevel.terms);
+        } else {
+            pushContext(ContextLevel.days);
+        }
+    }
+
+    @Override
+    public void exitContextLevelPlural(PSLGrammarParser.ContextLevelPluralContext ctx) {
         if (ctx.TERMS() != null) {
             PSLParsingError.assertTrue(getContextLevel() != ContextLevel.days, "Cannot move up to a broader context level", ctx.start);
             pushContext(ContextLevel.terms);

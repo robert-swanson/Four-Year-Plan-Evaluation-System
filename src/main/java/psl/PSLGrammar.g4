@@ -45,19 +45,22 @@ OTHERWISE_IF: 'otherwise if';
 OTHERWISE: 'otherwise';
 
 // Contextual Specification
-contextualSpecification: FOR (contextLevel WHERE condition | termYearList | weekdayList) specification;
+contextualSpecification: FOR (contextLevelPlural WHERE condition | termYearList | weekdayList | EACH contextLevel) specification;
 
 termYearList: termYear (',' termYear)*;
 weekdayList: weekday (',' weekday)*;
 weekday: 'sundays' | 'mondays' | 'tuesdays' | 'wednesdays' | 'thursdays' | 'fridays' | 'saturdays';
 
-contextLevel: TERMS|DAYS;
+contextLevelPlural: TERMS|DAYS;
+contextLevel: TERM|DAY;
 FOR: 'for';
 PLAN: 'plan';
 TERMS: 'terms';
 TERM: 'term';
 DAYS: 'days';
+DAY: 'day';
 WHERE: 'where';
+EACH: 'each';
 
 
 

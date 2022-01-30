@@ -26,7 +26,7 @@ public class ContextualSpecification extends Specification {
 
 
     private enum ContextualSpecificationType {
-        condition, terms, days
+        condition, terms, days, all
     }
 
     public ContextualSpecification(Specification specification, ContextLevel contextLevel, Condition condition, Set<TermYear> termYears, Set<Weekday> weekdays) {
@@ -36,14 +36,17 @@ public class ContextualSpecification extends Specification {
         this.termYears = termYears;
         this.weekdays = weekdays;
 
-        if (condition != null) {
+        if (condition != null) { // condition as context filter
             this.type = ContextualSpecificationType.condition;
             this.filterCondition = condition;
-        } else if (termYears != null && !termYears.isEmpty()) {
+        } else if (termYears != null && !termYears.isEmpty()) { // specific term years as context filter
             this.type = ContextualSpecificationType.terms;
             this.filterCondition = null;
-        } else if (termYears != null && !weekdays.isEmpty()) {
+        } else if (termYears != null && !weekdays.isEmpty()) { // specific weekdays as context filters
             this.type = ContextualSpecificationType.days;
+            this.filterCondition = null;
+        } else if (contextLevel == ContextLevel.terms || contextLevel == ContextLevel.days) { // all terms
+            this.type = ContextualSpecificationType.all;
             this.filterCondition = null;
         } else {
             this.type = null;
@@ -57,6 +60,7 @@ public class ContextualSpecification extends Specification {
             case condition -> context.applyContextFilter(filterCondition, contextLevel);
             case terms -> context.filterTerms(termYears);
             case days -> context.filterDays(weekdays);
+            case all -> context.applyAllFilter(contextLevel);
         };
         currentContextExplanation = context.explainLastResult();
         return applied;
@@ -93,6 +97,7 @@ public class ContextualSpecification extends Specification {
             case condition -> String.format("for %s where %s", contextLevel.toString(), filterCondition.describe());
             case terms -> String.format("for terms %s", termYearsPSL());
             case days -> String.format("for days %s", weekdaysPSL());
+            case all -> String.format("for each %s", contextLevel == ContextLevel.days ? "day" : "term");
         };
     }
 
@@ -113,6 +118,7 @@ public class ContextualSpecification extends Specification {
             case condition -> generator.addPSL(String.format("for %s where %s ", contextLevel, filterCondition.toPSL()));
             case terms -> generator.addPSL(String.format("for %s ", termYearsPSL()));
             case days -> generator.addPSL(String.format("for %s ", weekdaysPSL()));
+            case all -> generator.addPSL(String.format("for each %s ", contextLevel == ContextLevel.days ? "day" : "term"));
         }
         specification.generatePSL(generator);
     }
