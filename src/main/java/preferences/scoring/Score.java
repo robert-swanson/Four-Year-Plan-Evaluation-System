@@ -1,9 +1,11 @@
 package preferences.scoring;
 
 public class Score {
-    private double accum;
-    private double max;
+    private double scoreAccumulator;
+    private double scoreMax;
     private boolean isValid;
+    private int requirementsMet = 0;
+    private int requirementsViolated = 0;
 
     public static Score valid() {
         return new Score(true);
@@ -16,32 +18,40 @@ public class Score {
     private Score(boolean valid) {
         this(0,0,false);
         this.isValid = valid;
+        if (valid) requirementsMet++;
+        else requirementsViolated++;
     }
 
     public Score(double score, double weight, boolean invert) {
-        this.accum = (invert ? weight * (1 - score) : score*weight);
-        this.max = weight;
+        this.scoreAccumulator = (invert ? weight * (1 - score) : score*weight);
+        this.scoreMax = weight;
         isValid = true;
     }
 
     public void addScore(Score score) {
-        accum += score.accum;
-        max += score.max;
+        scoreAccumulator += score.scoreAccumulator;
+        scoreMax += score.scoreMax;
         isValid &= score.isValid;
+        requirementsMet += score.requirementsMet;
+        requirementsViolated += score.requirementsViolated;
     }
 
     public double getScore() {
-        return accum/max;
+        return scoreAccumulator / scoreMax;
     }
 
     public boolean isValid() { return  isValid; }
 
     public String describe() {
-        if (max == 0) {
-            return isValid ? "valid" : "invalid";
-        } else {
-            return String.format("%s (%.0f%%)", (isValid ? "valid" : "invalid"), getScore()*100);
+        String reqStr = isValid ? "valid" : "invalid";
+        if (!isValid) {
+            int totalReqs = requirementsMet+requirementsViolated;
+            reqStr += String.format(", %d requirements out of %d unmet", requirementsViolated, totalReqs);
         }
+        if (scoreMax != 0) {
+            reqStr += String.format(", with score of %.0f%%", getScore()*100);
+        }
+        return reqStr;
     }
 
     @Override
