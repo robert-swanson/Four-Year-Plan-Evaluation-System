@@ -4,7 +4,7 @@ import api.instance.AppInstance;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import preferences.specification.FullSpecification;
+import preferences.specification.Specification;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -16,7 +16,7 @@ public class EvaluationAnswer {
         answerList = new JsonArray();
     }
 
-    public void addAnswer(String planID, FullSpecification answer, boolean explain) {
+    public void addAnswer(String planID, Specification answer, boolean explain) {
         JsonObject thisAnswer = new JsonObject();
 
         JsonElement score = AppInstance.createGson().toJsonTree(answer.getLastResult());

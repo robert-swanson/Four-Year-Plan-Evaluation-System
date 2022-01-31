@@ -1,13 +1,14 @@
 package api.instance;
 
+import api.EvaluationAnswer;
 import api.SpecificationCache;
 import api.SpecificationID;
-import api.EvaluationAnswer;
 import exceptions.JSONParseException;
 import exceptions.LinkingException;
 import exceptions.PSLInstanceException;
 import io.github.cdimascio.dotenv.Dotenv;
 import preferences.specification.FullSpecification;
+import preferences.specification.Specification;
 import psl.exceptions.PSLParsingError;
 import spark.Response;
 
@@ -150,9 +151,12 @@ public class ServerInstance extends AppInstance {
         get("/evaluate/psl-json/:id/:version/:explain", (request, response) -> {
             try {
                 SpecificationID id = new SpecificationID(request.params(":id"), request.params(":version"));
-                FullSpecification specification = instance.requestPSL(id, true);
+                Specification specification = instance.requestPSL(id, true);
                 String planJSON = request.body();
                 boolean explain = request.params(":id").equals("explain");
+                if (!explain) {
+                    specification = specification.getSimplifiedSpecification();
+                }
                 EvaluationAnswer answer = instance.evaluatePlansString(planJSON, specification, explain);
                 return answer.toJSON();
             } catch (Exception e) {

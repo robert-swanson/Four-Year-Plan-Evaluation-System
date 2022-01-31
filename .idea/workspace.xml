@@ -76,15 +76,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added PSL generation unit tests">
+    <list default="true" id="94e88970-77d5-4756-b6c0-0bdee593edb0" name="Default Changelist" comment="Added 'for each'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/json/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/json/result.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/psl/test.psl" beforeDir="false" afterPath="$PROJECT_DIR$/assets/psl/test.psl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/context/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/context/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/preferences/specification/ContextualSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/preferences/specification/ContextualSpecification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLGrammar.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLGrammar.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testAssets/tests/contextual-specification.psl" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testAssets/tests/contextual-specification.psl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/EvaluationAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/EvaluationAnswer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/instance/AppInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/instance/AppInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/instance/ServerInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/instance/ServerInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/psl/PSLCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/psl/PSLCompiler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -567,14 +564,8 @@
       <workItem from="1643386528665" duration="30000" />
       <workItem from="1643386598491" duration="36253000" />
       <workItem from="1643508201355" duration="5607000" />
-      <workItem from="1643571899582" duration="5610000" />
-    </task>
-    <task id="LOCAL-00008" summary="Added scoring functions">
-      <created>1631076161948</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1631076161948</updated>
+      <workItem from="1643571899582" duration="5812000" />
+      <workItem from="1643596917292" duration="470000" />
     </task>
     <task id="LOCAL-00009" summary="Finished scoring for weekday contexts, and added explanations. Cleaned up context evaluators by consolidating into `CourseOfferingAccumulatorEvaluator.java`">
       <created>1631649425225</created>
@@ -912,7 +903,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643575063136</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Added 'for each'">
+      <created>1643577791978</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1643577791978</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -934,7 +932,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added evaluation results to explanation, added full spec and explanation" />
     <MESSAGE value="removed angle brackets from week sub context description" />
     <MESSAGE value="resolved bugs creating Term &amp; Week sub-contexts, integration test now compiles, evaluates, and explains without error" />
     <MESSAGE value="added assert plan context and resolved context issue where extra context would be added for day filters" />
@@ -959,7 +956,8 @@
     <MESSAGE value="Added 'no' keyword to represent 0, reworded ≥ and ≤ constraints to x or less/x or more" />
     <MESSAGE value="Added singular wording to evaluators" />
     <MESSAGE value="Added PSL generation unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added PSL generation unit tests" />
+    <MESSAGE value="Added 'for each'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added 'for each'" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

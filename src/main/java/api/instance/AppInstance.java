@@ -89,7 +89,7 @@ public abstract class AppInstance {
         return new FullSpecification(pslJSON);
     }
 
-    public EvaluationAnswer evaluatePlansString(String plansJson, FullSpecification specification, boolean includeExplanation) throws Exception {
+    public EvaluationAnswer evaluatePlansString(String plansJson, Specification specification, boolean includeExplanation) throws Exception {
         if (link == null) {
             throw new PSLInstanceException.PSLInstanceNotReadyException("needs to be linked");
         } else if (specification == null) {
